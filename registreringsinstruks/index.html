@@ -513,6 +513,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sectionbody">
 <div class="sidebarblock">
 <div class="content">
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Denne registreringsinstruksen erstattet av en nyere versjon!<br>
+<strong>Nyeste versjon finnes på</strong>: <a href="https://sosi.geonorge.no/registreringsinstrukser/Elveg/2.0/Fotogrammetrisk_2023-01-01" class="bare">https://sosi.geonorge.no/registreringsinstrukser/Elveg/2.0/Fotogrammetrisk_2023-01-01</a>
+</td>
+</tr>
+</table>
+</div>
 <div class="admonitionblock tip">
 <table>
 <tr>
@@ -528,8 +541,10 @@ Dette dokumentet kan også lastes ned <a href="https://sosi.geonorge.no/registre
 <div class="paragraph">
 <p><strong>Publisert</strong>: 2022-06-01<br>
 <strong>Denne versjonen finnes på</strong>: <a href="https://sosi.geonorge.no/registreringsinstrukser/Elveg/2.0/Fotogrammetrisk_2022-01-01" class="bare">https://sosi.geonorge.no/registreringsinstrukser/Elveg/2.0/Fotogrammetrisk_2022-01-01</a><br>
-<strong>Tilhørende produktspesifikasjon</strong>:<br>
-- <a href="https://sosi.geonorge.no/produktspesifikasjoner/SOSI_standardisert_produktspesifikasjon_Elveg_2.0.pdf">PDF-dokument for Elveg 2.0</a></p>
+<strong>Tilhørende produktspesifikasjon finnes på</strong>: <a href="https://sosi.geonorge.no/produktspesifikasjoner/Elveg/2.0" class="bare">https://sosi.geonorge.no/produktspesifikasjoner/Elveg/2.0</a><br>
+- <a href="https://sosi.geonorge.no/produktspesifikasjoner/Elveg/2.0">HTML-dokument</a><br>
+- <a href="https://sosi.geonorge.no/produktspesifikasjoner/Elveg/2.0/Produktspesifikasjon_Elveg_50.pdf">PDF-dokument</a><br>
+- <a href="https://sosi.geonorge.no/uml-modeller/sosi-del-3-produktspesifikasjoner/Elveg/2.0">HTML-visning av UML-modellen</a><br></p>
 </div>
 <div class="paragraph">
 <p><a href="https://kartverket.no/geodataarbeid/geovekst">Geovekst-samarbeidet</a> er eier og faglig ansvarlig for spesifikasjonen.</p>
@@ -1095,54 +1110,6 @@ Konnekteringslenker skal ikke nyregistreres ved fotogrammetrisk datafangst. Alle
 <td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Medium</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..MEDIUM</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">standardLRM</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«codeList» LineærReferanseMetode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..LRLRM</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">lenkesekvens</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Lenkesekvensreferanse</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..LENKESEKVENS</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">lenkesekvens.identifikasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Identifikasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;IDENT</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">lenkesekvens.identifikasjon.lokalId</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;.LOKALID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">lenkesekvens.identifikasjon.navnerom</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;.NAVNEROM</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">lenkesekvens.identifikasjon.versjonId</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;.VERSJONID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">lenkesekvens.startposisjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Real</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;LRSTARTVERDI</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">lenkesekvens.sluttposisjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Real</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;LRSLUTTVERDI</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">typeVeg</p></td>
@@ -2152,7 +2119,7 @@ av denne lisensen og ikke kan viderebrukes</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-05-31 10:42:57 +0200
+Last updated 2022-11-08 13:02:00 +0100
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css">
