@@ -5,6 +5,9 @@ Geovekst
 ifdef::backend-pdf[{empty} +]
 
 ****
+WARNING: Denne registreringsinstruksen erstattet av en nyere versjon! +
+*Nyeste versjon finnes på*: {reginstr-url-ny} 
+
 ifeval::["{backend}" == "html5"]
 
 [TIP]
@@ -24,9 +27,7 @@ endif::[]
 
 https://kartverket.no/geodataarbeid/geovekst[Geovekst-samarbeidet] er eier og faglig ansvarlig for spesifikasjonen.
 
-//*Nyeste versjon finnes på*: {prodspek-url} +
 
-//*Denne versjonen erstatter*: {prodspek-forrige-url}[{datasett} {versjon-forrige}] +
 
 ****
 
