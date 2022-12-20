@@ -629,7 +629,7 @@ SOSI Elveg 2.0.</p>
 <p>Nytt kapittel 3.2.7, Registrering av veglenker for kjørende, med tekst og bildeeksempel.</p>
 </li>
 <li>
-<p>Nytt kapittel 5.3.3 som presiseres håndtering av veglenker i randsonen av kartleggingsområdet</p>
+<p>Nytt kapittel 5.3.3 som presiserer håndtering av veglenker i randsonen av kartleggingsområdet</p>
 </li>
 </ul>
 </div>
@@ -1209,102 +1209,6 @@ Konnekteringslenker skal ikke nyregistreres ved fotogrammetrisk datafangst. Alle
 <td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Integer</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;.VEGNUMMER</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vegsystemreferanse.vegstrekning</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Vegstrekning</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;VEGSTREKNING</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vegsystemreferanse.vegstrekning.strekningNummer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;.STREKNINGNUMMER</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vegsystemreferanse.vegstrekning.delstrekningNummer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;.DELSTREKNINGNUMMER</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vegsystemreferanse.vegstrekning.fraMeter</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;.FRAMETER</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vegsystemreferanse.vegstrekning.tilMeter</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;.TILMETER</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vegsystemreferanse.vegstrekning.adskilteLøp</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«codeList» AdskilteLøp</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;.ADSKILTELØP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vegsystemreferanse.vegstrekning.adskilteLøpNummer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;.ADSKILTELØPNUMMER</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vegsystemreferanse.sideanlegg</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Sideanlegg</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;SIDEANLEGG</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vegsystemreferanse.sideanlegg.sideanleggsdel</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;.SIDEANLEGGSDEL</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vegsystemreferanse.sideanlegg.fraMeter</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;.FRAMETER</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vegsystemreferanse.sideanlegg.tilMeter</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;.TILMETER</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vegsystemreferanse.kryssystem</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Kryssystem</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;KRYSSYSTEM</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vegsystemreferanse.kryssystem.kryssdel</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;.KRYSSDEL</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vegsystemreferanse.kryssystem.fraMeter</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;.FRAMETER</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vegsystemreferanse.kryssystem.tilMeter</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;.TILMETER</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vegsystemreferanse.referanseretning</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«codeList» Referanseretning</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;REFERANSERETNING</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">feltoversikt</p></td>
@@ -2307,7 +2211,7 @@ av denne lisensen og ikke kan viderebrukes</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-11-22 12:46:56 +0100
+Last updated 2022-12-20 10:40:14 +0100
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css">
