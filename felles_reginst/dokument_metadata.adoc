@@ -5,7 +5,7 @@ Geovekst
 ifdef::backend-pdf[{empty} +]
 
 ****
-WARNING: Høringsversjon! Erstattes av endelig versjon januar 2023. +
+// WARNING: Høringsversjon! Erstattes av endelig versjon januar 2023. +
 // *Nyeste versjon finnes på*: {reginstr-url-ny} 
 
 ifeval::["{backend}" == "html5"]
