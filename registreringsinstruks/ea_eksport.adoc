@@ -103,6 +103,21 @@ Egenskapen typeveg er den viktigste egenskapen til veglenke og angir hvilken typ
 |..VERIFISERINGSDATO
 |[0..1]
  
+|endringsflagg
+|«dataType» Endringsflagg
+|..ENDRINGSFLAGG
+|[0..1]
+ 
+|endringsflagg.typeEndring
+|«CodeList» TypeEndring
+|...ENDRET_TYPE
+|[1..1]
+ 
+|endringsflagg.tidspunktEndring
+|DateTime
+|...ENDRET_TID
+|[0..1]
+ 
 |kommunenummer
 | «CodeList»  http://skjema.geonorge.no/SOSI/kodeliste/AdmEnheter/Kommunenummer[Kommunenummer, window = _blank]
 |..KOMM

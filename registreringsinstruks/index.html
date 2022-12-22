@@ -539,7 +539,7 @@ Dette dokumentet kan også lastes ned <a href="https://sosi.geonorge.no/registre
 </table>
 </div>
 <div class="paragraph">
-<p><strong>Publisert</strong>: 2022-12-01<br>
+<p><strong>Publisert</strong>: 2022-12-20<br>
 <strong>Denne versjonen finnes på</strong>: <a href="https://sosi.geonorge.no/registreringsinstrukser/Elveg/2.0/Fotogrammetrisk_2023-01-01" class="bare">https://sosi.geonorge.no/registreringsinstrukser/Elveg/2.0/Fotogrammetrisk_2023-01-01</a><br>
 <strong>Denne versjonen erstatter</strong>: <a href="https://sosi.geonorge.no/registreringsinstrukser/Elveg/2.0/Fotogrammetrisk_2022-01-01" class="bare">https://sosi.geonorge.no/registreringsinstrukser/Elveg/2.0/Fotogrammetrisk_2022-01-01</a><br>
 <strong>Tilhørende produktspesifikasjon finnes på</strong>: <a href="https://sosi.geonorge.no/produktspesifikasjoner/Elveg/2.0" class="bare">https://sosi.geonorge.no/produktspesifikasjoner/Elveg/2.0</a><br>
@@ -631,7 +631,7 @@ SOSI Elveg 2.0.</p>
 <p>Se produktspesifikasjon for Elveg for en oversikt over <a href="https://sosi.geonorge.no/produktspesifikasjoner/Elveg#trueendringer-siden-vegnett-4-61-2017-05-01">endringer siden vegnett 4.61 2018-01-01</a>. Det er ikke gjort endringer når det gjelder bestemmelser for fotogrammetrisk registrering utover det som følger av endringene i produktspesifikasjonen.</p>
 </div>
 <div class="paragraph">
-<p>(Dokumentasjon av SOSI-utvekslingsformat justert til oppdatert versjon av spesifikasjon med publiseringsdato 2022-12-01 på bakrunn av erfaring med FKB 5.0 testprosjekt våren 2022)</p>
+<p>(Dokumentasjon av SOSI-utvekslingsformat justert til oppdatert versjon av spesifikasjon med publiseringsdato 2022-12-20 på bakrunn av erfaring med FKB 5.0 testprosjekt våren 2022)</p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -1079,6 +1079,24 @@ Konnekteringslenker skal ikke nyregistreres ved fotogrammetrisk datafangst. Alle
 <td class="tableblock halign-left valign-top"><p class="tableblock">verifiseringsdato</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Date</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..VERIFISERINGSDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">endringsflagg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Endringsflagg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..ENDRINGSFLAGG</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">endringsflagg.typeEndring</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» TypeEndring</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;ENDRET_TYPE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">endringsflagg.tidspunktEndring</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;ENDRET_TID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 </tr>
 <tr>
@@ -2202,7 +2220,7 @@ av denne lisensen og ikke kan viderebrukes</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-12-20 11:16:27 +0100
+Last updated 2022-12-22 08:28:33 +0100
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css">
