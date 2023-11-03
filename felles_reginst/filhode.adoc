@@ -1,0 +1,79 @@
+// Adoc styling
+:toc: left
+:toc-title: Innholdsfortegnelse
+:toclevels: 3
+:sectnums:
+:sectnumlevels: 3
+:figure-caption: Figur
+:table-caption: Tabell
+:section-refsig: Kapittel
+:version-label: Versjon
+:doctype: book
+:encoding: utf-8
+:lang: nb
+:appendix-caption: Vedlegg
+:pdf-page-size: A4
+ifdef::backend-pdf[:toc: macro]
+:chapter-label! :
+
+// Adoc parametere
+:skjemabase-url: https://skjema.geonorge.no/SOSI/produktspesifikasjon/
+:prodspekbase-url: https://sosi.geonorge.no/produktspesifikasjoner/
+:umlbase-url: https://sosi.geonorge.no/uml-modeller/sosi-del-3-produktspesifikasjoner/
+:reginstrbase-url: https://sosi.geonorge.no/registreringsinstrukser/
+:fkbGenerellDel-url: https://sosi.geonorge.no/Standarder/FKB_generell_del/5.1
+:title-logo-image: image:../felles_reginst/figurer/geovekst.jpg[bottom=90%, align=center, pdfwidth=1.5in]
+:fkbdatasett: {datasett} {versjon}
+:skjema-url: {skjemabase-url}{datasett}/{versjon}
+:prodspek-url: {prodspekbase-url}{datasett}
+:uml-url: {umlbase-url}{datasett}/{versjon}
+:reginstr-url: {reginstrbase-url}{datasett}/{versjon}/{reginstr-type}_{underversjon}
+:reginstr-url-ny: {reginstrbase-url}{datasett}/{versjon-ny}/{reginstr-type}_{underversjon-ny}
+:reginstr-url-erstatter: {reginstrbase-url}{datasett}/{versjon-erstatter}/{reginstr-type}_{underversjon-erstatter}
+
+// Adoc filhode/metadata
+= Registreringsinstruks: {reginstr-type} {datasett}
+Geovekst
+{versjon} - {underversjon}
+
+ifdef::backend-pdf[{empty} +]
+
+****
+
+ifeval::[{dokumentstatus} == 2]
+
+WARNING: *Høringsversjon!* Siste gyldige versjon finnes på {reginstr-url-erstatter} 
+
+*Publisert*: {publisert} +
+
+endif::[]
+
+ifeval::[{dokumentstatus} == 3]
+
+WARNING: *Utgått versjon!* Se nyeste versjon på {reginstr-url-ny} 
+
+*Publisert*: {publisert} +
+*Denne versjonen erstatter*: {reginstr-url-erstatter} +
+*Tilhørende produktspesifikasjon finnes på*: {prodspek-url}/{versjon} +
+
+endif::[]
+
+ifeval::[{dokumentstatus} == 1]
+
+*Publisert*: {publisert} +
+*Nyeste gyldige versjon av dokumentet finnes på*: {reginstr-url-ny} +
+*Denne versjonen finnes på*: {reginstr-url} +
+*Denne versjonen erstatter*: {reginstr-url-erstatter} +
+*Tilhørende produktspesifikasjon finnes på*: {prodspek-url}/{versjon} +
+- {uml-url}[HTML-visning av UML-modellen] +
+
+endif::[]
+
+https://kartverket.no/geodataarbeid/geovekst[Geovekst-samarbeidet] er eier og faglig ansvarlig for spesifikasjonen.
+
+
+****
+
+<<<
+
+toc::[]
