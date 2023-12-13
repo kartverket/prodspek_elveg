@@ -54,47 +54,47 @@ Vegnettet ajourføres i Nasjonal Vegdatabank, NVDB.
 '''
  
 .Realisering av Veglenke og NVDB objekttyper 
-image::diagrammer/Realisering av Veglenke og NVDB objekttyper.png[link=diagrammer/Realisering av Veglenke og NVDB objekttyper.png, Alt="Diagram med navn Realisering av Veglenke og NVDB objekttyper som viser UML-klasser beskrevet i teksten nedenfor."]
+image::diagrammer/Realisering av Veglenke og NVDB objekttyper.png[link=diagrammer/Realisering av Veglenke og NVDB objekttyper.png, alt="Diagram med navn Realisering av Veglenke og NVDB objekttyper som viser UML-klasser beskrevet i teksten nedenfor."]
  
 '''
  
 .Pakkerealisering NVDB Vegnett Pluss 
-image::diagrammer/Pakkerealisering NVDB Vegnett Pluss.png[link=diagrammer/Pakkerealisering NVDB Vegnett Pluss.png, Alt="Diagram med navn Pakkerealisering NVDB Vegnett Pluss som viser UML-klasser beskrevet i teksten nedenfor."]
+image::diagrammer/Pakkerealisering NVDB Vegnett Pluss.png[link=diagrammer/Pakkerealisering NVDB Vegnett Pluss.png, alt="Diagram med navn Pakkerealisering NVDB Vegnett Pluss som viser UML-klasser beskrevet i teksten nedenfor."]
  
 '''
  
 .Oversiktsdiagram 
-image::diagrammer/Oversiktsdiagram.png[link=diagrammer/Oversiktsdiagram.png, Alt="Diagram med navn Oversiktsdiagram som viser UML-klasser beskrevet i teksten nedenfor."]
+image::diagrammer/Oversiktsdiagram.png[link=diagrammer/Oversiktsdiagram.png, alt="Diagram med navn Oversiktsdiagram som viser UML-klasser beskrevet i teksten nedenfor."]
  
 '''
  
 .Hoveddiagram - Veglenke med datatyper og kodelister 
-image::diagrammer/Hoveddiagram - Veglenke med datatyper og kodelister.png[link=diagrammer/Hoveddiagram - Veglenke med datatyper og kodelister.png, Alt="Diagram med navn Hoveddiagram - Veglenke med datatyper og kodelister som viser UML-klasser beskrevet i teksten nedenfor."]
+image::diagrammer/Hoveddiagram - Veglenke med datatyper og kodelister.png[link=diagrammer/Hoveddiagram - Veglenke med datatyper og kodelister.png, alt="Diagram med navn Hoveddiagram - Veglenke med datatyper og kodelister som viser UML-klasser beskrevet i teksten nedenfor."]
  
 '''
  
 .Hoveddiagram - NVDB-objekter 
-image::diagrammer/Hoveddiagram - NVDB-objekter.png[link=diagrammer/Hoveddiagram - NVDB-objekter.png, Alt="Diagram med navn Hoveddiagram - NVDB-objekter som viser UML-klasser beskrevet i teksten nedenfor."]
+image::diagrammer/Hoveddiagram - NVDB-objekter.png[link=diagrammer/Hoveddiagram - NVDB-objekter.png, alt="Diagram med navn Hoveddiagram - NVDB-objekter som viser UML-klasser beskrevet i teksten nedenfor."]
  
 '''
  
 .Hoveddiagram - Fellesegenskaper 
-image::diagrammer/Hoveddiagram - Fellesegenskaper.png[link=diagrammer/Hoveddiagram - Fellesegenskaper.png, Alt="Diagram med navn Hoveddiagram - Fellesegenskaper som viser UML-klasser beskrevet i teksten nedenfor."]
+image::diagrammer/Hoveddiagram - Fellesegenskaper.png[link=diagrammer/Hoveddiagram - Fellesegenskaper.png, alt="Diagram med navn Hoveddiagram - Fellesegenskaper som viser UML-klasser beskrevet i teksten nedenfor."]
  
 '''
  
 .Realisering av fellesegenskaper 
-image::diagrammer/Realisering av fellesegenskaper.png[link=diagrammer/Realisering av fellesegenskaper.png, Alt="Diagram med navn Realisering av fellesegenskaper som viser UML-klasser beskrevet i teksten nedenfor."]
+image::diagrammer/Realisering av fellesegenskaper.png[link=diagrammer/Realisering av fellesegenskaper.png, alt="Diagram med navn Realisering av fellesegenskaper som viser UML-klasser beskrevet i teksten nedenfor."]
  
 '''
  
 .Realisering av datatyper 
-image::diagrammer/Realisering av datatyper.png[link=diagrammer/Realisering av datatyper.png, Alt="Diagram med navn Realisering av datatyper som viser UML-klasser beskrevet i teksten nedenfor."]
+image::diagrammer/Realisering av datatyper.png[link=diagrammer/Realisering av datatyper.png, alt="Diagram med navn Realisering av datatyper som viser UML-klasser beskrevet i teksten nedenfor."]
  
 '''
  
 .Realisering av kodelister 
-image::diagrammer/Realisering av kodelister.png[link=diagrammer/Realisering av kodelister.png, Alt="Diagram med navn Realisering av kodelister som viser UML-klasser beskrevet i teksten nedenfor."]
+image::diagrammer/Realisering av kodelister.png[link=diagrammer/Realisering av kodelister.png, alt="Diagram med navn Realisering av kodelister som viser UML-klasser beskrevet i teksten nedenfor."]
 <<<
 '''
 ==== Pakke: Veglenke
@@ -261,7 +261,7 @@ SOSI_navn: MEDIUM +
 |<<sosi_objekt5.0_veglenke,«FeatureType» SOSI_Objekt5.0_veglenke>>
  
 |Realisering av: 
-|«ApplicationSchema» Vegnett-5.0::«featureType» Veglenke +
+|«applicationSchema» Vegnett-5.0::«featureType» Veglenke +
 |===
 <<<
 '''
@@ -377,7 +377,7 @@ Viktighet: Opsjonell +
 |<<sosi_fellesegenskaper,«FeatureType» SOSI_Fellesegenskaper>>
  
 |Realisering av: 
-|«ApplicationSchema» Elveg-SFKB::«» Beredskapsveg +
+|«ApplicationSchema» NVDB Datakatalogen/Beredskapsveg::«featureType» Beredskapsveg +
 |===
  
 '''
@@ -531,7 +531,7 @@ SOSI_navn: ARKIVNUMMER +
 |<<sosi_fellesegenskaper,«FeatureType» SOSI_Fellesegenskaper>>
  
 |Realisering av: 
-|«ApplicationSchema» Vegnett-5.0::«» External Reference +
+|«ApplicationSchema» NVDB Datakatalogen/Fartsgrense::«featureType» Fartsgrense +
 |===
  
 '''
@@ -855,7 +855,7 @@ SOSI_navn: PROSJEKTREFERANSE +
 |<<sosi_fellesegenskaper,«FeatureType» SOSI_Fellesegenskaper>>
  
 |Realisering av: 
-|«ApplicationSchema» Elveg-SFKB::«» FartsgrenseVariabel +
+|«ApplicationSchema» NVDB Datakatalogen/Fartsgrense, variabel::«featureType» FartsgrenseVariabel +
 |===
  
 '''
@@ -1113,7 +1113,7 @@ Viktighet: Betinget +
 |<<sosi_fellesegenskaper,«FeatureType» SOSI_Fellesegenskaper>>
  
 |Realisering av: 
-|«ApplicationSchema» NVDB Vegnett Pluss::«» Ferjesamband +
+|«ApplicationSchema» NVDB Datakatalogen/Ferjesamband::«featureType» Ferjesamband +
 |===
  
 '''
@@ -1225,7 +1225,214 @@ SOSI_navn: MERKNAD +
 |<<sosi_fellesegenskaper,«FeatureType» SOSI_Fellesegenskaper>>
  
 |Realisering av: 
-|«ApplicationSchema» Elveg-SFKB::«» FunksjonellVegklasse +
+|«ApplicationSchema» NVDB Datakatalogen/Funksjonell vegklasse::«featureType» FunksjonellVegklasse +
+|===
+ 
+'''
+ 
+[[gjennomkjøringforbudt]]
+===== «featureType» GjennomkjøringForbudt
+*Definisjon:* Angir start av strekning eller et område med gjennomkjøring forbudt. Hvor det er forbudt å kjøre til angis med et assosiert GjennomkjøringForbudtTil-objekt. 
+Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhørende GjennomkjøringForbudtTil-punkt uten planlagt stopp mellom dem.
+ 
+[discrete]
+====== Profilparametre i tagged values
+[cols="20,80"]
+|===
+|catalogue-entry
+|NVDB Datakatalogen
+ 
+|KjorefeltRelevant
+|0
+ 
+|KORTN_VOBJ_TYPE
+|vnettRes
+ 
+|NVDB_ID
+|913
+ 
+|NVDB_ID
+|913
+ 
+|NVDB_navn
+|Gjennomkjøring forbudt
+ 
+|SideposisjonRelevant
+|0
+ 
+|SOSINVDB_navn
+|GjennomkjøringForbudt_913
+ 
+|Stedfesting
+|flerepunkt
+ 
+|===
+[discrete]
+====== Egenskaper
+[cols="20,80"]
+|===
+|*Navn:* 
+|*posisjon*
+ 
+|Definisjon: 
+|Angivelse av objektetsposisjon. Plasseres ved start av gjennomkjøring forbudt (ved gjennomkjøring forbudt skilt)
+ 
+|Multiplisitet: 
+|[1..1]
+ 
+|Type: 
+|http://skjema.geonorge.no/SOSI/basistype/GM_Point[GM_Point]
+|===
+[cols="20,80"]
+|===
+|*Navn:* 
+|*gjelderFor*
+ 
+|Definisjon: 
+|Angir hva slags kjøretøy det er gjennomkjøring forbudt for
+ 
+|Multiplisitet: 
+|[0..1]
+ 
+|Type: 
+|<<gjelderfor,«CodeList» GjelderFor>>
+|Profilparametre i tagged values: 
+|
+defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/samferdsel/nvdbvegnettpluss/gjelderfor + 
+KORTN_EGENSKAPSTYPE: gjeldFor + 
+NVDB_ID: 12563 + 
+NVDB_navn: Gjelder for + 
+SOSI_datatype: T + 
+SOSI_lengde: 30 + 
+SOSI_navn: NVDB_GJELDERFOR + 
+SOSINVDB_navn: GjelderFor_12563 + 
+Viktighet: Påkrevd ved nyregistrering + 
+|===
+[cols="20,80"]
+|===
+|*Navn:* 
+|*gjelderTidsrom*
+ 
+|Definisjon: 
+|Angir tidsrommet (hhmm-hhmm) eller (mnd-mnd) forbudet mot gjennomkjøring gjelder for.
+ 
+|Multiplisitet: 
+|[0..1]
+ 
+|Type: 
+|<<characterstring,«dataType» CharacterString>>
+|Profilparametre i tagged values: 
+|
+KORTN_EGENSKAPSTYPE: gjeldTid + 
+NVDB_ID: 12602 + 
+NVDB_navn: Gjelder tidsrom + 
+SOSI_datatype: T + 
+SOSI_lengde: 9 + 
+SOSI_navn: NVDB_GJELDERTIDSROM + 
+Viktighet: Opsjonell + 
+|===
+[cols="20,80"]
+|===
+|*Navn:* 
+|*merknad*
+ 
+|Definisjon: 
+|Gir merknad knyttet til gjennomkjøring forbudt.
+ 
+|Multiplisitet: 
+|[0..1]
+ 
+|Type: 
+|<<characterstring,«dataType» CharacterString>>
+|Profilparametre i tagged values: 
+|
+KORTN_EGENSKAPSTYPE: beskriv + 
+NVDB_ID: 11217 + 
+NVDB_navn: Merknad + 
+SOSI_datatype: T + 
+SOSI_lengde: 250 + 
+SOSI_navn: NVDB_MERKNAD + 
+SOSINVDB_navn: Merknad_11217 + 
+Viktighet: Opsjonell + 
+|===
+ 
+[discrete]
+====== Roller
+[cols="20,80"]
+|===
+|*Rollenavn:* 
+|*gjennomkjøringForbudtTil*
+ 
+|Multiplisitet: 
+|[0..*]
+ 
+|Til klasse
+|<<gjennomkjøringforbudttil,«featureType» GjennomkjøringForbudtTil>>
+|===
+ 
+[discrete]
+====== Arv og realiseringer
+[cols="20,80"]
+|===
+|Supertype: 
+|<<sosi_fellesegenskaper,«FeatureType» SOSI_Fellesegenskaper>>
+ 
+|===
+ 
+'''
+ 
+[[gjennomkjøringforbudttil]]
+===== «featureType» GjennomkjøringForbudtTil
+*Definisjon:* Punkter som omslutter en strekning eller et område med gjennomkjøring forbudt. Kjørende kan ikke passere to punkter uten planlagt stopp mellom dem.
+ 
+[discrete]
+====== Egenskaper
+[cols="20,80"]
+|===
+|*Navn:* 
+|*posisjon*
+ 
+|Definisjon: 
+|
+ 
+|Multiplisitet: 
+|[1..1]
+ 
+|Type: 
+|http://skjema.geonorge.no/SOSI/basistype/GM_Point[GM_Point]
+|===
+[cols="20,80"]
+|===
+|*Navn:* 
+|*merknad*
+ 
+|Definisjon: 
+|Gir merknad knyttet til gjennomkjøring forbudt.
+ 
+|Multiplisitet: 
+|[0..1]
+ 
+|Type: 
+|<<characterstring,«dataType» CharacterString>>
+|Profilparametre i tagged values: 
+|
+KORTN_EGENSKAPSTYPE: beskriv + 
+NVDB_ID: 11217 + 
+NVDB_navn: Merknad + 
+SOSI_datatype: T + 
+SOSI_lengde: 250 + 
+SOSI_navn: NVDB_MERKNAD + 
+SOSINVDB_navn: Merknad_11217 + 
+Viktighet: Opsjonell + 
+|===
+ 
+[discrete]
+====== Arv og realiseringer
+[cols="20,80"]
+|===
+|Supertype: 
+|<<sosi_fellesegenskaper,«FeatureType» SOSI_Fellesegenskaper>>
+ 
 |===
  
 '''
@@ -1522,214 +1729,7 @@ Viktighet: Spesialinfo +
 |<<sosi_fellesegenskaper,«FeatureType» SOSI_Fellesegenskaper>>
  
 |Realisering av: 
-|«ApplicationSchema» Elveg-SFKB::«» Gågatereguleringer +
-|===
- 
-'''
- 
-[[gjennomkjøringforbudt]]
-===== «featureType» GjennomkjøringForbudt
-*Definisjon:* Angir start av strekning eller et område med gjennomkjøring forbudt. Hvor det er forbudt å kjøre til angis med et assosiert GjennomkjøringForbudtTil-objekt. 
-Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhørende GjennomkjøringForbudtTil-punkt uten planlagt stopp mellom dem.
- 
-[discrete]
-====== Profilparametre i tagged values
-[cols="20,80"]
-|===
-|catalogue-entry
-|NVDB Datakatalogen
- 
-|KjorefeltRelevant
-|0
- 
-|KORTN_VOBJ_TYPE
-|vnettRes
- 
-|NVDB_ID
-|913
- 
-|NVDB_ID
-|913
- 
-|NVDB_navn
-|Gjennomkjøring forbudt
- 
-|SideposisjonRelevant
-|0
- 
-|SOSINVDB_navn
-|GjennomkjøringForbudt_913
- 
-|Stedfesting
-|flerepunkt
- 
-|===
-[discrete]
-====== Egenskaper
-[cols="20,80"]
-|===
-|*Navn:* 
-|*posisjon*
- 
-|Definisjon: 
-|Angivelse av objektetsposisjon. Plasseres ved start av gjennomkjøring forbudt (ved gjennomkjøring forbudt skilt)
- 
-|Multiplisitet: 
-|[1..1]
- 
-|Type: 
-|http://skjema.geonorge.no/SOSI/basistype/GM_Point[GM_Point]
-|===
-[cols="20,80"]
-|===
-|*Navn:* 
-|*gjelderFor*
- 
-|Definisjon: 
-|Angir hva slags kjøretøy det er gjennomkjøring forbudt for
- 
-|Multiplisitet: 
-|[0..1]
- 
-|Type: 
-|<<gjelderfor,«CodeList» GjelderFor>>
-|Profilparametre i tagged values: 
-|
-defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/samferdsel/nvdbvegnettpluss/gjelderfor + 
-KORTN_EGENSKAPSTYPE: gjeldFor + 
-NVDB_ID: 12563 + 
-NVDB_navn: Gjelder for + 
-SOSI_datatype: T + 
-SOSI_lengde: 30 + 
-SOSI_navn: NVDB_GJELDERFOR + 
-SOSINVDB_navn: GjelderFor_12563 + 
-Viktighet: Påkrevd ved nyregistrering + 
-|===
-[cols="20,80"]
-|===
-|*Navn:* 
-|*gjelderTidsrom*
- 
-|Definisjon: 
-|Angir tidsrommet (hhmm-hhmm) eller (mnd-mnd) forbudet mot gjennomkjøring gjelder for.
- 
-|Multiplisitet: 
-|[0..1]
- 
-|Type: 
-|<<characterstring,«dataType» CharacterString>>
-|Profilparametre i tagged values: 
-|
-KORTN_EGENSKAPSTYPE: gjeldTid + 
-NVDB_ID: 12602 + 
-NVDB_navn: Gjelder tidsrom + 
-SOSI_datatype: T + 
-SOSI_lengde: 9 + 
-SOSI_navn: NVDB_GJELDERTIDSROM + 
-Viktighet: Opsjonell + 
-|===
-[cols="20,80"]
-|===
-|*Navn:* 
-|*merknad*
- 
-|Definisjon: 
-|Gir merknad knyttet til gjennomkjøring forbudt.
- 
-|Multiplisitet: 
-|[0..1]
- 
-|Type: 
-|<<characterstring,«dataType» CharacterString>>
-|Profilparametre i tagged values: 
-|
-KORTN_EGENSKAPSTYPE: beskriv + 
-NVDB_ID: 11217 + 
-NVDB_navn: Merknad + 
-SOSI_datatype: T + 
-SOSI_lengde: 250 + 
-SOSI_navn: NVDB_MERKNAD + 
-SOSINVDB_navn: Merknad_11217 + 
-Viktighet: Opsjonell + 
-|===
- 
-[discrete]
-====== Roller
-[cols="20,80"]
-|===
-|*Rollenavn:* 
-|*gjennomkjøringForbudtTil*
- 
-|Multiplisitet: 
-|[0..*]
- 
-|Til klasse
-|<<gjennomkjøringforbudttil,«featureType» GjennomkjøringForbudtTil>>
-|===
- 
-[discrete]
-====== Arv og realiseringer
-[cols="20,80"]
-|===
-|Supertype: 
-|<<sosi_fellesegenskaper,«FeatureType» SOSI_Fellesegenskaper>>
- 
-|===
- 
-'''
- 
-[[gjennomkjøringforbudttil]]
-===== «featureType» GjennomkjøringForbudtTil
-*Definisjon:* Punkter som omslutter en strekning eller et område med gjennomkjøring forbudt. Kjørende kan ikke passere to punkter uten planlagt stopp mellom dem.
- 
-[discrete]
-====== Egenskaper
-[cols="20,80"]
-|===
-|*Navn:* 
-|*posisjon*
- 
-|Definisjon: 
-|
- 
-|Multiplisitet: 
-|[1..1]
- 
-|Type: 
-|http://skjema.geonorge.no/SOSI/basistype/GM_Point[GM_Point]
-|===
-[cols="20,80"]
-|===
-|*Navn:* 
-|*merknad*
- 
-|Definisjon: 
-|Gir merknad knyttet til gjennomkjøring forbudt.
- 
-|Multiplisitet: 
-|[0..1]
- 
-|Type: 
-|<<characterstring,«dataType» CharacterString>>
-|Profilparametre i tagged values: 
-|
-KORTN_EGENSKAPSTYPE: beskriv + 
-NVDB_ID: 11217 + 
-NVDB_navn: Merknad + 
-SOSI_datatype: T + 
-SOSI_lengde: 250 + 
-SOSI_navn: NVDB_MERKNAD + 
-SOSINVDB_navn: Merknad_11217 + 
-Viktighet: Opsjonell + 
-|===
- 
-[discrete]
-====== Arv og realiseringer
-[cols="20,80"]
-|===
-|Supertype: 
-|<<sosi_fellesegenskaper,«FeatureType» SOSI_Fellesegenskaper>>
- 
+|«ApplicationSchema» NVDB Datakatalogen/Gågate::«featureType» Gågatereguleringer +
 |===
  
 '''
@@ -2063,7 +2063,7 @@ SOSI_navn: SENTERLINJE +
 |<<sosi_fellesegenskaper,«FeatureType» SOSI_Fellesegenskaper>>
  
 |Realisering av: 
-|«ApplicationSchema» Elveg-SFKB::«» Høydebegrensning +
+|«ApplicationSchema» NVDB Datakatalogen/Høydebegrensning::«featureType» Høydebegrensning +
 |===
  
 '''
@@ -2181,7 +2181,7 @@ SOSI_navn: POSISJON +
 |<<sosi_fellesegenskaper,«FeatureType» SOSI_Fellesegenskaper>>
  
 |Realisering av: 
-|«ApplicationSchema» Elveg-SFKB::«» Jernbanekryssing +
+|«ApplicationSchema» NVDB Datakatalogen/Jernbanekryssing::«featureType» Jernbanekryssing +
 |===
  
 '''
@@ -2272,7 +2272,7 @@ SOSI_navn: KLASSELANDBRUKSVEG +
 |<<sosi_fellesegenskaper,«FeatureType» SOSI_Fellesegenskaper>>
  
 |Realisering av: 
-|«ApplicationSchema» Elveg-SFKB::«» Landbruksvegklasse +
+|«ApplicationSchema» NVDB Datakatalogen/Landbruksvegklasse::«featureType» Landbruksvegklasse +
 |===
  
 '''
@@ -2411,7 +2411,7 @@ SOSI_navn: SENTERLINJE +
 |<<sosi_fellesegenskaper,«FeatureType» SOSI_Fellesegenskaper>>
  
 |Realisering av: 
-|«ApplicationSchema» Elveg-SFKB::«» Motorveg +
+|«ApplicationSchema» NVDB Datakatalogen/Motorveg::«featureType» Motorveg +
 |===
  
 '''
@@ -2489,7 +2489,7 @@ SOSI_navn: SENTERLINJE +
 |<<sosi_fellesegenskaper,«FeatureType» SOSI_Fellesegenskaper>>
  
 |Realisering av: 
-|«ApplicationSchema» Elveg-SFKB::«» Serviceveg +
+|«ApplicationSchema» NVDB Datakatalogen/Serviceveg::«featureType» Serviceveg +
 |===
  
 '''
@@ -2619,7 +2619,7 @@ SOSI_navn: SVINGEFORBUDTIL +
 |<<sosi_fellesegenskaper,«FeatureType» SOSI_Fellesegenskaper>>
  
 |Realisering av: 
-|«ApplicationSchema» Elveg-SFKB::«» Svingerestriksjon +
+|«ApplicationSchema» NVDB Datakatalogen/Svingerestriksjon::«featureType» Svingerestriksjon +
 |===
  
 '''
@@ -2806,7 +2806,7 @@ Viktighet: Opsjonell +
 |<<trafikkreguleringertrafikkreguleringer,«CodeList» TrafikkreguleringerTrafikkreguleringer>>
 |Profilparametre i tagged values: 
 |
-defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/samferdsel/nvdbvegnettpluss/trafikkreguleringertrafikkreguleringer + 
+defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/samferdsel/nvdbvegnettpluss/trafikkreguleringer + 
 KORTN_EGENSKAPSTYPE: trafReg + 
 NVDB_ID: 9794 + 
 NVDB_navn: Trafikkreguleringer + 
@@ -2899,7 +2899,190 @@ Viktighet: Opsjonell +
 |<<sosi_fellesegenskaper,«FeatureType» SOSI_Fellesegenskaper>>
  
 |Realisering av: 
-|«ApplicationSchema» Elveg-SFKB::«» Trafikkreguleringer +
+|«ApplicationSchema» NVDB Datakatalogen/Trafikkreguleringer::«featureType» Trafikkreguleringer +
+|===
+ 
+'''
+ 
+[[vegsperring]]
+===== «featureType» Vegsperring
+*Definisjon:* Angir at veg er fysisk sperret.
+ 
+[discrete]
+====== Profilparametre i tagged values
+[cols="20,80"]
+|===
+|byValuePropertyType
+|false
+ 
+|catalogue-entry
+|NVDB Datakatalogen
+ 
+|isCollection
+|false
+ 
+|noPropertyType
+|false
+ 
+|NVDB_ID
+|607
+ 
+|NVDB_navn
+|Vegsperring
+ 
+|===
+[discrete]
+====== Egenskaper
+[cols="20,80"]
+|===
+|*Navn:* 
+|*type*
+ 
+|Definisjon: 
+|Angir hvilken type sperring det er tale om
+ 
+|Multiplisitet: 
+|[0..1]
+ 
+|Type: 
+|<<typevegsperring,«codeList» TypeVegsperring>>
+|Profilparametre i tagged values: 
+|
+defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/samferdsel/nvdbvegnettpluss/typevegsperring + 
+NVDB_ID: 7861 + 
+NVDB_navn: Type + 
+SOSI_datatype: T + 
+SOSI_lengde: 30 + 
+SOSI_navn: TYPE + 
+|===
+[cols="20,80"]
+|===
+|*Navn:* 
+|*funksjon*
+ 
+|Definisjon: 
+|Angir hvilken funksjon sperringen har
+ 
+|Multiplisitet: 
+|[1..1]
+ 
+|Type: 
+|<<funksjon,«codeList» Funksjon>>
+|Profilparametre i tagged values: 
+|
+defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/samferdsel/nvdbvegnettpluss/funksjon + 
+NVDB_ID: 11542 + 
+NVDB_navn: Funksjon + 
+SOSI_datatype: T + 
+SOSI_lengde: 25 + 
+SOSI_navn: FUNKSJON + 
+|===
+[cols="20,80"]
+|===
+|*Navn:* 
+|*gjeldertidsrom*
+ 
+|Definisjon: 
+|Angir tidsrommet (hhmm-hhmm) eller (mnd-mnd) vegsperringen gjelder
+ 
+|Multiplisitet: 
+|[0..1]
+ 
+|Type: 
+|<<characterstring,«dataType» CharacterString>>
+|Profilparametre i tagged values: 
+|
+NVDB_ID: 11543 + 
+NVDB_navn: Gjelder tidsrom + 
+SOSI_datatype: T + 
+SOSI_lengde: 9 + 
+SOSI_navn: GJELDERTIDSROM + 
+|===
+[cols="20,80"]
+|===
+|*Navn:* 
+|*merknad*
+ 
+|Definisjon: 
+|Opplysning om spesielle forhold knyttet til fysisk sperring.
+ 
+|Multiplisitet: 
+|[0..1]
+ 
+|Type: 
+|<<characterstring,«dataType» CharacterString>>
+|Profilparametre i tagged values: 
+|
+NVDB_ID: 5478 + 
+NVDB_navn: Merknad + 
+SOSI_datatype: T + 
+SOSI_lengde: 200 + 
+SOSI_navn: MERKNAD + 
+|===
+[cols="20,80"]
+|===
+|*Navn:* 
+|*eier*
+ 
+|Definisjon: 
+|Angir hvem som er eier av vegobjektet
+ 
+|Multiplisitet: 
+|[0..1]
+ 
+|Type: 
+|<<eiervegsperring,«codeList» EierVegsperring>>
+|Profilparametre i tagged values: 
+|
+defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/samferdsel/nvdbvegnettpluss/eiervegsperring + 
+NVDB_ID: 9498 + 
+NVDB_navn: Eier + 
+SOSI_datatype: T + 
+SOSI_lengde: 30 + 
+SOSI_navn: EIER + 
+|===
+[cols="20,80"]
+|===
+|*Navn:* 
+|*posisjon*
+ 
+|Definisjon: 
+|Gir punkt som geometrisk representerer objektet.
+ 
+|Multiplisitet: 
+|[1..1]
+ 
+|Type: 
+|http://skjema.geonorge.no/SOSI/basistype/GM_Point[GM_Point]
+|Profilparametre i tagged values: 
+|
+NVDB_ID: 7930 + 
+NVDB_navn: Geometri, punkt + 
+SOSI_datatype: PUNKT + 
+SOSI_navn: POSISJON + 
+|===
+ 
+[discrete]
+====== Restriksjoner
+[cols="20,80"]
+|===
+|*Navn:* 
+|*Må ha minst en av stedfestingene lineærPosisjon og posisjon*
+ 
+|Beskrivelse: 
+|inv:count(self.posisjon)+count(self.lineærPosisjon) 0
+ 
+|===
+ 
+[discrete]
+====== Arv og realiseringer
+[cols="20,80"]
+|===
+|Supertype: 
+|<<sosi_fellesegenskaper,«FeatureType» SOSI_Fellesegenskaper>>
+ 
+|Realisering av: 
+|«ApplicationSchema» NVDB Datakatalogen/Vegsperring::«featureType» Vegsperring +
 |===
  
 '''
@@ -3401,190 +3584,7 @@ Viktighet: Opsjonell +
 |<<sosi_fellesegenskaper,«FeatureType» SOSI_Fellesegenskaper>>
  
 |Realisering av: 
-|«ApplicationSchema» Elveg-SFKB::«» VærutsattVeg +
-|===
- 
-'''
- 
-[[vegsperring]]
-===== «featureType» Vegsperring
-*Definisjon:* Angir at veg er fysisk sperret.
- 
-[discrete]
-====== Profilparametre i tagged values
-[cols="20,80"]
-|===
-|byValuePropertyType
-|false
- 
-|catalogue-entry
-|NVDB Datakatalogen
- 
-|isCollection
-|false
- 
-|noPropertyType
-|false
- 
-|NVDB_ID
-|607
- 
-|NVDB_navn
-|Vegsperring
- 
-|===
-[discrete]
-====== Egenskaper
-[cols="20,80"]
-|===
-|*Navn:* 
-|*type*
- 
-|Definisjon: 
-|Angir hvilken type sperring det er tale om
- 
-|Multiplisitet: 
-|[0..1]
- 
-|Type: 
-|<<typevegsperring,«codeList» TypeVegsperring>>
-|Profilparametre i tagged values: 
-|
-defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/samferdsel/nvdbvegnettpluss/typevegsperring + 
-NVDB_ID: 7861 + 
-NVDB_navn: Type + 
-SOSI_datatype: T + 
-SOSI_lengde: 30 + 
-SOSI_navn: TYPE + 
-|===
-[cols="20,80"]
-|===
-|*Navn:* 
-|*funksjon*
- 
-|Definisjon: 
-|Angir hvilken funksjon sperringen har
- 
-|Multiplisitet: 
-|[1..1]
- 
-|Type: 
-|<<funksjon,«codeList» Funksjon>>
-|Profilparametre i tagged values: 
-|
-defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/samferdsel/nvdbvegnettpluss/funksjon + 
-NVDB_ID: 11542 + 
-NVDB_navn: Funksjon + 
-SOSI_datatype: T + 
-SOSI_lengde: 25 + 
-SOSI_navn: FUNKSJON + 
-|===
-[cols="20,80"]
-|===
-|*Navn:* 
-|*gjeldertidsrom*
- 
-|Definisjon: 
-|Angir tidsrommet (hhmm-hhmm) eller (mnd-mnd) vegsperringen gjelder
- 
-|Multiplisitet: 
-|[0..1]
- 
-|Type: 
-|<<characterstring,«dataType» CharacterString>>
-|Profilparametre i tagged values: 
-|
-NVDB_ID: 11543 + 
-NVDB_navn: Gjelder tidsrom + 
-SOSI_datatype: T + 
-SOSI_lengde: 9 + 
-SOSI_navn: GJELDERTIDSROM + 
-|===
-[cols="20,80"]
-|===
-|*Navn:* 
-|*merknad*
- 
-|Definisjon: 
-|Opplysning om spesielle forhold knyttet til fysisk sperring.
- 
-|Multiplisitet: 
-|[0..1]
- 
-|Type: 
-|<<characterstring,«dataType» CharacterString>>
-|Profilparametre i tagged values: 
-|
-NVDB_ID: 5478 + 
-NVDB_navn: Merknad + 
-SOSI_datatype: T + 
-SOSI_lengde: 200 + 
-SOSI_navn: MERKNAD + 
-|===
-[cols="20,80"]
-|===
-|*Navn:* 
-|*eier*
- 
-|Definisjon: 
-|Angir hvem som er eier av vegobjektet
- 
-|Multiplisitet: 
-|[0..1]
- 
-|Type: 
-|<<eiervegsperring,«codeList» EierVegsperring>>
-|Profilparametre i tagged values: 
-|
-defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/samferdsel/nvdbvegnettpluss/eiervegsperring + 
-NVDB_ID: 9498 + 
-NVDB_navn: Eier + 
-SOSI_datatype: T + 
-SOSI_lengde: 30 + 
-SOSI_navn: EIER + 
-|===
-[cols="20,80"]
-|===
-|*Navn:* 
-|*posisjon*
- 
-|Definisjon: 
-|Gir punkt som geometrisk representerer objektet.
- 
-|Multiplisitet: 
-|[1..1]
- 
-|Type: 
-|http://skjema.geonorge.no/SOSI/basistype/GM_Point[GM_Point]
-|Profilparametre i tagged values: 
-|
-NVDB_ID: 7930 + 
-NVDB_navn: Geometri, punkt + 
-SOSI_datatype: PUNKT + 
-SOSI_navn: POSISJON + 
-|===
- 
-[discrete]
-====== Restriksjoner
-[cols="20,80"]
-|===
-|*Navn:* 
-|*Må ha minst en av stedfestingene lineærPosisjon og posisjon*
- 
-|Beskrivelse: 
-|inv:count(self.posisjon)+count(self.lineærPosisjon) 0
- 
-|===
- 
-[discrete]
-====== Arv og realiseringer
-[cols="20,80"]
-|===
-|Supertype: 
-|<<sosi_fellesegenskaper,«FeatureType» SOSI_Fellesegenskaper>>
- 
-|Realisering av: 
-|«ApplicationSchema» Elveg-SFKB::«» Vegsperring +
+|«ApplicationSchema» NVDB Datakatalogen/Værutsatt veg::«featureType» VærutsattVeg +
 |===
 <<<
 '''
@@ -3879,7 +3879,7 @@ SOSI_navn: SIDEVEG +
 [cols="20,80"]
 |===
 |Realisering av: 
-|«ApplicationSchema» Vegnett-5.0::«dataType» Veglenkeadresse +
+|«applicationSchema» Vegnett-5.0::«dataType» Veglenkeadresse +
 |===
  
 '''
@@ -3960,7 +3960,7 @@ SOSI_navn: TILMETER +
 [cols="20,80"]
 |===
 |Realisering av: 
-|«ApplicationSchema» Vegnett-5.0::«dataType» Kryssystem +
+|«applicationSchema» Vegnett-5.0::«dataType» Kryssystem +
 |===
  
 '''
@@ -4041,7 +4041,7 @@ SOSI_navn: TILMETER +
 [cols="20,80"]
 |===
 |Realisering av: 
-|«ApplicationSchema» Vegnett-5.0::«dataType» Sideanlegg +
+|«applicationSchema» Vegnett-5.0::«dataType» Sideanlegg +
 |===
  
 '''
@@ -4192,7 +4192,7 @@ SOSI_navn: ADSKILTELØPNUMMER +
 [cols="20,80"]
 |===
 |Realisering av: 
-|«ApplicationSchema» Vegnett-5.0::«dataType» Vegstrekning +
+|«applicationSchema» Vegnett-5.0::«dataType» Vegstrekning +
 |===
  
 '''
@@ -4271,7 +4271,7 @@ SOSI_navn: VEGNUMMER +
 [cols="20,80"]
 |===
 |Realisering av: 
-|«ApplicationSchema» Vegnett-5.0::«dataType» Vegsystem +
+|«applicationSchema» Vegnett-5.0::«dataType» Vegsystem +
 |===
  
 '''
@@ -4395,7 +4395,7 @@ SOSI_navn: REFERANSERETNING +
 [cols="20,80"]
 |===
 |Realisering av: 
-|«ApplicationSchema» Vegnett-5.0::«dataType» Vegsystemreferanse +
+|«applicationSchema» Vegnett-5.0::«dataType» Vegsystemreferanse +
 |===
  
 '''
@@ -4838,6 +4838,12 @@ SOSI_navn: H-NØYAKTIGHET +
 [cols="20,80"]
 |===
 |Realisering av: 
+|«ApplicationSchema» Generelle typer 5.0/SOSI_Fellesegenskaper og SOSI_Objekt::«dataType» Posisjonskvalitet +
+[discrete]
+======= Arv og realiseringer
+[cols="20,80"]
+|===
+|Realisering av: 
 |«ApplicationSchema» Generelle typer 5.1/SOSI_Fellesegenskaper og SOSI_Objekt::«dataType» Posisjonskvalitet +
 |===
  
@@ -4961,7 +4967,7 @@ Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.
 '''
  
 .Hoveddiagram - NVDB kodelister 
-image::diagrammer/Hoveddiagram - NVDB kodelister.png[link=diagrammer/Hoveddiagram - NVDB kodelister.png, Alt="Diagram med navn Hoveddiagram - NVDB kodelister som viser UML-klasser beskrevet i teksten nedenfor."]
+image::diagrammer/Hoveddiagram - NVDB kodelister.png[link=diagrammer/Hoveddiagram - NVDB kodelister.png, alt="Diagram med navn Hoveddiagram - NVDB kodelister som viser UML-klasser beskrevet i teksten nedenfor."]
  
 '''
  
@@ -5343,42 +5349,6 @@ image::diagrammer/Hoveddiagram - NVDB kodelister.png[link=diagrammer/Hoveddiagra
  
 '''
  
-[[målemetodehøydebegrensning]]
-===== NVDB::«codeList» MålemetodeHøydebegrensning
-*Definisjon:* Angir målemetode som er brukt for å måle høyder
- 
-[discrete]
-======= Profilparametre i tagged values
-[cols="20,80"]
-|===
-|asDictionary
-|true
- 
-|catalogue-entry
-|NVDB Datakatalogen
- 
-|codeList
-|https://register.geonorge.no/sosi-kodelister/samferdsel/nvdbvegnettpluss/m%C3%A5lemetodeh%C3%B8ydebegrensning
- 
-|NVDB_ID
-|9490
- 
-|NVDB_navn
-|Målemetode
- 
-|SOSI_datatype
-|T
- 
-|SOSI_lengde
-|20
- 
-|SOSI_navn
-|MÅLEMETODEHØYDEBEGRENSNING
- 
-|===
- 
-'''
- 
 [[motorvegtype]]
 ===== NVDB::«codeList» Motorvegtype
 *Definisjon:* Angir hvilken type motorveg det er tale om
@@ -5415,6 +5385,42 @@ image::diagrammer/Hoveddiagram - NVDB kodelister.png[link=diagrammer/Hoveddiagra
  
 '''
  
+[[målemetodehøydebegrensning]]
+===== NVDB::«codeList» MålemetodeHøydebegrensning
+*Definisjon:* Angir målemetode som er brukt for å måle høyder
+ 
+[discrete]
+======= Profilparametre i tagged values
+[cols="20,80"]
+|===
+|asDictionary
+|true
+ 
+|catalogue-entry
+|NVDB Datakatalogen
+ 
+|codeList
+|https://register.geonorge.no/sosi-kodelister/samferdsel/nvdbvegnettpluss/m%C3%A5lemetodeh%C3%B8ydebegrensning
+ 
+|NVDB_ID
+|9490
+ 
+|NVDB_navn
+|Målemetode
+ 
+|SOSI_datatype
+|T
+ 
+|SOSI_lengde
+|20
+ 
+|SOSI_navn
+|MÅLEMETODEHØYDEBEGRENSNING
+ 
+|===
+ 
+'''
+ 
 [[trafikkreguleringertrafikkreguleringer]]
 ===== NVDB::«CodeList» TrafikkreguleringerTrafikkreguleringer
 *Definisjon:* Angir eventuelle restriksjoner for motortrafikk, gående og syklende.
@@ -5430,7 +5436,7 @@ image::diagrammer/Hoveddiagram - NVDB kodelister.png[link=diagrammer/Hoveddiagra
 |NVDB Datakatalogen
  
 |codeList
-|https://register.geonorge.no/sosi-kodelister/samferdsel/nvdbvegnettpluss/trafikkreguleringertrafikkreguleringer
+|https://register.geonorge.no/sosi-kodelister/samferdsel/nvdbvegnettpluss/trafikkreguleringer
  
 |KORTN_EGENSKAPSTYPE
 |trafReg
