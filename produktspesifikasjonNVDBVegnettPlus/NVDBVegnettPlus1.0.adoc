@@ -1,13 +1,14 @@
-:datasett: NVDB Vegnett Plus
+:datasett: NVDBVegnettPlus
 :versjon: 1.0
 :skjemaversjon: 1.0
 :publisert: 2023-12-13
 :metadata-url: https://kartkatalog.geonorge.no/metadata/
+:dokumentstatus: 4
 // All informasjon i hode over denne linja må fylles ut for hvert datasett. Øvrige parametere settes i adoc_parametere.adoc
 include::inkluder/adoc_parametere.adoc[]
 = SOSI-standardisert produktspesifikasjon: {datasett}
 Geovekst
-{versjon}, 2022-01-01
+{versjon}, 2024-02-01
 
 include::inkluder/dokument_metadata.adoc[]
 
