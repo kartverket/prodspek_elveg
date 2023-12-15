@@ -1,0 +1,187 @@
+:datasett: NVDBVegnettPlus
+:versjon: 1.0
+:skjemaversjon: 1.0
+:publisert: 2023-12-13
+:metadata-url: https://kartkatalog.geonorge.no/metadata/
+:dokumentstatus: 4
+// All informasjon i hode over denne linja må fylles ut for hvert datasett. Øvrige parametere settes i adoc_parametere.adoc
+include::inkluder/adoc_parametere.adoc[]
+= SOSI-standardisert produktspesifikasjon: {datasett}
+Geovekst
+{versjon}, 2024-02-01
+
+include::inkluder/dokument_metadata.adoc[]
+
+== Innledning, historikk og endringslogg
+
+=== Innledning
+
+NVDB Vegnett Plus er...
+
+Denne produktspesifikasjonen er utarbeidet iht. SOSI produktspesifikasjoner – Krav og godkjenning 5.0 <<SOSI-KRAV>>. UML-modellen som ligger til grunn for innhold i diagrammene og dokumentasjon i kap. 5, følger reglene i SOSI Regler for UML-modellering, versjon 5.1 <<SOSI-UML>>. http://sosi.geonorge.no/veiledere/UML[Denne veilederen] gir hjelp til å lese UML-diagrammene.
+
+=== Historikk
+
+Første versjon
+
+Henvisning til Elveg 2.0 ?
+
+=== Endringslogg
+
+
+
+=== Normative referanser
+
+include::inkluder/kap14_normativ_ref.adoc[]
+
+<<<
+
+== Definisjoner og forkortelser
+
+=== Definisjoner
+
+include::inkluder/kap21_definisjoner.adoc[]
+
+=== Forkortelser
+
+include::inkluder/kap22_forkortelser.adoc[]
+
+<<<
+
+== Generelt om spesifikasjonen
+
+=== Unik identifisering
+NVDBVegnettPlus
+
+==== Fullstendig navn
+{datasett} 
+
+==== Versjon
+{versjon}
+
+=== Referansedato
+2024-02-01
+
+=== Ansvarlig organisasjon
+Kartverket
+
+=== Språk
+Norsk
+
+=== Hovedtema
+Basisdata, Samferdsel
+
+=== Temakategori
+basisData
+
+=== Sammendrag
+
+
+
+=== Formål
+// Fellesdel for FKB generell del og alle FKB-produktspesifikasjoner
+include::inkluder/kap38_formal.adoc[]
+
+
+// Fellesdel som dekker kap 3.9 - 3.12 for alle FKB-produktspesifikasjoner
+include::inkluder/kap39-312_representasjon.adoc[]
+
+=== Supplerende beskrivelse
+Data ikke angitt
+
+<<<
+
+== Spesifikasjonsomfang
+
+include::inkluder/kap4_omfang.adoc[]  
+
+<<<
+
+== Innhold og struktur
+
+=== Omfang
+<<HeleDatasettet,Hele datasettet>>
+
+include::kap5.adoc[]
+
+<<<
+
+== Referansesystem
+
+include::inkluder/kap6_referansesystem.adoc[]
+
+<<<
+
+== Kvalitet
+
+include::inkluder/kap7_kvalitet.adoc[]
+
+<<<
+
+== Datafangst
+
+include::inkluder/kap8_datafangst.adoc[]
+
+<<<
+
+== Datavedlikehold
+
+include::inkluder/kap9_vedlikehold.adoc[]
+
+<<<
+
+== Presentasjon
+
+=== Omfang
+<<HeleDatasettet,Hele datasettet>>
+
+=== Referanse til presentasjonskatalog
+Presentasjonsregler for FKB-data er angitt i skjermkartografispesifikasjonen: https://register.geonorge.no/register/versjoner/tegneregler/geovekst/fkb-skjermkartografi
+
+<<<
+
+== Leveranse
+
+include::inkluder/kap11_leveranse.adoc[]
+
+<<<
+
+== Tilleggsinformasjon
+Ingen angitt informasjon
+
+== Metadata
+
+=== Omfang
+<<HeleDatasettet,Hele datasettet>>
+
+=== Metadataspesifikasjon
+
+include::inkluder/kap13_metadata.adoc[]
+
+<<<
+
+[appendix]
+== GML-realisering
+
+GML-realiseringen følger kravene i "Realisering i GML-format 5.0" <<SOSI-GML>>. Realiseringen defineres av følgende filer:
+
+* link:{skjema-url}/NVDBVegnettPlus.xsd[GML-Skjema]
+* link:{skjema-url}/NVDBVegnettPlus.sch[Schematron-Skjema]
+
+
+[appendix]
+== SOSI-format-realisering
+
+SOSI-realiseringen følger kravene i "Realisering i SOSI-format 5.0" <<SOSI-FORMAT>>. Under en utlisting av SOSI-formatrealiseringen:
+
+//include::SOSI-realisering.adoc[]
+
+:sectnums!:
+
+<<<
+
+[discrete]
+== Lisensvilkår
+
+// Inkl. lisensvilkår
+include::inkluder/lisensvilkaar.adoc[]

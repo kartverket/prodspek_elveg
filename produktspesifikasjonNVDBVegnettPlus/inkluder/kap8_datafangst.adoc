@@ -1,0 +1,5 @@
+=== Omfang
+<<HeleDatasettet,Hele datasettet>>
+
+=== Registeringsinstruks
+Fotogrammetrisk datafangst er den dominerende datafangstmetoden for {fkbdatasett}. Se {reginstr-url}/Fotogrammetrisk_2022-01-01[fotogrammetrisk registreringsinstruks for {fkbdatasett}].

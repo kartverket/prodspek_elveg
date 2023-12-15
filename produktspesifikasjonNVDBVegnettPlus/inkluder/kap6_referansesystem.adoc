@@ -1,0 +1,83 @@
+Referansesystemer for FKB 5.0 er også beskrevet i vedlegg B i {fkbGenerellDel-url}[FKB generell del].
+
+=== Romlig referansesystem UTM sone 32 basert på EUREF89 (ETRS89/UTM), 2d + NN2000
+
+==== Omfang
+<<HeleDatasettet,Hele datasettet>>
+
+==== Navn på kilden til referansesystemet
+Norwegian Mapping Authority
+
+==== Ansvarlig organisasjon for referansesystemet
+The international Association of Oil & Gas Producers
+
+==== Link til mer informasjon om referansesystemet
+http://www.opengis.net/def/crs/EPSG/0/5972
+
+==== Koderom
+EPSG
+
+==== Identifikasjonskode
+5972
+
+==== Kodeversjon
+2020-03-30
+
+=== Romlig referansesystem UTM sone 33 basert på EUREF89 (ETRS89/UTM), 2d + NN2000
+
+==== Omfang
+<<HeleDatasettet,Hele datasettet>>
+
+==== Navn på kilden til referansesystemet
+Norwegian Mapping Authority
+
+==== Ansvarlig organisasjon for referansesystemet
+The international Association of Oil & Gas Producers
+
+==== Link til mer informasjon om referansesystemet
+http://www.opengis.net/def/crs/EPSG/0/5973
+
+==== Koderom
+EPSG
+
+==== Identifikasjonskode
+5973
+
+==== Kodeversjon
+2020-03-30
+
+=== Romlig referansesystem UTM sone 35 basert på EUREF89 (ETRS89/UTM), 2d + NN2000
+
+==== Omfang
+<<HeleDatasettet,Hele datasettet>>
+
+==== Navn på kilden til referansesystemet
+Norwegian Mapping Authority
+
+==== Ansvarlig organisasjon for referansesystemet
+The international Association of Oil & Gas Producers
+
+==== Link til mer informasjon om referansesystemet
+http://www.opengis.net/def/crs/EPSG/0/5975
+
+==== Koderom
+EPSG
+
+==== Identifikasjonskode
+5975
+
+==== Kodeversjon
+2020-03-30
+
+
+=== Temporalt referansesystem
+
+==== Omfang
+<<HeleDatasettet,Hele datasettet>>
+
+==== Navn på temporalt referansesystem
+UTC
+
+Dersom ikke tidssone er spesielt angitt ved angivelse av tidspunkt skal man anta at det er norsk tid som benyttes. Dvs. UTC+1 (normaltid) på vinteren og UTC+2 (sommertid) på sommeren.
+
+
