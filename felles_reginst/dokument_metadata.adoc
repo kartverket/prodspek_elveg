@@ -2,19 +2,10 @@
 Geovekst
 {versjon} - {underversjon}
 
-ifdef::backend-pdf[{empty} +]
-
 ****
-// WARNING: Høringsversjon! Erstattes av endelig versjon januar 2023. +
-// *Nyeste versjon finnes på*: {reginstr-url-ny} 
 
-ifeval::["{backend}" == "html5"]
+WARNING: *Utgått versjon!* Se nyeste versjon på {reginstrbase-url}{datasett}/{versjon}/{reginstr-type}_2024-01-01
 
-[TIP]
-//.Nedlasting av dokumentet
-Dette dokumentet kan også lastes ned link:{reginstr-url}/{reginstr-type}_registreringsinstruks_{datasett}_{versjon}_{underversjon}.pdf[som PDF].
-
-endif::[]
 
 *Publisert*: {publisert} +
 *Denne versjonen finnes på*: {reginstr-url} +
