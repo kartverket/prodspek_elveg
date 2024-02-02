@@ -1,140 +1,127 @@
 
-.*ajourføring*
-korrigering av innholdet i geodataene slik at de fremstiller de faktiske forhold på et gitt tidspunkt, etter de retningslinjer som gjelder for innhold og kvalitet <<PABG>>
+Forklaring på forkortelser i definisjonene som følger merket med [] finnes i kap.2.3.
 
-.*applikasjonsskjema*
-informasjonsmodellene i SOSI-modellregister er modellert som UML-modeller. UML-modellen for et FKB-datasett benevnes som et UML-applikasjonsskjema. Fra UML-applikasjonsskjema kan det automatisk genereres et GML-applikasjonsskjema som beskriver hvordan dataene representeres som GML <<SOSI-UML>>.
+*Ajourføring* </br>
+supplering og korrigering av innholdet i geodataene slik at de fremstiller de faktiske forhold på et gitt tidspunkt, etter de retningslinjer som gjelder for innhold og kvalitet [PABG] 
 
-_MERKNAD_: Se objektkatalog
+*Applikasjonsskjema* 
+informasjonsmodellene i SOSI-modellregister er modellert som UML-modeller. UML-modellen for et FKB-datasett benevnes som et UML-applikasjonsskjema. Fra UML-applikasjonsskjema kan det automatisk genereres et GML-applikasjonsskjema som beskriver hvordan dataene representeres som GML. 
 
-_MERKNAD_: Se http://sosi.geonorge.no/veiledere/UML[veileder for å lese UML-diagrammer]
+*Datasett*
+identifiserbar samling av beslektede data [T] 
 
-.*avledet datasett*
-bearbeidede primærdata tilpasset et bestemt bruksområde <<FKB>>
+*Egenskap* 
+navngitt kjennetegn eller karakteristikk av et objekt 
 
-_MERKNAD_: Avledede data skal i prinsippet ikke ajourføres direkte, men ajourføringen skal komme gjennom automatisk utvelgelse og generalisering fra primærdata. I noen tilfeller vil dette være en for tung prosess slik at en må avvike fra hovedprinsippet. Kalles også generalisert datasett.
+*FKB* 
+FKB er en forkortelse for Felles Kartdatabase.
 
-_EKSEMPEL_:	N5 Kartdata (avledet/generalisert produkt fra FKB-data).
+*Fullstendighet* 
+uttrykk for i hvilken grad spesifiserte deler av et produkt finnes i det aktuelle datasettet [G] 
 
-.*basis geodata*
-Detaljerte geodata som beskriver det fysiske landskapet ved naturlige eller menneskeskapte objekter. Basisdata brukes til lokalisering og som underlag for temadata. <<FKB>>
+*Geodata* 
+data i elektronisk form med direkte eller indirekte referanse til et bestemt sted eller geografisk område 
 
-_MERKNAD_: basis geodata er synonymt med begrepet grunnkart (eller grunnkartdata)
+*Kart* 
+generalisert avbildning av geografiske objekter med deres romlige relasjoner; med angitt geodetisk datum, projeksjon og koordinatsystem, samt målestokk dersom avbildningen er analog [G]
 
-.*datasett*
-identifiserbar samling av beslektede data <<G>>
+*Kartdata* 
+geodata tilrettelagt for presentasjon av kart [PABG] 
 
-.*egenskap*
-navngitt kjennetegn eller karakteristikk av et objekt
+*Kontinuerlig ajourhold* 
+fortløpende ajourføring basert på rapportering fra forvaltningsrutiner, daglige arbeidsrutiner og samarbeidsparter [PABG] 
 
-.*egenskapsnøyaktighet*
-uttrykk for hvor godt egenskapsdataene beskriver de aktuelle egenskapene <<G>>
+MERKNAD 	Kalles også administrativt vedlikehold. Data som samles inn administrativt, kan være digitale stikningsdata eller data fra sluttkontroll av beliggenhet, koordinatfestede grensemerker, markmålte bygninger, senterpunkt bygning, situasjonsplan og melding om landbruksbygg. 
 
-.*featuretype*
-UML-modellelement for å modellere geografiske objekttyper <<SOSI-UML>>.
+*Kvalitet* 
+helheten av egenskaper en enhet har og som vedrører dens evne til å tilfredsstille uttalte og underforståtte behov [NS-ISO 8402 def. 2.1] 
 
-_MERKNAD_: Begrepet brukes i mange sammenhenger synonymt med objekttype. Se også http://sosi.geonorge.no/veiledere/UML[veileder for å lese UML-diagrammer].
+*Metadata* 
+informasjon som beskriver et datasett [G]
 
-.*Fotogrammetrisk FKB*
-FKB-data som er etablert ved fotogrammetrisk kartlegging <<FKB>>  
+MERKNAD 	Hvilke opplysninger som inngår i metadataene, kan variere avhengig av datasettets karakter. Vanlige opplysninger er innhold, kvalitet, tilstand, struktur, format, produsent og vedlikeholdsansvar. 
 
-_MERKNAD_: I Fotogrammetrisk FKB inngår også enkelte objekttyper som ikke registreres fotogrammetrisk. Eksempel er fiktive avgrensningslinjer og representasjonspunkt.
+*Nettverkstopologi*
+Nettverkstopologi betyr at overalt hvor det fysiske vegnettet henger sammen, skal det finnes tilsvarende koplinger mellom veglenkene i nettverket. Nettverket blir da en topologisk representasjon av det fysiske vegnettet
 
-.*grunnkart* 
-Grunnkart er et begrep som er synonymt med basis geodata. Se definisjon under basis geodata. 
+*nøyaktighet* 
+mål for en estimert verdis nærhet til sin sanne verdi eller til det man antar er den sanne verdi [G] 
 
-_MERKNAD_: Grunnkart brukes til flere formål og kan danne grunnlag for avledede kart i forskjellige målestokker. Grunnkartet skal være det kartgrunnlaget som skal tjene alle formål som omhandles i plan- og bygningsloven eller dens forskrifter. 
+*objekt* 
+forekomst (instans) av en objekttype [SOSI] 
 
-.*fullstendighet* 
-uttrykk for i hvilken grad spesifiserte deler av et produkt finnes i det aktuelle datasettet <<G>>
+*objektkatalog* 
+definisjon og beskrivelse av objekttyper, objektegenskaper samt relasjoner mellom objekter, sammen med eventuelle funksjoner som er anvendt for objektet [SOSI] 
 
-_MERKNAD_: Fullstendighet karakteriseres ved kvalitetsmålene manglende objekter, overskytende objekter (ønsket om fullstendige geodatabaser innebærer også at det er galt dersom det finnes objekter i databasene som ikke skal være der i henhold til spesifikasjonene) og manglende egenskaper.
-Fullstendighet kan angis i prosent i relasjon til spesifiserte krav. Informasjon om fullstendighet må være datert.
+EKSEMPEL 	SOSI-Objektkatalog 
 
-.*geodata* 
-stedfestet informasjon <<G>>
+*objekttype*
+geografisk objekttype 
+en klasse av objekter med felles egenskaper, forholdet mot andre objekttyper og funksjoner [SOSI] 
 
-_MERKNAD_: Geodata består av objektidentifikasjon og informasjon om stedfesting og egenskaper. Stedfestingsdataene på sin side kan omfatte både posisjonsdata og geometriske beskrivelsesdata.
+EKSEMPEL Eksempler på objekttyper er Veglenke, Vegsperring og Fartsgrense. 
 
-.*kart* 
-generalisert avbildning av geografiske objekter med deres romlige relasjoner; med angitt geodetisk datum, projeksjon og koordinatsystem, samt målestokk dersom avbildningen er analog <<G>>
+*originaldatavert* 
+den av flere samarbeidsparter som har ansvaret for forvaltning og ajourføring av originalen av det enkelte primærdatasett [PABG] 
 
-.*kartdata* 
-geodata tilrettelagt for presentasjon av kart <<PABG>>
+*periodisk ajourhold *
+ajourføring som utføres systematisk med jevne mellomrom [PABG]
+ 
+MERKNAD 	Ved periodisk ajourføring blir eksisterende data, enten de har vært gjennom kontinuerlig ajourføring eller ei, kontrollert og evt. forbedret, og manglende objekter blir supplert. Objekter som ikke er endret, blir ikke kartlagt på nytt. Etter periodisk ajourføring skal datasettene minimum tilfredsstille kvalitetskravene for den valgte FKB-standard i området. Det kan være nødvendig også med en oppgradering for å oppfylle kvalitetskravene. Periodisk ajourføring gjøres vanligvis ved fotogrammetri. 
 
-.*kontinuerlig ajourhold*
-fortløpende ajourføring basert på rapportering fra forvaltningsrutiner, daglige arbeidsrutiner og samarbeidsparter <<PABG>>
+*primærdatasett* 
+et definert geodatasett som består av de mest detaljerte og nøyaktige data innen et definert område, har en viss utbredelse og jevnlig blir produsert og/eller ajourholdt [G] 
 
-_MERKNAD_: Kalles også administrativt vedlikehold. Data som samles inn administrativt, kan være digitale stikningsdata eller data fra sluttkontroll av beliggenhet, markmålte bygninger, senterpunkt bygning, situasjonsplan og melding om landbruksbygg.
+*produktspesifikasjon*
+detaljert beskrivelse av ett datasett eller en serie med datasett med tilleggsinformasjon som gjør det mulig å produsere, distribuere og bruke datasettet av andre (tredjepart) [SOSI] 
 
-.*kvalitet*
-i hvilken grad en samling av iboende egenskaper oppfyller krav <<G>>
+MERKNAD 	En dataproduktspesifikasjon kan lages for produksjon, salg, sluttbrukervirksomhet eller annet. 
 
-_MERKNAD_: Se standarden Geodatakvalitet for en nærmere beskrivelse av datakvalitet. 
+*standardavvik* 
+statistisk størrelse som angir spredningen for en gruppe måle- eller beregningsverdier i forhold til deres sanne eller estimerte verdier [G] 
 
-.*logisk konsistens*
-hvor godt regler som finnes i spesifikasjonene er oppfylt <<G>>
+*toleranse* 
+maksimalt tillatt avvik eller verdi [G] 
 
-_MERKNAD_: Logisk konsistens betegner sammenhengen mellom produktet og reglene produktet skal oppfylle. Logisk konsistens kan altså måles uten at en kjenner noen "fasit". 
+*topologi* 
+beskrivelse av sammenhengen mellom geografiske objekter [G] 
 
-.*metadata*
-informasjon som beskriver et datasett <<G>>
+MERKNAD 	De aktuelle objektene har ofte en fysisk sammenheng. Topologi er de av objektenes egenskaper som overlever det som er kalt kontinuerlige transformasjoner (også kalt gummiduk-transformasjoner). Alle tallverdier (lengder, arealer og retninger) kan bli forandret, mens for eksempel naboskapsforhold vil være uendret.
 
-_MERKNAD_: Hvilke opplysninger som inngår i metadataene, kan variere avhengig av datasettets karakter. Vanlige opplysninger er innhold, kvalitet, tilstand, struktur, format, produsent og vedlikeholdsansvar.
+*Vegnettet*
+Vegnettet består av veglenker med sin vegnettsgeometri. For at nettverket skal kunne brukes til navigasjon og nettverksanalyser er det helt vesentlig at det er knyttet sammen der dette er riktig. Det er likeså viktig med riktige restriksjoner, for eksempel vegsperring, der det ikke er framkommelighet i nettverket.
 
-.*nøyaktighet* 
-mål for en estimert verdis nærhet til sin sanne verdi eller til det man antar er den sanne verdi <<G>>
+*Vegdetaljnivå* 
+Ulike brukere kan ha ulike behov for detaljeringsgrad på vegnettet. Det er derfor lagt til rette for at vegnettet kan presenteres i 3 forskjellige detaljeringsnivåer: Vegtrasenivå, Kjørebanenivå og Kjørefeltnivå. Den største delen av vegnettet tilfredsstiller både vegtrasenivå og kjørebanenivå, og vil da ikke ha egenskapen detaljnivå. Kjørefeltnivå benyttes kun i tilfeller der det er ønskelig å detaljere vegnettet ytterligere. I hovedsak er det bilvegnettet som presenteres på forskjellige detaljeringsnivåer. Se Figur 1. Vegnett for gående og syklende vil i hovedsak kun være definert på vegtrasenivå.
 
-_MERKNAD_: I standarden Geodatakvalitet er de ulike nøyaktighetsmålene beskrevet.
+Vegens senterlinje defineres normalt midt mellom vegkanter. På deler av vegnettet der kjørebanene er fysisk skilt fra hverandre, for eksempel med midtrabatt, konstrueres det to senterlinjer for kjørebanenivået, en for hver kjøreretning. I tillegg konstrueres det linje for vegtrase i midtrabatten for vegnett på mindre detaljert nivå. For enkelte situasjoner i vegnettet, for eksempel i kryss, vil det også være aktuelt å konstruere en egen senterlinje for et svingefelt for å detaljere kryssets utforming ytterligere. 
 
-.*objekt* 
-forekomst (instans) av en objekttype <<SOSI-UML>>
+image::../images/Vegdetaljniva.png[]
 
-.*objektkatalog*
-definisjon og beskrivelse av objekttyper, objektegenskaper samt relasjoner mellom objekter, sammen med eventuelle funksjoner som er anvendt for objektet. <<SOSI-UML>> 
-
-.*objekttype* 
-geografisk objekttype er en klasse av objekter med felles egenskaper, forholdet mot andre objekttyper og funksjoner <<SOSI-UML>> 
-
-_EKSEMPEL_: Eksempler på objekttyper er Takkant, Arealbruksgrense og Mønelinje. 
-
-.*områdetype*
-arealinndeling basert på krav til detaljering/nøyaktighet av basis geodata i området <<FKB>> 
-
-_MERKNAD_: I FKB brukes områdetypen til å si noe om hvilken FKB-standard som bør velges i området. Områdetype brukes også som styrende for krav i standardene "Plassering og beliggenhetskontroll" og "Stedfesting av matrikkelenhets- og råderettsgrenser".
-
-.*oppgradering*
-forbedring av den datatekniske kvaliteten av eksisterende data <<PABG>> 
-
-.*periodisk ajourhold*
-ajourføring som utføres systematisk med jevne mellomrom <<PABG>> 
-
-_MERKNAD_: Ved periodisk ajourføring blir eksisterende data, enten de har vært gjennom kontinuerlig ajourføring eller ei, kontrollert og evt. forbedret, og manglende objekter blir supplert. Objekter som ikke er endret, blir ikke kartlagt på nytt. Etter periodisk ajourføring skal datasettene minimum tilfredsstille kvalitetskravene for den valgte FKB-standard i området. Det kan være nødvendig også med en oppgradering for å oppfylle kvalitetskravene. Periodisk ajourføring gjøres vanligvis ved fotogrammetri.
-
-.*presentasjonsdata*
-tilleggsdata til FKB som er nødvendige for å formidle en god presentasjon uten at de opprinnelige datasettene blir berørt <<FKB>>
-
-_MERKNAD_: Presentasjonsdata lages for presentasjoner i ulike målestokker. Det genereres presentasjonsdata for å ha mulighet til blant annet å redigere, avblende/slette, skrive om eller flytte tekster og symboler i kartbildet, uten at datasettene blir berørt. 
-
-_EKSEMPEL_:	Eksempler på presentasjonsdata er tekstdata generert fra datasett der tekst, tall eller symboler er ferdig plassert i kartbildet. En annen type presentasjonsdata er avblendingspolygoner som brukes til å fjerne unødig mye data i et aktuelt kartbilde. 
-
-.*primærdatasett*
-et definert geodatasett som består av de mest detaljerte og nøyaktige data innen et definert område, har en viss utbredelse og jevnlig blir produsert og/eller ajourholdt <<G>>
-
-_MERKNAD_: Primærdatasett skal være presentasjons- og produktuavhengige. De skal kunne danne utgangspunkt for forskjellig bruk og forskjellige produkter. Det er derfor krav om en viss utbredelse og produksjon før en kan kalle et datasett for primærdatasett. Primærdatasett er i prinsippet uavhengige datasett (ikke avledet fra andre datasett) og ajourholdes uavhengig av andre datasett. Et objekt tilhører bare ett primærdatasett. 
-
-.*produktspesifikasjon* 
-detaljert beskrivelse av ett datasett eller en serie med datasett med tilleggsinformasjon som gjør det mulig å produsere, distribuere og bruke datasettet av andre (tredjepart) <<SOSI-KRAV>>
-
-_MERKNAD_: En dataproduktspesifikasjon kan lages for produksjon, salg, sluttbrukervirksomhet eller annet.
-
-.*standardavvik*
-statistisk størrelse som angir spredningen for en gruppe måle- eller beregningsverdier i forhold til deres sanne eller estimerte verdier <<G>>
-
-.*topologi*
-beskrivelse av sammenhengen mellom geografiske objekter <<G>>
-
-_MERKNAD_: De aktuelle objektene har ofte en fysisk sammenheng. Topologi er de av objektenes egenskaper som overlever det som er kalt kontinuerlige transformasjoner (også kalt gummiduk-transformasjoner). Alle tallverdier (lengder, arealer og retninger) kan bli forandret, mens for eksempel naboskapsforhold vil være uendret.
+I NVDB Vegnett Pluss vil ikke alle vegdetaljnivåer av vegnett være med ut i datasettet. NVDB Vegnett Pluss vil være bygd opp av kjørebanelenker og kjørefeltlenker. Dette tilsvarer figuren som viser Kjørefeltnivået over.
 
 
+*Restriksjoner*
+Datasettet inneholder punkter og strekninger som fungerer som restriksjoner i vegnettet. Jernbanekryss, svingerestriksjon og vegsperring er restriksjonene som kommer ut som punktobjekter i datasettet. Fartsgrense, høydebegrensning, trafikkreguleringer, gågatereguleringer, tillatt kjøreretning, gjennomkjøring forbudt og værutsatt veg er restriksjonene som kommer ut som strekningsobjekter i datasettet.
 
+*Feltoversikt*
+I vegnettet defineres kjørefelt som en beskrivelse av tverrsnittet på vegen. Lovlige verdier for kjørefelt er definert i Statens vegvesen sin datakatalog. Kjørefelt i tverrsnittet av vegen beskrives vha en tekststreng i egenskapen feltoversikt, og kombinasjon av felt skilles med #.
+
+Metreringen gir oss referansen i lengderetning, mens feltkoding kan gi oss plassering på tvers av vegen. Feltkodene gis i forhold til vegens metreringsretning. Oddetall viser felt med kjøreretning med metreringsretningen, partall viser oss felt med kjøreretning mot metreringsretningen.
+
+Lenkeretning og metreringsretning er normalt sett den samme, men i noen tilfeller vil den ikke være det. SOSI Vegnett, og med det NVDB Vegnett Pluss definerer feltkoding [underline]#kun# i forhold til metreringsretning.
+
+image::../images/Feltoversikt.png[]
+
+Eksempler: +
+1) Normalt sett har vegen ett kjørefelt i hver retning: 
+GML: <app:feltoversikt>1#2</app:feltoversikt>
+SOSI: ..FELTOVERSIKT 1#2 +
+
+2) I tverrsnittet på vegen har vi ett kjørefelt i hver retning, samt et høyresvingefelt: 
+GML: <app:feltoversikt>1#1H1#2</app:feltoversikt>
+SOSI: ..FELTOVERSIKT 1#1H1#2 +
+
+3) I tverrsnittet på vegen har vi vanlige kjørefelt i begge retninger i midten, og kollektivfelt begge retninger utenfor disse:
+GML: <app:<feltoversikt>1#2#3K#4K</app:feltoversikt>
+SOSI: ..FELTOVERSIKT 1#2#3K#4K 

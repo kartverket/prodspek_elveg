@@ -18,11 +18,41 @@ ifdef::backend-pdf[:toc: macro]
 :prodspekbase-url: https://sosi.geonorge.no/produktspesifikasjoner/
 :umlbase-url: https://sosi.geonorge.no/uml-modeller/sosi-del-3-produktspesifikasjoner/
 :reginstrbase-url: https://sosi.geonorge.no/registreringsinstrukser/
-:fkbGenerellDel-url: https://sosi.geonorge.no/Standarder/FKB_generell_del/5.0
-:title-page-background-image: image:../../felles/figurer/forsidebilde_kartverketstandarder.jpg[]
-:fkbdatasett: {datasett} {versjon}
+:fkbGenerellDel-url: https://sosi.geonorge.no/Standarder/FKB_generell_del
 :skjema-url: {skjemabase-url}{datasett}/{skjemaversjon}
-:prodspek-url: {prodspekbase-url}{datasett}
 :uml-url: {umlbase-url}{datasett}/{versjon}
-:reginstr-url: {reginstrbase-url}{datasett}/{skjemaversjon}
-:prodspek-forrige-url: {prodspekbase-url}{prodspek-forrige}
+
+
+
+= SOSI-standardisert produktspesifikasjon: {datasett} {versjon}
+Kartverket
+{versjon}, {underversjon}
+
+****
+
+ifeval::[{dokumentstatus} == 2]
+
+WARNING: *Høringsversjon!* 
+
+endif::[]
+
+
+ifeval::[{dokumentstatus} == 3]
+
+WARNING: *Utgått versjon!* Dokumentet er erstattet av  
+
+endif::[]
+
+
+*Publisert*: {publisert} +
+*Denne versjonen finnes på*: {prodspek-url}/{versjon} +
+- {prodspek-url}/{versjon}[HTML-dokument] +
+- {uml-url}[HTML-visning av UML-modellen] +
+*Nyeste versjon finnes på*: {prodspek-url} +
+*Faglig godkjent av*: Kartverket +
+
+Vedtatt som standard av Standardiseringskomiteen for Geomatikk 
+
+****
+
+toc::[]
