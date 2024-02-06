@@ -45,10 +45,9 @@ endif::[]
 
 
 *Publisert*: {publisert} +
-*Denne versjonen finnes på*: {prodspek-url}/{versjon} +
-- {prodspek-url}/{versjon}[HTML-dokument] +
-- {uml-url}[HTML-visning av UML-modellen] +
-*Nyeste versjon finnes på*: {prodspek-url} +
+*Denne versjonen finnes på*: {prodspekbase-url}/{kortnavn}/{versjon} +
+//- {uml-url}[HTML-visning av UML-modellen] +
+//*Nyeste versjon finnes på*: {prodspek-url} +
 *Faglig godkjent av*: Kartverket +
 
 Vedtatt som standard av Standardiseringskomiteen for Geomatikk 
