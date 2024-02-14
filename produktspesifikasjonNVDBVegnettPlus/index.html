@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.20">
 <meta name="author" content="Kartverket">
-<title>SOSI-standardisert produktspesifikasjon: NVDB Vegnett Plus 1.0</title>
+<title>SOSI-standardisert produktspesifikasjon: NVDB Vegnett Pluss 1.0</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -436,7 +436,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1>SOSI-standardisert produktspesifikasjon: NVDB Vegnett Plus 1.0</h1>
+<h1>SOSI-standardisert produktspesifikasjon: NVDB Vegnett Pluss 1.0</h1>
 <div class="details">
 <span id="author" class="author">Kartverket</span><br>
 <span id="revnumber">versjon 1.0,</span>
@@ -497,236 +497,166 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_innhold_og_struktur">5. Innhold og struktur</a>
 <ul class="sectlevel2">
 <li><a href="#_omfang">5.1. Omfang</a></li>
-</ul>
-</li>
-<li><a href="#_applicationschema_nvdb_vegnett_pluss_1_0_utkast">6. «ApplicationSchema» NVDB Vegnett Pluss 1.0 - Utkast</a>
-<ul class="sectlevel2">
-<li><a href="#_pakke_veglenke">6.1. Pakke: Veglenke</a>
+<li><a href="#_applicationschema_nvdb_vegnett_pluss_1_0_utkast">5.2. «ApplicationSchema» NVDB Vegnett Pluss 1.0 - Utkast</a>
 <ul class="sectlevel3">
-<li><a href="#appveglenke">6.1.1. «featureType» Veglenke</a></li>
-</ul>
-</li>
-<li><a href="#_pakke_nvdb_objekttyper">6.2. Pakke: NVDB objekttyper</a>
-<ul class="sectlevel3">
-<li><a href="#appberedskapsveg">6.2.1. «featureType» Beredskapsveg</a></li>
-<li><a href="#appfartsgrense">6.2.2. «featureType» Fartsgrense</a></li>
-<li><a href="#appfartsgrensevariabel">6.2.3. «featureType» FartsgrenseVariabel</a></li>
-<li><a href="#appferjesamband">6.2.4. «featureType» Ferjesamband</a></li>
-<li><a href="#appfunksjonellvegklasse">6.2.5. «featureType» FunksjonellVegklasse</a></li>
-<li><a href="#appgjennomkjøringforbudt">6.2.6. «featureType» GjennomkjøringForbudt</a></li>
-<li><a href="#appgjennomkjøringforbudttil">6.2.7. «featureType» GjennomkjøringForbudtTil</a></li>
-<li><a href="#appgågatereguleringer">6.2.8. «featureType» Gågatereguleringer</a></li>
-<li><a href="#apphøydebegrensning">6.2.9. «featureType» Høydebegrensning</a></li>
-<li><a href="#appjernbanekryssing">6.2.10. «featureType» Jernbanekryssing</a></li>
-<li><a href="#applandbruksvegklasse">6.2.11. «featureType» Landbruksvegklasse</a></li>
-<li><a href="#appmotorveg">6.2.12. «featureType» Motorveg</a></li>
-<li><a href="#appserviceveg">6.2.13. «featureType» Serviceveg</a></li>
-<li><a href="#appsvingerestriksjon">6.2.14. «featureType» Svingerestriksjon</a></li>
-<li><a href="#apptillattkjøreretning">6.2.15. «FeatureType» TillattKjøreretning</a></li>
-<li><a href="#apptrafikkreguleringer">6.2.16. «featureType» Trafikkreguleringer</a></li>
-<li><a href="#appvegsperring">6.2.17. «featureType» Vegsperring</a></li>
-<li><a href="#appværutsattveg">6.2.18. «featureType» VærutsattVeg</a></li>
-</ul>
-</li>
-<li><a href="#_pakke_fellesegenskaper">6.3. Pakke: Fellesegenskaper</a>
-<ul class="sectlevel3">
-<li><a href="#appsosi_fellesegenskaper">6.3.1. <em>«FeatureType» SOSI_Fellesegenskaper (abstrakt)</em></a></li>
-<li><a href="#appsosi_objekt5.0_veglenke">6.3.2. <em>«FeatureType» SOSI_Objekt5.0_veglenke (abstrakt)</em></a></li>
-</ul>
-</li>
-<li><a href="#_pakke_datatyper_og_kodelister">6.4. Pakke: Datatyper og kodelister</a>
-<ul class="sectlevel3">
-<li><a href="#_pakke_datatyper_og_kodelisterveglenke">6.4.1. Pakke: Datatyper og kodelister::Veglenke</a>
+<li><a href="#_pakke_veglenke">5.2.1. Pakke: Veglenke</a>
 <ul class="sectlevel4">
-<li><a href="#appveglenkeadresse">6.4.1.1. «dataType» Veglenkeadresse</a></li>
-<li><a href="#appkryssystem">6.4.1.2. «dataType» Kryssystem</a></li>
-<li><a href="#appsideanlegg">6.4.1.3. «dataType» Sideanlegg</a></li>
-<li><a href="#appvegstrekning">6.4.1.4. «dataType» Vegstrekning</a></li>
-<li><a href="#appvegsystem">6.4.1.5. «dataType» Vegsystem</a></li>
-<li><a href="#appvegsystemreferanse">6.4.1.6. «dataType» Vegsystemreferanse</a></li>
-<li><a href="#appreferanseretning">6.4.1.7. «codeList» Referanseretning</a></li>
-<li><a href="#apptypeveg">6.4.1.8. «codeList» TypeVeg</a></li>
-<li><a href="#appvegdetaljnivå">6.4.1.9. «codeList» Vegdetaljnivå</a></li>
-<li><a href="#appvegkategori">6.4.1.10. «codeList» Vegkategori</a></li>
-<li><a href="#appadskilteløp">6.4.1.11. «codeList» AdskilteLøp</a></li>
-<li><a href="#appvegfase">6.4.1.12. «CodeList» Vegfase</a></li>
+<li><a href="#appveglenke">5.2.1.1. «featureType» Veglenke</a></li>
 </ul>
 </li>
-<li><a href="#_pakke_datatyper_og_kodelistersosi_objekt">6.4.2. Pakke: Datatyper og kodelister::SOSI_Objekt</a>
+<li><a href="#_pakke_nvdb_objekttyper">5.2.2. Pakke: NVDB objekttyper</a>
 <ul class="sectlevel4">
-<li><a href="#appkommunenummer">6.4.2.1. «codeList» Kommunenummer</a></li>
-<li><a href="#appidentifikasjon">6.4.2.2. «dataType» Identifikasjon</a></li>
-<li><a href="#appposisjonskvalitet">6.4.2.3. «dataType» Posisjonskvalitet</a></li>
-<li><a href="#appsynbarhet">6.4.2.4. «CodeList» Synbarhet</a></li>
-<li><a href="#appdatafangstmetode">6.4.2.5. «CodeList» Datafangstmetode</a></li>
-<li><a href="#appmedium">6.4.2.6. «CodeList» Medium</a></li>
+<li><a href="#appberedskapsveg">5.2.2.1. «featureType» Beredskapsveg</a></li>
+<li><a href="#appfartsgrense">5.2.2.2. «featureType» Fartsgrense</a></li>
+<li><a href="#appfartsgrensevariabel">5.2.2.3. «featureType» FartsgrenseVariabel</a></li>
+<li><a href="#appferjesamband">5.2.2.4. «featureType» Ferjesamband</a></li>
+<li><a href="#appfunksjonellvegklasse">5.2.2.5. «featureType» FunksjonellVegklasse</a></li>
+<li><a href="#appgjennomkjøringforbudt">5.2.2.6. «featureType» GjennomkjøringForbudt</a></li>
+<li><a href="#appgjennomkjøringforbudttil">5.2.2.7. «featureType» GjennomkjøringForbudtTil</a></li>
+<li><a href="#appgågatereguleringer">5.2.2.8. «featureType» Gågatereguleringer</a></li>
+<li><a href="#apphøydebegrensning">5.2.2.9. «featureType» Høydebegrensning</a></li>
+<li><a href="#appjernbanekryssing">5.2.2.10. «featureType» Jernbanekryssing</a></li>
+<li><a href="#applandbruksvegklasse">5.2.2.11. «featureType» Landbruksvegklasse</a></li>
+<li><a href="#appmotorveg">5.2.2.12. «featureType» Motorveg</a></li>
+<li><a href="#appserviceveg">5.2.2.13. «featureType» Serviceveg</a></li>
+<li><a href="#appsvingerestriksjon">5.2.2.14. «featureType» Svingerestriksjon</a></li>
+<li><a href="#apptillattkjøreretning">5.2.2.15. «FeatureType» TillattKjøreretning</a></li>
+<li><a href="#apptrafikkreguleringer">5.2.2.16. «featureType» Trafikkreguleringer</a></li>
+<li><a href="#appvegsperring">5.2.2.17. «featureType» Vegsperring</a></li>
+<li><a href="#appværutsattveg">5.2.2.18. «featureType» VærutsattVeg</a></li>
 </ul>
 </li>
-<li><a href="#_pakke_datatyper_og_kodelisternvdb">6.4.3. Pakke: Datatyper og kodelister::NVDB</a>
+<li><a href="#_pakke_fellesegenskaper">5.2.3. Pakke: Fellesegenskaper</a>
 <ul class="sectlevel4">
-<li><a href="#appbruksområdeberedskapsveg">6.4.3.1. «CodeList» BruksområdeBeredskapsveg</a></li>
-<li><a href="#appfunksjon">6.4.3.2. «codeList» Funksjon</a></li>
-<li><a href="#appansvarligvts">6.4.3.3. «CodeList» AnsvarligVTS</a></li>
-<li><a href="#appdriftsstatusferjesamband">6.4.3.4. «codeList» DriftsstatusFerjesamband</a></li>
-<li><a href="#appeiervegsperring">6.4.3.5. «codeList» EierVegsperring</a></li>
-<li><a href="#appfartsgrenseverdi">6.4.3.6. «codeList» FartsgrenseVerdi</a></li>
-<li><a href="#appfartsgrenseverdivariabel">6.4.3.7. «codeList» FartsgrenseVerdiVariabel</a></li>
-<li><a href="#appgjelderfor">6.4.3.8. «CodeList» GjelderFor</a></li>
-<li><a href="#appgjentakelsesintervallværutsattveg">6.4.3.9. «codeList» GjentakelsesintervallVærutsattVeg</a></li>
-<li><a href="#appklasselandbruksveg">6.4.3.10. «codeList» KlasseLandbruksveg</a></li>
-<li><a href="#appmotorvegtype">6.4.3.11. «codeList» Motorvegtype</a></li>
-<li><a href="#appmålemetodehøydebegrensning">6.4.3.12. «codeList» MålemetodeHøydebegrensning</a></li>
-<li><a href="#apptrafikkreguleringertrafikkreguleringer">6.4.3.13. «CodeList» TrafikkreguleringerTrafikkreguleringer</a></li>
-<li><a href="#apptypejernbanekryssing">6.4.3.14. «codeList» TypeJernbanekryssing</a></li>
-<li><a href="#appvegklasse">6.4.3.15. «codeList» Vegklasse</a></li>
-<li><a href="#apphovedproblemværutsattveg">6.4.3.16. «codeList» HovedproblemVærutsattVeg</a></li>
-<li><a href="#apphøyfjellsstrekning">6.4.3.17. «codeList» Høyfjellsstrekning</a></li>
-<li><a href="#appsambandstype">6.4.3.18. «codeList» Sambandstype</a></li>
-<li><a href="#apptypefartsgrensevariabel">6.4.3.19. «codeList» TypeFartsgrenseVariabel</a></li>
-<li><a href="#apptypehinder">6.4.3.20. «codeList» TypeHinder</a></li>
-<li><a href="#apptypevegsperring">6.4.3.21. «codeList» TypeVegsperring</a></li>
-<li><a href="#appukedag">6.4.3.22. «codeList» Ukedag</a></li>
+<li><a href="#appsosi_fellesegenskaper">5.2.3.1. <em>«FeatureType» SOSI_Fellesegenskaper (abstrakt)</em></a></li>
+<li><a href="#appsosi_objekt5.0_veglenke">5.2.3.2. <em>«FeatureType» SOSI_Objekt5.0_veglenke (abstrakt)</em></a></li>
+</ul>
+</li>
+<li><a href="#_pakke_datatyper_og_kodelister">5.2.4. Pakke: Datatyper og kodelister</a>
+<ul class="sectlevel4">
+<li><a href="#_pakke_datatyper_og_kodelisterveglenke">5.2.4.1. Pakke: Datatyper og kodelister::Veglenke</a></li>
+<li><a href="#_pakke_datatyper_og_kodelistersosi_objekt">5.2.4.2. Pakke: Datatyper og kodelister::SOSI_Objekt</a></li>
+<li><a href="#_pakke_datatyper_og_kodelisternvdb">5.2.4.3. Pakke: Datatyper og kodelister::NVDB</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#_referansesystem">7. Referansesystem</a>
+<li><a href="#_referansesystem">6. Referansesystem</a>
 <ul class="sectlevel2">
-<li><a href="#_romlig_referansesystem_utm_sone_32_basert_på_euref89_etrs89utm_2d_nn2000">7.1. Romlig referansesystem UTM sone 32 basert på EUREF89 (ETRS89/UTM), 2d + NN2000</a>
+<li><a href="#_romlig_referansesystem_utm_sone_32_basert_på_euref89_etrs89utm_2d_nn2000">6.1. Romlig referansesystem UTM sone 32 basert på EUREF89 (ETRS89/UTM), 2d + NN2000</a>
 <ul class="sectlevel3">
-<li><a href="#_omfang_2">7.1.1. Omfang</a></li>
-<li><a href="#_navn_på_kilden_til_referansesystemet">7.1.2. Navn på kilden til referansesystemet</a></li>
-<li><a href="#_ansvarlig_organisasjon_for_referansesystemet">7.1.3. Ansvarlig organisasjon for referansesystemet</a></li>
-<li><a href="#_link_til_mer_informasjon_om_referansesystemet">7.1.4. Link til mer informasjon om referansesystemet</a></li>
-<li><a href="#_koderom">7.1.5. Koderom</a></li>
-<li><a href="#_identifikasjonskode">7.1.6. Identifikasjonskode</a></li>
-<li><a href="#_kodeversjon">7.1.7. Kodeversjon</a></li>
+<li><a href="#_omfang_2">6.1.1. Omfang</a></li>
+<li><a href="#_navn_på_kilden_til_referansesystemet">6.1.2. Navn på kilden til referansesystemet</a></li>
+<li><a href="#_ansvarlig_organisasjon_for_referansesystemet">6.1.3. Ansvarlig organisasjon for referansesystemet</a></li>
+<li><a href="#_link_til_mer_informasjon_om_referansesystemet">6.1.4. Link til mer informasjon om referansesystemet</a></li>
+<li><a href="#_koderom">6.1.5. Koderom</a></li>
+<li><a href="#_identifikasjonskode">6.1.6. Identifikasjonskode</a></li>
+<li><a href="#_kodeversjon">6.1.7. Kodeversjon</a></li>
 </ul>
 </li>
-<li><a href="#_romlig_referansesystem_utm_sone_33_basert_på_euref89_etrs89utm_2d_nn2000">7.2. Romlig referansesystem UTM sone 33 basert på EUREF89 (ETRS89/UTM), 2d + NN2000</a>
+<li><a href="#_romlig_referansesystem_utm_sone_33_basert_på_euref89_etrs89utm_2d_nn2000">6.2. Romlig referansesystem UTM sone 33 basert på EUREF89 (ETRS89/UTM), 2d + NN2000</a>
 <ul class="sectlevel3">
-<li><a href="#_omfang_3">7.2.1. Omfang</a></li>
-<li><a href="#_navn_på_kilden_til_referansesystemet_2">7.2.2. Navn på kilden til referansesystemet</a></li>
-<li><a href="#_ansvarlig_organisasjon_for_referansesystemet_2">7.2.3. Ansvarlig organisasjon for referansesystemet</a></li>
-<li><a href="#_link_til_mer_informasjon_om_referansesystemet_2">7.2.4. Link til mer informasjon om referansesystemet</a></li>
-<li><a href="#_koderom_2">7.2.5. Koderom</a></li>
-<li><a href="#_identifikasjonskode_2">7.2.6. Identifikasjonskode</a></li>
-<li><a href="#_kodeversjon_2">7.2.7. Kodeversjon</a></li>
+<li><a href="#_omfang_3">6.2.1. Omfang</a></li>
+<li><a href="#_navn_på_kilden_til_referansesystemet_2">6.2.2. Navn på kilden til referansesystemet</a></li>
+<li><a href="#_ansvarlig_organisasjon_for_referansesystemet_2">6.2.3. Ansvarlig organisasjon for referansesystemet</a></li>
+<li><a href="#_link_til_mer_informasjon_om_referansesystemet_2">6.2.4. Link til mer informasjon om referansesystemet</a></li>
+<li><a href="#_koderom_2">6.2.5. Koderom</a></li>
+<li><a href="#_identifikasjonskode_2">6.2.6. Identifikasjonskode</a></li>
+<li><a href="#_kodeversjon_2">6.2.7. Kodeversjon</a></li>
 </ul>
 </li>
-<li><a href="#_romlig_referansesystem_utm_sone_35_basert_på_euref89_etrs89utm_2d_nn2000">7.3. Romlig referansesystem UTM sone 35 basert på EUREF89 (ETRS89/UTM), 2d + NN2000</a>
+<li><a href="#_romlig_referansesystem_utm_sone_35_basert_på_euref89_etrs89utm_2d_nn2000">6.3. Romlig referansesystem UTM sone 35 basert på EUREF89 (ETRS89/UTM), 2d + NN2000</a>
 <ul class="sectlevel3">
-<li><a href="#_omfang_4">7.3.1. Omfang</a></li>
-<li><a href="#_navn_på_kilden_til_referansesystemet_3">7.3.2. Navn på kilden til referansesystemet</a></li>
-<li><a href="#_ansvarlig_organisasjon_for_referansesystemet_3">7.3.3. Ansvarlig organisasjon for referansesystemet</a></li>
-<li><a href="#_link_til_mer_informasjon_om_referansesystemet_3">7.3.4. Link til mer informasjon om referansesystemet</a></li>
-<li><a href="#_koderom_3">7.3.5. Koderom</a></li>
-<li><a href="#_identifikasjonskode_3">7.3.6. Identifikasjonskode</a></li>
-<li><a href="#_kodeversjon_3">7.3.7. Kodeversjon</a></li>
+<li><a href="#_omfang_4">6.3.1. Omfang</a></li>
+<li><a href="#_navn_på_kilden_til_referansesystemet_3">6.3.2. Navn på kilden til referansesystemet</a></li>
+<li><a href="#_ansvarlig_organisasjon_for_referansesystemet_3">6.3.3. Ansvarlig organisasjon for referansesystemet</a></li>
+<li><a href="#_link_til_mer_informasjon_om_referansesystemet_3">6.3.4. Link til mer informasjon om referansesystemet</a></li>
+<li><a href="#_koderom_3">6.3.5. Koderom</a></li>
+<li><a href="#_identifikasjonskode_3">6.3.6. Identifikasjonskode</a></li>
+<li><a href="#_kodeversjon_3">6.3.7. Kodeversjon</a></li>
 </ul>
 </li>
-<li><a href="#_temporalt_referansesystem">7.4. Temporalt referansesystem</a>
+<li><a href="#_temporalt_referansesystem">6.4. Temporalt referansesystem</a>
 <ul class="sectlevel3">
-<li><a href="#_omfang_5">7.4.1. Omfang</a></li>
-<li><a href="#_navn_på_temporalt_referansesystem">7.4.2. Navn på temporalt referansesystem</a></li>
+<li><a href="#_omfang_5">6.4.1. Omfang</a></li>
+<li><a href="#_navn_på_temporalt_referansesystem">6.4.2. Navn på temporalt referansesystem</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#_kvalitet">8. Kvalitet</a>
+<li><a href="#_kvalitet">7. Kvalitet</a>
 <ul class="sectlevel2">
-<li><a href="#_omfang_6">8.1. Omfang</a>
+<li><a href="#_omfang_6">7.1. Omfang</a>
 <ul class="sectlevel3">
-<li><a href="#_fullstendighet">8.1.1. Fullstendighet</a></li>
-<li><a href="#_stedfestingsnøyaktighet">8.1.2. Stedfestingsnøyaktighet</a></li>
-<li><a href="#_egenskapsnøyaktighet">8.1.3. Egenskapsnøyaktighet</a></li>
-<li><a href="#_tidfestingsnøyaktighet">8.1.4. Tidfestingsnøyaktighet</a></li>
-<li><a href="#_logisk_konsistens">8.1.5. Logisk konsistens</a></li>
+<li><a href="#_fullstendighet">7.1.1. Fullstendighet</a></li>
+<li><a href="#_stedfestingsnøyaktighet">7.1.2. Stedfestingsnøyaktighet</a></li>
+<li><a href="#_egenskapsnøyaktighet">7.1.3. Egenskapsnøyaktighet</a></li>
+<li><a href="#_tidfestingsnøyaktighet">7.1.4. Tidfestingsnøyaktighet</a></li>
+<li><a href="#_logisk_konsistens">7.1.5. Logisk konsistens</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#_datafangst">9. Datafangst</a></li>
-<li><a href="#_datavedlikehold">10. Datavedlikehold</a>
+<li><a href="#_datafangst">8. Datafangst</a></li>
+<li><a href="#_datavedlikehold">9. Datavedlikehold</a>
 <ul class="sectlevel2">
-<li><a href="#_vedlikeholdsinformasjon_kartleggingsprosjekt">10.1. Vedlikeholdsinformasjon - Kartleggingsprosjekt</a>
+<li><a href="#_vedlikeholdsinformasjon_kartleggingsprosjekt">9.1. Vedlikeholdsinformasjon - Kartleggingsprosjekt</a>
 <ul class="sectlevel3">
-<li><a href="#_omfang_7">10.1.1. Omfang</a></li>
-<li><a href="#_vedlikeholdsfrekvens">10.1.2. Vedlikeholdsfrekvens</a></li>
-<li><a href="#_vedlikeholdsbeskrivelse">10.1.3. Vedlikeholdsbeskrivelse</a></li>
+<li><a href="#_omfang_7">9.1.1. Omfang</a></li>
+<li><a href="#_vedlikeholdsfrekvens">9.1.2. Vedlikeholdsfrekvens</a></li>
+<li><a href="#_vedlikeholdsbeskrivelse">9.1.3. Vedlikeholdsbeskrivelse</a></li>
 </ul>
 </li>
-<li><a href="#_vedlikeholdsinformasjon_avtaler_om_forvaltning_drift_og_vedlikehold">10.2. Vedlikeholdsinformasjon – Avtaler om forvaltning, drift og vedlikehold</a>
+<li><a href="#_vedlikeholdsinformasjon_avtaler_om_forvaltning_drift_og_vedlikehold">9.2. Vedlikeholdsinformasjon – Avtaler om forvaltning, drift og vedlikehold</a>
 <ul class="sectlevel3">
-<li><a href="#_omfang_8">10.2.1. Omfang</a></li>
-<li><a href="#_vedlikeholdsfrekvens_2">10.2.2. Vedlikeholdsfrekvens</a></li>
-<li><a href="#_vedlikeholdsbeskrivelse_2">10.2.3. Vedlikeholdsbeskrivelse</a></li>
-<li><a href="#_omfang_9">10.2.4. Omfang</a></li>
-<li><a href="#_vedlikeholdsfrekvens_3">10.2.5. Vedlikeholdsfrekvens</a></li>
-<li><a href="#_vedlikeholdsbeskrivelse_3">10.2.6. Vedlikeholdsbeskrivelse</a></li>
+<li><a href="#_omfang_8">9.2.1. Omfang</a></li>
+<li><a href="#_vedlikeholdsfrekvens_2">9.2.2. Vedlikeholdsfrekvens</a></li>
+<li><a href="#_vedlikeholdsbeskrivelse_2">9.2.3. Vedlikeholdsbeskrivelse</a></li>
+<li><a href="#_omfang_9">9.2.4. Omfang</a></li>
+<li><a href="#_vedlikeholdsfrekvens_3">9.2.5. Vedlikeholdsfrekvens</a></li>
+<li><a href="#_vedlikeholdsbeskrivelse_3">9.2.6. Vedlikeholdsbeskrivelse</a></li>
 </ul>
 </li>
-<li><a href="#_vedlikeholdsinformasjon_feilmeldinger_og_avvikshåndtering">10.3. Vedlikeholdsinformasjon – Feilmeldinger og avvikshåndtering</a>
+<li><a href="#_vedlikeholdsinformasjon_feilmeldinger_og_avvikshåndtering">9.3. Vedlikeholdsinformasjon – Feilmeldinger og avvikshåndtering</a>
 <ul class="sectlevel3">
-<li><a href="#_omfang_10">10.3.1. Omfang</a></li>
-<li><a href="#_vedlikeholdsfrekvens_4">10.3.2. Vedlikeholdsfrekvens</a></li>
-<li><a href="#_vedlikeholdsbeskrivelse_4">10.3.3. Vedlikeholdsbeskrivelse</a></li>
+<li><a href="#_omfang_10">9.3.1. Omfang</a></li>
+<li><a href="#_vedlikeholdsfrekvens_4">9.3.2. Vedlikeholdsfrekvens</a></li>
+<li><a href="#_vedlikeholdsbeskrivelse_4">9.3.3. Vedlikeholdsbeskrivelse</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#_presentasjon">11. Presentasjon</a>
+<li><a href="#_presentasjon">10. Presentasjon</a>
 <ul class="sectlevel2">
-<li><a href="#_omfang_11">11.1. Omfang</a></li>
-<li><a href="#_referanse_til_presentasjonskatalog">11.2. Referanse til presentasjonskatalog</a></li>
+<li><a href="#_omfang_11">10.1. Omfang</a></li>
+<li><a href="#_referanse_til_presentasjonskatalog">10.2. Referanse til presentasjonskatalog</a></li>
 </ul>
 </li>
-<li><a href="#_leveranse">12. Leveranse</a>
+<li><a href="#_leveranse">11. Leveranse</a>
 <ul class="sectlevel2">
-<li><a href="#_leveransemetode_gml_filleveranse">12.1. Leveransemetode GML filleveranse</a>
+<li><a href="#_leveransemetode_gml_ngis_openapi">11.1. Leveransemetode GML NGIS-OpenAPI</a>
 <ul class="sectlevel3">
-<li><a href="#_omfang_12">12.1.1. Omfang</a></li>
-<li><a href="#_leveranseformat">12.1.2. Leveranseformat</a></li>
-<li><a href="#_leveransemedium">12.1.3. Leveransemedium</a></li>
+<li><a href="#_omfang_12">11.1.1. Omfang</a></li>
+<li><a href="#_leveranseformat">11.1.2. Leveranseformat</a></li>
+<li><a href="#_leveransemedium">11.1.3. Leveransemedium</a></li>
 </ul>
 </li>
-<li><a href="#_leveransemetode_sosi_format_filleveranse">12.2. Leveransemetode SOSI-format filleveranse</a>
+<li><a href="#_leveransemetode_json_ngis_openapi">11.2. Leveransemetode JSON NGIS-OpenAPI</a>
 <ul class="sectlevel3">
-<li><a href="#_omfang_13">12.2.1. Omfang</a></li>
-<li><a href="#_leveranseformat_2">12.2.2. Leveranseformat</a></li>
-<li><a href="#_leveransemedium_2">12.2.3. Leveransemedium</a></li>
-</ul>
-</li>
-<li><a href="#_leveransemetode_esri_fgdb_filleveranse">12.3. Leveransemetode ESRI fgdb filleveranse</a>
-<ul class="sectlevel3">
-<li><a href="#_omfang_14">12.3.1. Omfang</a></li>
-<li><a href="#_leveranseformat_3">12.3.2. Leveranseformat</a></li>
-<li><a href="#_leveransemedium_3">12.3.3. Leveransemedium</a></li>
-</ul>
-</li>
-<li><a href="#_leveransemetode_gml_ngis_openapi">12.4. Leveransemetode GML NGIS-OpenAPI</a>
-<ul class="sectlevel3">
-<li><a href="#_omfang_15">12.4.1. Omfang</a></li>
-<li><a href="#_leveranseformat_4">12.4.2. Leveranseformat</a></li>
-<li><a href="#_leveransemedium_4">12.4.3. Leveransemedium</a></li>
-</ul>
-</li>
-<li><a href="#_leveransemetode_json_ngis_openapi">12.5. Leveransemetode JSON NGIS-OpenAPI</a>
-<ul class="sectlevel3">
-<li><a href="#_omfang_16">12.5.1. Omfang</a></li>
-<li><a href="#_leveranseformat_5">12.5.2. Leveranseformat</a></li>
-<li><a href="#_leveransemedium_5">12.5.3. Leveransemedium</a></li>
+<li><a href="#_omfang_13">11.2.1. Omfang</a></li>
+<li><a href="#_leveranseformat_2">11.2.2. Leveranseformat</a></li>
+<li><a href="#_leveransemedium_2">11.2.3. Leveransemedium</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#_tilleggsinformasjon">13. Tilleggsinformasjon</a></li>
-<li><a href="#_metadata">14. Metadata</a>
+<li><a href="#_tilleggsinformasjon">12. Tilleggsinformasjon</a></li>
+<li><a href="#_metadata">13. Metadata</a>
 <ul class="sectlevel2">
-<li><a href="#_omfang_17">14.1. Omfang</a></li>
-<li><a href="#_metadataspesifikasjon">14.2. Metadataspesifikasjon</a></li>
+<li><a href="#_omfang_14">13.1. Omfang</a></li>
+<li><a href="#_metadataspesifikasjon">13.2. Metadataspesifikasjon</a></li>
 </ul>
 </li>
 <li><a href="#_gml_realisering">Vedlegg A: GML-realisering</a></li>
@@ -752,8 +682,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </table>
 </div>
 <div class="paragraph">
-<p><strong>Publisert</strong>: 2024-02-06<br>
-<strong>Denne versjonen finnes på</strong>: <a href="https://sosi.geonorge.no/produktspesifikasjoner//NVDBVegnettPlus/1.0" class="bare">https://sosi.geonorge.no/produktspesifikasjoner//NVDBVegnettPlus/1.0</a><br>
+<p><strong>Publisert</strong>: 2024-02-14<br>
+<strong>Denne versjonen finnes på</strong>: <a href="https://sosi.geonorge.no/produktspesifikasjoner//NVDBVegnettPluss/1.0" class="bare">https://sosi.geonorge.no/produktspesifikasjoner//NVDBVegnettPluss/1.0</a><br>
 <strong>Faglig godkjent av</strong>: Kartverket<br></p>
 </div>
 <div class="paragraph">
@@ -770,18 +700,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_innledning">1.1. Innledning</h3>
 <div class="paragraph">
-<p>NVDB Vegnett Pluss er i hovedsak et forvaltningsdatasett for kommunene til forvaltning av vegnettet i SFKB. En kvalitetssikret versjon tilgjengeliggjøres på Geonorge. Datasettet omfatter alle kjørbare veger som er lengre enn 50 meter, eller del av et nettverk, samt gang- og sykkelveger og sykkelveger representert som veglenkegeometri. Fortau, gangveger, gangfelt, traktorveger og stier som tidligere fantes i FKB-TraktorvegSti, vil også være en del av NVDB Vegnett Pluss. For disse objekttypene gjenstår noe innsamling av data.</p>
+<p>NVDB Vegnett Pluss er i hovedsak et forvaltningsdatasett for kommunene til forvaltning av vegnettet i SFKB. En kvalitetssikret versjon tilgjengeliggjøres på Geonorge. Datasettet omfatter alle kjørbare veger som er lengre enn 50 meter, eller del av et nettverk, samt gang- og sykkelveger og sykkelveger representert som veglenkegeometri. Fortau, gangveger, gangfelt, traktorveger og stier som tidligere fantes i FKB-TraktorvegSti, vil også være en del av NVDB Vegnett Pluss. For disse typene veg gjenstår noe innsamling av data.</p>
 </div>
 <div class="paragraph">
-<p>I tillegg inneholder datasettet adresseinformasjon (som gir mulighet for kobling til matrikkelen og andre registre), fartsgrenser, trafikkreguleringer, trafikkrestriksjoner og vegklasser, alle representert som lineært refererte objekter. Veglenkens attributter er tematisert etter typeveg, vegkategori og vegfase.</p>
+<p>I tillegg inneholder datasettet adresseinformasjon (som gir mulighet for kobling til matrikkelen og andre registre), fartsgrenser, trafikkreguleringer, trafikkrestriksjoner og vegklasser. Veglenkens attributter er tematisert etter typeveg, vegkategori og vegfase.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Typeveg: bilferje, enkel bilveg, fortau, gangfelt, gang- og sykkelveg, gangveg, gatetun, gågate, kanalisert veg (kjørebane, kjørefelt og vegtrasé), passasjerferje, rampe, rundkjøring, sykkelveg og trapp.</p>
+<p>Typeveg: bilferje, enkel bilveg, fortau, gangfelt, gang- og sykkelveg, gangveg, gatetun, gågate, kanalisert veg (kjørebane og kjørefelt), passasjerferje, rampe, rundkjøring, sykkelveg og trapp.</p>
 </li>
 <li>
-<p>Vegkategori: europa- (E), riks- R, fylkes- (F) og kommunal veg (K), privat veg (P) og skogsveg (S).</p>
+<p>Vegkategori: europa- (E), riks- &#174;, fylkes- (F), kommunal veg (K), privat veg (P) og skogsveg (S).</p>
 </li>
 <li>
 <p>Vegfase: eksisterende veg (V), under bygging (A).</p>
@@ -789,9 +719,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 <div class="paragraph">
-<p>Grunnlagsdata for NVDB Vegnett Pluss forvaltes i Nasjonal vegdatabank, les mer om denne på:  <a href="https://www.vegvesen.no/fag/teknologi/nasjonal-vegdatabank/">Nasjonal vegdatabank (NVDB) | Statens vegvesen</a><br>
-NVDB Vegnett Pluss er et produkt eksport fra NVDB og ajourholdes av Statens vegvesen og Kartverket. I tillegg til NVDB Vegnett Pluss finnes det også et forenklet datasett, NVDB Vegnett. Dette datasettet består av de samme veglenkene og vegsperringene vi finner i NVDB Vegnett Pluss.<br>
-Europa-, riks- og fylkesvegnettet ajourføres kontinuerlig i NVDB med basis i Statens vegvesens plan- og ferdigvegsdata. Ajourføring av kommunale, private og skogsveger organiseres gjennom Norge digitalt og FDV-avtalene med kommuner, administrert av Kartverket.</p>
+<p>NVDB Vegnett Pluss er et produkt som eksporteres fra Nasjonal vegdatabank (NVDB). Grunnlagsdataene ajourholdes av Statens vegvesen og Kartverket. Les mer om denne på:  <a href="https://www.vegvesen.no/fag/teknologi/nasjonal-vegdatabank/">Nasjonal vegdatabank (NVDB) | Statens vegvesen</a><br></p>
+</div>
+<div class="paragraph">
+<p>I tillegg til NVDB Vegnett Pluss finnes det også et forenklet datasett, NVDB Vegnett. Dette datasettet består av de samme veglenkene og vegsperringene vi finner i NVDB Vegnett Pluss.<br></p>
+</div>
+<div class="paragraph">
+<p>Europa-, riks- og fylkesvegnettet ajourføres kontinuerlig i NVDB med basis i Statens vegvesens plan- og ferdigvegsdata. Ajourføring av kommunale, private og skogsveger organiseres gjennom Norge digitalt og FDV-avtalene med kommuner, administrert av Kartverket.</p>
 </div>
 <div class="paragraph">
 <p>Denne produktspesifikasjonen er utarbeidet iht. SOSI produktspesifikasjoner – Krav og godkjenning 5.0 <a href="#SOSI-KRAV">[SOSI-KRAV]</a>. UML-modellen som ligger til grunn for innhold i diagrammene og dokumentasjon i kap. 5, følger reglene i SOSI Regler for UML-modellering, versjon 5.1 <a href="#SOSI-UML">[SOSI-UML]</a>. <a href="http://sosi.geonorge.no/veiledere/UML">Denne veilederen</a> gir hjelp til å lese UML-diagrammene.</p>
@@ -992,7 +926,7 @@ Ulike brukere kan ha ulike behov for detaljeringsgrad på vegnettet. Det er derf
 </div>
 <div class="paragraph">
 <p><strong>Restriksjoner</strong>
-Datasettet inneholder punkter og strekninger som fungerer som restriksjoner i vegnettet. Jernbanekryss, svingerestriksjon og vegsperring er restriksjonene som kommer ut som punktobjekter i datasettet. Fartsgrense, høydebegrensning, trafikkreguleringer, gågatereguleringer, tillatt kjøreretning, gjennomkjøring forbudt og værutsatt veg er restriksjonene som kommer ut som strekningsobjekter i datasettet.</p>
+Datasettet inneholder punkter og strekninger som fungerer som restriksjoner i vegnettet. Jernbanekryss og vegsperring er restriksjonene som kommer ut som punktobjekter i datasettet. Fartsgrense, høydebegrensning, trafikkreguleringer, gågatereguleringer, tillatt kjøreretning, svingerestriksjon, gjennomkjøring forbudt og værutsatt veg er restriksjonene som kommer ut som strekningsobjekter i datasettet.</p>
 </div>
 <div class="paragraph">
 <p><strong>Feltoversikt</strong>
@@ -1073,7 +1007,7 @@ SOSI: ..FELTOVERSIKT 1#2#3K#4K</p>
 <div class="sect3">
 <h4 id="_fullstendig_navn">3.1.1. Fullstendig navn</h4>
 <div class="paragraph">
-<p>NVDB Vegnett Plus</p>
+<p>NVDB Vegnett Pluss</p>
 </div>
 </div>
 <div class="sect3">
@@ -1116,7 +1050,7 @@ SOSI: ..FELTOVERSIKT 1#2#3K#4K</p>
 <div class="sect2">
 <h3 id="_sammendrag">3.7. Sammendrag</h3>
 <div class="paragraph">
-<p>NVDB Vegnett Pluss er et vegnettsdatasett som omfatter alle kjørbare veger og vegnett for gående og syklende, i den grad dette er registrert, representert som veglenkegeometri. I tillegg inneholder datasettet adresseinformasjon (som gir mulighet for kobling til matrikkelen og andre registre), fartsgrenser, trafikkreguleringer, trafikkrestriksjoner og vegklasser, alle representert som egengeometri med lineære referanser.</p>
+<p>NVDB Vegnett Pluss er et vegnettsdatasett som omfatter alle kjørbare veger og vegnett for gående og syklende, i den grad dette er registrert, representert som veglenkegeometri. I tillegg inneholder datasettet adresseinformasjon (som gir mulighet for kobling til matrikkelen og andre registre), fartsgrenser, trafikkreguleringer, trafikkrestriksjoner og vegklasser, alle representert som egengeometri.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1246,16 +1180,14 @@ Ikke angitt</p>
 <p><a href="#HeleDatasettet">Hele datasettet</a></p>
 </div>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_applicationschema_nvdb_vegnett_pluss_1_0_utkast">6. «ApplicationSchema» NVDB Vegnett Pluss 1.0 - Utkast</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_applicationschema_nvdb_vegnett_pluss_1_0_utkast">5.2. «ApplicationSchema» NVDB Vegnett Pluss 1.0 - Utkast</h3>
 <div class="paragraph">
-<p><strong>Definisjon:</strong> NVDB Vegnett Pluss inneholder informasjon om alle europa-, riks-, fylkes-, kommunale og skogsbilveger, samt alle private veger unntatt korte, private blindveger. Korte veger er veger med lengde mindre enn 50 m. Veger med unike adresser er med uansett lengde. Bilferjestrekninger skal være representert og gang- og sykkelveger kan være med. Vegnettet er strukturert som et nettverk av veglenker med restriksjoner i form av lineære referanser.
+<p><strong>Definisjon:</strong> NVDB Vegnett Pluss inneholder informasjon om alle europa-, riks-, fylkes-, kommunale og skogsbilveger, samt alle private veger unntatt korte, private blindveger. Korte veger er veger med lengde mindre enn 50 m. Veger med unike adresser er med uansett lengde. Bilferjestrekninger og vegnett for gående og syklende kan også være med.
+Vegnettet er strukturert som et nettverk av veglenker med restriksjoner i form av lineære referanser. I produktet NVDB Vegnett Pluss utveksles objektene som er knyttet til vegnettet med egengeometri hentet fra vegnettet objektet er referert til.
 Vegnettet ajourføres i Nasjonal Vegdatabank, NVDB.</p>
 </div>
-<h3 id="_profilparametre_i_tagged_values" class="discrete">Profilparametre i tagged values</h3>
+<h4 id="_profilparametre_i_tagged_values" class="discrete">Profilparametre i tagged values</h4>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -1264,7 +1196,7 @@ Vegnettet ajourføres i Nasjonal Vegdatabank, NVDB.</p>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">definition</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">"Data model for NVDB Vegnett Plus"@en</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"Data model for NVDB Vegnett Pluss"@en</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">designation</p></td>
@@ -1316,7 +1248,7 @@ Vegnettet ajourføres i Nasjonal Vegdatabank, NVDB.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="_avhengigheter" class="discrete">Avhengigheter</h3>
+<h4 id="_avhengigheter" class="discrete">Avhengigheter</h4>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -1400,19 +1332,19 @@ SOSI Generell objektkatalog::Vegnett::<span class="underline">«applicationSchem
 <div class="title">Figur 9. Realisering av kodelister</div>
 </div>
 <div style="page-break-after: always;"></div>
-<div class="sect2">
-<h3 id="_pakke_veglenke">6.1. Pakke: Veglenke</h3>
+<div class="sect3">
+<h4 id="_pakke_veglenke">5.2.1. Pakke: Veglenke</h4>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Pakke med objekttypen som representerer lenker i vegnettet</p>
 </div>
 <hr>
-<div class="sect3">
-<h4 id="appveglenke">6.1.1. «featureType» Veglenke</h4>
+<div class="sect4">
+<h5 id="appveglenke">5.2.1.1. «featureType» Veglenke</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Objekttype som representerer lenker i vegnettet
 Eksempel: NVDB Referanselenkedeler, NVDB Transportlenker</p>
 </div>
-<h5 id="_egenskaper" class="discrete">Egenskaper</h5>
+<h6 id="_egenskaper" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -1434,10 +1366,6 @@ Eksempel: NVDB Referanselenkedeler, NVDB Transportlenker</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#apptypeveg">«codeList» TypeVeg</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/typeveg" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/typeveg</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodeSpace</p></td>
@@ -1466,10 +1394,6 @@ Eksempel: NVDB Referanselenkedeler, NVDB Transportlenker</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#appvegdetaljnivå">«codeList» Vegdetaljnivå</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/vegdetaljniv%C3%A5" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/vegdetaljniv%C3%A5</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodeSpace</p></td>
@@ -1539,7 +1463,7 @@ Merknad: Komplett vegadresse består i tillegg av husnummer og bokstav</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">sammensatt identifikator for vegreferanse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sammensatt identifikator for vegsystemreferanse</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
@@ -1627,7 +1551,28 @@ Merknad: Komplett vegadresse består i tillegg av husnummer og bokstav</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_arv_og_realiseringer" class="discrete">Arv og realiseringer</h5>
+<h6 id="_restriksjoner" class="discrete">Restriksjoner</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>DetaljnivåKjørebaneKjørefelt</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Beskrivelse:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For veglenker i produktet NVDB Vegnett Pluss skal kun detaljnivå Kjørebane og Kjørefelt benyttes. Detaljnivå Trase skal ikke benyttes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invariant</p></td>
+</tr>
+</tbody>
+</table>
+<h6 id="_arv_og_realiseringer" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -1647,18 +1592,18 @@ Merknad: Komplett vegadresse består i tillegg av husnummer og bokstav</p></td>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_pakke_nvdb_objekttyper">6.2. Pakke: NVDB objekttyper</h3>
+<div class="sect3">
+<h4 id="_pakke_nvdb_objekttyper">5.2.2. Pakke: NVDB objekttyper</h4>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Pakke med objekter hentet ut fra NVDB objektkatalogen</p>
 </div>
 <hr>
-<div class="sect3">
-<h4 id="appberedskapsveg">6.2.1. «featureType» Beredskapsveg</h4>
+<div class="sect4">
+<h5 id="appberedskapsveg">5.2.2.1. «featureType» Beredskapsveg</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Vegstrekning som ikke er åpen for allmenn trafikk. Åpnes for å lede trafikk til en annen veg når hovedvegen stenges.</p>
 </div>
-<h5 id="_profilparametre_i_tagged_values_2" class="discrete">Profilparametre i tagged values</h5>
+<h6 id="_profilparametre_i_tagged_values_2" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -1671,7 +1616,7 @@ Merknad: Komplett vegadresse består i tillegg av husnummer og bokstav</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_egenskaper_2" class="discrete">Egenskaper</h5>
+<h6 id="_egenskaper_2" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -1728,7 +1673,7 @@ Merknad: Komplett vegadresse består i tillegg av husnummer og bokstav</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_arv_og_realiseringer_2" class="discrete">Arv og realiseringer</h5>
+<h6 id="_arv_og_realiseringer_2" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -1747,12 +1692,12 @@ Merknad: Komplett vegadresse består i tillegg av husnummer og bokstav</p></td>
 </table>
 <hr>
 </div>
-<div class="sect3">
-<h4 id="appfartsgrense">6.2.2. «featureType» Fartsgrense</h4>
+<div class="sect4">
+<h5 id="appfartsgrense">5.2.2.2. «featureType» Fartsgrense</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Høyeste tillatte hastighet på en vegstrekning.</p>
 </div>
-<h5 id="_profilparametre_i_tagged_values_3" class="discrete">Profilparametre i tagged values</h5>
+<h6 id="_profilparametre_i_tagged_values_3" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -1765,7 +1710,7 @@ Merknad: Komplett vegadresse består i tillegg av husnummer og bokstav</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_egenskaper_3" class="discrete">Egenskaper</h5>
+<h6 id="_egenskaper_3" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -1907,7 +1852,7 @@ Enhet: Kilometer/time</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_arv_og_realiseringer_3" class="discrete">Arv og realiseringer</h5>
+<h6 id="_arv_og_realiseringer_3" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -1926,12 +1871,12 @@ Enhet: Kilometer/time</p></td>
 </table>
 <hr>
 </div>
-<div class="sect3">
-<h4 id="appfartsgrensevariabel">6.2.3. «featureType» FartsgrenseVariabel</h4>
+<div class="sect4">
+<h5 id="appfartsgrensevariabel">5.2.2.3. «featureType» FartsgrenseVariabel</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Høyeste tillatte hastighet på en vegstrekning innenfor et avgrenset tidsrom.</p>
 </div>
-<h5 id="_profilparametre_i_tagged_values_4" class="discrete">Profilparametre i tagged values</h5>
+<h6 id="_profilparametre_i_tagged_values_4" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -1944,7 +1889,7 @@ Enhet: Kilometer/time</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_egenskaper_4" class="discrete">Egenskaper</h5>
+<h6 id="_egenskaper_4" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -2318,7 +2263,7 @@ Enhet: Kilometer/time</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_arv_og_realiseringer_4" class="discrete">Arv og realiseringer</h5>
+<h6 id="_arv_og_realiseringer_4" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -2337,12 +2282,12 @@ Enhet: Kilometer/time</p></td>
 </table>
 <hr>
 </div>
-<div class="sect3">
-<h4 id="appferjesamband">6.2.4. «featureType» Ferjesamband</h4>
+<div class="sect4">
+<h5 id="appferjesamband">5.2.2.4. «featureType» Ferjesamband</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Overfart som trafikkeres av bilferje. Kan ha to eller flere anløpssteder.</p>
 </div>
-<h5 id="_profilparametre_i_tagged_values_5" class="discrete">Profilparametre i tagged values</h5>
+<h6 id="_profilparametre_i_tagged_values_5" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -2355,7 +2300,7 @@ Enhet: Kilometer/time</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_egenskaper_5" class="discrete">Egenskaper</h5>
+<h6 id="_egenskaper_5" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -2463,10 +2408,6 @@ Enhet: Kilometer/time</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#appsambandstype">«codeList» Sambandstype</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/sambandstype" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/sambandstype</a></p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodeSpace</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/sambandstype" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/sambandstype</a></p></td>
 </tr>
@@ -2497,10 +2438,6 @@ Enhet: Kilometer/time</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#appdriftsstatusferjesamband">«codeList» DriftsstatusFerjesamband</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/driftsstatus" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/driftsstatus</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodeSpace</p></td>
@@ -2620,7 +2557,7 @@ Enhet: Kilometer/time</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_arv_og_realiseringer_5" class="discrete">Arv og realiseringer</h5>
+<h6 id="_arv_og_realiseringer_5" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -2639,12 +2576,12 @@ Enhet: Kilometer/time</p></td>
 </table>
 <hr>
 </div>
-<div class="sect3">
-<h4 id="appfunksjonellvegklasse">6.2.5. «featureType» FunksjonellVegklasse</h4>
+<div class="sect4">
+<h5 id="appfunksjonellvegklasse">5.2.2.5. «featureType» FunksjonellVegklasse</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> En klassifisering basert på hvor viktig en veg er for det totale vegnettets forbindelsesmuligheter. Brukes blant annet for vekting i ruteplanlegging</p>
 </div>
-<h5 id="_profilparametre_i_tagged_values_6" class="discrete">Profilparametre i tagged values</h5>
+<h6 id="_profilparametre_i_tagged_values_6" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -2657,7 +2594,7 @@ Enhet: Kilometer/time</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_egenskaper_6" class="discrete">Egenskaper</h5>
+<h6 id="_egenskaper_6" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -2742,7 +2679,7 @@ Enhet: Kilometer/time</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_arv_og_realiseringer_6" class="discrete">Arv og realiseringer</h5>
+<h6 id="_arv_og_realiseringer_6" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -2761,13 +2698,13 @@ Enhet: Kilometer/time</p></td>
 </table>
 <hr>
 </div>
-<div class="sect3">
-<h4 id="appgjennomkjøringforbudt">6.2.6. «featureType» GjennomkjøringForbudt</h4>
+<div class="sect4">
+<h5 id="appgjennomkjøringforbudt">5.2.2.6. «featureType» GjennomkjøringForbudt</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir start av strekning eller et område med gjennomkjøring forbudt. Hvor det er forbudt å kjøre til angis med et assosiert GjennomkjøringForbudtTil-objekt.
 Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhørende GjennomkjøringForbudtTil-punkt uten planlagt stopp mellom dem.</p>
 </div>
-<h5 id="_profilparametre_i_tagged_values_7" class="discrete">Profilparametre i tagged values</h5>
+<h6 id="_profilparametre_i_tagged_values_7" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -2780,31 +2717,7 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
 </tr>
 </tbody>
 </table>
-<h5 id="_egenskaper_7" class="discrete">Egenskaper</h5>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>posisjon</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Angivelse av objektetsposisjon. Plasseres ved start av gjennomkjøring forbudt (ved gjennomkjøring forbudt skilt)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/GM_Point">GM_Point</a></p></td>
-</tr>
-</tbody>
-</table>
+<h6 id="_egenskaper_7" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -2865,7 +2778,207 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
 </tr>
 </tbody>
 </table>
-<h5 id="_roller" class="discrete">Roller</h5>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>retning</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Angir hvilken retning gjennomkjøring forbudt gjelder.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#appretning">«CodeList» Retning</a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>gjelderUkedag</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gjennomkjøring forbudt gjelder kun angitt ukedag.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#appgjelderukedag">«CodeList» GjelderUkedag</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodeSpace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/gjelderukedag" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/gjelderukedag</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12649</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>unntakForBuss</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdi settes til True/Ja  dersom gjennomkjøring forbudt ikke gjelder buss</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/Boolean">Boolean</a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>unntakForTaxi</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdi settes til True/Ja  dersom gjennomkjøring forbudt ikke gjelder taxi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/Boolean">Boolean</a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>unntakForMoped</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdi settes til True/Ja  dersom gjennomkjøring forbudt ikke gjelder moped</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/Boolean">Boolean</a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>unntakForMotorsykkel</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdi settes til True/Ja  dersom gjennomkjøring forbudt ikke gjelder motorsykkel</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/Boolean">Boolean</a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>unntakForTraktor</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdi settes til True/Ja  dersom gjennomkjøring forbudt ikke gjelder traktor</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/Boolean">Boolean</a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>posisjon</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Angivelse av objektetsposisjon. Plasseres ved start av gjennomkjøring forbudt (ved gjennomkjøring forbudt skilt)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/GM_Point">GM_Point</a></p></td>
+</tr>
+</tbody>
+</table>
+<h6 id="_roller" class="discrete">Roller</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -2878,7 +2991,7 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>ADVARSEL: DEFINISJON MANGLER</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">referanse til posisjon som det er ulovlig å kjøre til</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
@@ -2898,7 +3011,7 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
 </tr>
 </tbody>
 </table>
-<h5 id="_arv_og_realiseringer_7" class="discrete">Arv og realiseringer</h5>
+<h6 id="_arv_og_realiseringer_7" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -2913,12 +3026,15 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
 </table>
 <hr>
 </div>
-<div class="sect3">
-<h4 id="appgjennomkjøringforbudttil">6.2.7. «featureType» GjennomkjøringForbudtTil</h4>
+<div class="sect4">
+<h5 id="appgjennomkjøringforbudttil">5.2.2.7. «featureType» GjennomkjøringForbudtTil</h5>
 <div class="paragraph">
-<p><strong>Definisjon:</strong> Punkter som omslutter en strekning eller et område med gjennomkjøring forbudt. Kjørende kan ikke passere to punkter uten planlagt stopp mellom dem.</p>
+<p><strong>Definisjon:</strong> Angir slutten på en strekning eller et område med gjennomkjøring forbudt.</p>
 </div>
-<h5 id="_profilparametre_i_tagged_values_8" class="discrete">Profilparametre i tagged values</h5>
+<div class="paragraph">
+<p>Kjørende kan ikke passere et GjennomkjøringForbudt-objekt og et tilhørende GjennomkjøringForbudtTil-objekt uten planlagt stopp mellom dem.</p>
+</div>
+<h6 id="_profilparametre_i_tagged_values_8" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -2931,7 +3047,7 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
 </tr>
 </tbody>
 </table>
-<h5 id="_egenskaper_8" class="discrete">Egenskaper</h5>
+<h6 id="_egenskaper_8" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -2984,7 +3100,7 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
 </tr>
 </tbody>
 </table>
-<h5 id="_arv_og_realiseringer_8" class="discrete">Arv og realiseringer</h5>
+<h6 id="_arv_og_realiseringer_8" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -2999,12 +3115,12 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
 </table>
 <hr>
 </div>
-<div class="sect3">
-<h4 id="appgågatereguleringer">6.2.8. «featureType» Gågatereguleringer</h4>
+<div class="sect4">
+<h5 id="appgågatereguleringer">5.2.2.8. «featureType» Gågatereguleringer</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Gate uten fortau reservert for gående hvor trafikkreglene for gågate gjelder.</p>
 </div>
-<h5 id="_profilparametre_i_tagged_values_9" class="discrete">Profilparametre i tagged values</h5>
+<h6 id="_profilparametre_i_tagged_values_9" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -3017,7 +3133,7 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
 </tr>
 </tbody>
 </table>
-<h5 id="_egenskaper_9" class="discrete">Egenskaper</h5>
+<h6 id="_egenskaper_9" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -3250,30 +3366,6 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>kjøringTilEiendommeneTillatt</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">angir om det er lov med kjøring til eiendommene</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/Boolean">Boolean</a></p></td>
-</tr>
-</tbody>
-</table>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>senterlinje</strong></p></td>
 </tr>
 <tr>
@@ -3290,7 +3382,7 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
 </tr>
 </tbody>
 </table>
-<h5 id="_restriksjoner" class="discrete">Restriksjoner</h5>
+<h6 id="_restriksjoner_2" class="discrete">Restriksjoner</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -3315,7 +3407,7 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
 </tr>
 </tbody>
 </table>
-<h5 id="_arv_og_realiseringer_9" class="discrete">Arv og realiseringer</h5>
+<h6 id="_arv_og_realiseringer_9" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -3334,12 +3426,12 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
 </table>
 <hr>
 </div>
-<div class="sect3">
-<h4 id="apphøydebegrensning">6.2.9. «featureType» Høydebegrensning</h4>
+<div class="sect4">
+<h5 id="apphøydebegrensning">5.2.2.9. «featureType» Høydebegrensning</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Strekning i vegnettet hvor kjøretøy kan komme i konflikt med overliggende hinder</p>
 </div>
-<h5 id="_profilparametre_i_tagged_values_10" class="discrete">Profilparametre i tagged values</h5>
+<h6 id="_profilparametre_i_tagged_values_10" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -3352,7 +3444,7 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
 </tr>
 </tbody>
 </table>
-<h5 id="_egenskaper_10" class="discrete">Egenskaper</h5>
+<h6 id="_egenskaper_10" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -3731,7 +3823,7 @@ Enhet: Meter</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_arv_og_realiseringer_10" class="discrete">Arv og realiseringer</h5>
+<h6 id="_arv_og_realiseringer_10" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -3750,12 +3842,12 @@ Enhet: Meter</p></td>
 </table>
 <hr>
 </div>
-<div class="sect3">
-<h4 id="appjernbanekryssing">6.2.10. «featureType» Jernbanekryssing</h4>
+<div class="sect4">
+<h5 id="appjernbanekryssing">5.2.2.10. «featureType» Jernbanekryssing</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Sted i vegnettet hvor veg og jernbane krysses</p>
 </div>
-<h5 id="_profilparametre_i_tagged_values_11" class="discrete">Profilparametre i tagged values</h5>
+<h6 id="_profilparametre_i_tagged_values_11" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -3768,7 +3860,7 @@ Enhet: Meter</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_egenskaper_11" class="discrete">Egenskaper</h5>
+<h6 id="_egenskaper_11" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -3853,7 +3945,7 @@ Enhet: Meter</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_arv_og_realiseringer_11" class="discrete">Arv og realiseringer</h5>
+<h6 id="_arv_og_realiseringer_11" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -3872,12 +3964,12 @@ Enhet: Meter</p></td>
 </table>
 <hr>
 </div>
-<div class="sect3">
-<h4 id="applandbruksvegklasse">6.2.11. «featureType» Landbruksvegklasse</h4>
+<div class="sect4">
+<h5 id="applandbruksvegklasse">5.2.2.11. «featureType» Landbruksvegklasse</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Landbruksmyndighetene sin inndeling av landbruksveger, ut i fra støtteordninger</p>
 </div>
-<h5 id="_profilparametre_i_tagged_values_12" class="discrete">Profilparametre i tagged values</h5>
+<h6 id="_profilparametre_i_tagged_values_12" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -3890,7 +3982,7 @@ Enhet: Meter</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_egenskaper_12" class="discrete">Egenskaper</h5>
+<h6 id="_egenskaper_12" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -3943,7 +4035,7 @@ Enhet: Meter</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_arv_og_realiseringer_12" class="discrete">Arv og realiseringer</h5>
+<h6 id="_arv_og_realiseringer_12" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -3962,12 +4054,12 @@ Enhet: Meter</p></td>
 </table>
 <hr>
 </div>
-<div class="sect3">
-<h4 id="appmotorveg">6.2.12. «featureType» Motorveg</h4>
+<div class="sect4">
+<h5 id="appmotorveg">5.2.2.12. «featureType» Motorveg</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Strekninger som har vedtatt status motorveg.</p>
 </div>
-<h5 id="_profilparametre_i_tagged_values_13" class="discrete">Profilparametre i tagged values</h5>
+<h6 id="_profilparametre_i_tagged_values_13" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -3980,7 +4072,7 @@ Enhet: Meter</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_egenskaper_13" class="discrete">Egenskaper</h5>
+<h6 id="_egenskaper_13" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -4093,7 +4185,7 @@ Enhet: Meter</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_arv_og_realiseringer_13" class="discrete">Arv og realiseringer</h5>
+<h6 id="_arv_og_realiseringer_13" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -4112,12 +4204,12 @@ Enhet: Meter</p></td>
 </table>
 <hr>
 </div>
-<div class="sect3">
-<h4 id="appserviceveg">6.2.13. «featureType» Serviceveg</h4>
+<div class="sect4">
+<h5 id="appserviceveg">5.2.2.13. «featureType» Serviceveg</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Vegstrekning som ikke er åpen for allmenn trafikk, men som benyttes for å komme til tekniske anlegg el.l.</p>
 </div>
-<h5 id="_profilparametre_i_tagged_values_14" class="discrete">Profilparametre i tagged values</h5>
+<h6 id="_profilparametre_i_tagged_values_14" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -4130,7 +4222,7 @@ Enhet: Meter</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_egenskaper_14" class="discrete">Egenskaper</h5>
+<h6 id="_egenskaper_14" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -4155,7 +4247,7 @@ Enhet: Meter</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_arv_og_realiseringer_14" class="discrete">Arv og realiseringer</h5>
+<h6 id="_arv_og_realiseringer_14" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -4174,12 +4266,12 @@ Enhet: Meter</p></td>
 </table>
 <hr>
 </div>
-<div class="sect3">
-<h4 id="appsvingerestriksjon">6.2.14. «featureType» Svingerestriksjon</h4>
+<div class="sect4">
+<h5 id="appsvingerestriksjon">5.2.2.14. «featureType» Svingerestriksjon</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir svingerestriksjon</p>
 </div>
-<h5 id="_profilparametre_i_tagged_values_15" class="discrete">Profilparametre i tagged values</h5>
+<h6 id="_profilparametre_i_tagged_values_15" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -4192,7 +4284,7 @@ Enhet: Meter</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_egenskaper_15" class="discrete">Egenskaper</h5>
+<h6 id="_egenskaper_15" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -4245,7 +4337,7 @@ Enhet: Meter</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_arv_og_realiseringer_15" class="discrete">Arv og realiseringer</h5>
+<h6 id="_arv_og_realiseringer_15" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -4264,12 +4356,15 @@ Enhet: Meter</p></td>
 </table>
 <hr>
 </div>
-<div class="sect3">
-<h4 id="apptillattkjøreretning">6.2.15. «FeatureType» TillattKjøreretning</h4>
+<div class="sect4">
+<h5 id="apptillattkjøreretning">5.2.2.15. «FeatureType» TillattKjøreretning</h5>
 <div class="paragraph">
-<p><strong>Definisjon:</strong> Erstatter VT 606 "Innkjøring forbudt", men objektene stedfestes i motsatt retning.</p>
+<p><strong>Definisjon:</strong> Geometriretningen angir tillatt kjøreretning.</p>
 </div>
-<h5 id="_profilparametre_i_tagged_values_16" class="discrete">Profilparametre i tagged values</h5>
+<div class="paragraph">
+<p>Erstatter VT 606 "Innkjøring forbudt", men objektene stedfestes i motsatt retning.</p>
+</div>
+<h6 id="_profilparametre_i_tagged_values_16" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -4282,7 +4377,7 @@ Enhet: Meter</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_egenskaper_16" class="discrete">Egenskaper</h5>
+<h6 id="_egenskaper_16" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -4319,34 +4414,6 @@ Enhet: Meter</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>merknad</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Informasjon som ikke framkommer av øvrige egenskaper.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/CharacterString">CharacterString</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">12601</p></td>
-</tr>
-</tbody>
-</table>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>senterlinje</strong></p></td>
 </tr>
 <tr>
@@ -4363,7 +4430,7 @@ Enhet: Meter</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_arv_og_realiseringer_16" class="discrete">Arv og realiseringer</h5>
+<h6 id="_arv_og_realiseringer_16" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -4382,12 +4449,12 @@ Enhet: Meter</p></td>
 </table>
 <hr>
 </div>
-<div class="sect3">
-<h4 id="apptrafikkreguleringer">6.2.16. «featureType» Trafikkreguleringer</h4>
+<div class="sect4">
+<h5 id="apptrafikkreguleringer">5.2.2.16. «featureType» Trafikkreguleringer</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Strekning hvor det er restriksjoner for motortrafikk eller gående og syklende.</p>
 </div>
-<h5 id="_profilparametre_i_tagged_values_17" class="discrete">Profilparametre i tagged values</h5>
+<h6 id="_profilparametre_i_tagged_values_17" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -4400,7 +4467,7 @@ Enhet: Meter</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_egenskaper_17" class="discrete">Egenskaper</h5>
+<h6 id="_egenskaper_17" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -4513,7 +4580,7 @@ Enhet: Meter</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_arv_og_realiseringer_17" class="discrete">Arv og realiseringer</h5>
+<h6 id="_arv_og_realiseringer_17" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -4532,12 +4599,12 @@ Enhet: Meter</p></td>
 </table>
 <hr>
 </div>
-<div class="sect3">
-<h4 id="appvegsperring">6.2.17. «featureType» Vegsperring</h4>
+<div class="sect4">
+<h5 id="appvegsperring">5.2.2.17. «featureType» Vegsperring</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir at veg er fysisk sperret.</p>
 </div>
-<h5 id="_profilparametre_i_tagged_values_18" class="discrete">Profilparametre i tagged values</h5>
+<h6 id="_profilparametre_i_tagged_values_18" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -4550,7 +4617,7 @@ Enhet: Meter</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_egenskaper_18" class="discrete">Egenskaper</h5>
+<h6 id="_egenskaper_18" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -4727,7 +4794,7 @@ Enhet: Meter</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_arv_og_realiseringer_18" class="discrete">Arv og realiseringer</h5>
+<h6 id="_arv_og_realiseringer_18" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -4746,12 +4813,12 @@ Enhet: Meter</p></td>
 </table>
 <hr>
 </div>
-<div class="sect3">
-<h4 id="appværutsattveg">6.2.18. «featureType» VærutsattVeg</h4>
+<div class="sect4">
+<h5 id="appværutsattveg">5.2.2.18. «featureType» VærutsattVeg</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Vegstrekning som er spesielt utsatt for uvær, og av den grunn kan ha begrenset åpningstid. Strekning defineres fra stengningspunkt til stengningspunkt (gjerne fastmonterte vegbommer). Kortere lokale strekninger med konkrete problemstillinger registreres som Naturfare (VT 957).</p>
 </div>
-<h5 id="_profilparametre_i_tagged_values_19" class="discrete">Profilparametre i tagged values</h5>
+<h6 id="_profilparametre_i_tagged_values_19" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -4764,7 +4831,7 @@ Enhet: Meter</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_egenskaper_19" class="discrete">Egenskaper</h5>
+<h6 id="_egenskaper_19" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -4956,10 +5023,6 @@ Enhet: Meter</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#appansvarligvts">«CodeList» AnsvarligVTS</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/ansvarligvts" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/ansvarligvts</a></p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodeSpace</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/ansvarligvts" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/ansvarligvts</a></p></td>
 </tr>
@@ -5005,7 +5068,7 @@ Enhet: Meter</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>høyfjellsstrekning</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>ekstraVintervedlikehold</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
@@ -5017,11 +5080,11 @@ Enhet: Meter</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#apphøyfjellsstrekning">«codeList» Høyfjellsstrekning</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#appekstravintervedlikehold">«codeList» EkstraVintervedlikehold</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodeSpace</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/h%C3%B8yfjellsstrekning" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/h%C3%B8yfjellsstrekning</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/ekstra-vintervedlikehold" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/ekstra-vintervedlikehold</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
@@ -5305,7 +5368,7 @@ Enhet: Meter</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_arv_og_realiseringer_19" class="discrete">Arv og realiseringer</h5>
+<h6 id="_arv_og_realiseringer_19" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5325,18 +5388,18 @@ Enhet: Meter</p></td>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_pakke_fellesegenskaper">6.3. Pakke: Fellesegenskaper</h3>
+<div class="sect3">
+<h4 id="_pakke_fellesegenskaper">5.2.3. Pakke: Fellesegenskaper</h4>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Pakke med abstrakte objekter som inneholder fellesegenskaper som arves ut i objektene</p>
 </div>
 <hr>
-<div class="sect3">
-<h4 id="appsosi_fellesegenskaper">6.3.1. <em>«FeatureType» SOSI_Fellesegenskaper (abstrakt)</em></h4>
+<div class="sect4">
+<h5 id="appsosi_fellesegenskaper">5.2.3.1. <em>«FeatureType» SOSI_Fellesegenskaper (abstrakt)</em></h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> abstrakt objekttype som bærer sentrale egenskaper som er anbefalt for bruk i produktspesifikasjoner.</p>
 </div>
-<h5 id="_egenskaper_20" class="discrete">Egenskaper</h5>
+<h6 id="_egenskaper_20" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5391,7 +5454,7 @@ Oppdateringsdato kan være forskjellig fra Datafangsdato ved at data som er regi
 </tr>
 </tbody>
 </table>
-<h5 id="_arv_og_realiseringer_20" class="discrete">Arv og realiseringer</h5>
+<h6 id="_arv_og_realiseringer_20" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5428,8 +5491,8 @@ Oppdateringsdato kan være forskjellig fra Datafangsdato ved at data som er regi
 </table>
 <hr>
 </div>
-<div class="sect3">
-<h4 id="appsosi_objekt5.0_veglenke">6.3.2. <em>«FeatureType» SOSI_Objekt5.0_veglenke (abstrakt)</em></h4>
+<div class="sect4">
+<h5 id="appsosi_objekt5.0_veglenke">5.2.3.2. <em>«FeatureType» SOSI_Objekt5.0_veglenke (abstrakt)</em></h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> abstrakt objekttype som bærer en rekke egenskaper som er fagområde-uavhengige og kan benyttes for alle objekttyper</p>
 </div>
@@ -5437,7 +5500,7 @@ Oppdateringsdato kan være forskjellig fra Datafangsdato ved at data som er regi
 <p>Merknad:
 Spesielt i produktspesifikasjonsarbeid vil en velge egenskaper og av grensningslinjer fra denne klassen.</p>
 </div>
-<h5 id="_egenskaper_21" class="discrete">Egenskaper</h5>
+<h6 id="_egenskaper_21" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5568,7 +5631,7 @@ På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_arv_og_realiseringer_21" class="discrete">Arv og realiseringer</h5>
+<h6 id="_arv_og_realiseringer_21" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5592,25 +5655,25 @@ På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</p></td>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_pakke_datatyper_og_kodelister">6.4. Pakke: Datatyper og kodelister</h3>
+<div class="sect3">
+<h4 id="_pakke_datatyper_og_kodelister">5.2.4. Pakke: Datatyper og kodelister</h4>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Pakke med alle datatyper og kodelister som brukes i datasettet</p>
 </div>
 <div style="page-break-after: always;"></div>
-<div class="sect3">
-<h4 id="_pakke_datatyper_og_kodelisterveglenke">6.4.1. Pakke: Datatyper og kodelister::Veglenke</h4>
+<div class="sect4">
+<h5 id="_pakke_datatyper_og_kodelisterveglenke">5.2.4.1. Pakke: Datatyper og kodelister::Veglenke</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Pakke med datatyper og kodelister som hører til vegklenke-objektet</p>
 </div>
 <hr>
-<div class="sect4">
-<h5 id="appveglenkeadresse">6.4.1.1. «dataType» Veglenkeadresse</h5>
+<div class="sect5">
+<h6 id="appveglenkeadresse">«dataType» Veglenkeadresse</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> sammensatt identifikator for veglenkeadresse.
 Merknad: Komplett vegadresse består i tillegg av husnummer og bokstav .</p>
 </div>
-<h6 id="_egenskaper_22" class="discrete">Egenskaper</h6>
+<h7 id="_egenskaper_22" class="discrete">Egenskaper</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5685,7 +5748,7 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_22" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_22" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5700,12 +5763,12 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appkryssystem">6.4.1.2. «dataType» Kryssystem</h5>
+<div class="sect5">
+<h6 id="appkryssystem">«dataType» Kryssystem</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> angir hvilke deler av et kryss som forvaltningsmessig sett hører sammen</p>
 </div>
-<h6 id="_egenskaper_23" class="discrete">Egenskaper</h6>
+<h7 id="_egenskaper_23" class="discrete">Egenskaper</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5778,7 +5841,7 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_23" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_23" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5793,12 +5856,12 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appsideanlegg">6.4.1.3. «dataType» Sideanlegg</h5>
+<div class="sect5">
+<h6 id="appsideanlegg">«dataType» Sideanlegg</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> sideanlegg som trenger egne referanselenker forvaltningsmessig sett fordi disse ikke er en del av vegen for øvrig</p>
 </div>
-<h6 id="_egenskaper_24" class="discrete">Egenskaper</h6>
+<h7 id="_egenskaper_24" class="discrete">Egenskaper</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5871,7 +5934,7 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_24" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_24" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5886,12 +5949,12 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appvegstrekning">6.4.1.4. «dataType» Vegstrekning</h5>
+<div class="sect5">
+<h6 id="appvegstrekning">«dataType» Vegstrekning</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> deler inn vegsystemet i praktisk håndterbare størrelser nummerert i stigende rekkefølge i vegens retning</p>
 </div>
-<h6 id="_egenskaper_25" class="discrete">Egenskaper</h6>
+<h7 id="_egenskaper_25" class="discrete">Egenskaper</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6040,7 +6103,7 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_restriksjoner_2" class="discrete">Restriksjoner</h6>
+<h7 id="_restriksjoner_3" class="discrete">Restriksjoner</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6065,7 +6128,7 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_25" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_25" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6080,12 +6143,12 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appvegsystem">6.4.1.5. «dataType» Vegsystem</h5>
+<div class="sect5">
+<h6 id="appvegsystem">«dataType» Vegsystem</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> hvilke deler av vegnettet som forvaltningsmessig hører sammen.</p>
 </div>
-<h6 id="_egenskaper_26" class="discrete">Egenskaper</h6>
+<h7 id="_egenskaper_26" class="discrete">Egenskaper</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6170,7 +6233,7 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_26" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_26" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6185,12 +6248,12 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appvegsystemreferanse">6.4.1.6. «dataType» Vegsystemreferanse</h5>
+<div class="sect5">
+<h6 id="appvegsystemreferanse">«dataType» Vegsystemreferanse</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> sammensatt identifikator for vegsystemreferanse</p>
 </div>
-<h6 id="_egenskaper_27" class="discrete">Egenskaper</h6>
+<h7 id="_egenskaper_27" class="discrete">Egenskaper</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6315,7 +6378,7 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_restriksjoner_3" class="discrete">Restriksjoner</h6>
+<h7 id="_restriksjoner_4" class="discrete">Restriksjoner</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6340,7 +6403,7 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_27" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_27" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6355,12 +6418,12 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appreferanseretning">6.4.1.7. «codeList» Referanseretning</h5>
+<div class="sect5">
+<h6 id="appreferanseretning">«codeList» Referanseretning</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Kodeliste for å angi retning i forrhold til nettverkselementets geometri.</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_20" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_20" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6377,7 +6440,7 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_28" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_28" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6392,12 +6455,12 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="apptypeveg">6.4.1.8. «codeList» TypeVeg</h5>
+<div class="sect5">
+<h6 id="apptypeveg">«codeList» TypeVeg</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Type veg (FormOfWay).</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_21" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_21" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6414,7 +6477,7 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_29" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_29" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6429,12 +6492,12 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appvegdetaljnivå">6.4.1.9. «codeList» Vegdetaljnivå</h5>
+<div class="sect5">
+<h6 id="appvegdetaljnivå">«codeList» Vegdetaljnivå</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Detaljnivå i vegnettet. Dersom verdi ikke er angitt representerer lenka både vegtrase og kjørebane.</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_22" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_22" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6451,7 +6514,7 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_30" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_30" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6466,12 +6529,12 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appvegkategori">6.4.1.10. «codeList» Vegkategori</h5>
+<div class="sect5">
+<h6 id="appvegkategori">«codeList» Vegkategori</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir vegkategori</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_23" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_23" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6484,11 +6547,7 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/vegdetaljniv%C3%A5" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/vegdetaljniv%C3%A5</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdbvegnettpluss/vegkategori" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdbvegnettpluss/vegkategori</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/vegkategori" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/vegkategori</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
@@ -6496,7 +6555,7 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_31" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_31" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6511,12 +6570,12 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appadskilteløp">6.4.1.11. «codeList» AdskilteLøp</h5>
+<div class="sect5">
+<h6 id="appadskilteløp">«codeList» AdskilteLøp</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> angir at delstrekningen har så fysisk adskilte løp eller kjørebaner at disse referansemessig må håndteres hver for seg</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_24" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_24" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6537,7 +6596,7 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_32" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_32" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6552,12 +6611,12 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appvegfase">6.4.1.12. «CodeList» Vegfase</h5>
+<div class="sect5">
+<h6 id="appvegfase">«CodeList» Vegfase</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir vegens fase i livet.</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_25" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_25" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6578,7 +6637,7 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_33" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_33" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6594,18 +6653,18 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_pakke_datatyper_og_kodelistersosi_objekt">6.4.2. Pakke: Datatyper og kodelister::SOSI_Objekt</h4>
+<div class="sect4">
+<h5 id="_pakke_datatyper_og_kodelistersosi_objekt">5.2.4.2. Pakke: Datatyper og kodelister::SOSI_Objekt</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Pakke med datatyper og kodelister som hører til SOSI-Objektet</p>
 </div>
 <hr>
-<div class="sect4">
-<h5 id="appkommunenummer">6.4.2.1. «codeList» Kommunenummer</h5>
+<div class="sect5">
+<h6 id="appkommunenummer">«codeList» Kommunenummer</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> nummerering av kommuner i henhold til Statistisk sentralbyrå sin offisielle liste samt et utvalg av utgåtte numre.</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_26" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_26" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6622,7 +6681,7 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_34" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_34" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6637,8 +6696,8 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appidentifikasjon">6.4.2.2. «dataType» Identifikasjon</h5>
+<div class="sect5">
+<h6 id="appidentifikasjon">«dataType» Identifikasjon</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Unik identifikasjon av et objekt i et datasett, forvaltet av den ansvarlige produsent/forvalter, og kan benyttes av eksterne applikasjoner som stabil referanse til objektet.</p>
 </div>
@@ -6648,7 +6707,7 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 <div class="paragraph">
 <p>Merknad 2: Denne unike identifikatoren vil ikke endres i løpet av objektets levetid, og ikke gjenbrukes i andre objekt.</p>
 </div>
-<h6 id="_egenskaper_28" class="discrete">Egenskaper</h6>
+<h7 id="_egenskaper_28" class="discrete">Egenskaper</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6724,7 +6783,7 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_35" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_35" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6739,8 +6798,8 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appposisjonskvalitet">6.4.2.3. «dataType» Posisjonskvalitet</h5>
+<div class="sect5">
+<h6 id="appposisjonskvalitet">«dataType» Posisjonskvalitet</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> beskrivelse av kvaliteten på stedfestingen.</p>
 </div>
@@ -6748,7 +6807,7 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 <p>Merknad:
 Posisjonskvalitet er ikke konform med  kvalitetsmodellen i ISO slik den er defineret i ISO19157:2013, men er en videreføring av tidligere brukte kvalitetsegenskaper i SOSI. FKB 5.0 innfører en egen variant av datatypen Posisjonskvalitet der kodeliste målemetode er byttet ut med den mer generelle kodelista Datafangstmetode.</p>
 </div>
-<h6 id="_egenskaper_29" class="discrete">Egenskaper</h6>
+<h7 id="_egenskaper_29" class="discrete">Egenskaper</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6891,7 +6950,7 @@ Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for 
 </tr>
 </tbody>
 </table>
-<h6 id="_restriksjoner_4" class="discrete">Restriksjoner</h6>
+<h7 id="_restriksjoner_5" class="discrete">Restriksjoner</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6917,7 +6976,7 @@ Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for 
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_36" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_36" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6934,12 +6993,12 @@ Generelle typer 5.1::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appsynbarhet">6.4.2.4. «CodeList» Synbarhet</h5>
+<div class="sect5">
+<h6 id="appsynbarhet">«CodeList» Synbarhet</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> synbarhet beskriver hvor godt objektene framgår i datagrunnlaget for posisjonering (f.eks. flybildene).</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_27" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_27" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6956,7 +7015,7 @@ Generelle typer 5.1::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_37" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_37" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6972,15 +7031,15 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appdatafangstmetode">6.4.2.5. «CodeList» Datafangstmetode</h5>
+<div class="sect5">
+<h6 id="appdatafangstmetode">«CodeList» Datafangstmetode</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> metode for datafangst.</p>
 </div>
 <div class="paragraph">
 <p>Datafangstmetoden beskriver hvordan selve vektordataene er posisjonert fra et datagrunnlag (observasjoner med landmålingsutstyr, fotogrammetrisk stereomodell, digital terrengmodell etc.) og ikke prosessen med å innhente det bakenforliggende datagrunnlaget.</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_28" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_28" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6999,8 +7058,8 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appmedium">6.4.2.6. «CodeList» Medium</h5>
+<div class="sect5">
+<h6 id="appmedium">«CodeList» Medium</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> objektets beliggenhet i forhold til jordoverflaten</p>
 </div>
@@ -7008,7 +7067,7 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <p>Eksempel:
 Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_29" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_29" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7025,7 +7084,7 @@ Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_38" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_38" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7042,8 +7101,8 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <div style="page-break-after: always;"></div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_pakke_datatyper_og_kodelisternvdb">6.4.3. Pakke: Datatyper og kodelister::NVDB</h4>
+<div class="sect4">
+<h5 id="_pakke_datatyper_og_kodelisternvdb">5.2.4.3. Pakke: Datatyper og kodelister::NVDB</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Pakke med datatyper og kodelister som hører til NVDB-objekter</p>
 </div>
@@ -7055,12 +7114,12 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <div class="title">Figur 10. Hoveddiagram - NVDB kodelister</div>
 </div>
 <hr>
-<div class="sect4">
-<h5 id="appbruksområdeberedskapsveg">6.4.3.1. «CodeList» BruksområdeBeredskapsveg</h5>
+<div class="sect5">
+<h6 id="appbruksområdeberedskapsveg">«CodeList» BruksområdeBeredskapsveg</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir hvilket bruksområde beredskapsvegen i hovedsak benyttes til.</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_30" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_30" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7079,20 +7138,16 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">12599</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">12599</p></td>
-</tr>
 </tbody>
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appfunksjon">6.4.3.2. «codeList» Funksjon</h5>
+<div class="sect5">
+<h6 id="appfunksjon">«codeList» Funksjon</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir hvilken funksjon sperringen har</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_31" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_31" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7104,10 +7159,6 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">catalogue-entry</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB Datakatalogen</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/funksjon" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/funksjon</a></p></td>
 </tr>
@@ -7115,13 +7166,9 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">11542</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_navn</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Funksjon</p></td>
-</tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_39" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_39" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7136,12 +7183,12 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appansvarligvts">6.4.3.3. «CodeList» AnsvarligVTS</h5>
+<div class="sect5">
+<h6 id="appansvarligvts">«CodeList» AnsvarligVTS</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir ansvarlig vegtrafikksentral for strekningen.</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_32" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_32" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7160,20 +7207,16 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">12229</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">12229</p></td>
-</tr>
 </tbody>
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appdriftsstatusferjesamband">6.4.3.4. «codeList» DriftsstatusFerjesamband</h5>
+<div class="sect5">
+<h6 id="appdriftsstatusferjesamband">«codeList» DriftsstatusFerjesamband</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> driftsstatus for ferjesamband</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_33" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_33" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7192,24 +7235,16 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">9189</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">9189</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_navn</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Driftsstatus</p></td>
-</tr>
 </tbody>
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appeiervegsperring">6.4.3.5. «codeList» EierVegsperring</h5>
+<div class="sect5">
+<h6 id="appeiervegsperring">«codeList» EierVegsperring</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir hvem som er eier av vegobjektet</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_34" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_34" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7221,10 +7256,6 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">catalogue-entry</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB Datakatalogen</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/eiervegsperring" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/eiervegsperring</a></p></td>
 </tr>
@@ -7232,13 +7263,9 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">9498</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_navn</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Eier</p></td>
-</tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_40" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_40" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7253,12 +7280,12 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appfartsgrenseverdi">6.4.3.6. «codeList» FartsgrenseVerdi</h5>
+<div class="sect5">
+<h6 id="appfartsgrenseverdi">«codeList» FartsgrenseVerdi</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Fartsgrense</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_35" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_35" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7268,10 +7295,6 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">asDictionary</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">catalogue-entry</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB Datakatalogen</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
@@ -7287,7 +7310,7 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_41" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_41" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7302,12 +7325,12 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appfartsgrenseverdivariabel">6.4.3.7. «codeList» FartsgrenseVerdiVariabel</h5>
+<div class="sect5">
+<h6 id="appfartsgrenseverdivariabel">«codeList» FartsgrenseVerdiVariabel</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Verdien på fartsgrensen i angitt tidsrom</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_36" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_36" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7326,13 +7349,9 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">7023</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_navn</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Fartsgrense</p></td>
-</tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_42" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_42" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7347,12 +7366,12 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appgjelderfor">6.4.3.8. «CodeList» GjelderFor</h5>
+<div class="sect5">
+<h6 id="appgjelderfor">«CodeList» GjelderFor</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> angir hva slags kjøretøy det er gjennomkjøring forbudt for</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_37" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_37" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7371,24 +7390,16 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">12563</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">12563</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_navn</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Gjelder for</p></td>
-</tr>
 </tbody>
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appgjentakelsesintervallværutsattveg">6.4.3.9. «codeList» GjentakelsesintervallVærutsattVeg</h5>
+<div class="sect5">
+<h6 id="appgjelderukedag">«CodeList» GjelderUkedag</h6>
 <div class="paragraph">
-<p><strong>Definisjon:</strong> Angir hvor ofte dette problemet statistisk sett oppstår. Det defineres som at problemet har inntruffet ikke bare om vegen blir stengt, men også om det er behov for økt beredskap og enkelte restriksjoner som f.eks nedsatt hastighet, sperring av ett kjørefe</p>
+<p><strong>Definisjon:</strong> Gjennomkjøring forbudt gjelder kun angitt ukedag.</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_38" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_38" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7400,8 +7411,32 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">catalogue-entry</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB Datakatalogen</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/gjelderukedag" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/gjelderukedag</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12649</p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</div>
+<div class="sect5">
+<h6 id="appgjentakelsesintervallværutsattveg">«codeList» GjentakelsesintervallVærutsattVeg</h6>
+<div class="paragraph">
+<p><strong>Definisjon:</strong> Angir hvor ofte dette problemet statistisk sett oppstår. Det defineres som at problemet har inntruffet ikke bare om vegen blir stengt, men også om det er behov for økt beredskap og enkelte restriksjoner som f.eks nedsatt hastighet, sperring av ett kjørefe</p>
+</div>
+<h7 id="_profilparametre_i_tagged_values_39" class="discrete">Profilparametre i tagged values</h7>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">asDictionary</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
@@ -7411,20 +7446,16 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">9958</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_navn</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Gjentakelsesintervall</p></td>
-</tr>
 </tbody>
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appklasselandbruksveg">6.4.3.10. «codeList» KlasseLandbruksveg</h5>
+<div class="sect5">
+<h6 id="appklasselandbruksveg">«codeList» KlasseLandbruksveg</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir landbruksvegklasse</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_39" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_40" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7436,10 +7467,6 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">catalogue-entry</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB Datakatalogen</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/fkb/traktorvegsti/5.0/klasselandbruksveg" class="bare">https://register.geonorge.no/sosi-kodelister/fkb/traktorvegsti/5.0/klasselandbruksveg</a></p></td>
 </tr>
@@ -7447,13 +7474,9 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">9339</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_navn</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klasse</p></td>
-</tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_43" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_43" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7468,12 +7491,12 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appmotorvegtype">6.4.3.11. «codeList» Motorvegtype</h5>
+<div class="sect5">
+<h6 id="appmotorvegtype">«codeList» Motorvegtype</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir hvilken type motorveg det er tale om</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_40" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_41" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7485,10 +7508,6 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">catalogue-entry</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB Datakatalogen</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/motorvegtype" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/motorvegtype</a></p></td>
 </tr>
@@ -7496,13 +7515,9 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">5378</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_navn</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Motorvegtype</p></td>
-</tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_44" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_44" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7517,12 +7532,12 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appmålemetodehøydebegrensning">6.4.3.12. «codeList» MålemetodeHøydebegrensning</h5>
+<div class="sect5">
+<h6 id="appmålemetodehøydebegrensning">«codeList» MålemetodeHøydebegrensning</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir målemetode som er brukt for å måle høyder</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_41" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_42" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7534,10 +7549,6 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">catalogue-entry</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB Datakatalogen</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/m%C3%A5lemetodeh%C3%B8ydebegrensning" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/m%C3%A5lemetodeh%C3%B8ydebegrensning</a></p></td>
 </tr>
@@ -7545,13 +7556,9 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">9490</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_navn</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Målemetode</p></td>
-</tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_45" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_45" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7566,12 +7573,12 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="apptrafikkreguleringertrafikkreguleringer">6.4.3.13. «CodeList» TrafikkreguleringerTrafikkreguleringer</h5>
+<div class="sect5">
+<h6 id="appretning">«CodeList» Retning</h6>
 <div class="paragraph">
-<p><strong>Definisjon:</strong> Angir eventuelle restriksjoner for motortrafikk, gående og syklende.</p>
+<p><strong>Definisjon:</strong> Angir hvilken retning gjennomkjøring forbudt gjelder.</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_42" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_43" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7583,8 +7590,32 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">catalogue-entry</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB Datakatalogen</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/retning" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/retning</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12634</p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</div>
+<div class="sect5">
+<h6 id="apptrafikkreguleringertrafikkreguleringer">«CodeList» TrafikkreguleringerTrafikkreguleringer</h6>
+<div class="paragraph">
+<p><strong>Definisjon:</strong> Angir eventuelle restriksjoner for motortrafikk, gående og syklende.</p>
+</div>
+<h7 id="_profilparametre_i_tagged_values_44" class="discrete">Profilparametre i tagged values</h7>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">asDictionary</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
@@ -7594,17 +7625,9 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">9794</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">9794</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_navn</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Trafikkreguleringer</p></td>
-</tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_46" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_46" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7619,12 +7642,12 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="apptypejernbanekryssing">6.4.3.14. «codeList» TypeJernbanekryssing</h5>
+<div class="sect5">
+<h6 id="apptypejernbanekryssing">«codeList» TypeJernbanekryssing</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir hvilken type vegobjektet er av</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_43" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_45" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7636,10 +7659,6 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">catalogue-entry</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB Datakatalogen</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/jernbanekryssing" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/jernbanekryssing</a></p></td>
 </tr>
@@ -7647,13 +7666,9 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1153</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_navn</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
-</tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_47" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_47" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7668,12 +7683,12 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appvegklasse">6.4.3.15. «codeList» Vegklasse</h5>
+<div class="sect5">
+<h6 id="appvegklasse">«codeList» Vegklasse</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir funksjonell vegklasse</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_44" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_46" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7685,10 +7700,6 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">catalogue-entry</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB Datakatalogen</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/vegklasse" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/vegklasse</a></p></td>
 </tr>
@@ -7696,13 +7707,9 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">9338</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_navn</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Vegklasse</p></td>
-</tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_48" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_48" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7717,48 +7724,12 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="apphovedproblemværutsattveg">6.4.3.16. «codeList» HovedproblemVærutsattVeg</h5>
-<div class="paragraph">
-<p><strong>Definisjon:</strong> Angir hva som er hovedproblem for værutsatt veg.</p>
-</div>
-<h6 id="_profilparametre_i_tagged_values_45" class="discrete">Profilparametre i tagged values</h6>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">asDictionary</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">catalogue-entry</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB Datakatalogen</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/hovedproblemv%C3%A6rutsattveg" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/hovedproblemv%C3%A6rutsattveg</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">9957</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_navn</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hovedproblem</p></td>
-</tr>
-</tbody>
-</table>
-<hr>
-</div>
-<div class="sect4">
-<h5 id="apphøyfjellsstrekning">6.4.3.17. «codeList» Høyfjellsstrekning</h5>
+<div class="sect5">
+<h6 id="appekstravintervedlikehold">«codeList» EkstraVintervedlikehold</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir om denne vegstrekningen krever ekstra vintervedlikehold utover standard vinterdrift. Informasjon benyttes i forbindelse med beregning av vedlikeholdsmidler i MOTIV.</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_46" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_47" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7770,28 +7741,16 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">catalogue-entry</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB Datakatalogen</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/h%C3%B8yfjellsstrekning" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/h%C3%B8yfjellsstrekning</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/ekstra-vintervedlikehold" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/ekstra-vintervedlikehold</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">8835</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">8835</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_navn</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ekstra vintervedlikehold</p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_49" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_49" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7806,12 +7765,12 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appsambandstype">6.4.3.18. «codeList» Sambandstype</h5>
+<div class="sect5">
+<h6 id="apphovedproblemværutsattveg">«codeList» HovedproblemVærutsattVeg</h6>
 <div class="paragraph">
-<p><strong>Definisjon:</strong> Angir hvilken type samband det er, dvs. om det er på stat-, fylke- eller kommunenivå.</p>
+<p><strong>Definisjon:</strong> Angir hva som er hovedproblem for værutsatt veg.</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_47" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_48" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7823,39 +7782,51 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">catalogue-entry</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB Datakatalogen</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/hovedproblemv%C3%A6rutsattveg" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/hovedproblemv%C3%A6rutsattveg</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9957</p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</div>
+<div class="sect5">
+<h6 id="appsambandstype">«codeList» Sambandstype</h6>
+<div class="paragraph">
+<p><strong>Definisjon:</strong> Angir hvilken type samband det er, dvs. om det er på stat-, fylke- eller kommunenivå.</p>
+</div>
+<h7 id="_profilparametre_i_tagged_values_49" class="discrete">Profilparametre i tagged values</h7>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">asDictionary</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/sambandstype" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/sambandstype</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">KORTN_EGENSKAPSTYPE</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">sambType</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">10954</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">10954</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_navn</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Sambandstype</p></td>
 </tr>
 </tbody>
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="apptypefartsgrensevariabel">6.4.3.19. «codeList» TypeFartsgrenseVariabel</h5>
+<div class="sect5">
+<h6 id="apptypefartsgrensevariabel">«codeList» TypeFartsgrenseVariabel</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir hvilken type variabel fartsgrense det er</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_48" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_50" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7865,10 +7836,6 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">asDictionary</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">catalogue-entry</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB Datakatalogen</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
@@ -7878,13 +7845,9 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">7016</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_navn</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
-</tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_50" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_50" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7899,12 +7862,12 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="apptypehinder">6.4.3.20. «codeList» TypeHinder</h5>
+<div class="sect5">
+<h6 id="apptypehinder">«codeList» TypeHinder</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir hvilken type hinder det er tale om</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_49" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_51" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7916,10 +7879,6 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">catalogue-entry</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB Datakatalogen</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/typehinder" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/typehinder</a></p></td>
 </tr>
@@ -7927,13 +7886,9 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">5270</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_navn</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Type hinder</p></td>
-</tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_51" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_51" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7948,12 +7903,12 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="apptypevegsperring">6.4.3.21. «codeList» TypeVegsperring</h5>
+<div class="sect5">
+<h6 id="apptypevegsperring">«codeList» TypeVegsperring</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir hvilken type sperring det er tale om.</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_50" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_52" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7965,10 +7920,6 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">catalogue-entry</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB Datakatalogen</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/typevegsperring" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/typevegsperring</a></p></td>
 </tr>
@@ -7976,17 +7927,9 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">7861</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">7861</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_navn</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
-</tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_52" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_52" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -8001,12 +7944,12 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 </table>
 <hr>
 </div>
-<div class="sect4">
-<h5 id="appukedag">6.4.3.22. «codeList» Ukedag</h5>
+<div class="sect5">
+<h6 id="appukedag">«codeList» Ukedag</h6>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir ukedager en variabel fartsgrense gjelder for.</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_51" class="discrete">Profilparametre i tagged values</h6>
+<h7 id="_profilparametre_i_tagged_values_53" class="discrete">Profilparametre i tagged values</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -8018,10 +7961,6 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">catalogue-entry</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB Datakatalogen</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/ukedag" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/ukedag</a></p></td>
 </tr>
@@ -8029,13 +7968,9 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">9401</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_navn</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ukedag</p></td>
-</tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_53" class="discrete">Arv og realiseringer</h6>
+<h7 id="_arv_og_realiseringer_53" class="discrete">Arv og realiseringer</h7>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -8054,157 +7989,158 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 </div>
 </div>
 </div>
+</div>
 <div class="sect1">
-<h2 id="_referansesystem">7. Referansesystem</h2>
+<h2 id="_referansesystem">6. Referansesystem</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Referansesystemer for FKB 5.0 er også beskrevet i vedlegg B i <a href="https://sosi.geonorge.no/Standarder/FKB_generell_del">FKB generell del</a>.</p>
 </div>
 <div class="sect2">
-<h3 id="_romlig_referansesystem_utm_sone_32_basert_på_euref89_etrs89utm_2d_nn2000">7.1. Romlig referansesystem UTM sone 32 basert på EUREF89 (ETRS89/UTM), 2d + NN2000</h3>
+<h3 id="_romlig_referansesystem_utm_sone_32_basert_på_euref89_etrs89utm_2d_nn2000">6.1. Romlig referansesystem UTM sone 32 basert på EUREF89 (ETRS89/UTM), 2d + NN2000</h3>
 <div class="sect3">
-<h4 id="_omfang_2">7.1.1. Omfang</h4>
+<h4 id="_omfang_2">6.1.1. Omfang</h4>
 <div class="paragraph">
 <p><a href="#HeleDatasettet">Hele datasettet</a></p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_navn_på_kilden_til_referansesystemet">7.1.2. Navn på kilden til referansesystemet</h4>
+<h4 id="_navn_på_kilden_til_referansesystemet">6.1.2. Navn på kilden til referansesystemet</h4>
 <div class="paragraph">
 <p>Norwegian Mapping Authority</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_ansvarlig_organisasjon_for_referansesystemet">7.1.3. Ansvarlig organisasjon for referansesystemet</h4>
+<h4 id="_ansvarlig_organisasjon_for_referansesystemet">6.1.3. Ansvarlig organisasjon for referansesystemet</h4>
 <div class="paragraph">
 <p>The international Association of Oil &amp; Gas Producers</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_link_til_mer_informasjon_om_referansesystemet">7.1.4. Link til mer informasjon om referansesystemet</h4>
+<h4 id="_link_til_mer_informasjon_om_referansesystemet">6.1.4. Link til mer informasjon om referansesystemet</h4>
 <div class="paragraph">
 <p><a href="http://www.opengis.net/def/crs/EPSG/0/5972" class="bare">http://www.opengis.net/def/crs/EPSG/0/5972</a></p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_koderom">7.1.5. Koderom</h4>
+<h4 id="_koderom">6.1.5. Koderom</h4>
 <div class="paragraph">
 <p>EPSG</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_identifikasjonskode">7.1.6. Identifikasjonskode</h4>
+<h4 id="_identifikasjonskode">6.1.6. Identifikasjonskode</h4>
 <div class="paragraph">
 <p>5972</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_kodeversjon">7.1.7. Kodeversjon</h4>
+<h4 id="_kodeversjon">6.1.7. Kodeversjon</h4>
 <div class="paragraph">
 <p>2020-03-30</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_romlig_referansesystem_utm_sone_33_basert_på_euref89_etrs89utm_2d_nn2000">7.2. Romlig referansesystem UTM sone 33 basert på EUREF89 (ETRS89/UTM), 2d + NN2000</h3>
+<h3 id="_romlig_referansesystem_utm_sone_33_basert_på_euref89_etrs89utm_2d_nn2000">6.2. Romlig referansesystem UTM sone 33 basert på EUREF89 (ETRS89/UTM), 2d + NN2000</h3>
 <div class="sect3">
-<h4 id="_omfang_3">7.2.1. Omfang</h4>
+<h4 id="_omfang_3">6.2.1. Omfang</h4>
 <div class="paragraph">
 <p><a href="#HeleDatasettet">Hele datasettet</a></p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_navn_på_kilden_til_referansesystemet_2">7.2.2. Navn på kilden til referansesystemet</h4>
+<h4 id="_navn_på_kilden_til_referansesystemet_2">6.2.2. Navn på kilden til referansesystemet</h4>
 <div class="paragraph">
 <p>Norwegian Mapping Authority</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_ansvarlig_organisasjon_for_referansesystemet_2">7.2.3. Ansvarlig organisasjon for referansesystemet</h4>
+<h4 id="_ansvarlig_organisasjon_for_referansesystemet_2">6.2.3. Ansvarlig organisasjon for referansesystemet</h4>
 <div class="paragraph">
 <p>The international Association of Oil &amp; Gas Producers</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_link_til_mer_informasjon_om_referansesystemet_2">7.2.4. Link til mer informasjon om referansesystemet</h4>
+<h4 id="_link_til_mer_informasjon_om_referansesystemet_2">6.2.4. Link til mer informasjon om referansesystemet</h4>
 <div class="paragraph">
 <p><a href="http://www.opengis.net/def/crs/EPSG/0/5973" class="bare">http://www.opengis.net/def/crs/EPSG/0/5973</a></p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_koderom_2">7.2.5. Koderom</h4>
+<h4 id="_koderom_2">6.2.5. Koderom</h4>
 <div class="paragraph">
 <p>EPSG</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_identifikasjonskode_2">7.2.6. Identifikasjonskode</h4>
+<h4 id="_identifikasjonskode_2">6.2.6. Identifikasjonskode</h4>
 <div class="paragraph">
 <p>5973</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_kodeversjon_2">7.2.7. Kodeversjon</h4>
+<h4 id="_kodeversjon_2">6.2.7. Kodeversjon</h4>
 <div class="paragraph">
 <p>2020-03-30</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_romlig_referansesystem_utm_sone_35_basert_på_euref89_etrs89utm_2d_nn2000">7.3. Romlig referansesystem UTM sone 35 basert på EUREF89 (ETRS89/UTM), 2d + NN2000</h3>
+<h3 id="_romlig_referansesystem_utm_sone_35_basert_på_euref89_etrs89utm_2d_nn2000">6.3. Romlig referansesystem UTM sone 35 basert på EUREF89 (ETRS89/UTM), 2d + NN2000</h3>
 <div class="sect3">
-<h4 id="_omfang_4">7.3.1. Omfang</h4>
+<h4 id="_omfang_4">6.3.1. Omfang</h4>
 <div class="paragraph">
 <p><a href="#HeleDatasettet">Hele datasettet</a></p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_navn_på_kilden_til_referansesystemet_3">7.3.2. Navn på kilden til referansesystemet</h4>
+<h4 id="_navn_på_kilden_til_referansesystemet_3">6.3.2. Navn på kilden til referansesystemet</h4>
 <div class="paragraph">
 <p>Norwegian Mapping Authority</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_ansvarlig_organisasjon_for_referansesystemet_3">7.3.3. Ansvarlig organisasjon for referansesystemet</h4>
+<h4 id="_ansvarlig_organisasjon_for_referansesystemet_3">6.3.3. Ansvarlig organisasjon for referansesystemet</h4>
 <div class="paragraph">
 <p>The international Association of Oil &amp; Gas Producers</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_link_til_mer_informasjon_om_referansesystemet_3">7.3.4. Link til mer informasjon om referansesystemet</h4>
+<h4 id="_link_til_mer_informasjon_om_referansesystemet_3">6.3.4. Link til mer informasjon om referansesystemet</h4>
 <div class="paragraph">
 <p><a href="http://www.opengis.net/def/crs/EPSG/0/5975" class="bare">http://www.opengis.net/def/crs/EPSG/0/5975</a></p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_koderom_3">7.3.5. Koderom</h4>
+<h4 id="_koderom_3">6.3.5. Koderom</h4>
 <div class="paragraph">
 <p>EPSG</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_identifikasjonskode_3">7.3.6. Identifikasjonskode</h4>
+<h4 id="_identifikasjonskode_3">6.3.6. Identifikasjonskode</h4>
 <div class="paragraph">
 <p>5975</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_kodeversjon_3">7.3.7. Kodeversjon</h4>
+<h4 id="_kodeversjon_3">6.3.7. Kodeversjon</h4>
 <div class="paragraph">
 <p>2020-03-30</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_temporalt_referansesystem">7.4. Temporalt referansesystem</h3>
+<h3 id="_temporalt_referansesystem">6.4. Temporalt referansesystem</h3>
 <div class="sect3">
-<h4 id="_omfang_5">7.4.1. Omfang</h4>
+<h4 id="_omfang_5">6.4.1. Omfang</h4>
 <div class="paragraph">
 <p><a href="#HeleDatasettet">Hele datasettet</a></p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_navn_på_temporalt_referansesystem">7.4.2. Navn på temporalt referansesystem</h4>
+<h4 id="_navn_på_temporalt_referansesystem">6.4.2. Navn på temporalt referansesystem</h4>
 <div class="paragraph">
 <p>UTC</p>
 </div>
@@ -8217,21 +8153,21 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 </div>
 </div>
 <div class="sect1">
-<h2 id="_kvalitet">8. Kvalitet</h2>
+<h2 id="_kvalitet">7. Kvalitet</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_omfang_6">8.1. Omfang</h3>
+<h3 id="_omfang_6">7.1. Omfang</h3>
 <div class="paragraph">
 <p>Hele datasettet</p>
 </div>
 <div class="sect3">
-<h4 id="_fullstendighet">8.1.1. Fullstendighet</h4>
+<h4 id="_fullstendighet">7.1.1. Fullstendighet</h4>
 <div class="paragraph">
 <p>Datasettet er fullstendig så langt det er mulig og oppdateres kontinuerlig i henhold til avtaler om forvaltning, drift og vedlikehold.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_stedfestingsnøyaktighet">8.1.2. Stedfestingsnøyaktighet</h4>
+<h4 id="_stedfestingsnøyaktighet">7.1.2. Stedfestingsnøyaktighet</h4>
 <div class="paragraph">
 <p>Det er et overordnet prinsipp at best tilgjengelige geometri skal benyttes i vegnettet.
 NVDB Vegnett Pluss  inneholder ikke homogene data. Produktet som helhet kan ikke love bedre kvalitet enn de dårligste datakildene. Vegen registreres så langt mulig i tre dimensjoner (nord, øst, høyde), men ved administrativ datafangst godkjennes 2D data (digitalisering fra ortofoto) dersom andre datakilder ikke finnes.</p>
@@ -8241,19 +8177,19 @@ NVDB Vegnett Pluss  inneholder ikke homogene data. Produktet som helhet kan ikke
 </div>
 </div>
 <div class="sect3">
-<h4 id="_egenskapsnøyaktighet">8.1.3. Egenskapsnøyaktighet</h4>
+<h4 id="_egenskapsnøyaktighet">7.1.3. Egenskapsnøyaktighet</h4>
 <div class="paragraph">
 <p>Egenskaper stedfestes med bakgrunn fra administrativt ajourhold og følger generelt samme krav som øvrige kvalitetskrav.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_tidfestingsnøyaktighet">8.1.4. Tidfestingsnøyaktighet</h4>
+<h4 id="_tidfestingsnøyaktighet">7.1.4. Tidfestingsnøyaktighet</h4>
 <div class="paragraph">
 <p>Kontinuerlig ajourhold.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_logisk_konsistens">8.1.5. Logisk konsistens</h4>
+<h4 id="_logisk_konsistens">7.1.5. Logisk konsistens</h4>
 <div class="paragraph">
 <p>Kontinuerlig kontroll.</p>
 </div>
@@ -8263,99 +8199,101 @@ NVDB Vegnett Pluss  inneholder ikke homogene data. Produktet som helhet kan ikke
 </div>
 </div>
 <div class="sect1">
-<h2 id="_datafangst">9. Datafangst</h2>
+<h2 id="_datafangst">8. Datafangst</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>NVDB Vegnett Pluss er et direkte uttrekk fra NVDB. Vegnett i NVDB er etablert med data fra vegsituasjon (fotogrammetri), GPS og treghetsmålinger, administrativ ajourhold (gjennom ajourhold av NVDB Vegnett Pluss) og med data fra Statens vegvesens plan- og ferdigvegsdata.</p>
 </div>
 <div class="paragraph">
-<p>I tillegg mottar Kartverket og Statens vegvesen feilmeldinger og endringer fra publikum gjennom deres feilmeldingstjenester <a href="http://rettikartet.no">http://rettikartet.no</a> og <a href="http://fiksvegdata.opentns.org">http://fiksvegdata.opentns.org</a>. Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB og kommer deretter ut i NVDB Vegnett Pluss.</p>
+<p>I tillegg mottar Kartverket og Statens vegvesen feilmeldinger og endringer fra publikum gjennom deres feilmeldingstjenester <a href="http://rettikartet.no">http://rettikartet.no</a> og <a href="https://fiksvegdata.atlas.vegvesen.no/">fiksvegdata.atlas.vegvesen.no</a>. Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB og kommer deretter ut i NVDB Vegnett Pluss.</p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_datavedlikehold">10. Datavedlikehold</h2>
+<h2 id="_datavedlikehold">9. Datavedlikehold</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_vedlikeholdsinformasjon_kartleggingsprosjekt">10.1. Vedlikeholdsinformasjon - Kartleggingsprosjekt</h3>
+<h3 id="_vedlikeholdsinformasjon_kartleggingsprosjekt">9.1. Vedlikeholdsinformasjon - Kartleggingsprosjekt</h3>
 <div class="sect3">
-<h4 id="_omfang_7">10.1.1. Omfang</h4>
+<h4 id="_omfang_7">9.1.1. Omfang</h4>
 <div class="paragraph">
 <p>Hele datasettet</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_vedlikeholdsfrekvens">10.1.2. Vedlikeholdsfrekvens</h4>
+<h4 id="_vedlikeholdsfrekvens">9.1.2. Vedlikeholdsfrekvens</h4>
 <div class="paragraph">
 <p>Kontinuerlig</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_vedlikeholdsbeskrivelse">10.1.3. Vedlikeholdsbeskrivelse</h4>
+<h4 id="_vedlikeholdsbeskrivelse">9.1.3. Vedlikeholdsbeskrivelse</h4>
 <div class="paragraph">
 <p>Fotogrammetrisk ajourhold utføres gjennom Geovekst kartleggingsprosjekter. Kartleggingsprosjektene spesifiseres og finansieres gjennom Geovekst og settes ut på anbud fra Kartverket. Flyfotografering og selve det fotogrammetriske ajourholdet utføres av et privat firma i tråd med fotogrammetrisk registreringsinstruks. Kartverket gjør kontroll av leveranse ved mottak og legger dataene inn i databasen i samarbeid med Statens vegvesen.</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_vedlikeholdsinformasjon_avtaler_om_forvaltning_drift_og_vedlikehold">10.2. Vedlikeholdsinformasjon – Avtaler om forvaltning, drift og vedlikehold</h3>
+<h3 id="_vedlikeholdsinformasjon_avtaler_om_forvaltning_drift_og_vedlikehold">9.2. Vedlikeholdsinformasjon – Avtaler om forvaltning, drift og vedlikehold</h3>
 <div class="sect3">
-<h4 id="_omfang_8">10.2.1. Omfang</h4>
+<h4 id="_omfang_8">9.2.1. Omfang</h4>
 <div class="paragraph">
 <p>Hele datasettet</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_vedlikeholdsfrekvens_2">10.2.2. Vedlikeholdsfrekvens</h4>
+<h4 id="_vedlikeholdsfrekvens_2">9.2.2. Vedlikeholdsfrekvens</h4>
 <div class="paragraph">
 <p>Kontinuerlig</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_vedlikeholdsbeskrivelse_2">10.2.3. Vedlikeholdsbeskrivelse</h4>
+<h4 id="_vedlikeholdsbeskrivelse_2">9.2.3. Vedlikeholdsbeskrivelse</h4>
 <div class="paragraph">
-<p>Det er i regi av Geovekst inngått avtaler om forvaltning, drift og vedlikehold (FDV) med de fleste kommuner. Her avtalefestes oppgaver og finansiering av et felles kontinuerlig ajourhold av FKB-dataene blant partene i avtalen (dette gjelder også for NVDB Vegnett Pluss). Den viktigste parten i avtalene er kommunen da mange av endringene i FKB kan fanges opp gjennom kommunal saksbehandling. Dataene blir så sendt til Kartverket for innlesing i databasen.
+<p>Det er i regi av Geovekst inngått avtaler om forvaltning, drift og vedlikehold (FDV) med de fleste kommuner. Her avtalefestes oppgaver og finansiering av et felles kontinuerlig ajourhold av FKB-dataene blant partene i avtalen (dette gjelder også for NVDB Vegnett Pluss).
+Den viktigste parten i avtalene er kommunen da mange av endringene i FKB kan fanges opp gjennom kommunal saksbehandling.
+Dataene blir så sendt til Kartverket for innlesing i databasen.
 Kommuner utenfor Geovekst gjør tilsvarende vedlikehold i egen regi og leverer data i henhold til Norge digitalt avtale.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_omfang_9">10.2.4. Omfang</h4>
+<h4 id="_omfang_9">9.2.4. Omfang</h4>
 <div class="paragraph">
 <p>Hele datasettet</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_vedlikeholdsfrekvens_3">10.2.5. Vedlikeholdsfrekvens</h4>
+<h4 id="_vedlikeholdsfrekvens_3">9.2.5. Vedlikeholdsfrekvens</h4>
 <div class="paragraph">
 <p>Kontinuerlig</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_vedlikeholdsbeskrivelse_3">10.2.6. Vedlikeholdsbeskrivelse</h4>
+<h4 id="_vedlikeholdsbeskrivelse_3">9.2.6. Vedlikeholdsbeskrivelse</h4>
 <div class="paragraph">
 <p>Statens vegvesen er forpliktet til å levere ferdigvegsdata til NVDB Vegnett Pluss ved ferdigstillelse av prosjekter.</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_vedlikeholdsinformasjon_feilmeldinger_og_avvikshåndtering">10.3. Vedlikeholdsinformasjon – Feilmeldinger og avvikshåndtering</h3>
+<h3 id="_vedlikeholdsinformasjon_feilmeldinger_og_avvikshåndtering">9.3. Vedlikeholdsinformasjon – Feilmeldinger og avvikshåndtering</h3>
 <div class="sect3">
-<h4 id="_omfang_10">10.3.1. Omfang</h4>
+<h4 id="_omfang_10">9.3.1. Omfang</h4>
 <div class="paragraph">
 <p>Hele datasettet</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_vedlikeholdsfrekvens_4">10.3.2. Vedlikeholdsfrekvens</h4>
+<h4 id="_vedlikeholdsfrekvens_4">9.3.2. Vedlikeholdsfrekvens</h4>
 <div class="paragraph">
 <p>Kontinuerlig</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_vedlikeholdsbeskrivelse_4">10.3.3. Vedlikeholdsbeskrivelse</h4>
+<h4 id="_vedlikeholdsbeskrivelse_4">9.3.3. Vedlikeholdsbeskrivelse</h4>
 <div class="paragraph">
-<p>Kartverket og Statens vegvesen mottar feilmeldinger fra publikum gjennom deres feilmeldingstjenester <a href="http://rettikartet.no/" class="bare">http://rettikartet.no/</a> og <a href="http://fiksvegdata.opentns.org/.Disse" class="bare">http://fiksvegdata.opentns.org/.Disse</a> meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB (og deretter komme ut i NVDB Vegnett Pluss).</p>
+<p>Kartverket og Statens vegvesen mottar feilmeldinger fra publikum gjennom deres feilmeldingstjenester <a href="http://rettikartet.no/" class="bare">http://rettikartet.no/</a> og <a href="https://fiksvegdata.atlas.vegvesen.no/" class="bare">https://fiksvegdata.atlas.vegvesen.no/</a> . Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB (og deretter komme ut i NVDB Vegnett Pluss).</p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -8363,16 +8301,16 @@ Kommuner utenfor Geovekst gjør tilsvarende vedlikehold i egen regi og leverer d
 </div>
 </div>
 <div class="sect1">
-<h2 id="_presentasjon">11. Presentasjon</h2>
+<h2 id="_presentasjon">10. Presentasjon</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_omfang_11">11.1. Omfang</h3>
+<h3 id="_omfang_11">10.1. Omfang</h3>
 <div class="paragraph">
 <p><a href="#HeleDatasettet">Hele datasettet</a></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_referanse_til_presentasjonskatalog">11.2. Referanse til presentasjonskatalog</h3>
+<h3 id="_referanse_til_presentasjonskatalog">10.2. Referanse til presentasjonskatalog</h3>
 <div class="paragraph">
 <p>Det er utarbeidet en presentasjonsregel for Elveg, men ikke for NVDB Vegnett Pluss enda. Denne er tilgjengelig via geonorge:
 <a href="https://register.geonorge.no/register/versjoner/tegneregler/kartverket/elveg" class="bare">https://register.geonorge.no/register/versjoner/tegneregler/kartverket/elveg</a></p>
@@ -8382,156 +8320,21 @@ Kommuner utenfor Geovekst gjør tilsvarende vedlikehold i egen regi og leverer d
 </div>
 </div>
 <div class="sect1">
-<h2 id="_leveranse">12. Leveranse</h2>
+<h2 id="_leveranse">11. Leveranse</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Leveransemetoder og formater for FKB 5.0 er også beskrevet i vedlegg A i <a href="https://sosi.geonorge.no/Standarder/FKB_generell_del">FKB generell del</a>.</p>
 </div>
 <div class="sect2">
-<h3 id="_leveransemetode_gml_filleveranse">12.1. Leveransemetode GML filleveranse</h3>
+<h3 id="_leveransemetode_gml_ngis_openapi">11.1. Leveransemetode GML NGIS-OpenAPI</h3>
 <div class="sect3">
-<h4 id="_omfang_12">12.1.1. Omfang</h4>
+<h4 id="_omfang_12">11.1.1. Omfang</h4>
 <div class="paragraph">
 <p><a href="#HeleDatasettet">Hele datasettet</a></p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_leveranseformat">12.1.2. Leveranseformat</h4>
-<div class="paragraph">
-<p><strong>Formatnavn</strong>: <a href="#GML">[GML]</a></p>
-</div>
-<div class="paragraph">
-<p><strong>Formatversjon</strong>: 3.2.1</p>
-</div>
-<div class="paragraph">
-<p><strong>Formatspesifikasjon</strong>: <a href="http://www.opengeospatial.org/standards/gml">OpenGIS® Geograph Markup Language (GML) Encoding Standard</a></p>
-</div>
-<div class="paragraph">
-<p><strong>Filstruktur</strong>: Tekstfil (XML)</p>
-</div>
-<div class="paragraph">
-<p><strong>Språk</strong>: nor</p>
-</div>
-<div class="paragraph">
-<p><strong>Tegnsett</strong>: utf8</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_leveransemedium">12.1.3. Leveransemedium</h4>
-<div class="paragraph">
-<p><strong>Leveranseenhet</strong>: kommunevise filer</p>
-</div>
-<div class="paragraph">
-<p><strong>Overføringsstørrelse</strong>:  Varierer veldig ut fra kommunestørrelse</p>
-</div>
-<div class="paragraph">
-<p><strong>Navn på medium</strong>: Datasettet lastes ned fra <a href="http://www.geonorge.no">geonorge.no</a></p>
-</div>
-<div class="paragraph">
-<p><strong>Annen leveranseinformasjon</strong>: Nedlastingsfilene vil være zippet</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_leveransemetode_sosi_format_filleveranse">12.2. Leveransemetode SOSI-format filleveranse</h3>
-<div class="sect3">
-<h4 id="_omfang_13">12.2.1. Omfang</h4>
-<div class="paragraph">
-<p><a href="#HeleDatasettet">Hele datasettet</a></p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_leveranseformat_2">12.2.2. Leveranseformat</h4>
-<div class="paragraph">
-<p><strong>Formatnavn</strong>: SOSI</p>
-</div>
-<div class="paragraph">
-<p><strong>Formatversjon</strong>: 5.0</p>
-</div>
-<div class="paragraph">
-<p><strong>Formatspesifikasjon</strong>: <a href="https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/sosi-del-1-generell-del/realisering-i-sosi-format-5.0-sosi-generell-del.pdf">SOSI Realisering i SOSI-format, versjon 5.0 2018</a> <a href="#SOSI-FORMAT">[SOSI-FORMAT]</a></p>
-</div>
-<div class="paragraph">
-<p><strong>Filstruktur</strong>: Tekstfil</p>
-</div>
-<div class="paragraph">
-<p><strong>Språk</strong>: nor</p>
-</div>
-<div class="paragraph">
-<p><strong>Tegnsett</strong>: utf8</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_leveransemedium_2">12.2.3. Leveransemedium</h4>
-<div class="paragraph">
-<p><strong>Leveranseenhet</strong>: kommunevise filer</p>
-</div>
-<div class="paragraph">
-<p><strong>Overføringsstørrelse</strong>: Varierer ut fra kommunestørrelse</p>
-</div>
-<div class="paragraph">
-<p><strong>Navn på medium</strong>: Datasettet lastes ned fra <a href="http://www.geonorge.no">geonorge.no</a></p>
-</div>
-<div class="paragraph">
-<p><strong>Annen leveranseinformasjon</strong>: Nedlastingsfilene vil være zippet</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_leveransemetode_esri_fgdb_filleveranse">12.3. Leveransemetode ESRI fgdb filleveranse</h3>
-<div class="sect3">
-<h4 id="_omfang_14">12.3.1. Omfang</h4>
-<div class="paragraph">
-<p><a href="#HeleDatasettet">Hele datasettet</a></p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_leveranseformat_3">12.3.2. Leveranseformat</h4>
-<div class="paragraph">
-<p><strong>Formatnavn</strong>: <a href="#ESRI fgdb">[ESRI fgdb]</a></p>
-</div>
-<div class="paragraph">
-<p><strong>Formatversjon</strong>: 10.0</p>
-</div>
-<div class="paragraph">
-<p><strong>Formatspesifikasjon</strong>: ESRI filgeodatabase</p>
-</div>
-<div class="paragraph">
-<p><strong>Filstruktur</strong>: Filer</p>
-</div>
-<div class="paragraph">
-<p><strong>Språk</strong>: nor</p>
-</div>
-<div class="paragraph">
-<p><strong>Tegnsett</strong>: utf8</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_leveransemedium_3">12.3.3. Leveransemedium</h4>
-<div class="paragraph">
-<p><strong>Leveranseenhet</strong>: kommunevise filer, fylkesvise filer og landsdekkende filer</p>
-</div>
-<div class="paragraph">
-<p><strong>Overføringsstørrelse</strong>: Varierer områdestørrelse</p>
-</div>
-<div class="paragraph">
-<p><strong>Navn på medium</strong>: Datasettet lastes ned fra <a href="http://www.geonorge.no">geonorge.no</a></p>
-</div>
-<div class="paragraph">
-<p><strong>Annen leveranseinformasjon</strong>: Nedlastingsfilene vil være zippet</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_leveransemetode_gml_ngis_openapi">12.4. Leveransemetode GML NGIS-OpenAPI</h3>
-<div class="sect3">
-<h4 id="_omfang_15">12.4.1. Omfang</h4>
-<div class="paragraph">
-<p><a href="#HeleDatasettet">Hele datasettet</a></p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_leveranseformat_4">12.4.2. Leveranseformat</h4>
+<h4 id="_leveranseformat">11.1.2. Leveranseformat</h4>
 <div class="paragraph">
 <p><strong>Formatnavn</strong>: <a href="#GML">[GML]</a></p>
 </div>
@@ -8552,7 +8355,7 @@ Kommuner utenfor Geovekst gjør tilsvarende vedlikehold i egen regi og leverer d
 </div>
 </div>
 <div class="sect3">
-<h4 id="_leveransemedium_4">12.4.3. Leveransemedium</h4>
+<h4 id="_leveransemedium">11.1.3. Leveransemedium</h4>
 <div class="paragraph">
 <p><strong>Leveranseenhet</strong>: ikke angitt</p>
 </div>
@@ -8568,15 +8371,15 @@ Kommuner utenfor Geovekst gjør tilsvarende vedlikehold i egen regi og leverer d
 </div>
 </div>
 <div class="sect2">
-<h3 id="_leveransemetode_json_ngis_openapi">12.5. Leveransemetode JSON NGIS-OpenAPI</h3>
+<h3 id="_leveransemetode_json_ngis_openapi">11.2. Leveransemetode JSON NGIS-OpenAPI</h3>
 <div class="sect3">
-<h4 id="_omfang_16">12.5.1. Omfang</h4>
+<h4 id="_omfang_13">11.2.1. Omfang</h4>
 <div class="paragraph">
 <p><a href="#HeleDatasettet">Hele datasettet</a></p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_leveranseformat_5">12.5.2. Leveranseformat</h4>
+<h4 id="_leveranseformat_2">11.2.2. Leveranseformat</h4>
 <div class="paragraph">
 <p><strong>Formatnavn</strong>: <a href="#JSON">[JSON]</a></p>
 </div>
@@ -8597,7 +8400,7 @@ Kommuner utenfor Geovekst gjør tilsvarende vedlikehold i egen regi og leverer d
 </div>
 </div>
 <div class="sect3">
-<h4 id="_leveransemedium_5">12.5.3. Leveransemedium</h4>
+<h4 id="_leveransemedium_2">11.2.3. Leveransemedium</h4>
 <div class="paragraph">
 <p><strong>Leveranseenhet</strong>: ikke angitt</p>
 </div>
@@ -8616,7 +8419,7 @@ Kommuner utenfor Geovekst gjør tilsvarende vedlikehold i egen regi og leverer d
 </div>
 </div>
 <div class="sect1">
-<h2 id="_tilleggsinformasjon">13. Tilleggsinformasjon</h2>
+<h2 id="_tilleggsinformasjon">12. Tilleggsinformasjon</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Ingen angitt informasjon</p>
@@ -8624,16 +8427,16 @@ Kommuner utenfor Geovekst gjør tilsvarende vedlikehold i egen regi og leverer d
 </div>
 </div>
 <div class="sect1">
-<h2 id="_metadata">14. Metadata</h2>
+<h2 id="_metadata">13. Metadata</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_omfang_17">14.1. Omfang</h3>
+<h3 id="_omfang_14">13.1. Omfang</h3>
 <div class="paragraph">
 <p><a href="#HeleDatasettet">Hele datasettet</a></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_metadataspesifikasjon">14.2. Metadataspesifikasjon</h3>
+<h3 id="_metadataspesifikasjon">13.2. Metadataspesifikasjon</h3>
 <div class="paragraph">
 <p>Det leveres metadata i henhold til ISO 19115 <a href="#ISO-METADATA">[ISO-METADATA]</a>.</p>
 </div>
@@ -8656,10 +8459,10 @@ Kommuner utenfor Geovekst gjør tilsvarende vedlikehold i egen regi og leverer d
 <div class="ulist">
 <ul>
 <li>
-<p>link:https://skjema.geonorge.no/SOSI/produktspesifikasjon/NVDB Vegnett Plus/1.0/NVDBVegnettPlus.xsd[GML-Skjema]</p>
+<p><a href="https://skjema.geonorge.no/SOSI/produktspesifikasjon/NVDB" class="bare">https://skjema.geonorge.no/SOSI/produktspesifikasjon/NVDB</a> Vegnett Pluss/1.0/NVDBVegnettPlus.xsd[GML-Skjema]</p>
 </li>
 <li>
-<p>link:https://skjema.geonorge.no/SOSI/produktspesifikasjon/NVDB Vegnett Plus/1.0/NVDBVegnettPlus.sch[Schematron-Skjema]</p>
+<p><a href="https://skjema.geonorge.no/SOSI/produktspesifikasjon/NVDB" class="bare">https://skjema.geonorge.no/SOSI/produktspesifikasjon/NVDB</a> Vegnett Pluss/1.0/NVDBVegnettPlus.sch[Schematron-Skjema]</p>
 </li>
 </ul>
 </div>
@@ -9559,13 +9362,6 @@ Kommuner utenfor Geovekst gjør tilsvarende vedlikehold i egen regi og leverer d
 <td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">posisjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Point</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.PUNKT</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">gjelderFor</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» GjelderFor</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
@@ -9578,6 +9374,62 @@ Kommuner utenfor Geovekst gjør tilsvarende vedlikehold i egen regi og leverer d
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..MERKNAD</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">T250</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">retning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Retning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">gjelderUkedag</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» GjelderUkedag</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..NVDB_GJELDERUKEDAG</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T20</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">unntakForBuss</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">unntakForTaxi</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">unntakForMoped</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">unntakForMotorsykkel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">unntakForTraktor</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">posisjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Point</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">.PUNKT</p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Rolle: </strong>gjennomkjøringForbudtTil</p></td>
@@ -9763,13 +9615,6 @@ Kommuner utenfor Geovekst gjør tilsvarende vedlikehold i egen regi og leverer d
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..VARETRANSPORTLØRDAGPERIODE2TILKL</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">T4</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kjøringTilEiendommeneTillatt</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..KJØRINGTILEIENDOMMENETILLATT</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">senterlinje</p></td>
@@ -10339,13 +10184,6 @@ Kommuner utenfor Geovekst gjør tilsvarende vedlikehold i egen regi og leverer d
 <td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">merknad</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..MERKNAD</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T200</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">senterlinje</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
@@ -10641,10 +10479,10 @@ Kommuner utenfor Geovekst gjør tilsvarende vedlikehold i egen regi og leverer d
 <td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">høyfjellsstrekning</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«codeList» Høyfjellsstrekning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ekstraVintervedlikehold</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«codeList» EkstraVintervedlikehold</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..HØYFJELLSSTREKNING</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..EKSTRAVINTERVEDLIKEHOLD</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">T10</p></td>
 </tr>
 <tr>
@@ -10780,7 +10618,7 @@ av denne lisensen og ikke kan viderebrukes</p>
 <div id="footer">
 <div id="footer-text">
 Versjon 1.0<br>
-Last updated 2024-02-06 07:43:43 +0100
+Last updated 2024-02-14 15:11:35 +0100
 </div>
 </div>
 </body>

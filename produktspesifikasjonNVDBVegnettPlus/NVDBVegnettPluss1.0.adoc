@@ -3,7 +3,7 @@
 :versjon: 1.0
 :skjemaversjon: {versjon}
 :underversjon: 2024-02-01
-:publisert: 2024-02-06
+:publisert: 2024-02-14
 :metadata-url: https://kartkatalog.geonorge.no/metadata/
 :dokumentstatus: 2
 // All informasjon i hode over denne linja må fylles ut for hvert datasett. Øvrige parametere settes i adoc_parametere.adoc
@@ -114,7 +114,7 @@ include::inkluder/kap4_omfang.adoc[]
 === Omfang
 <<HeleDatasettet,Hele datasettet>>
 
-include::modellRapport.adoc[]
+include::modellRapport.adoc[leveloffset=+1]
 
 <<<
 
@@ -153,7 +153,7 @@ Kontinuerlig kontroll.
 
 NVDB Vegnett Pluss er et direkte uttrekk fra NVDB. Vegnett i NVDB er etablert med data fra vegsituasjon (fotogrammetri), GPS og treghetsmålinger, administrativ ajourhold (gjennom ajourhold av NVDB Vegnett Pluss) og med data fra Statens vegvesens plan- og ferdigvegsdata. 
 
-I tillegg mottar Kartverket og Statens vegvesen feilmeldinger og endringer fra publikum gjennom deres feilmeldingstjenester http://rettikartet.no[http://rettikartet.no] og http://fiksvegdata.opentns.org[http://fiksvegdata.opentns.org]. Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB og kommer deretter ut i NVDB Vegnett Pluss. 
+I tillegg mottar Kartverket og Statens vegvesen feilmeldinger og endringer fra publikum gjennom deres feilmeldingstjenester http://rettikartet.no[http://rettikartet.no] og https://fiksvegdata.atlas.vegvesen.no/[fiksvegdata.atlas.vegvesen.no]. Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB og kommer deretter ut i NVDB Vegnett Pluss. 
 
 
 <<<
@@ -180,7 +180,9 @@ Hele datasettet
 Kontinuerlig
 
 ==== Vedlikeholdsbeskrivelse 
-Det er i regi av Geovekst inngått avtaler om forvaltning, drift og vedlikehold (FDV) med de fleste kommuner. Her avtalefestes oppgaver og finansiering av et felles kontinuerlig ajourhold av FKB-dataene blant partene i avtalen (dette gjelder også for NVDB Vegnett Pluss). Den viktigste parten i avtalene er kommunen da mange av endringene i FKB kan fanges opp gjennom kommunal saksbehandling. Dataene blir så sendt til Kartverket for innlesing i databasen. 
+Det er i regi av Geovekst inngått avtaler om forvaltning, drift og vedlikehold (FDV) med de fleste kommuner. Her avtalefestes oppgaver og finansiering av et felles kontinuerlig ajourhold av FKB-dataene blant partene i avtalen (dette gjelder også for NVDB Vegnett Pluss). 
+Den viktigste parten i avtalene er kommunen da mange av endringene i FKB kan fanges opp gjennom kommunal saksbehandling. 
+Dataene blir så sendt til Kartverket for innlesing i databasen. 
 Kommuner utenfor Geovekst gjør tilsvarende vedlikehold i egen regi og leverer data i henhold til Norge digitalt avtale.
 
 ==== Omfang 
@@ -200,7 +202,7 @@ Hele datasettet
 Kontinuerlig
 
 ==== Vedlikeholdsbeskrivelse 
-Kartverket og Statens vegvesen mottar feilmeldinger fra publikum gjennom deres feilmeldingstjenester http://rettikartet.no/ og http://fiksvegdata.opentns.org/.Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB (og deretter komme ut i NVDB Vegnett Pluss). 
+Kartverket og Statens vegvesen mottar feilmeldinger fra publikum gjennom deres feilmeldingstjenester http://rettikartet.no/ og https://fiksvegdata.atlas.vegvesen.no/ . Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB (og deretter komme ut i NVDB Vegnett Pluss). 
 
 
 <<<
