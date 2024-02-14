@@ -102,7 +102,7 @@ I NVDB Vegnett Pluss vil ikke alle vegdetaljnivåer av vegnett være med ut i da
 
 
 *Restriksjoner*
-Datasettet inneholder punkter og strekninger som fungerer som restriksjoner i vegnettet. Jernbanekryss, svingerestriksjon og vegsperring er restriksjonene som kommer ut som punktobjekter i datasettet. Fartsgrense, høydebegrensning, trafikkreguleringer, gågatereguleringer, tillatt kjøreretning, gjennomkjøring forbudt og værutsatt veg er restriksjonene som kommer ut som strekningsobjekter i datasettet.
+Datasettet inneholder punkter og strekninger som fungerer som restriksjoner i vegnettet. Jernbanekryss og vegsperring er restriksjonene som kommer ut som punktobjekter i datasettet. Fartsgrense, høydebegrensning, trafikkreguleringer, gågatereguleringer, tillatt kjøreretning, svingerestriksjon, gjennomkjøring forbudt og værutsatt veg er restriksjonene som kommer ut som strekningsobjekter i datasettet.
 
 *Feltoversikt*
 I vegnettet defineres kjørefelt som en beskrivelse av tverrsnittet på vegen. Lovlige verdier for kjørefelt er definert i Statens vegvesen sin datakatalog. Kjørefelt i tverrsnittet av vegen beskrives vha en tekststreng i egenskapen feltoversikt, og kombinasjon av felt skilles med #.

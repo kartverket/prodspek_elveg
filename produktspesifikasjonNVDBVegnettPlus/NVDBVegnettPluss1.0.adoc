@@ -1,5 +1,5 @@
-:datasett: NVDB Vegnett Plus
-:kortnavn: NVDBVegnettPlus
+:datasett: NVDB Vegnett Pluss
+:kortnavn: NVDBVegnettPluss
 :versjon: 1.0
 :skjemaversjon: {versjon}
 :underversjon: 2024-02-01
@@ -13,16 +13,18 @@ include::inkluder/filhode.adoc[]
 
 === Innledning
 
-NVDB Vegnett Pluss er i hovedsak et forvaltningsdatasett for kommunene til forvaltning av vegnettet i SFKB. En kvalitetssikret versjon tilgjengeliggjøres på Geonorge. Datasettet omfatter alle kjørbare veger som er lengre enn 50 meter, eller del av et nettverk, samt gang- og sykkelveger og sykkelveger representert som veglenkegeometri. Fortau, gangveger, gangfelt, traktorveger og stier som tidligere fantes i FKB-TraktorvegSti, vil også være en del av NVDB Vegnett Pluss. For disse objekttypene gjenstår noe innsamling av data.
+NVDB Vegnett Pluss er i hovedsak et forvaltningsdatasett for kommunene til forvaltning av vegnettet i SFKB. En kvalitetssikret versjon tilgjengeliggjøres på Geonorge. Datasettet omfatter alle kjørbare veger som er lengre enn 50 meter, eller del av et nettverk, samt gang- og sykkelveger og sykkelveger representert som veglenkegeometri. Fortau, gangveger, gangfelt, traktorveger og stier som tidligere fantes i FKB-TraktorvegSti, vil også være en del av NVDB Vegnett Pluss. For disse typene veg gjenstår noe innsamling av data.
 
-I tillegg inneholder datasettet adresseinformasjon (som gir mulighet for kobling til matrikkelen og andre registre), fartsgrenser, trafikkreguleringer, trafikkrestriksjoner og vegklasser, alle representert som lineært refererte objekter. Veglenkens attributter er tematisert etter typeveg, vegkategori og vegfase.  
+I tillegg inneholder datasettet adresseinformasjon (som gir mulighet for kobling til matrikkelen og andre registre), fartsgrenser, trafikkreguleringer, trafikkrestriksjoner og vegklasser. Veglenkens attributter er tematisert etter typeveg, vegkategori og vegfase.  
 
-* Typeveg: bilferje, enkel bilveg, fortau, gangfelt, gang- og sykkelveg, gangveg, gatetun, gågate, kanalisert veg (kjørebane, kjørefelt og vegtrasé), passasjerferje, rampe, rundkjøring, sykkelveg og trapp.
-* Vegkategori: europa- (E), riks- R, fylkes- (F) og kommunal veg (K), privat veg (P) og skogsveg (S).
+* Typeveg: bilferje, enkel bilveg, fortau, gangfelt, gang- og sykkelveg, gangveg, gatetun, gågate, kanalisert veg (kjørebane og kjørefelt), passasjerferje, rampe, rundkjøring, sykkelveg og trapp.
+* Vegkategori: europa- (E), riks- (R), fylkes- (F), kommunal veg (K), privat veg (P) og skogsveg (S).
 * Vegfase: eksisterende veg (V), under bygging (A). 
 
-Grunnlagsdata for NVDB Vegnett Pluss forvaltes i Nasjonal vegdatabank, les mer om denne på:  https://www.vegvesen.no/fag/teknologi/nasjonal-vegdatabank/[Nasjonal vegdatabank (NVDB) | Statens vegvesen] +
-NVDB Vegnett Pluss er et produkt eksport fra NVDB og ajourholdes av Statens vegvesen og Kartverket. I tillegg til NVDB Vegnett Pluss finnes det også et forenklet datasett, NVDB Vegnett. Dette datasettet består av de samme veglenkene og vegsperringene vi finner i NVDB Vegnett Pluss. +
+NVDB Vegnett Pluss er et produkt som eksporteres fra Nasjonal vegdatabank (NVDB). Grunnlagsdataene ajourholdes av Statens vegvesen og Kartverket. Les mer om denne på:  https://www.vegvesen.no/fag/teknologi/nasjonal-vegdatabank/[Nasjonal vegdatabank (NVDB) | Statens vegvesen] +
+
+I tillegg til NVDB Vegnett Pluss finnes det også et forenklet datasett, NVDB Vegnett. Dette datasettet består av de samme veglenkene og vegsperringene vi finner i NVDB Vegnett Pluss. +
+
 Europa-, riks- og fylkesvegnettet ajourføres kontinuerlig i NVDB med basis i Statens vegvesens plan- og ferdigvegsdata. Ajourføring av kommunale, private og skogsveger organiseres gjennom Norge digitalt og FDV-avtalene med kommuner, administrert av Kartverket. 
 
 
