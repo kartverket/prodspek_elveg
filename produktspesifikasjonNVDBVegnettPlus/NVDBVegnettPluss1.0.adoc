@@ -87,7 +87,7 @@ basisData
 
 === Sammendrag
 
-NVDB Vegnett Pluss er et vegnettsdatasett som omfatter alle kjørbare veger og vegnett for gående og syklende, i den grad dette er registrert, representert som veglenkegeometri. I tillegg inneholder datasettet adresseinformasjon (som gir mulighet for kobling til matrikkelen og andre registre), fartsgrenser, trafikkreguleringer, trafikkrestriksjoner og vegklasser, alle representert som egengeometri med lineære referanser. 
+NVDB Vegnett Pluss er et vegnettsdatasett som omfatter alle kjørbare veger og vegnett for gående og syklende, i den grad dette er registrert, representert som veglenkegeometri. I tillegg inneholder datasettet adresseinformasjon (som gir mulighet for kobling til matrikkelen og andre registre), fartsgrenser, trafikkreguleringer, trafikkrestriksjoner og vegklasser, alle representert som egengeometri. 
 
 
 === Formål
@@ -241,8 +241,8 @@ include::inkluder/kap13_metadata.adoc[]
 
 GML-realiseringen følger kravene i "Realisering i GML-format 5.0" <<SOSI-GML>>. Realiseringen defineres av følgende filer:
 
-* link:{skjema-url}/NVDBVegnettPlus.xsd[GML-Skjema]
-* link:{skjema-url}/NVDBVegnettPlus.sch[Schematron-Skjema]
+* {skjema-url}/NVDBVegnettPlus.xsd[GML-Skjema]
+* {skjema-url}/NVDBVegnettPlus.sch[Schematron-Skjema]
 
 
 [appendix]
