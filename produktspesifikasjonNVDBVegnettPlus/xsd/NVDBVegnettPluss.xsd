@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:app="http://skjema.geonorge.no/SOSI/produktspesifikasjon/NVDBVegnettPluss/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" elementFormDefault="qualified" targetNamespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/NVDBVegnettPluss/1.0" version="1.0">
   <annotation>
-    <documentation>NVDB Vegnett Pluss inneholder informasjon om alle europa-, riks-, fylkes-, kommunale og skogsbilveger, samt alle private veger unntatt korte, private blindveger. Korte veger er veger med lengde mindre enn 50 m. Veger med unike adresser er med uansett lengde. Bilferjestrekninger skal være representert og gang- og sykkelveger kan være med. Vegnettet er strukturert som et nettverk av veglenker med restriksjoner i form av lineære referanser. 
+    <documentation>NVDB Vegnett Pluss inneholder informasjon om alle europa-, riks-, fylkes-, kommunale og skogsbilveger, samt alle private veger unntatt korte, private blindveger. Korte veger er veger med lengde mindre enn 50 m. Veger med unike adresser er med uansett lengde. Bilferjestrekninger og vegnett for gående og syklende kan også være med. 
+Vegnettet er strukturert som et nettverk av veglenker med restriksjoner i form av lineære referanser. I produktet NVDB Vegnett Pluss utveksles objektene som er knyttet til vegnettet med egengeometri hentet fra vegnettet objektet er referert til.
 Vegnettet ajourføres i Nasjonal Vegdatabank, NVDB.</documentation>
   </annotation>
   <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="http://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
@@ -411,11 +412,6 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
     <complexContent>
       <extension base="app:SOSI_FellesegenskaperType">
         <sequence>
-          <element name="posisjon" type="gml:PointPropertyType">
-            <annotation>
-              <documentation>Angivelse av objektetsposisjon. Plasseres ved start av gjennomkjøring forbudt (ved gjennomkjøring forbudt skilt)</documentation>
-            </annotation>
-          </element>
           <element minOccurs="0" name="gjelderFor" type="gml:CodeType">
             <annotation>
               <documentation>12563: Angir hva slags kjøretøy det er gjennomkjøring forbudt for</documentation>
@@ -435,8 +431,54 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
               </appinfo>
             </annotation>
           </element>
+          <element name="retning" type="gml:CodeType">
+            <annotation>
+              <documentation>Angir hvilken retning gjennomkjøring forbudt gjelder.</documentation>
+            </annotation>
+          </element>
+          <element name="gjelderUkedag" type="gml:CodeType">
+            <annotation>
+              <documentation>Gjennomkjøring forbudt gjelder kun angitt ukedag.</documentation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/gjelderukedag</defaultCodeSpace>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">12649</taggedValue>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">NVDB_GJELDERUKEDAG</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="unntakForBuss" type="boolean">
+            <annotation>
+              <documentation>Verdi settes til True/Ja  dersom gjennomkjøring forbudt ikke gjelder buss</documentation>
+            </annotation>
+          </element>
+          <element name="unntakForTaxi" type="boolean">
+            <annotation>
+              <documentation>Verdi settes til True/Ja  dersom gjennomkjøring forbudt ikke gjelder taxi</documentation>
+            </annotation>
+          </element>
+          <element name="unntakForMoped" type="boolean">
+            <annotation>
+              <documentation>Verdi settes til True/Ja  dersom gjennomkjøring forbudt ikke gjelder moped</documentation>
+            </annotation>
+          </element>
+          <element name="unntakForMotorsykkel" type="boolean">
+            <annotation>
+              <documentation>Verdi settes til True/Ja  dersom gjennomkjøring forbudt ikke gjelder motorsykkel</documentation>
+            </annotation>
+          </element>
+          <element name="unntakForTraktor" type="boolean">
+            <annotation>
+              <documentation>Verdi settes til True/Ja  dersom gjennomkjøring forbudt ikke gjelder traktor</documentation>
+            </annotation>
+          </element>
+          <element name="posisjon" type="gml:PointPropertyType">
+            <annotation>
+              <documentation>Angivelse av objektetsposisjon. Plasseres ved start av gjennomkjøring forbudt (ved gjennomkjøring forbudt skilt)</documentation>
+            </annotation>
+          </element>
           <element maxOccurs="unbounded" minOccurs="0" name="gjennomkjøringForbudtTil" type="gml:ReferenceType">
             <annotation>
+              <documentation>referanse til posisjon som det er ulovlig å kjøre til</documentation>
               <appinfo>
                 <targetElement xmlns="http://www.opengis.net/gml/3.2">app:GjennomkjøringForbudtTil</targetElement>
                 <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">GJENNOMKJORINGFORBUDTTIL</taggedValue>
@@ -456,7 +498,9 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
   </complexType>
   <element name="GjennomkjøringForbudtTil" substitutionGroup="app:SOSI_Fellesegenskaper" type="app:GjennomkjøringForbudtTilType">
     <annotation>
-      <documentation>979: Punkter som omslutter en strekning eller et område med gjennomkjøring forbudt. Kjørende kan ikke passere to punkter uten planlagt stopp mellom dem.</documentation>
+      <documentation>979: Angir slutten på en strekning eller et område med gjennomkjøring forbudt.
+
+Kjørende kan ikke passere et GjennomkjøringForbudt-objekt og et tilhørende GjennomkjøringForbudtTil-objekt uten planlagt stopp mellom dem.</documentation>
       <appinfo>
         <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">979</taggedValue>
       </appinfo>
@@ -572,14 +616,6 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
               <appinfo>
                 <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">11540</taggedValue>
                 <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">VARETRANSPORTLØRDAGPERIODE2TILKL</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element name="kjøringTilEiendommeneTillatt" type="boolean">
-            <annotation>
-              <documentation>angir om det er lov med kjøring til eiendommene</documentation>
-              <appinfo>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">KJØRINGTILEIENDOMMENETILLATT</taggedValue>
               </appinfo>
             </annotation>
           </element>
@@ -1278,7 +1314,9 @@ På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</documentation>
   </complexType>
   <element name="TillattKjøreretning" substitutionGroup="app:SOSI_Fellesegenskaper" type="app:TillattKjøreretningType">
     <annotation>
-      <documentation>977: Erstatter VT 606 "Innkjøring forbudt", men objektene stedfestes i motsatt retning.</documentation>
+      <documentation>977: Geometriretningen angir tillatt kjøreretning.
+
+Erstatter VT 606 "Innkjøring forbudt", men objektene stedfestes i motsatt retning.</documentation>
       <appinfo>
         <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">977</taggedValue>
       </appinfo>
@@ -1294,15 +1332,6 @@ På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</documentation>
               <appinfo>
                 <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">12600</taggedValue>
                 <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">SYKLINGMOTKJØRERETNINGTILLATT</taggedValue>
-              </appinfo>
-            </annotation>
-          </element>
-          <element minOccurs="0" name="merknad" type="string">
-            <annotation>
-              <documentation>12601: Informasjon som ikke framkommer av øvrige egenskaper.</documentation>
-              <appinfo>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">12601</taggedValue>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">MERKNAD</taggedValue>
               </appinfo>
             </annotation>
           </element>
@@ -1383,7 +1412,6 @@ På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</documentation>
       <documentation>7861: Angir hvilken type sperring det er tale om.</documentation>
       <appinfo>
         <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">7861</taggedValue>
-        <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">7861</taggedValue>
         <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">NVDB_TYPEVEGSPERRING</taggedValue>
       </appinfo>
     </annotation>
@@ -1393,7 +1421,6 @@ På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</documentation>
     <annotation>
       <documentation>7861: Angir hvilken type sperring det er tale om.</documentation>
       <appinfo>
-        <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">7861</taggedValue>
         <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">7861</taggedValue>
         <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">NVDB_TYPEVEGSPERRING</taggedValue>
       </appinfo>
@@ -1453,7 +1480,7 @@ Merknad: Komplett vegadresse består i tillegg av husnummer og bokstav</document
           </element>
           <element minOccurs="0" name="vegsystemreferanse" type="app:VegsystemreferansePropertyType">
             <annotation>
-              <documentation>sammensatt identifikator for vegreferanse</documentation>
+              <documentation>sammensatt identifikator for vegsystemreferanse</documentation>
               <appinfo>
                 <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">VEGSYSTEMREFERANSE</taggedValue>
               </appinfo>
@@ -1855,13 +1882,13 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</documentati
               </appinfo>
             </annotation>
           </element>
-          <element name="høyfjellsstrekning" type="gml:CodeType">
+          <element name="ekstraVintervedlikehold" type="gml:CodeType">
             <annotation>
               <documentation>8835: Angir om denne vegstrekningen krever ekstra vintervedlikehold utover standard vinterdrift. Informasjon benyttes i forbindelse med beregning av vedlikeholdsmidler i MOTIV.</documentation>
               <appinfo>
-                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/h%C3%B8yfjellsstrekning</defaultCodeSpace>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/ekstra-vintervedlikehold</defaultCodeSpace>
                 <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">8835</taggedValue>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">HØYFJELLSSTREKNING</taggedValue>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">EKSTRAVINTERVEDLIKEHOLD</taggedValue>
               </appinfo>
             </annotation>
           </element>
