@@ -3,7 +3,7 @@
 :versjon: 1.0
 :skjemaversjon: {versjon}
 :underversjon: 2024-02-01
-:publisert: 2024-02-14
+:publisert: 2024-02-20
 :metadata-url: https://kartkatalog.geonorge.no/metadata/
 :dokumentstatus: 2
 // All informasjon i hode over denne linja må fylles ut for hvert datasett. Øvrige parametere settes i adoc_parametere.adoc
@@ -252,7 +252,7 @@ GML-realiseringen følger kravene i "Realisering i GML-format 5.0" <<SOSI-GML>>.
 
 SOSI-realiseringen følger kravene i "Realisering i SOSI-format 5.0" <<SOSI-FORMAT>>. Under en utlisting av SOSI-formatrealiseringen:
 
-include::vedlegg.adoc[]
+include::SOSIformatRealisering.adoc[]
 
 :sectnums!:
 
