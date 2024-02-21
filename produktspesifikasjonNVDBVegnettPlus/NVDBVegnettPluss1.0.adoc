@@ -3,7 +3,7 @@
 :versjon: 1.0
 :skjemaversjon: {versjon}
 :underversjon: 2024-02-01
-:publisert: 2024-02-20
+:publisert: 2024-02-21
 :metadata-url: https://kartkatalog.geonorge.no/metadata/
 :dokumentstatus: 2
 // All informasjon i hode over denne linja må fylles ut for hvert datasett. Øvrige parametere settes i adoc_parametere.adoc
@@ -18,7 +18,7 @@ NVDB Vegnett Pluss er i hovedsak et forvaltningsdatasett for kommunene til forva
 I tillegg inneholder datasettet adresseinformasjon (som gir mulighet for kobling til matrikkelen og andre registre), fartsgrenser, trafikkreguleringer, trafikkrestriksjoner og vegklasser. Veglenkens attributter er tematisert etter typeveg, vegkategori og vegfase.  
 
 * Typeveg: bilferje, enkel bilveg, fortau, gangfelt, gang- og sykkelveg, gangveg, gatetun, gågate, kanalisert veg (kjørebane og kjørefelt), passasjerferje, rampe, rundkjøring, sykkelveg og trapp.
-* Vegkategori: europa- (E), riks- (R), fylkes- (F), kommunal veg (K), privat veg (P) og skogsveg (S).
+* Vegkategori: europa- (E), riks- \(R), fylkes- (F), kommunal veg (K), privat veg (P) og skogsveg (S).
 * Vegfase: eksisterende veg (V), under bygging (A). 
 
 NVDB Vegnett Pluss er et produkt som eksporteres fra Nasjonal vegdatabank (NVDB). Grunnlagsdataene ajourholdes av Statens vegvesen og Kartverket. Les mer om denne på:  https://www.vegvesen.no/fag/teknologi/nasjonal-vegdatabank/[Nasjonal vegdatabank (NVDB) | Statens vegvesen] +
@@ -37,7 +37,7 @@ Elveg 2.0 var en videreutvikling og sammenslåing av FKB-Vegnett 4.03, Vbase og 
 
 === Endringslogg
 
-Første versjon
+Dette er første versjon av produktspesifikasjonen {datasett}. 
 
 
 
@@ -62,7 +62,7 @@ include::inkluder/kap22_forkortelser.adoc[]
 == Generelt om spesifikasjonen
 
 === Unik identifisering
-NVDBVegnettPlus
+{kortnavn}
 
 ==== Fullstendig navn
 {datasett} 
@@ -114,7 +114,7 @@ include::inkluder/kap4_omfang.adoc[]
 === Omfang
 <<HeleDatasettet,Hele datasettet>>
 
-include::modellRapport.adoc[leveloffset=+1]
+include::modellRapport.adoc[]
 
 <<<
 
