@@ -3,7 +3,7 @@
 :versjon: 1.0
 :skjemaversjon: {versjon}
 :underversjon: 2024-02-01
-:publisert: 2024-02-21
+:publisert: 2024-02-22
 :metadata-url: https://kartkatalog.geonorge.no/metadata/
 :dokumentstatus: 2
 // All informasjon i hode over denne linja må fylles ut for hvert datasett. Øvrige parametere settes i adoc_parametere.adoc
@@ -25,7 +25,7 @@ NVDB Vegnett Pluss er et produkt som eksporteres fra Nasjonal vegdatabank (NVDB)
 
 I tillegg til NVDB Vegnett Pluss finnes det også et forenklet datasett, NVDB Vegnett. Dette datasettet består av de samme veglenkene og vegsperringene vi finner i NVDB Vegnett Pluss. +
 
-Europa-, riks- og fylkesvegnettet ajourføres kontinuerlig i NVDB med basis i Statens vegvesens plan- og ferdigvegsdata. Ajourføring av kommunale, private og skogsveger organiseres gjennom Norge digitalt og FDV-avtalene med kommuner, administrert av Kartverket. 
+Europa-, riks- og fylkesvegnettet ajourføres kontinuerlig i NVDB med basis i plan- og ferdigvegsdata. Ajourføring av kommunale, private og skogsveger organiseres gjennom Norge digitalt og FDV-avtalene med kommuner, administrert av Kartverket. 
 
 
 Denne produktspesifikasjonen er utarbeidet iht. SOSI produktspesifikasjoner – Krav og godkjenning 5.0 <<SOSI-KRAV>>. UML-modellen som ligger til grunn for innhold i diagrammene og dokumentasjon i kap. 5, følger reglene i SOSI Regler for UML-modellering, versjon 5.1 <<SOSI-UML>>. http://sosi.geonorge.no/veiledere/UML[Denne veilederen] gir hjelp til å lese UML-diagrammene.

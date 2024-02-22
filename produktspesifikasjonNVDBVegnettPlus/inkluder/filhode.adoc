@@ -34,6 +34,8 @@ ifeval::[{dokumentstatus} == 2]
 
 WARNING: *Høringsversjon!* 
 
+*Publisert*: {publisert} 
+
 endif::[]
 
 
@@ -41,8 +43,11 @@ ifeval::[{dokumentstatus} == 3]
 
 WARNING: *Utgått versjon!* Dokumentet er erstattet av  
 
+*Publisert*: {publisert} 
+
 endif::[]
 
+ifeval::[{dokumentstatus} == 1]
 
 *Publisert*: {publisert} +
 *Denne versjonen finnes på*: {prodspekbase-url}/{kortnavn}/{versjon} +
@@ -51,6 +56,8 @@ endif::[]
 *Faglig godkjent av*: Kartverket +
 
 Vedtatt som standard av Standardiseringskomiteen for Geomatikk 
+
+endif::[]
 
 ****
 
