@@ -25,6 +25,7 @@ Vegnettet ajourføres i Nasjonal Vegdatabank, NVDB.</documentation>
               <appinfo>
                 <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/bruksomr%C3%A5deberedskapsveg</defaultCodeSpace>
                 <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">12599</taggedValue>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">BRUKSOMRÅDEBEREDSKAPSVEG</taggedValue>
               </appinfo>
             </annotation>
           </element>
@@ -434,6 +435,11 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
           <element name="retning" type="gml:CodeType">
             <annotation>
               <documentation>Angir hvilken retning gjennomkjøring forbudt gjelder.</documentation>
+              <appinfo>
+                <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/retning</defaultCodeSpace>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">12634</taggedValue>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">RETNING</taggedValue>
+              </appinfo>
             </annotation>
           </element>
           <element name="gjelderUkedag" type="gml:CodeType">
@@ -442,7 +448,7 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
               <appinfo>
                 <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/gjelderukedag</defaultCodeSpace>
                 <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">12649</taggedValue>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">NVDB_GJELDERUKEDAG</taggedValue>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">GJELDERUKEDAG</taggedValue>
               </appinfo>
             </annotation>
           </element>
@@ -450,6 +456,7 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
             <annotation>
               <documentation>Verdi settes til True/Ja  dersom gjennomkjøring forbudt ikke gjelder buss</documentation>
               <appinfo>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">12635</taggedValue>
                 <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">UNNTAKFORBUSS</taggedValue>
               </appinfo>
             </annotation>
@@ -458,6 +465,7 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
             <annotation>
               <documentation>Verdi settes til True/Ja  dersom gjennomkjøring forbudt ikke gjelder taxi</documentation>
               <appinfo>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">12636</taggedValue>
                 <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">UNNTAKFORTAXI</taggedValue>
               </appinfo>
             </annotation>
@@ -466,6 +474,7 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
             <annotation>
               <documentation>Verdi settes til True/Ja  dersom gjennomkjøring forbudt ikke gjelder moped</documentation>
               <appinfo>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">12637</taggedValue>
                 <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">UNNTAKFORMOPED</taggedValue>
               </appinfo>
             </annotation>
@@ -474,6 +483,7 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
             <annotation>
               <documentation>Verdi settes til True/Ja  dersom gjennomkjøring forbudt ikke gjelder motorsykkel</documentation>
               <appinfo>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">12638</taggedValue>
                 <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">UNNTAKFORMOTORSYKKEL</taggedValue>
               </appinfo>
             </annotation>
@@ -482,6 +492,7 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
             <annotation>
               <documentation>Verdi settes til True/Ja  dersom gjennomkjøring forbudt ikke gjelder traktor</documentation>
               <appinfo>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">12639</taggedValue>
                 <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">UNNTAKFORTRAKTOR</taggedValue>
               </appinfo>
             </annotation>
@@ -1505,7 +1516,7 @@ Merknad: Komplett vegadresse består i tillegg av husnummer og bokstav</document
       <documentation>sammensatt identifikator for veglenkeadresse. 
 Merknad: Komplett vegadresse består i tillegg av husnummer og bokstav.</documentation>
       <appinfo>
-        <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">VEGLENKEADRESSE</taggedValue>
+        <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">538</taggedValue>
       </appinfo>
     </annotation>
   </element>
@@ -1896,7 +1907,7 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</documentati
               <documentation>1917: Angir hvor mange døgn pr år vegstrekningen normalt er stengt.</documentation>
               <appinfo>
                 <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">1917</taggedValue>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">NVDB_ANTALLSTENGTEDØGN</taggedValue>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">ANTALLSTENGTEDØGN</taggedValue>
               </appinfo>
             </annotation>
           </element>
@@ -1932,7 +1943,7 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</documentati
               <documentation>2222: Angir dato (mmdd) for når nattestengning avsluttes i et normalår.</documentation>
               <appinfo>
                 <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">2222</taggedValue>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">NVDB_NATTESTENGT_TILDATO</taggedValue>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">NATTESTENGT_TILDATO</taggedValue>
               </appinfo>
             </annotation>
           </element>
