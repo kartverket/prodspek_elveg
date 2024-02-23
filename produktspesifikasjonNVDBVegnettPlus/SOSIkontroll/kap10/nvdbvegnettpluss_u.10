@@ -1,0 +1,89 @@
+! ***************************************************************************!
+! * SOSI-kontroll                                             NVDBVEGNETTPLUSS-UTVALG *!
+! * Utvalgsregler for NVDBVEGNETTPLUSS          				                    *!
+! *                            SOSI versjon  1.0                   *!
+! ***************************************************************************!
+! *           Følger databeskrivelsene i Del 1, Praktisk bruk               *!
+! *            og databeskrivelsene i Objektkatalogen,                      *!
+! *                   Generert fra SOSI UML modell                          *!
+! *                                                                         *!
+! *               Statens kartverk, SOSI-sekretariatet           23.02.2024 *!
+! *                          nn                                             *!
+! ***************************************************************************!
+! ------ Antall definerte objekttyper i denne katalogen: 19
+
+.GRUPPE-UTVALG Veglenke
+..VELG  "..OBJTYPE" = Veglenke
+..BRUK-REGEL Veglenke
+
+.GRUPPE-UTVALG Beredskapsveg
+..VELG  "..OBJTYPE" = Beredskapsveg
+..BRUK-REGEL Beredskapsveg
+
+.GRUPPE-UTVALG Fartsgrense
+..VELG  "..OBJTYPE" = Fartsgrense
+..BRUK-REGEL Fartsgrense
+
+.GRUPPE-UTVALG FartsgrenseVariabel
+..VELG  "..OBJTYPE" = FartsgrenseVariabel
+..BRUK-REGEL FartsgrenseVariabel
+
+.GRUPPE-UTVALG Ferjesamband
+..VELG  "..OBJTYPE" = Ferjesamband
+..BRUK-REGEL Ferjesamband
+
+.GRUPPE-UTVALG FunksjonellVegklasse
+..VELG  "..OBJTYPE" = FunksjonellVegklasse
+..BRUK-REGEL FunksjonellVegklasse
+
+.GRUPPE-UTVALG Gågatereguleringer
+..VELG  "..OBJTYPE" = Gågatereguleringer
+..BRUK-REGEL Gågatereguleringer
+
+.GRUPPE-UTVALG GjennomkjøringForbudt
+..VELG  "..OBJTYPE" = GjennomkjøringForbudt
+..BRUK-REGEL GjennomkjøringForbudt
+
+.GRUPPE-UTVALG GjennomkjøringForbudtTil
+..VELG  "..OBJTYPE" = GjennomkjøringForbudtTil
+..BRUK-REGEL GjennomkjøringForbudtTil
+
+.GRUPPE-UTVALG Høydebegrensning
+..VELG  "..OBJTYPE" = Høydebegrensning
+..BRUK-REGEL Høydebegrensning
+
+.GRUPPE-UTVALG Jernbanekryssing
+..VELG  "..OBJTYPE" = Jernbanekryssing
+..BRUK-REGEL Jernbanekryssing
+
+.GRUPPE-UTVALG Landbruksvegklasse
+..VELG  "..OBJTYPE" = Landbruksvegklasse
+..BRUK-REGEL Landbruksvegklasse
+
+.GRUPPE-UTVALG Motorveg
+..VELG  "..OBJTYPE" = Motorveg
+..BRUK-REGEL Motorveg
+
+.GRUPPE-UTVALG Serviceveg
+..VELG  "..OBJTYPE" = Serviceveg
+..BRUK-REGEL Serviceveg
+
+.GRUPPE-UTVALG Svingerestriksjon
+..VELG  "..OBJTYPE" = Svingerestriksjon
+..BRUK-REGEL Svingerestriksjon
+
+.GRUPPE-UTVALG TillattKjøreretning
+..VELG  "..OBJTYPE" = TillattKjøreretning
+..BRUK-REGEL TillattKjøreretning
+
+.GRUPPE-UTVALG Trafikkreguleringer
+..VELG  "..OBJTYPE" = Trafikkreguleringer
+..BRUK-REGEL Trafikkreguleringer
+
+.GRUPPE-UTVALG VærutsattVeg
+..VELG  "..OBJTYPE" = VærutsattVeg
+..BRUK-REGEL VærutsattVeg
+
+.GRUPPE-UTVALG Vegsperring
+..VELG  "..OBJTYPE" = Vegsperring
+..BRUK-REGEL Vegsperring

@@ -1,0 +1,392 @@
+! ***************************************************************************!
+! * SOSI-kontroll                                             NVDBVEGNETTPLUSS-OBJEKTER *!
+! * Objektdefinisjoner for NVDBVEGNETTPLUSS          				                    *!
+! *                            SOSI versjon  1.0                   *!
+! ***************************************************************************!
+! *           Følger databeskrivelsene i Del 1, Praktisk bruk               *!
+! *            og databeskrivelsene i Objektkatalogen,                      *!
+! *                   Generert fra SOSI UML modell                          *!
+! *                                                                         *!
+! *               Statens kartverk, SOSI-sekretariatet           23.02.2024 *!
+! *                          nn                                             *!
+! ***************************************************************************!
+! ------ Antall objekttyper i denne katalogen: 19
+
+
+.OBJEKTTYPE
+..TYPENAVN Veglenke
+..PRODUKTSPEK NVDBVEGNETTPLUSS 5.0
+..EGENSKAP "" * "..OBJTYPE"    T32  1  1  = (Veglenke)
+..EGENSKAP "typeVeg" * "..TYPEVEG"    T20  1  1  >< ()
+..EGENSKAP "detaljnivå" * "..DETALJNIVÅ"    T10  0  1  >< ()
+..EGENSKAP "konnekteringslenke" * "..KONNEKTERINGSLENKE"    BOOLSK  0  1  = (JA,NEI)
+..EGENSKAP "veglenkeadresse" * "..VEGLENKEADRESSE"    *  0  1  >< ()
+..EGENSKAP "adressekode" * "...ADRESSEKODE"    H5  1  1  >< ()
+..EGENSKAP "adressenavn" * "...ADRESSENAVN"    T30  1  1  >< ()
+..EGENSKAP "sideveg" * "...SIDEVEG"    T3  0  1  >< ()
+..EGENSKAP "vegsystemreferanse" * "..VEGSYSTEMREFERANSE"    *  0  1  >< ()
+..EGENSKAP "vegsystem" * "...VEGSYSTEM"    *  1  1  >< ()
+..EGENSKAP "vegkategori" * "....VEGKATEGORI"    T1  1  1  >< ()
+..EGENSKAP "fase" * "....VEGFASE"    T1  1  1  >< ()
+..EGENSKAP "vegnummer" * "....VEGNUMMER"    H5  0  1  >< ()
+..EGENSKAP "vegstrekning" * "...VEGSTREKNING"    *  0  1  >< ()
+..EGENSKAP "strekningNummer" * "....STREKNINGNUMMER"    H3  1  1  >< ()
+..EGENSKAP "delstrekningNummer" * "....DELSTREKNINGNUMMER"    H3  1  1  >< ()
+..EGENSKAP "fraMeter" * "....FRAMETER"    H5  1  1  >< ()
+..EGENSKAP "tilMeter" * "....TILMETER"    H5  1  1  >< ()
+..EGENSKAP "adskilteLøp" * "....ADSKILTELØP"    T3  0  1  >< ()
+..EGENSKAP "adskilteLøpNummer" * "....ADSKILTELØPNUMMER"    T1  0  1  >< ()
+..EGENSKAP "sideanlegg" * "...SIDEANLEGG"    *  0  1  >< ()
+..EGENSKAP "sideanleggsdel" * "....SIDEANLEGGSDEL"    H3  1  1  >< ()
+..EGENSKAP "fraMeter" * "....FRAMETER"    H5  1  1  >< ()
+..EGENSKAP "tilMeter" * "....TILMETER"    H5  1  1  >< ()
+..EGENSKAP "kryssystem" * "...KRYSSYSTEM"    *  0  1  >< ()
+..EGENSKAP "kryssdel" * "....KRYSSDEL"    H3  1  1  >< ()
+..EGENSKAP "fraMeter" * "....FRAMETER"    H5  1  1  >< ()
+..EGENSKAP "tilMeter" * "....TILMETER"    H5  1  1  >< ()
+..EGENSKAP "referanseretning" * "...REFERANSERETNING"    T3  1  1  >< ()
+..EGENSKAP "feltoversikt" * "..FELTOVERSIKT"    T50  0  1  >< ()
+..EGENSKAP "medium" * "..MEDIUM"    T16  1  1  >< ()
+..EGENSKAP "senterlinje" * ".."    *  1  1  >< ()
+..EGENSKAP "datafangstdato" * "..DATAFANGSTDATO"    DATO  0  1  >< ()
+..EGENSKAP "verifiseringsdato" * "..VERIFISERINGSDATO"    DATO  0  1  >< ()
+..EGENSKAP "kommunenummer" * "..KOMM"    T4  1  1  >< ()
+..EGENSKAP "kvalitet" * "..KVALITET"    *  0  1  >< ()
+..EGENSKAP "datafangstmetode" * "...DATAFANGSTMETODE"    T3  1  1  != (dig)
+..EGENSKAP "nøyaktighet" * "...NØYAKTIGHET"    H6  0  1  >< ()
+..EGENSKAP "synbarhet" * "...SYNBARHET"    H1  0  1  >< ()
+..EGENSKAP "datafangstmetodeHøyde" * "...DATAFANGSTMETODEHØYDE"    T3  0  1  >< ()
+..EGENSKAP "nøyaktighetHøyde" * "...H-NØYAKTIGHET"    H6  0  1  >< ()
+..EGENSKAP "medium" * "..MEDIUM"    T16  0  1  >< ()
+..EGENSKAP "identifikasjon" * "..IDENT"    *  1  1  >< ()
+..EGENSKAP "lokalId" * "...LOKALID"    T100  1  1  >< ()
+..EGENSKAP "navnerom" * "...NAVNEROM"    T100  1  1  >< ()
+..EGENSKAP "versjonId" * "...VERSJONID"    T100  0  1  >< ()
+..EGENSKAP "oppdateringsdato" * "..OPPDATERINGSDATO"    DATOTID  0  1  >< ()
+
+
+
+.OBJEKTTYPE
+..TYPENAVN Beredskapsveg
+..PRODUKTSPEK NVDBVEGNETTPLUSS 5.0
+..EGENSKAP "" * "..OBJTYPE"    T32  1  1  = (Beredskapsveg)
+..EGENSKAP "bruksområde" * "..BRUKSOMRÅDEBEREDSKAPSVEG"    T50  0  1  >< ()
+..EGENSKAP "senterlinje" * ".."    FIX  1  1  >< ()
+..EGENSKAP "identifikasjon" * "..IDENT"    *  1  1  >< ()
+..EGENSKAP "lokalId" * "...LOKALID"    T100  1  1  >< ()
+..EGENSKAP "navnerom" * "...NAVNEROM"    T100  1  1  >< ()
+..EGENSKAP "versjonId" * "...VERSJONID"    T100  0  1  >< ()
+..EGENSKAP "oppdateringsdato" * "..OPPDATERINGSDATO"    DATOTID  0  1  >< ()
+
+
+
+.OBJEKTTYPE
+..TYPENAVN Fartsgrense
+..PRODUKTSPEK NVDBVEGNETTPLUSS 5.0
+..EGENSKAP "" * "..OBJTYPE"    T32  1  1  = (Fartsgrense)
+..EGENSKAP "fartsgrenseVerdi" * "..FARTSGRENSEVERDI"    H3  1  1  >< ()
+..EGENSKAP "vedtaksnummer" * "..VEDTAKSNUMMER"    T30  0  1  >< ()
+..EGENSKAP "gyldigFraDato" * "..GYLDIGFRADATO"    DATO  0  1  >< ()
+..EGENSKAP "arkivnummer" * "..ARKIVNUMMER"    T250  0  1  >< ()
+..EGENSKAP "senterlinje" * ".."    FIX  1  1  >< ()
+..EGENSKAP "identifikasjon" * "..IDENT"    *  1  1  >< ()
+..EGENSKAP "lokalId" * "...LOKALID"    T100  1  1  >< ()
+..EGENSKAP "navnerom" * "...NAVNEROM"    T100  1  1  >< ()
+..EGENSKAP "versjonId" * "...VERSJONID"    T100  0  1  >< ()
+..EGENSKAP "oppdateringsdato" * "..OPPDATERINGSDATO"    DATOTID  0  1  >< ()
+
+
+
+.OBJEKTTYPE
+..TYPENAVN FartsgrenseVariabel
+..PRODUKTSPEK NVDBVEGNETTPLUSS 5.0
+..EGENSKAP "" * "..OBJTYPE"    T32  1  1  = (FartsgrenseVariabel)
+..EGENSKAP "fartsgrenseVerdi" * "..FARTSGRENSEVERDI"    H3  1  1  >< ()
+..EGENSKAP "type" * "..TYPE"    T30  1  1  >< ()
+..EGENSKAP "ukedag" * "..UKEDAG"    T30  0  1  >< ()
+..EGENSKAP "datoFra" * "..DATOFRA"    T4  0  1  >< ()
+..EGENSKAP "datoTil" * "..DATOTIL"    T4  0  1  >< ()
+..EGENSKAP "klokkeslettFra" * "..KLOKKESLETTFRA"    T4  0  1  >< ()
+..EGENSKAP "klokkeslettTil" * "..KLOKKESLETTTIL"    T4  0  1  >< ()
+..EGENSKAP "vedtaksnummer" * "..VEDTAKSNUMMER"    T15  0  1  >< ()
+..EGENSKAP "gyldigFraDato" * "..GYLDIGFRADATO"    DATO  0  1  >< ()
+..EGENSKAP "merknad" * "..MERKNAD"    T400  0  1  >< ()
+..EGENSKAP "arkivnummer" * "..ARKIVNUMMER"    T250  0  1  >< ()
+..EGENSKAP "prosjektreferanse" * "..PROSJEKTREFERANSE"    T200  0  1  >< ()
+..EGENSKAP "senterlinje" * ".."    FIX  1  1  >< ()
+..EGENSKAP "identifikasjon" * "..IDENT"    *  1  1  >< ()
+..EGENSKAP "lokalId" * "...LOKALID"    T100  1  1  >< ()
+..EGENSKAP "navnerom" * "...NAVNEROM"    T100  1  1  >< ()
+..EGENSKAP "versjonId" * "...VERSJONID"    T100  0  1  >< ()
+..EGENSKAP "oppdateringsdato" * "..OPPDATERINGSDATO"    DATOTID  0  1  >< ()
+
+
+
+.OBJEKTTYPE
+..TYPENAVN Ferjesamband
+..PRODUKTSPEK NVDBVEGNETTPLUSS 5.0
+..EGENSKAP "" * "..OBJTYPE"    T32  1  1  = (Ferjesamband)
+..EGENSKAP "navn" * "..NAVN"    T70  0  1  >< ()
+..EGENSKAP "ferjesambands_Id" * "..FERJESAMBANDS_ID"    H6  0  1  >< ()
+..EGENSKAP "neTEx_id" * "..NETEX_ID"    T100  0  1  >< ()
+..EGENSKAP "sambandstype" * "..SAMBANDSTYPE"    T30  0  1  >< ()
+..EGENSKAP "driftsstatus" * "..DRIFTSSTATUS"    T50  0  1  >< ()
+..EGENSKAP "referanseTilEksternInfo" * "..REFERANSETILEKSTERNINFO"    T250  0  1  >< ()
+..EGENSKAP "driftFraDato" * "..DRIFTFRADATO"    T4  0  1  >< ()
+..EGENSKAP "driftTilDato" * "..DRIFTTILDATO"    T4  0  1  >< ()
+..EGENSKAP "senterlinje" * ".."    FIX  1  1  >< ()
+..EGENSKAP "identifikasjon" * "..IDENT"    *  1  1  >< ()
+..EGENSKAP "lokalId" * "...LOKALID"    T100  1  1  >< ()
+..EGENSKAP "navnerom" * "...NAVNEROM"    T100  1  1  >< ()
+..EGENSKAP "versjonId" * "...VERSJONID"    T100  0  1  >< ()
+..EGENSKAP "oppdateringsdato" * "..OPPDATERINGSDATO"    DATOTID  0  1  >< ()
+
+
+
+.OBJEKTTYPE
+..TYPENAVN FunksjonellVegklasse
+..PRODUKTSPEK NVDBVEGNETTPLUSS 5.0
+..EGENSKAP "" * "..OBJTYPE"    T32  1  1  = (FunksjonellVegklasse)
+..EGENSKAP "vegklasse" * "..VEGKLASSE"    H1  1  1  >< ()
+..EGENSKAP "merknad" * "..MERKNAD"    T250  0  1  >< ()
+..EGENSKAP "senterlinje" * ".."    FIX  1  1  >< ()
+..EGENSKAP "identifikasjon" * "..IDENT"    *  1  1  >< ()
+..EGENSKAP "lokalId" * "...LOKALID"    T100  1  1  >< ()
+..EGENSKAP "navnerom" * "...NAVNEROM"    T100  1  1  >< ()
+..EGENSKAP "versjonId" * "...VERSJONID"    T100  0  1  >< ()
+..EGENSKAP "oppdateringsdato" * "..OPPDATERINGSDATO"    DATOTID  0  1  >< ()
+
+
+
+.OBJEKTTYPE
+..TYPENAVN Gågatereguleringer
+..PRODUKTSPEK NVDBVEGNETTPLUSS 5.0
+..EGENSKAP "" * "..OBJTYPE"    T32  1  1  = (Gågatereguleringer)
+..EGENSKAP "varetransportHverdagULørdagPeriode1FraKl" * "..VARETRANSPORTHVERDAGULØRDAGPERIODE1FRAKL"    FIX  0  1  >< ()
+..EGENSKAP "varetransportHverdagULørdagPeriode1TilKl" * "..VARETRANSPORTHVERDAGULØRDAGPERIODE1TILKL"    FIX  0  1  >< ()
+..EGENSKAP "varetransportHverdagULørdagPeriode2FraKl" * "..VARETRANSPORTHVERDAGULØRDAGPERIODE2FRAKL"    FIX  0  1  >< ()
+..EGENSKAP "varetransportHverdagULørdagPeriode2TilKl" * "..VARETRANSPORTHVERDAGULØRDAGPERIODE2TILKL"    FIX  0  1  >< ()
+..EGENSKAP "varetransportLørdagPeriode1FraKl" * "..VARETRANSPORTLØRDAGPERIODE1FRAKL"    FIX  0  1  >< ()
+..EGENSKAP "varetransportLørdagPeriode1TilKl" * "..VARETRANSPORTLØRDAGPERIODE1TILKL"    FIX  0  1  >< ()
+..EGENSKAP "varetransportLørdagPeriode2FraKl" * "..VARETRANSPORTLØRDAGPERIODE2FRAKL"    FIX  0  1  >< ()
+..EGENSKAP "varetransportLørdagPeriode2TilKl" * "..VARETRANSPORTLØRDAGPERIODE2TILKL"    FIX  0  1  >< ()
+..EGENSKAP "senterlinje" * ".."    FIX  1  1  >< ()
+..EGENSKAP "identifikasjon" * "..IDENT"    *  1  1  >< ()
+..EGENSKAP "lokalId" * "...LOKALID"    T100  1  1  >< ()
+..EGENSKAP "navnerom" * "...NAVNEROM"    T100  1  1  >< ()
+..EGENSKAP "versjonId" * "...VERSJONID"    T100  0  1  >< ()
+..EGENSKAP "oppdateringsdato" * "..OPPDATERINGSDATO"    DATOTID  0  1  >< ()
+
+
+
+.OBJEKTTYPE
+..TYPENAVN GjennomkjøringForbudt
+..PRODUKTSPEK NVDBVEGNETTPLUSS 5.0
+..EGENSKAP "" * "..OBJTYPE"    T32  1  1  = (GjennomkjøringForbudt)
+..EGENSKAP "gjelderFor" * "..GJELDERFOR"    T30  0  1  >< ()
+..EGENSKAP "merknad" * "..MERKNAD"    T250  0  1  >< ()
+..EGENSKAP "retning" * "..RETNING"    T20  1  1  >< ()
+..EGENSKAP "gjelderUkedag" * "..GJELDERUKEDAG"    T20  1  1  >< ()
+..EGENSKAP "unntakForBuss" * "..UNNTAKFORBUSS"    BOOLSK  1  1  = (JA,NEI)
+..EGENSKAP "unntakForTaxi" * "..UNNTAKFORTAXI"    BOOLSK  1  1  = (JA,NEI)
+..EGENSKAP "unntakForMoped" * "..UNNTAKFORMOPED"    BOOLSK  1  1  = (JA,NEI)
+..EGENSKAP "unntakForMotorsykkel" * "..UNNTAKFORMOTORSYKKEL"    BOOLSK  1  1  = (JA,NEI)
+..EGENSKAP "unntakForTraktor" * "..UNNTAKFORTRAKTOR"    BOOLSK  1  1  = (JA,NEI)
+..EGENSKAP "posisjon" * ".."    FIX  1  1  >< ()
+..EGENSKAP "gjennomkjøringForbudtTil(rolle)" * "..GJENNOMKJORINGFORBUDTTIL"    *  0  N  >< ()
+..EGENSKAP "identifikasjon" * "..IDENT"    *  1  1  >< ()
+..EGENSKAP "lokalId" * "...LOKALID"    T100  1  1  >< ()
+..EGENSKAP "navnerom" * "...NAVNEROM"    T100  1  1  >< ()
+..EGENSKAP "versjonId" * "...VERSJONID"    T100  0  1  >< ()
+..EGENSKAP "oppdateringsdato" * "..OPPDATERINGSDATO"    DATOTID  0  1  >< ()
+
+
+
+.OBJEKTTYPE
+..TYPENAVN GjennomkjøringForbudtTil
+..PRODUKTSPEK NVDBVEGNETTPLUSS 5.0
+..EGENSKAP "" * "..OBJTYPE"    T32  1  1  = (GjennomkjøringForbudtTil)
+..EGENSKAP "posisjon" * ".."    FIX  1  1  >< ()
+..EGENSKAP "merknad" * "..MERKNAD"    T250  0  1  >< ()
+..EGENSKAP "identifikasjon" * "..IDENT"    *  1  1  >< ()
+..EGENSKAP "lokalId" * "...LOKALID"    T100  1  1  >< ()
+..EGENSKAP "navnerom" * "...NAVNEROM"    T100  1  1  >< ()
+..EGENSKAP "versjonId" * "...VERSJONID"    T100  0  1  >< ()
+..EGENSKAP "oppdateringsdato" * "..OPPDATERINGSDATO"    DATOTID  0  1  >< ()
+
+
+
+.OBJEKTTYPE
+..TYPENAVN Høydebegrensning
+..PRODUKTSPEK NVDBVEGNETTPLUSS 5.0
+..EGENSKAP "" * "..OBJTYPE"    T32  1  1  = (Høydebegrensning)
+..EGENSKAP "skiltaHøyde" * "..SKILTAHØYDE"    D3  0  1  >< ()
+..EGENSKAP "typeHinder" * "..TYPEHINDER"    T50  1  1  >< ()
+..EGENSKAP "beregnetHøyde" * "..BEREGNETHØYDE"    D5  0  1  >< ()
+..EGENSKAP "navn" * "..NAVN"    T50  0  1  >< ()
+..EGENSKAP "merknad" * "..MERKNAD"    T50  0  1  >< ()
+..EGENSKAP "bredde" * "..BREDDE"    D5  0  1  >< ()
+..EGENSKAP "hMinHøyreKant" * "..HMINHØYREKANT"    D5  0  1  >< ()
+..EGENSKAP "hMinMidt" * "..HMINMIDT"    D5  0  1  >< ()
+..EGENSKAP "hMinVenstreKant" * "..HMINVENSTREKANT"    D5  0  1  >< ()
+..EGENSKAP "målemetode" * "..MÅLEMETODEHØYDEBEGRENSNING"    T20  0  1  >< ()
+..EGENSKAP "måledato" * "..MÅLEDATO"    DATO  0  1  >< ()
+..EGENSKAP "prosjektreferanse" * "..PROSJEKTREFERANSE"    T200  0  1  >< ()
+..EGENSKAP "senterlinje" * ".."    FIX  1  1  >< ()
+..EGENSKAP "identifikasjon" * "..IDENT"    *  1  1  >< ()
+..EGENSKAP "lokalId" * "...LOKALID"    T100  1  1  >< ()
+..EGENSKAP "navnerom" * "...NAVNEROM"    T100  1  1  >< ()
+..EGENSKAP "versjonId" * "...VERSJONID"    T100  0  1  >< ()
+..EGENSKAP "oppdateringsdato" * "..OPPDATERINGSDATO"    DATOTID  0  1  >< ()
+
+
+
+.OBJEKTTYPE
+..TYPENAVN Jernbanekryssing
+..PRODUKTSPEK NVDBVEGNETTPLUSS 5.0
+..EGENSKAP "" * "..OBJTYPE"    T32  1  1  = (Jernbanekryssing)
+..EGENSKAP "typeJernbanekryssing" * "..TYPEJERNBANEKRYSSING"    T50  1  1  >< ()
+..EGENSKAP "tilleggsinformasjon" * "..TILLEGGSINFORMASJON"    T250  0  1  >< ()
+..EGENSKAP "posisjon" * ".."    FIX  1  1  >< ()
+..EGENSKAP "identifikasjon" * "..IDENT"    *  1  1  >< ()
+..EGENSKAP "lokalId" * "...LOKALID"    T100  1  1  >< ()
+..EGENSKAP "navnerom" * "...NAVNEROM"    T100  1  1  >< ()
+..EGENSKAP "versjonId" * "...VERSJONID"    T100  0  1  >< ()
+..EGENSKAP "oppdateringsdato" * "..OPPDATERINGSDATO"    DATOTID  0  1  >< ()
+
+
+
+.OBJEKTTYPE
+..TYPENAVN Landbruksvegklasse
+..PRODUKTSPEK NVDBVEGNETTPLUSS 5.0
+..EGENSKAP "" * "..OBJTYPE"    T32  1  1  = (Landbruksvegklasse)
+..EGENSKAP "klasseLandbruksveg" * "..KLASSELANDBRUKSVEG"    T40  1  1  >< ()
+..EGENSKAP "senterlinje" * ".."    FIX  1  1  >< ()
+..EGENSKAP "identifikasjon" * "..IDENT"    *  1  1  >< ()
+..EGENSKAP "lokalId" * "...LOKALID"    T100  1  1  >< ()
+..EGENSKAP "navnerom" * "...NAVNEROM"    T100  1  1  >< ()
+..EGENSKAP "versjonId" * "...VERSJONID"    T100  0  1  >< ()
+..EGENSKAP "oppdateringsdato" * "..OPPDATERINGSDATO"    DATOTID  0  1  >< ()
+
+
+
+.OBJEKTTYPE
+..TYPENAVN Motorveg
+..PRODUKTSPEK NVDBVEGNETTPLUSS 5.0
+..EGENSKAP "" * "..OBJTYPE"    T32  1  1  = (Motorveg)
+..EGENSKAP "motorvegtype" * "..MOTORVEGTYPE"    T20  1  1  >< ()
+..EGENSKAP "vedtaksnummer" * "..VEDTAKSNUMMER"    T15  0  1  >< ()
+..EGENSKAP "arkivnummer" * "..ARKIVNUMMER"    T250  0  1  >< ()
+..EGENSKAP "senterlinje" * ".."    FIX  1  1  >< ()
+..EGENSKAP "identifikasjon" * "..IDENT"    *  1  1  >< ()
+..EGENSKAP "lokalId" * "...LOKALID"    T100  1  1  >< ()
+..EGENSKAP "navnerom" * "...NAVNEROM"    T100  1  1  >< ()
+..EGENSKAP "versjonId" * "...VERSJONID"    T100  0  1  >< ()
+..EGENSKAP "oppdateringsdato" * "..OPPDATERINGSDATO"    DATOTID  0  1  >< ()
+
+
+
+.OBJEKTTYPE
+..TYPENAVN Serviceveg
+..PRODUKTSPEK NVDBVEGNETTPLUSS 5.0
+..EGENSKAP "" * "..OBJTYPE"    T32  1  1  = (Serviceveg)
+..EGENSKAP "senterlinje" * ".."    FIX  1  1  >< ()
+..EGENSKAP "identifikasjon" * "..IDENT"    *  1  1  >< ()
+..EGENSKAP "lokalId" * "...LOKALID"    T100  1  1  >< ()
+..EGENSKAP "navnerom" * "...NAVNEROM"    T100  1  1  >< ()
+..EGENSKAP "versjonId" * "...VERSJONID"    T100  0  1  >< ()
+..EGENSKAP "oppdateringsdato" * "..OPPDATERINGSDATO"    DATOTID  0  1  >< ()
+
+
+
+.OBJEKTTYPE
+..TYPENAVN Svingerestriksjon
+..PRODUKTSPEK NVDBVEGNETTPLUSS 5.0
+..EGENSKAP "" * "..OBJTYPE"    T32  1  1  = (Svingerestriksjon)
+..EGENSKAP "merknad" * "..MERKNAD"    T200  0  1  >< ()
+..EGENSKAP "posisjon" * ".."    FIX  1  1  >< ()
+..EGENSKAP "identifikasjon" * "..IDENT"    *  1  1  >< ()
+..EGENSKAP "lokalId" * "...LOKALID"    T100  1  1  >< ()
+..EGENSKAP "navnerom" * "...NAVNEROM"    T100  1  1  >< ()
+..EGENSKAP "versjonId" * "...VERSJONID"    T100  0  1  >< ()
+..EGENSKAP "oppdateringsdato" * "..OPPDATERINGSDATO"    DATOTID  0  1  >< ()
+
+
+
+.OBJEKTTYPE
+..TYPENAVN TillattKjøreretning
+..PRODUKTSPEK NVDBVEGNETTPLUSS 5.0
+..EGENSKAP "" * "..OBJTYPE"    T32  1  1  = (TillattKjøreretning)
+..EGENSKAP "syklingMotKjøreretningTillatt" * "..SYKLINGMOTKJØRERETNINGTILLATT"    BOOLSK3  0  1  = (JA,NEI)
+..EGENSKAP "senterlinje" * ".."    FIX  1  1  >< ()
+..EGENSKAP "identifikasjon" * "..IDENT"    *  1  1  >< ()
+..EGENSKAP "lokalId" * "...LOKALID"    T100  1  1  >< ()
+..EGENSKAP "navnerom" * "...NAVNEROM"    T100  1  1  >< ()
+..EGENSKAP "versjonId" * "...VERSJONID"    T100  0  1  >< ()
+..EGENSKAP "oppdateringsdato" * "..OPPDATERINGSDATO"    DATOTID  0  1  >< ()
+
+
+
+.OBJEKTTYPE
+..TYPENAVN Trafikkreguleringer
+..PRODUKTSPEK NVDBVEGNETTPLUSS 5.0
+..EGENSKAP "" * "..OBJTYPE"    T32  1  1  = (Trafikkreguleringer)
+..EGENSKAP "trafikkreguleringer" * "..TRAFIKKREGULERINGER"    T80  1  1  >< ()
+..EGENSKAP "gjeldertidsrom" * "..GJELDERTIDSROM"    T9  0  1  >< ()
+..EGENSKAP "merknad" * "..MERKNAD"    T290  0  1  >< ()
+..EGENSKAP "senterlinje" * ".."    FIX  1  1  >< ()
+..EGENSKAP "identifikasjon" * "..IDENT"    *  1  1  >< ()
+..EGENSKAP "lokalId" * "...LOKALID"    T100  1  1  >< ()
+..EGENSKAP "navnerom" * "...NAVNEROM"    T100  1  1  >< ()
+..EGENSKAP "versjonId" * "...VERSJONID"    T100  0  1  >< ()
+..EGENSKAP "oppdateringsdato" * "..OPPDATERINGSDATO"    DATOTID  0  1  >< ()
+
+
+
+.OBJEKTTYPE
+..TYPENAVN VærutsattVeg
+..PRODUKTSPEK NVDBVEGNETTPLUSS 5.0
+..EGENSKAP "" * "..OBJTYPE"    T32  1  1  = (VærutsattVeg)
+..EGENSKAP "fjellovergang" * "..FJELLOVERGANG"    BOOLSK20  0  1  = (JA,NEI)
+..EGENSKAP "navn" * "..NAVN"    T40  0  1  >< ()
+..EGENSKAP "sted_Fra" * "..STED_FRA"    T75  0  1  >< ()
+..EGENSKAP "sted_Til" * "..STED_TIL"    T75  0  1  >< ()
+..EGENSKAP "stedLokalt_Fra" * "..STEDLOKALT_FRA"    T75  0  1  >< ()
+..EGENSKAP "stedLokalt_Til" * "..STEDLOKALT_TIL"    T75  0  1  >< ()
+..EGENSKAP "ansvarligVTS" * "..ANSVARLIGVTS"    T20  0  1  >< ()
+..EGENSKAP "stedligBeredskap" * "..STEDLIGBEREDSKAP"    BOOLSK3  0  1  = (JA,NEI)
+..EGENSKAP "ekstraVintervedlikehold" * "..EKSTRAVINTERVEDLIKEHOLD"    T10  1  1  >< ()
+..EGENSKAP "snødybde" * "..SNØDYBDE"    H4  0  1  >< ()
+..EGENSKAP "antallStengteDøgn" * "..ANTALLSTENGTEDØGN"    H3  0  1  >< ()
+..EGENSKAP "vinterstengt_FraDato" * "..VINTERSTENGT_FRADATO"    T4  0  1  >< ()
+..EGENSKAP "vinterstengt_TilDato" * "..NVDB_VINTERSTENGT_TILDATO"    T4  0  1  >< ()
+..EGENSKAP "nattestengt_FraDato" * "..NATTESTENGT_FRADATO"    T4  0  1  >< ()
+..EGENSKAP "nattestengt_TilDato" * "..NATTESTENGT_TILDATO"    T4  0  1  >< ()
+..EGENSKAP "avgrensaVinterdriftFraDato" * "..AVGRENSAVINTERDRIFTFRADATO"    T4  0  1  >< ()
+..EGENSKAP "avgrensaVinterdriftTilDato" * "..AVGRENSAVINTERDRIFTTILDATO"    T4  0  1  >< ()
+..EGENSKAP "tilleggsinformasjon" * "..TILLEGGSINFORMASJON"    T400  0  1  >< ()
+..EGENSKAP "senterlinje" * ".."    FIX  1  1  >< ()
+..EGENSKAP "identifikasjon" * "..IDENT"    *  1  1  >< ()
+..EGENSKAP "lokalId" * "...LOKALID"    T100  1  1  >< ()
+..EGENSKAP "navnerom" * "...NAVNEROM"    T100  1  1  >< ()
+..EGENSKAP "versjonId" * "...VERSJONID"    T100  0  1  >< ()
+..EGENSKAP "oppdateringsdato" * "..OPPDATERINGSDATO"    DATOTID  0  1  >< ()
+
+
+
+.OBJEKTTYPE
+..TYPENAVN Vegsperring
+..PRODUKTSPEK NVDBVEGNETTPLUSS 5.0
+..EGENSKAP "" * "..OBJTYPE"    T32  1  1  = (Vegsperring)
+..EGENSKAP "type" * "..TYPE"    T30  0  1  >< ()
+..EGENSKAP "funksjon" * "..FUNKSJON"    T25  1  1  >< ()
+..EGENSKAP "gjeldertidsrom" * "..GJELDERTIDSROM"    T9  0  1  >< ()
+..EGENSKAP "merknad" * "..MERKNAD"    T200  0  1  >< ()
+..EGENSKAP "eier" * "..EIER"    T30  0  1  >< ()
+..EGENSKAP "posisjon" * ".."    FIX  1  1  >< ()
+..EGENSKAP "identifikasjon" * "..IDENT"    *  1  1  >< ()
+..EGENSKAP "lokalId" * "...LOKALID"    T100  1  1  >< ()
+..EGENSKAP "navnerom" * "...NAVNEROM"    T100  1  1  >< ()
+..EGENSKAP "versjonId" * "...VERSJONID"    T100  0  1  >< ()
+..EGENSKAP "oppdateringsdato" * "..OPPDATERINGSDATO"    DATOTID  0  1  >< ()
+
