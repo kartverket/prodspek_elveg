@@ -502,6 +502,72 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
               <documentation>Angivelse av objektetsposisjon. Plasseres ved start av gjennomkjøring forbudt (ved gjennomkjøring forbudt skilt)</documentation>
             </annotation>
           </element>
+          <element minOccurs="0" name="gjelderHverdagerULørdagFraKl" type="dateTime">
+            <annotation>
+              <documentation>angir tidspunkt for når gjennomkjøring forbudt gjelder fra. 
+
+Merknad: Om gjennomkjøring forbudt gjelder generelt angis ingen verdi</documentation>
+              <appinfo>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">12640</taggedValue>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">GJELDERHVERDAGERULØRDAGFRAKL</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="gjelderHverdagerULørdagTilKl" type="dateTime">
+            <annotation>
+              <documentation>angir tidspunkt for når gjennomkjøring forbudt gjelder til. 
+
+Merknad: Om gjennomkjøring forbudt gjelder generelt angis ingen verdi</documentation>
+              <appinfo>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">12641</taggedValue>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">GJELDERHVERDAGERULØRDAGTILKL</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="gjelderLørdagFraKl" type="dateTime">
+            <annotation>
+              <documentation>angir tidspunkt for når gjennomkjøring forbudt gjelder fra. 
+
+Merknad: Om gjennomkjøring forbudt gjelder generelt angis ingen verdi</documentation>
+              <appinfo>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">12642</taggedValue>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">GJELDERLØRDAGFRAKL</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="gjelderLørdagTilKl" type="dateTime">
+            <annotation>
+              <documentation>angir tidspunkt for når gjennomkjøring forbudt gjelder til. 
+
+Merknad: Om gjennomkjøring forbudt gjelder generelt angis ingen verdi</documentation>
+              <appinfo>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">12643</taggedValue>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">GJELDERLØRDAGTILKL</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="gjelderSøndagFraKl" type="dateTime">
+            <annotation>
+              <documentation>angir tidspunkt for når gjennomkjøring forbudt gjelder fra. 
+
+Merknad: Om gjennomkjøring forbudt gjelder generelt angis ingen verdi</documentation>
+              <appinfo>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">12644</taggedValue>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">GJELDERSØNDAGFRAKL</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="gjelderSøndagTilKl" type="dateTime">
+            <annotation>
+              <documentation>angir tidspunkt for når gjennomkjøring forbudt gjelder til. 
+
+Merknad: Om gjennomkjøring forbudt gjelder generelt angis ingen verdi</documentation>
+              <appinfo>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">12645</taggedValue>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">GJELDERSØNDAGTILKL</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
           <element maxOccurs="unbounded" minOccurs="0" name="gjennomkjøringForbudtTil" type="gml:ReferenceType">
             <annotation>
               <documentation>referanse til posisjon som det er ulovlig å kjøre til</documentation>
@@ -1925,7 +1991,7 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</documentati
               <documentation>2223: Angir dato (mmdd) for når vinterstengning opphører i et normalår.</documentation>
               <appinfo>
                 <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="NVDB_ID">2223</taggedValue>
-                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">NVDB_VINTERSTENGT_TILDATO</taggedValue>
+                <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">VINTERSTENGT_TILDATO</taggedValue>
               </appinfo>
             </annotation>
           </element>

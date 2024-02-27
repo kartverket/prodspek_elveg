@@ -7,7 +7,7 @@
 ! *            og databeskrivelsene i Objektkatalogen,                      *!
 ! *                   Generert fra SOSI UML modell                          *!
 ! *                                                                         *!
-! *               Statens kartverk, SOSI-sekretariatet           23.02.2024 *!
+! *               Statens kartverk, SOSI-sekretariatet           27.02.2024 *!
 ! *                          nn                                             *!
 ! ***************************************************************************!
 ! ------ Antall objekttyper i denne katalogen: 19
@@ -47,7 +47,7 @@
 ..EGENSKAP "referanseretning" * "...REFERANSERETNING"    T3  1  1  >< ()
 ..EGENSKAP "feltoversikt" * "..FELTOVERSIKT"    T50  0  1  >< ()
 ..EGENSKAP "medium" * "..MEDIUM"    T16  1  1  >< ()
-..EGENSKAP "senterlinje" * ".."    *  1  1  >< ()
+..EGENSKAP "senterlinje" * ".."    FIX  1  1  >< ()
 ..EGENSKAP "datafangstdato" * "..DATAFANGSTDATO"    DATO  0  1  >< ()
 ..EGENSKAP "verifiseringsdato" * "..VERIFISERINGSDATO"    DATO  0  1  >< ()
 ..EGENSKAP "kommunenummer" * "..KOMM"    T4  1  1  >< ()
@@ -193,6 +193,12 @@
 ..EGENSKAP "unntakForMotorsykkel" * "..UNNTAKFORMOTORSYKKEL"    BOOLSK  1  1  = (JA,NEI)
 ..EGENSKAP "unntakForTraktor" * "..UNNTAKFORTRAKTOR"    BOOLSK  1  1  = (JA,NEI)
 ..EGENSKAP "posisjon" * ".."    FIX  1  1  >< ()
+..EGENSKAP "gjelderHverdagerULørdagFraKl" * "..GJELDERHVERDAGERULØRDAGFRAKL"    DATOTID  0  1  >< ()
+..EGENSKAP "gjelderHverdagerULørdagTilKl" * "..GJELDERHVERDAGERULØRDAGTILKL"    DATOTID  0  1  >< ()
+..EGENSKAP "gjelderLørdagFraKl" * "..GJELDERLØRDAGFRAKL"    DATOTID  0  1  >< ()
+..EGENSKAP "gjelderLørdagTilKl" * "..GJELDERLØRDAGTILKL"    DATOTID  0  1  >< ()
+..EGENSKAP "gjelderSøndagFraKl" * "..GJELDERSØNDAGFRAKL"    DATOTID  0  1  >< ()
+..EGENSKAP "gjelderSøndagTilKl" * "..GJELDERSØNDAGTILKL"    DATOTID  0  1  >< ()
 ..EGENSKAP "gjennomkjøringForbudtTil(rolle)" * "..GJENNOMKJORINGFORBUDTTIL"    *  0  N  >< ()
 ..EGENSKAP "identifikasjon" * "..IDENT"    *  1  1  >< ()
 ..EGENSKAP "lokalId" * "...LOKALID"    T100  1  1  >< ()
@@ -359,7 +365,7 @@
 ..EGENSKAP "snødybde" * "..SNØDYBDE"    H4  0  1  >< ()
 ..EGENSKAP "antallStengteDøgn" * "..ANTALLSTENGTEDØGN"    H3  0  1  >< ()
 ..EGENSKAP "vinterstengt_FraDato" * "..VINTERSTENGT_FRADATO"    T4  0  1  >< ()
-..EGENSKAP "vinterstengt_TilDato" * "..NVDB_VINTERSTENGT_TILDATO"    T4  0  1  >< ()
+..EGENSKAP "vinterstengt_TilDato" * "..VINTERSTENGT_TILDATO"    T4  0  1  >< ()
 ..EGENSKAP "nattestengt_FraDato" * "..NATTESTENGT_FRADATO"    T4  0  1  >< ()
 ..EGENSKAP "nattestengt_TilDato" * "..NATTESTENGT_TILDATO"    T4  0  1  >< ()
 ..EGENSKAP "avgrensaVinterdriftFraDato" * "..AVGRENSAVINTERDRIFTFRADATO"    T4  0  1  >< ()
