@@ -5,16 +5,13 @@ Forklaring på forkortelser i definisjonene som følger merket med [] finnes i k
 supplering og korrigering av innholdet i geodataene slik at de fremstiller de faktiske forhold på et gitt tidspunkt, etter de retningslinjer som gjelder for innhold og kvalitet [PABG] 
 
 *Applikasjonsskjema* 
-informasjonsmodellene i SOSI-modellregister er modellert som UML-modeller. UML-modellen for et FKB-datasett benevnes som et UML-applikasjonsskjema. Fra UML-applikasjonsskjema kan det automatisk genereres et GML-applikasjonsskjema som beskriver hvordan dataene representeres som GML. 
+informasjonsmodellene i SOSI-modellregister er modellert som UML-modeller. UML-modellen for et datasett benevnes som et UML-applikasjonsskjema. Fra UML-applikasjonsskjema kan det automatisk genereres et GML-applikasjonsskjema som beskriver hvordan dataene representeres som GML. 
 
 *Datasett*
 identifiserbar samling av beslektede data [T] 
 
 *Egenskap* 
 navngitt kjennetegn eller karakteristikk av et objekt 
-
-*FKB* 
-FKB er en forkortelse for Felles Kartdatabase.
 
 *Fullstendighet* 
 uttrykk for i hvilken grad spesifiserte deler av et produkt finnes i det aktuelle datasettet [G] 
