@@ -1,18 +1,18 @@
 Referansesystemer for FKB 5.0 er også beskrevet i vedlegg B i {fkbGenerellDel-url}[FKB generell del].
 
-=== Romlig referansesystem UTM sone 32 basert på EUREF89 (ETRS89/UTM), 2d + NN2000
+=== Romlig referansesystem 5972
 
 ==== Omfang
 <<HeleDatasettet,Hele datasettet>>
 
 ==== Navn på kilden til referansesystemet
-Norwegian Mapping Authority
+EPSG / SOSI
 
 ==== Ansvarlig organisasjon for referansesystemet
-The international Association of Oil & Gas Producers
+Statens kartverk
 
 ==== Link til mer informasjon om referansesystemet
-http://www.opengis.net/def/crs/EPSG/0/5972
+https://register.geonorge.no/epsg-koder/euref89-utm-sone-32-2d-nn2000
 
 ==== Koderom
 EPSG
@@ -23,19 +23,19 @@ EPSG
 ==== Kodeversjon
 2020-03-30
 
-=== Romlig referansesystem UTM sone 33 basert på EUREF89 (ETRS89/UTM), 2d + NN2000
+=== Romlig referansesystem 5973
 
 ==== Omfang
 <<HeleDatasettet,Hele datasettet>>
 
 ==== Navn på kilden til referansesystemet
-Norwegian Mapping Authority
+EPSG / SOSI
 
 ==== Ansvarlig organisasjon for referansesystemet
-The international Association of Oil & Gas Producers
+Statens kartverk
 
 ==== Link til mer informasjon om referansesystemet
-http://www.opengis.net/def/crs/EPSG/0/5973
+https://register.geonorge.no/epsg-koder/euref89-utm-sone-33-2d-nn2000
 
 ==== Koderom
 EPSG
@@ -46,19 +46,18 @@ EPSG
 ==== Kodeversjon
 2020-03-30
 
-=== Romlig referansesystem UTM sone 35 basert på EUREF89 (ETRS89/UTM), 2d + NN2000
-
+=== Romlig referansesystem 5975
 ==== Omfang
 <<HeleDatasettet,Hele datasettet>>
 
 ==== Navn på kilden til referansesystemet
-Norwegian Mapping Authority
+EPSG / SOSI
 
 ==== Ansvarlig organisasjon for referansesystemet
-The international Association of Oil & Gas Producers
+Statens kartverk
 
 ==== Link til mer informasjon om referansesystemet
-http://www.opengis.net/def/crs/EPSG/0/5975
+https://register.geonorge.no/epsg-koder/euref89-utm-sone-35-2d-nn2000
 
 ==== Koderom
 EPSG

@@ -2,10 +2,10 @@
 :kortnavn: NVDBVegnettPluss
 :versjon: 1.0
 :skjemaversjon: {versjon}
-:underversjon: 2024-02-01
-:publisert: 2024-02-27
+:underversjon: 2024-09-01
+:publisert: 2024-08-21
 :metadata-url: https://kartkatalog.geonorge.no/metadata/
-:dokumentstatus: 2
+:dokumentstatus: 1
 // All informasjon i hode over denne linja må fylles ut for hvert datasett. Øvrige parametere settes i adoc_parametere.adoc
 include::inkluder/filhode.adoc[]
 
@@ -71,7 +71,7 @@ include::inkluder/kap22_forkortelser.adoc[]
 {versjon}
 
 === Referansedato
-2024-02-01
+2024-09-01
 
 === Ansvarlig organisasjon
 Kartverket
@@ -238,13 +238,6 @@ include::inkluder/kap13_metadata.adoc[]
 
 <<<
 
-[appendix]
-== GML-realisering
-
-GML-realiseringen følger kravene i "Realisering i GML-format 5.0" <<SOSI-GML>>. Realiseringen defineres av følgende filer:
-
-* {skjema-url}/NVDBVegnettPlus.xsd[GML-Skjema]
-* {skjema-url}/NVDBVegnettPlus.sch[Schematron-Skjema]
 
 
 [appendix]
@@ -252,7 +245,18 @@ GML-realiseringen følger kravene i "Realisering i GML-format 5.0" <<SOSI-GML>>.
 
 SOSI-realiseringen følger kravene i "Realisering i SOSI-format 5.0" <<SOSI-FORMAT>>. Under en utlisting av SOSI-formatrealiseringen:
 
+SOSI-filer i henhold til denne produktspesifikasjonen merkes med ..OBJEKTKATALOG {kortnavn} {versjon} i filhodet.
+
 include::SOSIformatRealisering.adoc[]
+
+
+[appendix]
+== GML-realisering
+
+GML-realiseringen følger kravene i "Realisering i GML-format 5.0" <<SOSI-GML>>. Realiseringen defineres av følgende filer:
+
+* {skjema-url}/NVDBVegnettPlus.xsd[GML-Skjema]
+* {skjema-url}/NVDBVegnettPlus.sch[Schematron-Skjema]
 
 :sectnums!:
 
