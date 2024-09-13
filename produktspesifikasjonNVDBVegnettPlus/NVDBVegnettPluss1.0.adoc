@@ -2,8 +2,8 @@
 :kortnavn: NVDBVegnettPluss
 :versjon: 1.0
 :skjemaversjon: {versjon}
-:underversjon: 2024-09-01
-:publisert: 2024-08-21
+:underversjon: 2024-10-01
+:publisert: 2024-09-13
 :metadata-url: https://kartkatalog.geonorge.no/metadata/
 :dokumentstatus: 1
 // All informasjon i hode over denne linja må fylles ut for hvert datasett. Øvrige parametere settes i adoc_parametere.adoc
