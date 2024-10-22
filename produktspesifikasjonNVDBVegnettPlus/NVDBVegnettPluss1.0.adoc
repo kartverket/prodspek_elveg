@@ -48,36 +48,36 @@ Dette er første versjon av produktspesifikasjonen {datasett}. I forhold til Elv
 
 *Generelt:*
  
-*Produktet har formål som forvaltningsdatasett mot kommunene, slik Elveg 2.0 også ble benyttet. Produktet har fått nytt navn for å tydeliggjøre endring fra gamle Elveg som ikke lengre vil produseres. 
-*Forenklet Elveg 2.0 leveres som produktet NVDB Vegnett. Dette inneholder de samme veglenkene og vegsperringene som vi finner i NVDB Vegnett Pluss. 
-*Eksterne kodelister for tillatte verdier benyttes overalt der dette er mulig, se NVDB - Geonorge Register 
-*Stedfestingsegenskaper for sideposisjon og høydeposisjon benyttes ikke for objekttyper i produktet, og er derfor tatt ut. 
-*Overgang til posisjonskvalitet iht. FKB 5.0. 
+* Produktet har formål som forvaltningsdatasett mot kommunene, slik Elveg 2.0 også ble benyttet. Produktet har fått nytt navn for å tydeliggjøre endring fra gamle Elveg som ikke lengre vil produseres. 
+* Forenklet Elveg 2.0 leveres som produktet NVDB Vegnett. Dette inneholder de samme veglenkene og vegsperringene som vi finner i NVDB Vegnett Pluss. 
+* Eksterne kodelister for tillatte verdier benyttes overalt der dette er mulig, se NVDB - Geonorge Register 
+* Stedfestingsegenskaper for sideposisjon og høydeposisjon benyttes ikke for objekttyper i produktet, og er derfor tatt ut. 
+* Overgang til posisjonskvalitet iht. FKB 5.0. 
 
 *Endringer på veglenka:* 
 
-*Type veg er utvidet med «traktorveg», «sti», og «annet». Også disse typene veg vil forvaltes i NVDB for å sikre et fullstendig sammenhengende nettverk for kjørende, gående og syklende. 
-*Det innføres lenker på feltnivå for sykkelfelt som ligger i kjørebanen. I NVDB vil disse lenkene ha samme type veg som resten av vegen feltet er en del av, og være kodet med feltkode for sykkelfelt. For NVDB Vegnett Pluss innføres det en produkttilpasset type veg, «sykkelfelt», for de nye feltlenkene. For vanlig sykkelveg innføres ikke egne lenker på kjørefeltnivå. 
+* Type veg er utvidet med «traktorveg», «sti», og «annet». Også disse typene veg vil forvaltes i NVDB for å sikre et fullstendig sammenhengende nettverk for kjørende, gående og syklende. 
+* Det innføres lenker på feltnivå for sykkelfelt som ligger i kjørebanen. I NVDB vil disse lenkene ha samme type veg som resten av vegen feltet er en del av, og være kodet med feltkode for sykkelfelt. For NVDB Vegnett Pluss innføres det en produkttilpasset type veg, «sykkelfelt», for de nye feltlenkene. For vanlig sykkelveg innføres ikke egne lenker på kjørefeltnivå. 
 
 *Endring på objekttyper:*
  
-*Beredskapsveg: 
-**Ny egenskap viser bruksområde. Gjør det enklere å lage gode kart der beredskapsveger som egentlig ikke trenger å vises godt i kartet kan tones ned, eller ikke vises i det hele tatt. 
-*Gågatereguleringer:
-**Egenskap kjøring til eiendommer tillatt er tatt ut, dette dekkes av objekttypen Trafikkregulering. 
-**Det er lagt til mulighet for to perioder for varetransport lørdag. 
-*InnkjøringForbudt:
-**Er erstattet av ny objekttype, TillattKjøreretning.  
-**TillattKjøreretning har også egenskap som viser sykling mot kjøreretning tillatt. 
-*Trafikkregulering:  
-**Egenskapstype for sykling mot kjøreretning tillatt er tatt ut, denne reguleringen dekkes av den nye objekttypen Tillatt kjøreretning (som nevnt over). 
-**Egenskapstyper for gjennomkjøring forbudt er tatt ut, og erstattet av to nye objekttyper, GjennomkjøringForbudt med assosiasjon til GjennomkjøringForbudtTil  
-*VærutsattVeg:  
-**Objekttypen har gjennom andre prosesser fått endret flere egenskaper, og fått flere administrative egenskaper som f.eks. stedsnavn. 
-*Ferjesamband: 
-**Ny objekttype bl.a. for å tydeliggjøre sommerruter. Værutsatt veg vil ikke lengre legges på ferjestrekninger. 
-*Vegsperring: 
-**Kodeliste for Type er tilpasset objekttype Vegbom i NVDB/FKB Veg sine typer der disse i utgangspunktet er like. 
+* Beredskapsveg: 
+** Ny egenskap viser bruksområde. Gjør det enklere å lage gode kart der beredskapsveger som egentlig ikke trenger å vises godt i kartet kan tones ned, eller ikke vises i det hele tatt. 
+* Gågatereguleringer:
+** Egenskap kjøring til eiendommer tillatt er tatt ut, dette dekkes av objekttypen Trafikkregulering. 
+** Det er lagt til mulighet for to perioder for varetransport lørdag. 
+* InnkjøringForbudt:
+** Er erstattet av ny objekttype, TillattKjøreretning.  
+** TillattKjøreretning har også egenskap som viser sykling mot kjøreretning tillatt. 
+* Trafikkregulering:  
+** Egenskapstype for sykling mot kjøreretning tillatt er tatt ut, denne reguleringen dekkes av den nye objekttypen Tillatt kjøreretning (som nevnt over). 
+** Egenskapstyper for gjennomkjøring forbudt er tatt ut, og erstattet av to nye objekttyper, GjennomkjøringForbudt med assosiasjon til GjennomkjøringForbudtTil  
+* VærutsattVeg:  
+** Objekttypen har gjennom andre prosesser fått endret flere egenskaper, og fått flere administrative egenskaper som f.eks. stedsnavn. 
+* Ferjesamband: 
+** Ny objekttype bl.a. for å tydeliggjøre sommerruter. Værutsatt veg vil ikke lengre legges på ferjestrekninger. 
+* Vegsperring: 
+** Kodeliste for Type er tilpasset objekttype Vegbom i NVDB/FKB Veg sine typer der disse i utgangspunktet er like. 
 
 
 

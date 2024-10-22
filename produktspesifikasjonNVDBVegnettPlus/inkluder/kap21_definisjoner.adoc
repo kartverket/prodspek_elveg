@@ -61,7 +61,7 @@ EKSEMPEL Eksempler på objekttyper er Veglenke, Vegsperring og Fartsgrense.
 *originaldatavert* 
 den av flere samarbeidsparter som har ansvaret for forvaltning og ajourføring av originalen av det enkelte primærdatasett [PABG] 
 
-*periodisk ajourhold *
+*periodisk ajourhold*
 ajourføring som utføres systematisk med jevne mellomrom [PABG]
  
 MERKNAD 	Ved periodisk ajourføring blir eksisterende data, enten de har vært gjennom kontinuerlig ajourføring eller ei, kontrollert og evt. forbedret, og manglende objekter blir supplert. Objekter som ikke er endret, blir ikke kartlagt på nytt. Etter periodisk ajourføring skal datasettene minimum tilfredsstille kvalitetskravene for den valgte FKB-standard i området. Det kan være nødvendig også med en oppgradering for å oppfylle kvalitetskravene. Periodisk ajourføring gjøres vanligvis ved fotogrammetri. 
@@ -112,7 +112,7 @@ Metreringen gir oss referansen i lengderetning, mens feltkoding kan gi oss plass
 Lenkeretning og metreringsretning er normalt sett den samme, men i noen tilfeller vil den ikke være det. SOSI Vegnett, og med det NVDB Vegnett Pluss definerer feltkoding [underline]#kun# i forhold til metreringsretning.
 
 .Figuren viser at feltkoder gir oss en referanse på tvers av vegens tverrsnitt. Kjørefeltene nummereres fra midten av vegen og utover til hver side. Det brukes oddetall på felt som har trafikk med metreringsretningen, og partall på felt som har trafikk mot metreringsretning. Feltet kan dessuten ha tilleggskoder som gir flere opplysninger,
-image::figurer/Feltkoder.png[alt="Figur som viser feltkoder"]
+image::figurer/Feltkoding.png[alt="Figur som viser feltkoder"]
 
 include::Feltoversikt_tab.adoc[]
 
