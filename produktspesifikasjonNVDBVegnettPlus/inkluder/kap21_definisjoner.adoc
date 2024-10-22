@@ -93,22 +93,28 @@ Ulike brukere kan ha ulike behov for detaljeringsgrad på vegnettet. Det er derf
 
 Vegens senterlinje defineres normalt midt mellom vegkanter. På deler av vegnettet der kjørebanene er fysisk skilt fra hverandre, for eksempel med midtrabatt, konstrueres det to senterlinjer for kjørebanenivået, en for hver kjøreretning. I tillegg konstrueres det linje for vegtrase i midtrabatten for vegnett på mindre detaljert nivå. For enkelte situasjoner i vegnettet, for eksempel i kryss, vil det også være aktuelt å konstruere en egen senterlinje for et svingefelt for å detaljere kryssets utforming ytterligere. 
 
-image::figurer/Vegdetaljniva.png[]
+.Figuren viser geometri for vegnettet i et fullkanalisert kryss. Figurene viser geometrien for krysset presentert på «vegtrasenivå», «kjørebanenivå» og «kjørefeltnivå». Tabellen viser hvilken type veg og detaljeringsnivå de enkelte geometriene viser. I tillegg vises det hvilken geometri som representerer konnekteringslenkene i krysset. I NVDB Vegnett Pluss er det vegnettet slik det er vist for «kjørefeltnivå» som ligger i datasettet.
+image::figurer/Vegdetaljniva.png[alt="Figur som viser vegdetaljnivå"]
 
 I NVDB Vegnett Pluss vil ikke alle vegdetaljnivåer av vegnett være med ut i datasettet. NVDB Vegnett Pluss vil være bygd opp av kjørebanelenker og kjørefeltlenker. Dette tilsvarer figuren som viser Kjørefeltnivået over.
 
 
-*Restriksjoner*
+*Restriksjoner:*
+
 Datasettet inneholder punkter og strekninger som fungerer som restriksjoner i vegnettet. Jernbanekryss og vegsperring er restriksjonene som kommer ut som punktobjekter i datasettet. Fartsgrense, høydebegrensning, trafikkreguleringer, gågatereguleringer, tillatt kjøreretning, svingerestriksjon, gjennomkjøring forbudt og værutsatt veg er restriksjonene som kommer ut som strekningsobjekter i datasettet.
 
-*Feltoversikt*
+*Feltoversikt:*
+
 I vegnettet defineres kjørefelt som en beskrivelse av tverrsnittet på vegen. Lovlige verdier for kjørefelt er definert i Statens vegvesen sin datakatalog. Kjørefelt i tverrsnittet av vegen beskrives vha en tekststreng i egenskapen feltoversikt, og kombinasjon av felt skilles med #.
 
 Metreringen gir oss referansen i lengderetning, mens feltkoding kan gi oss plassering på tvers av vegen. Feltkodene gis i forhold til vegens metreringsretning. Oddetall viser felt med kjøreretning med metreringsretningen, partall viser oss felt med kjøreretning mot metreringsretningen.
 
 Lenkeretning og metreringsretning er normalt sett den samme, men i noen tilfeller vil den ikke være det. SOSI Vegnett, og med det NVDB Vegnett Pluss definerer feltkoding [underline]#kun# i forhold til metreringsretning.
 
-image::figurer/Feltoversikt.png[]
+.Figuren viser at feltkoder gir oss en referanse på tvers av vegens tverrsnitt. Kjørefeltene nummereres fra midten av vegen og utover til hver side. Det brukes oddetall på felt som har trafikk med metreringsretningen, og partall på felt som har trafikk mot metreringsretning. Feltet kan dessuten ha tilleggskoder som gir flere opplysninger,
+image::figurer/Feltkoder.png[alt="Figur som viser feltkoder"]
+
+include::Feltoversikt_tab.adoc[]
 
 Eksempler: +
 1) Normalt sett har vegen ett kjørefelt i hver retning: 
