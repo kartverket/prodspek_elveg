@@ -10,29 +10,3 @@ spec:
   lifecycle: "production"
   owner: "felles_kartdatabase"
   system: "standardisering"
----
-apiVersion: "backstage.io/v1alpha1"
-kind: "Group"
-metadata:
-  name: "security_champion_prodspek_elveg"
-  title: "Security Champion prodspek_elveg"
-spec:
-  type: "security_champion"
-  parent: "land_security_champions"
-  members:
-  - "NilsIvarNes"
-  children:
-  - "resource:prodspek_elveg"
----
-apiVersion: "backstage.io/v1alpha1"
-kind: "Resource"
-metadata:
-  name: "prodspek_elveg"
-  links:
-  - url: "https://github.com/kartverket/prodspek_elveg"
-    title: "prodspek_elveg på GitHub"
-spec:
-  type: "repo"
-  owner: "security_champion_prodspek_elveg"
-  dependencyOf:
-  - "component:prodspek_elveg"
