@@ -1,5 +1,6 @@
-Det leveres metadata i henhold til ISO 19115 <<ISO-METADATA>>.
+NVDB Vegnett Pluss brukes i forbindelse med forvaltning av vegnettsdata gjennom Sentral FKB. 
+Produktet leveres normalt ikke ut i andre sammenhenger (til andre brukere).
 
-Se oppdaterte metadata for {metadata-url}[{datasett} i kartkatalog på Geonorge]. 
+For metadata henvises det til leveres ikke ut som et produktet Elveg 2.0: 
 
-Under https://forvaltningsinformasjon.geonorge.no finnes mer detaljert kommunevis informasjon om datainnholdet og forvaltningen av FKB-data.
+{metadata-url}[{Elveg 2.0} i kartkatalog på Geonorge]. 

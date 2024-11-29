@@ -1,4 +1,5 @@
-Leveransemetoder og formater for FKB 5.1 er også beskrevet i vedlegg A i {fkbGenerellDel-url}[FKB generell del].
+NVDB Vegnett Pluss leveranser kan hentes ut fra NVDB. 
+
 
 === Leveransemetode GML filleveranse
 
@@ -25,9 +26,8 @@ Leveransemetoder og formater for FKB 5.1 er også beskrevet i vedlegg A i {fkbGe
 
 *Overføringsstørrelse*:  Varierer veldig ut fra kommunestørrelse  
 
-*Navn på medium*: Datasettet lastes ned fra http://www.geonorge.no[geonorge.no] 
+*Navn på medium*: Datasettet eksporteres fra NVDB
 
-*Annen leveranseinformasjon*: Nedlastingsfilene vil være zippet   
 
 
 === Leveransemetode SOSI-format filleveranse 
@@ -55,39 +55,8 @@ Leveransemetoder og formater for FKB 5.1 er også beskrevet i vedlegg A i {fkbGe
 
 *Overføringsstørrelse*: Varierer ut fra kommunestørrelse
 
-*Navn på medium*: Datasettet lastes ned fra http://www.geonorge.no[geonorge.no] 
+*Navn på medium*: Datasettet eksporteres fra NVDB
 
-*Annen leveranseinformasjon*: Nedlastingsfilene vil være zippet  
-
-
-=== Leveransemetode ESRI fgdb filleveranse
-
-==== Omfang
-<<HeleDatasettet,Hele datasettet>>
-
-==== Leveranseformat  
-
-*Formatnavn*: <<ESRI fgdb>>  
-
-*Formatversjon*: 10.0 
-
-*Formatspesifikasjon*: ESRI filgeodatabase 
-
-*Filstruktur*: Filer
-
-*Språk*: nor 
-
-*Tegnsett*: utf8 
-
-==== Leveransemedium  
-
-*Leveranseenhet*: kommunevise filer, fylkesvise filer og landsdekkende filer 
-
-*Overføringsstørrelse*: Varierer områdestørrelse
-
-*Navn på medium*: Datasettet lastes ned fra http://www.geonorge.no[geonorge.no]
-
-*Annen leveranseinformasjon*: Nedlastingsfilene vil være zippet
 
 
 === Leveransemetode GML NGIS-OpenAPI 
@@ -117,7 +86,6 @@ Leveransemetoder og formater for FKB 5.1 er også beskrevet i vedlegg A i {fkbGe
 
 *Navn på medium*: NGIS-OpenAPI
 
-*Annen leveranseinformasjon*: Se vedlegg A.2 til FKB generell del for mer informasjon.
 
 
 === Leveransemetode JSON NGIS-OpenAPI 
@@ -146,5 +114,3 @@ Leveransemetoder og formater for FKB 5.1 er også beskrevet i vedlegg A i {fkbGe
 *Overføringsstørrelse*:  ikke angitt  
 
 *Navn på medium*: NGIS-OpenAPI
-
-*Annen leveranseinformasjon*: Se vedlegg A.2 til FKB generell del for mer informasjon.

@@ -47,6 +47,14 @@ WARNING: *Utgått versjon!* Dokumentet er erstattet av
 
 endif::[]
 
+ifeval::[{dokumentstatus} == 4]
+
+*Status* : Ferdig dokument til godkjenning hos Standardiseringskomiteen for Geomatikk 
+
+*Publisert*: {publisert} 
+
+endif::[]
+
 ifeval::[{dokumentstatus} == 1]
 
 *Publisert*: {publisert} +

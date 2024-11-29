@@ -14,7 +14,7 @@
 *[PABG]* : https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/produksjon-av-basis-geodata[Produksjon av basis geodata, versjon 2.0 2023]
 
 [#PBL-KART]
-*[PBL-KART]* : https://www.regjeringen.no/no/dokumenter/veiledning-til-forskrift-om-kart-stedfestet-informasjon-arealformal-og-digitalt-planregister/[Veiledning til forskrift om kart, stedfestet informasjon, arealformål og digitalt planregister]
+*[PBL-KART]* : https://www.regjeringen.no/no/dokumenter/veiledning-til-forskrift-om-kart-stedfestet-informasjon-arealformal-og-digitalt-planregister/id2628439/[Veiledning til forskrift om kart, stedfestet informasjon, arealformål og digitalt planregister]
 
 [#SOSI-UML]
 *[SOSI-UML]* : https://register.geonorge.no/standarder/sosi/del-1-generell-del/regler-for-uml-modellering[SOSI Regler for UML-modellering, versjon 5.1 2020]

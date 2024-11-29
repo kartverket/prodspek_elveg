@@ -2,10 +2,10 @@
 :kortnavn: NVDBVegnettPluss
 :versjon: 1.0
 :skjemaversjon: {versjon}
-:underversjon: 2024-11-01
-:publisert: 2024-10-22
-:metadata-url: https://kartkatalog.geonorge.no/metadata/
-:dokumentstatus: 1
+:underversjon: 2024-12-01
+:publisert: 2024-11-29
+:metadata-url: https://kartkatalog.geonorge.no/metadata/elveg-20/77944f7e-3d75-4f6d-ae04-c528cc72e8f6
+:dokumentstatus: 4
 // All informasjon i hode over denne linja må fylles ut for hvert datasett. Øvrige parametere settes i adoc_parametere.adoc
 include::inkluder/filhode.adoc[]
 
@@ -111,7 +111,7 @@ include::inkluder/kap22_forkortelser.adoc[]
 {versjon}
 
 === Referansedato
-2024-11-01
+{underversjon}
 
 === Ansvarlig organisasjon
 Kartverket
@@ -174,9 +174,13 @@ Datasettet er fullstendig så langt det er mulig og oppdateres kontinuerlig i he
 
 ==== Stedfestingsnøyaktighet
 Det er et overordnet prinsipp at best tilgjengelige geometri skal benyttes i vegnettet. 
-NVDB Vegnett Pluss  inneholder ikke homogene data. Produktet som helhet kan ikke love bedre kvalitet enn de dårligste datakildene. Vegen registreres så langt mulig i tre dimensjoner (nord, øst, høyde), men ved administrativ datafangst godkjennes 2D data (digitalisering fra ortofoto) dersom andre datakilder ikke finnes.
+NVDB Vegnett Pluss  inneholder ikke homogene data. Produktet som helhet kan ikke love bedre kvalitet enn de dårligste datakildene. 
+Vegen registreres så langt mulig i tre dimensjoner (nord, øst, høyde), men ved administrativ datafangst godkjennes 2D data (digitalisering fra ortofoto) dersom andre datakilder ikke finnes.
 
-NVDB Vegnett Pluss inneholder detaljerte data stort sett registrert fotogrammetrisk fra flybilder med en oppløsing mellom 7 og 25 cm. Nøyaktigheten varierer fra +/- 0.10 m til +/- 2 m avhengig av objekttype, områdetype og datafangstmetode.
+NVDB Vegnett Pluss inneholder detaljerte data som er registrert fotogrammetrisk fra flybilder med en oppløsning mellom 7 og 25 cm. 
+Data kan også være innmålte data som ferdigvegsdata etter at vegprosjekter er ferdige. 
+Stedfestingsnøyaktigheten varierer fra +/- 0,10 m til +/- 1 m avhengig av objekttype, områdetype og datafangstmetode. Data fra NVDB Vegnett Pluss egner seg for presentasjon i målestokker fra ca 1:100 til ca 1:20000.
+
 
 ==== Egenskapsnøyaktighet
 Egenskaper stedfestes med bakgrunn fra administrativt ajourhold og følger generelt samme krav som øvrige kvalitetskrav. 
@@ -220,7 +224,8 @@ Hele datasettet
 Kontinuerlig
 
 ==== Vedlikeholdsbeskrivelse 
-Det er i regi av Geovekst inngått avtaler om forvaltning, drift og vedlikehold (FDV) med de fleste kommuner. Her avtalefestes oppgaver og finansiering av et felles kontinuerlig ajourhold av FKB-dataene blant partene i avtalen (dette gjelder også for NVDB Vegnett Pluss). 
+Det er i regi av Geovekst inngått avtaler om forvaltning, drift og vedlikehold (FDV) med de fleste kommuner. 
+Her avtalefestes oppgaver og finansiering av et felles kontinuerlig ajourhold av FKB-dataene blant partene i avtalen (dette gjelder også for NVDB Vegnett Pluss). 
 Den viktigste parten i avtalene er kommunen da mange av endringene i FKB kan fanges opp gjennom kommunal saksbehandling. 
 Dataene blir så sendt til Kartverket for innlesing i databasen. 
 Kommuner utenfor Geovekst gjør tilsvarende vedlikehold i egen regi og leverer data i henhold til Norge digitalt avtale.
@@ -242,7 +247,8 @@ Hele datasettet
 Kontinuerlig
 
 ==== Vedlikeholdsbeskrivelse 
-Kartverket og Statens vegvesen mottar feilmeldinger fra publikum gjennom deres feilmeldingstjenester http://rettikartet.no/ og https://fiksvegdata.atlas.vegvesen.no/ . Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB (og deretter komme ut i NVDB Vegnett Pluss). 
+Kartverket og Statens vegvesen mottar feilmeldinger fra publikum gjennom deres feilmeldingstjenester http://rettikartet.no/ og https://fiksvegdata.atlas.vegvesen.no/ . 
+Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB (og deretter komme ut i NVDB Vegnett Pluss). 
 
 
 <<<
@@ -287,6 +293,8 @@ SOSI-realiseringen følger kravene i "Realisering i SOSI-format 5.0" <<SOSI-FORM
 
 SOSI-filer i henhold til denne produktspesifikasjonen merkes med ..OBJEKTKATALOG {kortnavn} {versjon} i filhodet.
 
+Se eksempelfiler på {skjema-url}/eksempel/
+
 include::SOSIformatRealisering.adoc[]
 
 
@@ -297,6 +305,8 @@ GML-realiseringen følger kravene i "Realisering i GML-format 5.0" <<SOSI-GML>>.
 
 * {skjema-url}/NVDBVegnettPlus.xsd[GML-Skjema]
 * {skjema-url}/NVDBVegnettPlus.sch[Schematron-Skjema]
+
+Se eksempelfiler på {skjema-url}/eksempel/
 
 :sectnums!:
 
