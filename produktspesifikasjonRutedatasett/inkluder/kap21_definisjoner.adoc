@@ -1,0 +1,130 @@
+
+Forklaring på forkortelser i definisjonene som følger merket med [] finnes i kap.2.3.
+
+*Ajourføring*
+supplering og korrigering av innholdet i geodataene slik at de fremstiller de faktiske forhold på et gitt tidspunkt, etter de retningslinjer som gjelder for innhold og kvalitet [PABG] 
+
+*Applikasjonsskjema* 
+informasjonsmodellene i SOSI-modellregister er modellert som UML-modeller. UML-modellen for et datasett benevnes som et UML-applikasjonsskjema. Fra UML-applikasjonsskjema kan det automatisk genereres et GML-applikasjonsskjema som beskriver hvordan dataene representeres som GML. 
+
+*Datasett*
+identifiserbar samling av beslektede data [T] 
+
+*Egenskap* 
+navngitt kjennetegn eller karakteristikk av et objekt 
+
+*Fullstendighet* 
+uttrykk for i hvilken grad spesifiserte deler av et produkt finnes i det aktuelle datasettet [G] 
+
+*Geodata* 
+data i elektronisk form med direkte eller indirekte referanse til et bestemt sted eller geografisk område 
+
+*Kart* 
+generalisert avbildning av geografiske objekter med deres romlige relasjoner; med angitt geodetisk datum, projeksjon og koordinatsystem, samt målestokk dersom avbildningen er analog [G]
+
+*Kartdata* 
+geodata tilrettelagt for presentasjon av kart [PABG] 
+
+*Kontinuerlig ajourhold* 
+fortløpende ajourføring basert på rapportering fra forvaltningsrutiner, daglige arbeidsrutiner og samarbeidsparter [PABG] 
+
+MERKNAD 	Kalles også administrativt vedlikehold. Data som samles inn administrativt, kan være digitale stikningsdata eller data fra sluttkontroll av beliggenhet, koordinatfestede grensemerker, markmålte bygninger, senterpunkt bygning, situasjonsplan og melding om landbruksbygg. 
+
+*Kvalitet* 
+helheten av egenskaper en enhet har og som vedrører dens evne til å tilfredsstille uttalte og underforståtte behov [NS-ISO 8402 def. 2.1] 
+
+*Metadata* 
+informasjon som beskriver et datasett [G]
+
+MERKNAD 	Hvilke opplysninger som inngår i metadataene, kan variere avhengig av datasettets karakter. Vanlige opplysninger er innhold, kvalitet, tilstand, struktur, format, produsent og vedlikeholdsansvar. 
+
+*Nettverkstopologi*
+Nettverkstopologi betyr at overalt hvor det fysiske vegnettet henger sammen, skal det finnes tilsvarende koplinger mellom veglenkene i nettverket. Nettverket blir da en topologisk representasjon av det fysiske vegnettet
+
+*nøyaktighet* 
+mål for en estimert verdis nærhet til sin sanne verdi eller til det man antar er den sanne verdi [G] 
+
+*objekt* 
+forekomst (instans) av en objekttype [SOSI] 
+
+*objektkatalog* 
+definisjon og beskrivelse av objekttyper, objektegenskaper samt relasjoner mellom objekter, sammen med eventuelle funksjoner som er anvendt for objektet [SOSI] 
+
+EKSEMPEL 	SOSI-Objektkatalog 
+
+*objekttype*
+geografisk objekttype 
+en klasse av objekter med felles egenskaper, forholdet mot andre objekttyper og funksjoner [SOSI] 
+
+EKSEMPEL Eksempler på objekttyper er Veglenke, Vegsperring og Fartsgrense. 
+
+*originaldatavert* 
+den av flere samarbeidsparter som har ansvaret for forvaltning og ajourføring av originalen av det enkelte primærdatasett [PABG] 
+
+*periodisk ajourhold*
+ajourføring som utføres systematisk med jevne mellomrom [PABG]
+ 
+MERKNAD 	Ved periodisk ajourføring blir eksisterende data, enten de har vært gjennom kontinuerlig ajourføring eller ei, kontrollert og evt. forbedret, og manglende objekter blir supplert. Objekter som ikke er endret, blir ikke kartlagt på nytt. Etter periodisk ajourføring skal datasettene minimum tilfredsstille kvalitetskravene for den valgte FKB-standard i området. Det kan være nødvendig også med en oppgradering for å oppfylle kvalitetskravene. Periodisk ajourføring gjøres vanligvis ved fotogrammetri. 
+
+*primærdatasett* 
+et definert geodatasett som består av de mest detaljerte og nøyaktige data innen et definert område, har en viss utbredelse og jevnlig blir produsert og/eller ajourholdt [G] 
+
+*produktspesifikasjon*
+detaljert beskrivelse av ett datasett eller en serie med datasett med tilleggsinformasjon som gjør det mulig å produsere, distribuere og bruke datasettet av andre (tredjepart) [SOSI] 
+
+MERKNAD 	En dataproduktspesifikasjon kan lages for produksjon, salg, sluttbrukervirksomhet eller annet. 
+
+*standardavvik* 
+statistisk størrelse som angir spredningen for en gruppe måle- eller beregningsverdier i forhold til deres sanne eller estimerte verdier [G] 
+
+*toleranse* 
+maksimalt tillatt avvik eller verdi [G] 
+
+*topologi* 
+beskrivelse av sammenhengen mellom geografiske objekter [G] 
+
+MERKNAD 	De aktuelle objektene har ofte en fysisk sammenheng. Topologi er de av objektenes egenskaper som overlever det som er kalt kontinuerlige transformasjoner (også kalt gummiduk-transformasjoner). Alle tallverdier (lengder, arealer og retninger) kan bli forandret, mens for eksempel naboskapsforhold vil være uendret.
+
+*Vegnettet*
+Vegnettet består av veglenker med sin vegnettsgeometri. For at nettverket skal kunne brukes til navigasjon og nettverksanalyser er det helt vesentlig at det er knyttet sammen der dette er riktig. Det er likeså viktig med riktige restriksjoner, for eksempel vegsperring, der det ikke er framkommelighet i nettverket.
+
+*Vegdetaljnivå* 
+Ulike brukere kan ha ulike behov for detaljeringsgrad på vegnettet. Det er derfor lagt til rette for at vegnettet kan presenteres i 3 forskjellige detaljeringsnivåer: Vegtrasenivå, Kjørebanenivå og Kjørefeltnivå. Den største delen av vegnettet tilfredsstiller både vegtrasenivå og kjørebanenivå, og vil da ikke ha egenskapen detaljnivå. Kjørefeltnivå benyttes kun i tilfeller der det er ønskelig å detaljere vegnettet ytterligere. I hovedsak er det bilvegnettet som presenteres på forskjellige detaljeringsnivåer. Se Figur 1. Vegnett for gående og syklende vil i hovedsak kun være definert på vegtrasenivå.
+
+Vegens senterlinje defineres normalt midt mellom vegkanter. På deler av vegnettet der kjørebanene er fysisk skilt fra hverandre, for eksempel med midtrabatt, konstrueres det to senterlinjer for kjørebanenivået, en for hver kjøreretning. I tillegg konstrueres det linje for vegtrase i midtrabatten for vegnett på mindre detaljert nivå. For enkelte situasjoner i vegnettet, for eksempel i kryss, vil det også være aktuelt å konstruere en egen senterlinje for et svingefelt for å detaljere kryssets utforming ytterligere. 
+
+.Figuren viser geometri for vegnettet i et fullkanalisert kryss. Figurene viser geometrien for krysset presentert på «vegtrasenivå», «kjørebanenivå» og «kjørefeltnivå». Tabellen viser hvilken type veg og detaljeringsnivå de enkelte geometriene viser. I tillegg vises det hvilken geometri som representerer konnekteringslenkene i krysset. I NVDB Vegnett Pluss er det vegnettet slik det er vist for «kjørefeltnivå» som ligger i datasettet.
+image::figurer/Vegdetaljniva.png[alt="Figur som viser vegdetaljnivå"]
+
+I NVDB Vegnett Pluss vil ikke alle vegdetaljnivåer av vegnett være med ut i datasettet. NVDB Vegnett Pluss vil være bygd opp av kjørebanelenker og kjørefeltlenker. Dette tilsvarer figuren som viser Kjørefeltnivået over.
+
+
+*Restriksjoner:*
+
+Datasettet inneholder punkter og strekninger som fungerer som restriksjoner i vegnettet. Jernbanekryss og vegsperring er restriksjonene som kommer ut som punktobjekter i datasettet. Fartsgrense, høydebegrensning, trafikkreguleringer, gågatereguleringer, tillatt kjøreretning, svingerestriksjon, gjennomkjøring forbudt og værutsatt veg er restriksjonene som kommer ut som strekningsobjekter i datasettet.
+
+*Feltoversikt:*
+
+I vegnettet defineres kjørefelt som en beskrivelse av tverrsnittet på vegen. Lovlige verdier for kjørefelt er definert i Statens vegvesen sin datakatalog. Kjørefelt i tverrsnittet av vegen beskrives vha en tekststreng i egenskapen feltoversikt, og kombinasjon av felt skilles med #.
+
+Metreringen gir oss referansen i lengderetning, mens feltkoding kan gi oss plassering på tvers av vegen. Feltkodene gis i forhold til vegens metreringsretning. Oddetall viser felt med kjøreretning med metreringsretningen, partall viser oss felt med kjøreretning mot metreringsretningen.
+
+Lenkeretning og metreringsretning er normalt sett den samme, men i noen tilfeller vil den ikke være det. SOSI Vegnett, og med det NVDB Vegnett Pluss definerer feltkoding [underline]#kun# i forhold til metreringsretning.
+
+.Figuren viser at feltkoder gir oss en referanse på tvers av vegens tverrsnitt. Kjørefeltene nummereres fra midten av vegen og utover til hver side. Det brukes oddetall på felt som har trafikk med metreringsretningen, og partall på felt som har trafikk mot metreringsretning. Feltet kan dessuten ha tilleggskoder som gir flere opplysninger,
+image::figurer/Feltkoding.png[alt="Figur som viser feltkoder"]
+
+include::Feltoversikt_tab.adoc[]
+
+Eksempler: +
+1) Normalt sett har vegen ett kjørefelt i hver retning: 
+GML: <app:feltoversikt>1#2</app:feltoversikt>
+SOSI: ..FELTOVERSIKT 1#2 +
+
+2) I tverrsnittet på vegen har vi ett kjørefelt i hver retning, samt et høyresvingefelt: 
+GML: <app:feltoversikt>1#1H1#2</app:feltoversikt>
+SOSI: ..FELTOVERSIKT 1#1H1#2 +
+
+3) I tverrsnittet på vegen har vi vanlige kjørefelt i begge retninger i midten, og kollektivfelt begge retninger utenfor disse:
+GML: <app:<feltoversikt>1#2#3K#4K</app:feltoversikt>
+SOSI: ..FELTOVERSIKT 1#2#3K#4K 

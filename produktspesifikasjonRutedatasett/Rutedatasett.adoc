@@ -1,0 +1,319 @@
+:datasett: Rutedatasett - foreløpig en kopi av NVDB Vegnett Pluss
+:kortnavn: NVDBVegnettPluss
+:versjon: 1.0
+:skjemaversjon: {versjon}
+:underversjon: 2024-12-01
+:publisert: 2024-11-29
+:metadata-url: https://kartkatalog.geonorge.no/metadata/elveg-20/77944f7e-3d75-4f6d-ae04-c528cc72e8f6
+:dokumentstatus: 2
+// All informasjon i hode over denne linja må fylles ut for hvert datasett. Øvrige parametere settes i adoc_parametere.adoc
+include::inkluder/filhode.adoc[]
+
+== Innledning, historikk og endringslogg
+
+=== Innledning
+
+NVDB Vegnett Pluss er et forvaltningsdatasett for kommunene til forvaltning av vegnettet i SFKB. En kvalitetssikret versjon tilgjengeliggjøres på Geonorge. 
+Datasettet omfatter alle kjørbare veger som er lengre enn 50 meter, eller del av et nettverk, samt gang- og sykkelveger og sykkelveger representert som veglenkegeometri. 
+Fortau, gangveger, gangfelt, traktorveger og stier som tidligere fantes i FKB-TraktorvegSti, vil også være en del av NVDB Vegnett Pluss. For disse typene veg gjenstår noe innsamling av data.
+
+I tillegg inneholder datasettet adresseinformasjon (som gir mulighet for kobling til matrikkelen og andre registre), fartsgrenser, trafikkreguleringer og vegklasser. 
+Veglenkens attributter er tematisert etter typeveg, vegkategori og vegfase.  
+
+* Type veg for kjørende: enkel bilveg, kanalisert veg, rampe, rundkjøring, bilferje og gatetun.
+* Type veg for gående og syklende: gangveg, sykkelveg, gang- og sykkelveg, sykkelfelt, gågate, fortau, trapp, gangfelt, passasjerferje, traktorveg, sti, annet.
+* Vegkategori: europa- (E), riks- \(R), fylkes- (F), kommunal veg (K), privat veg (P) og skogsveg (S).
+* Vegfase: eksisterende veg (V), under bygging (A). 
+
+NVDB Vegnett Pluss er et produkt som eksporteres fra Nasjonal vegdatabank (NVDB). Grunnlagsdataene ajourholdes av Statens vegvesen og Kartverket. 
+Les mer om denne på:  https://www.vegvesen.no/fag/teknologi/nasjonal-vegdatabank/[Nasjonal vegdatabank (NVDB) | Statens vegvesen] +
+
+I tillegg til NVDB Vegnett Pluss finnes det også et forenklet datasett, NVDB Vegnett. Dette datasettet består av de samme veglenkene og vegsperringene vi finner i NVDB Vegnett Pluss. +
+
+Europa-, riks- og fylkesvegnettet ajourføres kontinuerlig i NVDB med basis i plan- og ferdigvegsdata. Ajourføring av kommunale, private og skogsveger organiseres gjennom Norge digitalt og FDV-avtalene med kommuner, administrert av Kartverket. 
+
+
+Denne produktspesifikasjonen er utarbeidet iht. SOSI produktspesifikasjoner – Krav og godkjenning 5.0 <<SOSI-KRAV>>. 
+UML-modellen som ligger til grunn for innhold i diagrammene og dokumentasjon i kap. 5, følger reglene i SOSI Regler for UML-modellering, versjon 5.1 <<SOSI-UML>>. 
+http://sosi.geonorge.no/veiledere/UML[Denne veilederen] gir hjelp til å lese UML-diagrammene.
+
+=== Historikk
+
+Elveg 2.0 var en videreutvikling og sammenslåing av FKB-Vegnett 4.03, Vbase og Elveg, hvor det for første gang ble innført lineært refererte objekter. 
+Fortau, gangveger og gangfelt skulle også overføres fra FKB Traktorveg/Sti. NVDB Vegnett Pluss er en revisjon av Elveg 2.0 etter at datasettet nå har fått endret formål til å være et forvaltningsdatasett mot kommunene.
+
+=== Endringslogg
+
+Dette er første versjon av produktspesifikasjonen {datasett}. I forhold til Elveg 2.0 er følgende endringer gjort:
+
+*Generelt:*
+ 
+* Produktet har formål som forvaltningsdatasett mot kommunene, slik Elveg 2.0 også ble benyttet. Produktet har fått nytt navn for å tydeliggjøre endring fra gamle Elveg som ikke lengre vil produseres. 
+* Forenklet Elveg 2.0 leveres som produktet NVDB Vegnett. Dette inneholder de samme veglenkene og vegsperringene som vi finner i NVDB Vegnett Pluss. 
+* Eksterne kodelister for tillatte verdier benyttes overalt der dette er mulig, se NVDB - Geonorge Register 
+* Stedfestingsegenskaper for sideposisjon og høydeposisjon benyttes ikke for objekttyper i produktet, og er derfor tatt ut. 
+* Overgang til posisjonskvalitet iht. FKB 5.0. 
+
+*Endringer på veglenka:* 
+
+* Type veg er utvidet med «traktorveg», «sti», og «annet». Også disse typene veg vil forvaltes i NVDB for å sikre et fullstendig sammenhengende nettverk for kjørende, gående og syklende. 
+* Det innføres lenker på feltnivå for sykkelfelt som ligger i kjørebanen. I NVDB vil disse lenkene ha samme type veg som resten av vegen feltet er en del av, og være kodet med feltkode for sykkelfelt. For NVDB Vegnett Pluss innføres det en produkttilpasset type veg, «sykkelfelt», for de nye feltlenkene. For vanlig sykkelveg innføres ikke egne lenker på kjørefeltnivå. 
+
+*Endring på objekttyper:*
+ 
+* Beredskapsveg: 
+** Ny egenskap viser bruksområde. Gjør det enklere å lage gode kart der beredskapsveger som egentlig ikke trenger å vises godt i kartet kan tones ned, eller ikke vises i det hele tatt. 
+* Gågatereguleringer:
+** Egenskap kjøring til eiendommer tillatt er tatt ut, dette dekkes av objekttypen Trafikkregulering. 
+** Det er lagt til mulighet for to perioder for varetransport lørdag. 
+* InnkjøringForbudt:
+** Er erstattet av ny objekttype, TillattKjøreretning.  
+** TillattKjøreretning har også egenskap som viser sykling mot kjøreretning tillatt. 
+* Trafikkregulering:  
+** Egenskapstype for sykling mot kjøreretning tillatt er tatt ut, denne reguleringen dekkes av den nye objekttypen Tillatt kjøreretning (som nevnt over). 
+** Egenskapstyper for gjennomkjøring forbudt er tatt ut, og erstattet av to nye objekttyper, GjennomkjøringForbudt med assosiasjon til GjennomkjøringForbudtTil  
+* VærutsattVeg:  
+** Objekttypen har gjennom andre prosesser fått endret flere egenskaper, og fått flere administrative egenskaper som f.eks. stedsnavn. 
+* Ferjesamband: 
+** Ny objekttype bl.a. for å tydeliggjøre sommerruter. Værutsatt veg vil ikke lengre legges på ferjestrekninger. 
+* Vegsperring: 
+** Kodeliste for Type er tilpasset objekttype Vegbom i NVDB/FKB Veg sine typer der disse i utgangspunktet er like. 
+
+
+
+=== Normative referanser
+
+include::inkluder/kap14_normativ_ref.adoc[]
+
+<<<
+
+== Definisjoner og forkortelser
+
+=== Definisjoner
+
+include::inkluder/kap21_definisjoner.adoc[]
+
+=== Forkortelser
+
+include::inkluder/kap22_forkortelser.adoc[]
+
+<<<
+
+== Generelt om spesifikasjonen
+
+=== Unik identifisering
+{kortnavn}
+
+==== Fullstendig navn
+{datasett} 
+
+==== Versjon
+{versjon}
+
+=== Referansedato
+{underversjon}
+
+=== Ansvarlig organisasjon
+Kartverket
+
+=== Språk
+Norsk
+
+=== Hovedtema
+Basisdata, Samferdsel
+
+=== Temakategori
+basisData
+
+=== Sammendrag
+
+NVDB Vegnett Pluss er et vegnettsdatasett som omfatter alle kjørbare veger og vegnett for gående og syklende, i den grad dette er registrert, representert som veglenkegeometri. I tillegg inneholder datasettet adresseinformasjon (som gir mulighet for kobling til matrikkelen og andre registre), fartsgrenser, trafikkreguleringer, trafikkrestriksjoner og vegklasser, alle representert som egengeometri. 
+
+
+=== Formål
+
+NVDB Vegnett Pluss brukes som forvaltningsdatasett i den offentlige forvaltningen av vegnett gjennom Geovekst FDV-avtalene.
+
+
+// Fellesdel som dekker kap 3.9 - 3.12 for alle FKB-produktspesifikasjoner
+include::inkluder/kap39-312_representasjon.adoc[]
+
+=== Supplerende beskrivelse
+Data ikke angitt
+
+<<<
+
+== Spesifikasjonsomfang
+
+include::inkluder/kap4_omfang.adoc[]  
+
+<<<
+
+== Innhold og struktur
+
+=== Omfang
+<<HeleDatasettet,Hele datasettet>>
+
+include::modellRapport.adoc[]
+
+<<<
+
+== Referansesystem
+
+include::inkluder/kap6_referansesystem.adoc[]
+
+<<<
+
+== Kvalitet
+
+=== Omfang
+Hele datasettet
+
+==== Fullstendighet
+Datasettet er fullstendig så langt det er mulig og oppdateres kontinuerlig i henhold til avtaler om forvaltning, drift og vedlikehold.
+
+==== Stedfestingsnøyaktighet
+Det er et overordnet prinsipp at best tilgjengelige geometri skal benyttes i vegnettet. 
+NVDB Vegnett Pluss  inneholder ikke homogene data. Produktet som helhet kan ikke love bedre kvalitet enn de dårligste datakildene. 
+Vegen registreres så langt mulig i tre dimensjoner (nord, øst, høyde), men ved administrativ datafangst godkjennes 2D data (digitalisering fra ortofoto) dersom andre datakilder ikke finnes.
+
+NVDB Vegnett Pluss inneholder detaljerte data som er registrert fotogrammetrisk fra flybilder med en oppløsning mellom 7 og 25 cm. 
+Data kan også være innmålte data som ferdigvegsdata etter at vegprosjekter er ferdige. 
+Stedfestingsnøyaktigheten varierer fra +/- 0,10 m til +/- 1 m avhengig av objekttype, områdetype og datafangstmetode. Data fra NVDB Vegnett Pluss egner seg for presentasjon i målestokker fra ca 1:100 til ca 1:20000.
+
+
+==== Egenskapsnøyaktighet
+Egenskaper stedfestes med bakgrunn fra administrativt ajourhold og følger generelt samme krav som øvrige kvalitetskrav. 
+
+==== Tidfestingsnøyaktighet
+Kontinuerlig ajourhold.
+
+==== Logisk konsistens
+Kontinuerlig kontroll. 
+
+<<<
+
+== Datafangst
+
+NVDB Vegnett Pluss er et direkte uttrekk fra NVDB. Vegnett i NVDB er etablert med data fra vegsituasjon (fotogrammetri), GPS og treghetsmålinger, administrativ ajourhold (gjennom ajourhold av NVDB Vegnett Pluss) og med data fra Statens vegvesens plan- og ferdigvegsdata. 
+
+I tillegg mottar Kartverket og Statens vegvesen feilmeldinger og endringer fra publikum gjennom deres feilmeldingstjenester http://rettikartet.no[http://rettikartet.no] og https://fiksvegdata.atlas.vegvesen.no/[fiksvegdata.atlas.vegvesen.no]. Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB og kommer deretter ut i NVDB Vegnett Pluss. 
+
+
+<<<
+
+== Datavedlikehold
+
+
+=== Vedlikeholdsinformasjon - Kartleggingsprosjekt
+
+==== Omfang 
+Hele datasettet
+
+==== Vedlikeholdsfrekvens 
+Kontinuerlig
+
+==== Vedlikeholdsbeskrivelse 
+Fotogrammetrisk ajourhold utføres gjennom Geovekst kartleggingsprosjekter. Kartleggingsprosjektene spesifiseres og finansieres gjennom Geovekst og settes ut på anbud fra Kartverket. Flyfotografering og selve det fotogrammetriske ajourholdet utføres av et privat firma i tråd med fotogrammetrisk registreringsinstruks. Kartverket gjør kontroll av leveranse ved mottak og legger dataene inn i databasen i samarbeid med Statens vegvesen.
+
+=== Vedlikeholdsinformasjon – Avtaler om forvaltning, drift og vedlikehold
+==== Omfang 
+Hele datasettet
+
+==== Vedlikeholdsfrekvens 
+Kontinuerlig
+
+==== Vedlikeholdsbeskrivelse 
+Det er i regi av Geovekst inngått avtaler om forvaltning, drift og vedlikehold (FDV) med de fleste kommuner. 
+Her avtalefestes oppgaver og finansiering av et felles kontinuerlig ajourhold av FKB-dataene blant partene i avtalen (dette gjelder også for NVDB Vegnett Pluss). 
+Den viktigste parten i avtalene er kommunen da mange av endringene i FKB kan fanges opp gjennom kommunal saksbehandling. 
+Dataene blir så sendt til Kartverket for innlesing i databasen. 
+Kommuner utenfor Geovekst gjør tilsvarende vedlikehold i egen regi og leverer data i henhold til Norge digitalt avtale.
+
+==== Omfang 
+Hele datasettet
+
+==== Vedlikeholdsfrekvens 
+Kontinuerlig
+
+==== Vedlikeholdsbeskrivelse 
+Statens vegvesen er forpliktet til å levere ferdigvegsdata til NVDB Vegnett Pluss ved ferdigstillelse av prosjekter.
+
+=== Vedlikeholdsinformasjon – Feilmeldinger og avvikshåndtering
+==== Omfang 
+Hele datasettet
+
+==== Vedlikeholdsfrekvens 
+Kontinuerlig
+
+==== Vedlikeholdsbeskrivelse 
+Kartverket og Statens vegvesen mottar feilmeldinger fra publikum gjennom deres feilmeldingstjenester http://rettikartet.no/ og https://fiksvegdata.atlas.vegvesen.no/ . 
+Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB (og deretter komme ut i NVDB Vegnett Pluss). 
+
+
+<<<
+
+== Presentasjon
+
+=== Omfang
+<<HeleDatasettet,Hele datasettet>>
+
+=== Referanse til presentasjonskatalog
+Det er utarbeidet en presentasjonsregel for Elveg, men ikke for NVDB Vegnett Pluss enda. Denne er tilgjengelig via geonorge:
+https://register.geonorge.no/register/versjoner/tegneregler/kartverket/elveg
+
+<<<
+
+== Leveranse
+
+include::inkluder/kap11_leveranse.adoc[]
+
+<<<
+
+== Tilleggsinformasjon
+Ingen angitt informasjon
+
+== Metadata
+
+=== Omfang
+<<HeleDatasettet,Hele datasettet>>
+
+=== Metadataspesifikasjon
+
+include::inkluder/kap13_metadata.adoc[]
+
+<<<
+
+
+
+[appendix]
+== SOSI-format-realisering
+
+SOSI-realiseringen følger kravene i "Realisering i SOSI-format 5.0" <<SOSI-FORMAT>>. Under en utlisting av SOSI-formatrealiseringen:
+
+SOSI-filer i henhold til denne produktspesifikasjonen merkes med ..OBJEKTKATALOG {kortnavn} {versjon} i filhodet.
+
+Se eksempelfiler på {skjema-url}/eksempel/
+
+include::SOSIformatRealisering.adoc[]
+
+
+[appendix]
+== GML-realisering
+
+GML-realiseringen følger kravene i "Realisering i GML-format 5.0" <<SOSI-GML>>. Realiseringen defineres av følgende filer:
+
+* {skjema-url}/NVDBVegnettPlus.xsd[GML-Skjema]
+* {skjema-url}/NVDBVegnettPlus.sch[Schematron-Skjema]
+
+Se eksempelfiler på {skjema-url}/eksempel/
+
+:sectnums!:
+
+<<<
+
+[discrete]
+== Lisensvilkår
+
+// Inkl. lisensvilkår
+include::inkluder/lisensvilkaar.adoc[]

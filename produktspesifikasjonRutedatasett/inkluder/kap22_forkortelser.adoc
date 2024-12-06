@@ -1,0 +1,22 @@
+
+
+
+**SOSI**	Samordnet Opplegg for Stedfestet Informasjon – et standardformat for digitale geodata (SOSI-standarden). 
+
+**NS-ISO 8402** 	Kvalitetsledelse og kvalitetssikring - Terminologi, utgitt 1994 
+
+**T 	Prosjektet** "Termer for geografisk informasjon" (revisjon av Ordbok for kart og oppmåling) 
+
+**SFKB**			Sentral Felles KartdataBase
+ 
+**Geovekst** 	Geodatasamarbeid mellom KS (kommunesektorens organisasjon), Energi Norge, Kartverket, Telenor, Statens vegvesen, Landbruksdepartementet, Fylkeskommunen og Norges vassdrags- og energidirektorat. 
+
+**UML** 	Unified Modelling Language. Modelleringsspråk som (blant annet) brukes til å beskrive geografiske informasjonsmodeller.
+
+**GML** 	GML Geography Markup Language – Internasjonalt standardformat for utveksling av geografisk informasjon 
+
+**KPS-veger** 		Kommunale veger, private veger og skogsveger
+
+**ERF-veger**		Europa-, riks- og fylkesveger
+
+**NVDB** 	Nasjonal vegdatabank 

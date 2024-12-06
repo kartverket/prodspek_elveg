@@ -1,0 +1,6 @@
+NVDB Vegnett Pluss brukes i forbindelse med forvaltning av vegnettsdata gjennom Sentral FKB. 
+Produktet leveres normalt ikke ut i andre sammenhenger (til andre brukere).
+
+For metadata henvises det til leveres ikke ut som et produktet Elveg 2.0: 
+
+{metadata-url}[{Elveg 2.0} i kartkatalog på Geonorge]. 

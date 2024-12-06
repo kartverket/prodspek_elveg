@@ -1,0 +1,82 @@
+Referansesystemer for FKB 5.0 er også beskrevet i vedlegg B i {fkbGenerellDel-url}[FKB generell del].
+
+=== Romlig referansesystem 5972
+
+==== Omfang
+<<HeleDatasettet,Hele datasettet>>
+
+==== Navn på kilden til referansesystemet
+EPSG / SOSI
+
+==== Ansvarlig organisasjon for referansesystemet
+Statens kartverk
+
+==== Link til mer informasjon om referansesystemet
+https://register.geonorge.no/epsg-koder/euref89-utm-sone-32-2d-nn2000
+
+==== Koderom
+EPSG
+
+==== Identifikasjonskode
+5972
+
+==== Kodeversjon
+2020-03-30
+
+=== Romlig referansesystem 5973
+
+==== Omfang
+<<HeleDatasettet,Hele datasettet>>
+
+==== Navn på kilden til referansesystemet
+EPSG / SOSI
+
+==== Ansvarlig organisasjon for referansesystemet
+Statens kartverk
+
+==== Link til mer informasjon om referansesystemet
+https://register.geonorge.no/epsg-koder/euref89-utm-sone-33-2d-nn2000
+
+==== Koderom
+EPSG
+
+==== Identifikasjonskode
+5973
+
+==== Kodeversjon
+2020-03-30
+
+=== Romlig referansesystem 5975
+==== Omfang
+<<HeleDatasettet,Hele datasettet>>
+
+==== Navn på kilden til referansesystemet
+EPSG / SOSI
+
+==== Ansvarlig organisasjon for referansesystemet
+Statens kartverk
+
+==== Link til mer informasjon om referansesystemet
+https://register.geonorge.no/epsg-koder/euref89-utm-sone-35-2d-nn2000
+
+==== Koderom
+EPSG
+
+==== Identifikasjonskode
+5975
+
+==== Kodeversjon
+2020-03-30
+
+
+=== Temporalt referansesystem
+
+==== Omfang
+<<HeleDatasettet,Hele datasettet>>
+
+==== Navn på temporalt referansesystem
+UTC
+
+Dersom ikke tidssone er spesielt angitt ved angivelse av tidspunkt skal man anta at det er norsk tid som benyttes. Dvs. UTC+1 (normaltid) på vinteren og UTC+2 (sommertid) på sommeren.
+
+
