@@ -77,6 +77,7 @@ Dette er første versjon av produktspesifikasjonen {datasett}. I forhold til Elv
 ** Ny objekttype bl.a. for å tydeliggjøre sommerruter. Værutsatt veg vil ikke lengre legges på ferjestrekninger. 
 * Vegsperring: 
 ** Kodeliste for Type er tilpasset objekttype Vegbom i NVDB/FKB Veg sine typer der disse i utgangspunktet er like. 
+** Egenskapstype Gjelder tidsrom er erstattet av nye egenskapstyper for Stengt fra dato og Stengt til dato, samt Stengt fra kl. og Stengt til kl.
 
 
 
