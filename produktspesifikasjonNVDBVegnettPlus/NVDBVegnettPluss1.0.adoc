@@ -2,9 +2,8 @@
 :kortnavn: NVDBVegnettPluss
 :versjon: 1.0
 :skjemaversjon: {versjon}
-:underversjon: 2024-12-01
-:publisert: 2024-11-29
-:metadata-url: https://kartkatalog.geonorge.no/metadata/elveg-20/77944f7e-3d75-4f6d-ae04-c528cc72e8f6
+:underversjon: 2024-12-15
+:publisert: 2024-12-09
 :dokumentstatus: 4
 // All informasjon i hode over denne linja må fylles ut for hvert datasett. Øvrige parametere settes i adoc_parametere.adoc
 include::inkluder/filhode.adoc[]
@@ -50,7 +49,7 @@ Dette er første versjon av produktspesifikasjonen {datasett}. I forhold til Elv
  
 * Produktet har formål som forvaltningsdatasett mot kommunene, slik Elveg 2.0 også ble benyttet. Produktet har fått nytt navn for å tydeliggjøre endring fra gamle Elveg som ikke lengre vil produseres. 
 * Forenklet Elveg 2.0 leveres som produktet NVDB Vegnett. Dette inneholder de samme veglenkene og vegsperringene som vi finner i NVDB Vegnett Pluss. 
-* Eksterne kodelister for tillatte verdier benyttes overalt der dette er mulig, se NVDB - Geonorge Register 
+* Eksterne kodelister for tillatte verdier benyttes overalt der dette er mulig, se https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb[NVDB - Geonorge Register] 
 * Stedfestingsegenskaper for sideposisjon og høydeposisjon benyttes ikke for objekttyper i produktet, og er derfor tatt ut. 
 * Overgang til posisjonskvalitet iht. FKB 5.0. 
 
@@ -114,7 +113,7 @@ include::inkluder/kap22_forkortelser.adoc[]
 {underversjon}
 
 === Ansvarlig organisasjon
-Kartverket
+Kartverket og Statens vegvesen
 
 === Språk
 Norsk

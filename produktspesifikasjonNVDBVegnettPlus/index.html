@@ -440,7 +440,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">Kartverket</span><br>
 <span id="revnumber">versjon 1.0,</span>
-<span id="revdate">2024-12-01</span>
+<span id="revdate">2024-12-15</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Innholdsfortegnelse</div>
@@ -729,7 +729,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>Status</strong> : Ferdig dokument til godkjenning hos Standardiseringskomiteen for Geomatikk</p>
 </div>
 <div class="paragraph">
-<p><strong>Publisert</strong>: 2024-11-29</p>
+<p><strong>Publisert</strong>: 2024-12-09</p>
 </div>
 </div>
 </div>
@@ -806,7 +806,7 @@ Fortau, gangveger og gangfelt skulle også overføres fra FKB Traktorveg/Sti. NV
 <p>Forenklet Elveg 2.0 leveres som produktet NVDB Vegnett. Dette inneholder de samme veglenkene og vegsperringene som vi finner i NVDB Vegnett Pluss.</p>
 </li>
 <li>
-<p>Eksterne kodelister for tillatte verdier benyttes overalt der dette er mulig, se NVDB - Geonorge Register</p>
+<p>Eksterne kodelister for tillatte verdier benyttes overalt der dette er mulig, se <a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb">NVDB - Geonorge Register</a></p>
 </li>
 <li>
 <p>Stedfestingsegenskaper for sideposisjon og høydeposisjon benyttes ikke for objekttyper i produktet, og er derfor tatt ut.</p>
@@ -1046,7 +1046,7 @@ den av flere samarbeidsparter som har ansvaret for forvaltning og ajourføring a
 ajourføring som utføres systematisk med jevne mellomrom [PABG]</p>
 </div>
 <div class="paragraph">
-<p>MERKNAD 	Ved periodisk ajourføring blir eksisterende data, enten de har vært gjennom kontinuerlig ajourføring eller ei, kontrollert og evt. forbedret, og manglende objekter blir supplert. Objekter som ikke er endret, blir ikke kartlagt på nytt. Etter periodisk ajourføring skal datasettene minimum tilfredsstille kvalitetskravene for den valgte FKB-standard i området. Det kan være nødvendig også med en oppgradering for å oppfylle kvalitetskravene. Periodisk ajourføring gjøres vanligvis ved fotogrammetri.</p>
+<p>MERKNAD 	Ved periodisk ajourføring blir eksisterende data, enten de har vært gjennom kontinuerlig ajourføring eller ei, kontrollert og ev. forbedret, og manglende objekter blir supplert. Objekter som ikke er endret, blir ikke kartlagt på nytt. Etter periodisk ajourføring skal datasettene minimum tilfredsstille kvalitetskravene for den valgte FKB-standard i området. Det kan være nødvendig også med en oppgradering for å oppfylle kvalitetskravene. Periodisk ajourføring gjøres vanligvis ved fotogrammetri.</p>
 </div>
 <div class="paragraph">
 <p><strong>primærdatasett</strong>
@@ -1080,12 +1080,16 @@ Vegnettet består av veglenker med sin vegnettsgeometri. For at nettverket skal 
 </div>
 <div class="paragraph">
 <p><strong>Vegdetaljnivå</strong>
-Ulike brukere kan ha ulike behov for detaljeringsgrad på vegnettet. Det er derfor lagt til rette for at vegnettet kan presenteres i 3 forskjellige detaljeringsnivåer: Vegtrasenivå, Kjørebanenivå og Kjørefeltnivå. Den største delen av vegnettet tilfredsstiller både vegtrasenivå og kjørebanenivå, og vil da ikke ha egenskapen detaljnivå. Kjørefeltnivå benyttes kun i tilfeller der det er ønskelig å detaljere vegnettet ytterligere. I hovedsak er det bilvegnettet som presenteres på forskjellige detaljeringsnivåer. Se Figur 1. Vegnett for gående og syklende vil i hovedsak kun være definert på vegtrasenivå.</p>
+Ulike brukere kan ha ulike behov for detaljeringsgrad på vegnettet.
+Det er derfor lagt til rette for at vegnettet kan presenteres i 3 forskjellige detaljeringsnivåer: Vegtrasenivå, Kjørebanenivå og Kjørefeltnivå.
+Den største delen av vegnettet tilfredsstiller både vegtrasenivå og kjørebanenivå, og vil da ikke ha egenskapen detaljnivå.
+Kjørefeltnivå benyttes kun i tilfeller der det er ønskelig å detaljere vegnettet ytterligere.
+I hovedsak er det bilvegnettet som presenteres på forskjellige detaljeringsnivåer. Se <a href="#Figur_Detaljnivå">Figur 1</a>. Vegnett for gående og syklende vil i hovedsak kun være definert på vegtrasenivå.</p>
 </div>
 <div class="paragraph">
 <p>Vegens senterlinje defineres normalt midt mellom vegkanter. På deler av vegnettet der kjørebanene er fysisk skilt fra hverandre, for eksempel med midtrabatt, konstrueres det to senterlinjer for kjørebanenivået, en for hver kjøreretning. I tillegg konstrueres det linje for vegtrase i midtrabatten for vegnett på mindre detaljert nivå. For enkelte situasjoner i vegnettet, for eksempel i kryss, vil det også være aktuelt å konstruere en egen senterlinje for et svingefelt for å detaljere kryssets utforming ytterligere.</p>
 </div>
-<div class="imageblock">
+<div id="Figur_Detaljnivå" class="imageblock">
 <div class="content">
 <img src="figurer/Vegdetaljniva.png" alt="Figur som viser vegdetaljnivå">
 </div>
@@ -1104,17 +1108,17 @@ Ulike brukere kan ha ulike behov for detaljeringsgrad på vegnettet. Det er derf
 <p><strong>Feltoversikt:</strong></p>
 </div>
 <div class="paragraph">
-<p>I vegnettet defineres kjørefelt som en beskrivelse av tverrsnittet på vegen. Lovlige verdier for kjørefelt er definert i Statens vegvesen sin datakatalog. Kjørefelt i tverrsnittet av vegen beskrives vha en tekststreng i egenskapen feltoversikt, og kombinasjon av felt skilles med #.</p>
+<p>I vegnettet defineres kjørefelt som en beskrivelse av tverrsnittet på vegen. Lovlige verdier for kjørefelt er definert i Statens vegvesen sin datakatalog. Kjørefelt i tverrsnittet av vegen beskrives vha. en tekststreng i egenskapen feltoversikt, og kombinasjon av felt skilles med #.</p>
 </div>
 <div class="paragraph">
 <p>Metreringen gir oss referansen i lengderetning, mens feltkoding kan gi oss plassering på tvers av vegen. Feltkodene gis i forhold til vegens metreringsretning. Oddetall viser felt med kjøreretning med metreringsretningen, partall viser oss felt med kjøreretning mot metreringsretningen.</p>
 </div>
 <div class="paragraph">
-<p>Lenkeretning og metreringsretning er normalt sett den samme, men i noen tilfeller vil den ikke være det. SOSI Vegnett, og med det NVDB Vegnett Pluss definerer feltkoding <span class="underline">kun</span> i forhold til metreringsretning.</p>
+<p>Lenkeretning og metreringsretning er normalt sett den samme, men i noen tilfeller vil den ikke være det. SOSI Vegnett, og med det NVDB Vegnett Pluss, definerer feltkoding <span class="underline">kun</span> i forhold til metreringsretning.</p>
 </div>
-<div class="imageblock">
+<div id="Figur_Feltkoding" class="imageblock">
 <div class="content">
-<img src="figurer/Feltkoding.png" alt="Figur som viser feltkoder">
+<img src="figurer/Feltkoding.png" alt="Figur som viser feltkoder" width="400" height="400">
 </div>
 <div class="title">Figur 2. Figuren viser at feltkoder gir oss en referanse på tvers av vegens tverrsnitt. Kjørefeltene nummereres fra midten av vegen og utover til hver side. Det brukes oddetall på felt som har trafikk med metreringsretningen, og partall på felt som har trafikk mot metreringsretning. Feltet kan dessuten ha tilleggskoder som gir flere opplysninger,</div>
 </div>
@@ -1475,13 +1479,13 @@ SOSI: ..FELTOVERSIKT 1#2#3K#4K</p>
 <div class="sect2">
 <h3 id="_referansedato">3.2. Referansedato</h3>
 <div class="paragraph">
-<p>2024-12-01</p>
+<p>2024-12-15</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_ansvarlig_organisasjon">3.3. Ansvarlig organisasjon</h3>
 <div class="paragraph">
-<p>Kartverket</p>
+<p>Kartverket og Statens vegvesen</p>
 </div>
 </div>
 <div class="sect2">
@@ -1523,16 +1527,17 @@ SOSI: ..FELTOVERSIKT 1#2#3K#4K</p>
 <div class="sect2">
 <h3 id="_datasettoppløsning">3.10. Datasettoppløsning</h3>
 <div class="paragraph">
-<p>FKB er detaljerte data stort sett registrert fotogrammetrisk fra flybilder med en oppløsing mellom 7 og 25 cm.
+<p>NVDB Vegnett Pluss inneholder detaljerte data som er registrert fotogrammetrisk fra flybilder med en oppløsning mellom 7 og 25 cm.
+Data kan også være innmålte data som ferdigvegsdata etter at vegprosjekter er ferdige.
 Stedfestingsnøyaktigheten varierer fra +/- 0,10 m til +/- 1 m avhengig av objekttype, områdetype og datafangstmetode.
-FKB-data egner seg for presentasjon i målestokker fra ca 1:100 til ca 1:20000</p>
+Data fra NVDB Vegnett Pluss egner seg for presentasjon i målestokker fra ca 1:100 til ca 1:20000.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_utstrekningsinformasjon">3.11. Utstrekningsinformasjon</h3>
 <div class="paragraph">
 <p><strong>Utstrekningbeskrivelse</strong><br>
-FKB-data dekker Norges fastlandsterritorium</p>
+NVDB Vegnett Pluss dekker Norges fastlandsterritorium</p>
 </div>
 <div class="paragraph">
 <p><strong>Geografisk område</strong><br>
@@ -1588,16 +1593,13 @@ Ikke angitt</p>
 <div class="sect3">
 <h4 id="_navn">4.1.3. Navn</h4>
 <div class="paragraph">
-<p>{fkbdatasett}</p>
+<p>NVDB Vegnett Pluss</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_beskrivelse">4.1.4. Beskrivelse</h4>
 <div class="paragraph">
-<p>Detaljeringen av FKB er delt inn i 4 nøyaktighetsklasser; FKB-A, FKB-B, FKB-C og FKB-D, men er i denne spesifikasjonen beskrevet som et homogent produkt med ett omfang.</p>
-</div>
-<div class="paragraph">
-<p>Se FKB Generell del <a href="#FKB">[FKB]</a> for en nærmere beskrivelse av inndeling av FKB i FKB-A til D.</p>
+<p>Denne spesifikasjonen er beskrevet som et homogent produkt med ett omfang.</p>
 </div>
 </div>
 <div class="sect3">
@@ -1796,8 +1798,7 @@ SOSI Generell objektkatalog::Vegnett::<span class="underline">«applicationSchem
 <div class="sect4">
 <h5 id="appveglenke">5.2.1.1. «featureType» Veglenke</h5>
 <div class="paragraph">
-<p><strong>Definisjon:</strong> Objekttype som representerer lenker i vegnettet
-Eksempel: NVDB Referanselenkedeler, NVDB Transportlenker</p>
+<p><strong>Definisjon:</strong> Objekttype som representerer lenker i vegnettet</p>
 </div>
 <h6 id="_egenskaper" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
@@ -2498,7 +2499,7 @@ Enhet: Kilometer/time</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/CharacterString">CharacterString</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/Time">Time</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
@@ -2526,7 +2527,7 @@ Enhet: Kilometer/time</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/CharacterString">CharacterString</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/Time">Time</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
@@ -7942,9 +7943,7 @@ Dersom ikke oppgitt, gir det "Nei"-alternativet, dvs "Ikke sideveg"</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI</p>
-<p class="tableblock">Eksempel:http://register.geonorge.no/navnerom/https-data-geonorge-no-sosi-stedsnavn/e696eb95-9a00-42fe-ab28-3ec6272c9108</p>
-<p class="tableblock">Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
@@ -9716,14 +9715,10 @@ Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB
 <div class="sect2">
 <h3 id="_metadataspesifikasjon">13.2. Metadataspesifikasjon</h3>
 <div class="paragraph">
-<p>NVDB Vegnett Pluss brukes i forbindelse med forvaltning av vegnettsdata gjennom Sentral FKB.
-Produktet leveres normalt ikke ut i andre sammenhenger (til andre brukere).</p>
+<p>NVDB Vegnett Pluss brukes i forbindelse med forvaltning av vegnettsdata gjennom Sentral FKB. For metadata henvises det til NVDB Vegnett Pluss på Geonorge.</p>
 </div>
 <div class="paragraph">
-<p>For metadata henvises det til leveres ikke ut som et produktet Elveg 2.0:</p>
-</div>
-<div class="paragraph">
-<p><a href="https://kartkatalog.geonorge.no/metadata/elveg-20/77944f7e-3d75-4f6d-ae04-c528cc72e8f6">{Elveg 2.0} i kartkatalog på Geonorge</a>.</p>
+<p>Veglenkene og vegsperringene leveres også som produktet NVDB Vegnett</p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -10369,17 +10364,17 @@ Produktet leveres normalt ikke ut i andre sammenhenger (til andre brukere).</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">klokkeslettFra</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Time</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..KLOKKESLETTFRA</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T20</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">klokkeslettTil</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Time</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..KLOKKESLETTTIL</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T20</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">vedtaksnummer</p></td>
@@ -10984,63 +10979,63 @@ Produktet leveres normalt ikke ut i andre sammenhenger (til andre brukere).</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Time</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..VARETRANSPORTHVERDAGULØRDAGPERIODE1FRAKL</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T20</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">varetransportHverdagULørdagPeriode1TilKl</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Time</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..VARETRANSPORTHVERDAGULØRDAGPERIODE1TILKL</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T20</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">varetransportHverdagULørdagPeriode2FraKl</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Time</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..VARETRANSPORTHVERDAGULØRDAGPERIODE2FRAKL</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T20</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">varetransportHverdagULørdagPeriode2TilKl</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Time</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..VARETRANSPORTHVERDAGULØRDAGPERIODE2TILKL</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T20</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">varetransportLørdagPeriode1FraKl</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Time</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..VARETRANSPORTLØRDAGPERIODE1FRAKL</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T20</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">varetransportLørdagPeriode1TilKl</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Time</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..VARETRANSPORTLØRDAGPERIODE1TILKL</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T20</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">varetransportLørdagPeriode2FraKl</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Time</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..VARETRANSPORTLØRDAGPERIODE2FRAKL</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T20</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">varetransportLørdagPeriode2TilKl</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Time</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..VARETRANSPORTLØRDAGPERIODE2TILKL</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T20</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">varetransportLørdagPeriode2TilKl</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Time</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..VARETRANSPORTLØRDAGPERIODE2TILKL</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T20</p></td>
 </tr>
 </tbody>
 </table>
@@ -11977,7 +11972,7 @@ Produktet leveres normalt ikke ut i andre sammenhenger (til andre brukere).</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Time</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..STENGTFRAKLOKKESLETT</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T20</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">merknad</p></td>
@@ -11991,7 +11986,7 @@ Produktet leveres normalt ikke ut i andre sammenhenger (til andre brukere).</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Time</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..STENGTTILKLOKKESLETT</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T20</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">StengtUkedag</p></td>
@@ -12297,7 +12292,7 @@ av denne lisensen og ikke kan viderebrukes</p>
 <div id="footer">
 <div id="footer-text">
 Versjon 1.0<br>
-Last updated 2024-11-29 09:04:45 +0100
+Last updated 2024-12-09 11:58:58 +0100
 </div>
 </div>
 </body>
