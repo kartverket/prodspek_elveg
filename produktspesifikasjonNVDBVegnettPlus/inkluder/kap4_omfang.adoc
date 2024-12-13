@@ -1,4 +1,3 @@
-(Antall spesifikasjonsomfang: 1)
 
 [[HeleDatasettet]]
 === Spesifikasjonsomfang for hele spesifikasjonen
@@ -15,20 +14,7 @@ Datasett
 ==== Beskrivelse
 Denne spesifikasjonen er beskrevet som et homogent produkt med ett omfang.
 
-
 ==== Utstrekningsinformasjon
 
 *Utstrekningbeskrivelse* + 
 FKB-data dekker Norges fastlandsterritorium 
-
-*Geografisk område* + 
-Nord: 72° +
-Sør: 57° +
-Øst: 32° +
-Vest: 4°
-
-*Vertikal utbredelse* + 
-Fra ca -250 m til ca 2500 m
-
-*Innhold gyldighetsperiode* + 
-Ikke angitt

@@ -3,7 +3,7 @@
 :versjon: 1.0
 :skjemaversjon: {versjon}
 :underversjon: 2024-12-15
-:publisert: 2024-12-09
+:publisert: 2024-12-13
 :dokumentstatus: 4
 // All informasjon i hode over denne linja må fylles ut for hvert datasett. Øvrige parametere settes i adoc_parametere.adoc
 include::inkluder/filhode.adoc[]

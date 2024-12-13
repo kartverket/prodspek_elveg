@@ -1,6 +1,6 @@
 Referansesystemer for FKB 5.0 er også beskrevet i vedlegg B i {fkbGenerellDel-url}[FKB generell del].
 
-=== Romlig referansesystem 5972
+=== Romlig referansesystem UTM32-NN2000
 
 ==== Omfang
 <<HeleDatasettet,Hele datasettet>>
@@ -23,7 +23,7 @@ EPSG
 ==== Kodeversjon
 2020-03-30
 
-=== Romlig referansesystem 5973
+=== Romlig referansesystem UTM33-NN2000
 
 ==== Omfang
 <<HeleDatasettet,Hele datasettet>>
@@ -46,7 +46,7 @@ EPSG
 ==== Kodeversjon
 2020-03-30
 
-=== Romlig referansesystem 5975
+=== Romlig referansesystem UTM35-NN2000
 ==== Omfang
 <<HeleDatasettet,Hele datasettet>>
 
@@ -67,16 +67,5 @@ EPSG
 
 ==== Kodeversjon
 2020-03-30
-
-
-=== Temporalt referansesystem
-
-==== Omfang
-<<HeleDatasettet,Hele datasettet>>
-
-==== Navn på temporalt referansesystem
-UTC
-
-Dersom ikke tidssone er spesielt angitt ved angivelse av tidspunkt skal man anta at det er norsk tid som benyttes. Dvs. UTC+1 (normaltid) på vinteren og UTC+2 (sommertid) på sommeren.
 
 
