@@ -53,6 +53,11 @@ NVDB Rutedatasett ble utviklet i 2021.
 |01.03.2022|Statens vegvesen|1.1|Etter ønsker fra brukere er datasettet utvidet med veglenker for kjørefeltnivå.
 |01.01.2025|Statens vegvesen|2.0|Navn på en rekke egenskaper er skrevet om. I tillegg er bruken av «_» erstattet med stor bokstav.
 
+Endring på veglenka:
+
+* jjjjjjjjjjjjjj
+
+
 
 |===
 
