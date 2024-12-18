@@ -13,34 +13,34 @@ include::inkluder/filhode.adoc[]
 
 === Innledning
 
-NVDB Rutedatasett test Ny Test Ny test5 er et forvaltningsdatasett for kommunene til forvaltning av vegnettet i SFKB. En kvalitetssikret versjon tilgjengeliggjøres på Geonorge. 
-Datasettet omfatter alle kjørbare veger som er lengre enn 50 meter, eller del av et nettverk, samt gang- og sykkelveger og sykkelveger representert som veglenkegeometri. 
-Fortau, gangveger, gangfelt, traktorveger og stier som tidligere fantes i FKB-TraktorvegSti, vil også være en del av NVDB Vegnett Pluss. For disse typene veg gjenstår noe innsamling av data.
+NVDB Rutedatasett er et verktøyuavhengig rutedatasett som benyttes til navigasjon. Normalt sett tilgjengeliggjøres nye versjoner på Geonorge minimum 10 ganger i året.
 
-I tillegg inneholder datasettet adresseinformasjon (som gir mulighet for kobling til matrikkelen og andre registre), fartsgrenser, trafikkreguleringer og vegklasser. 
-Veglenkens attributter er tematisert etter typeveg, vegkategori og vegfase.  
+Datagrunnlaget er hentet fra Nasjonal vegdatabank (NVDB). Vegnettet segmenteres i forhold til egenskapene til strekningsobjektene som er med i datasettet. Dette er objekttyper som
+* Produktet har formål som forvaltningsdatasett mot kommunene, slik Elveg 2.0 også ble benyttet. Produktet har fått nytt navn for å tydeliggjøre endring fra gamle Elveg som ikke lengre vil 
+  produseres. 
+* angir hvor «en veg» går, og hvilke deler av vegnettet som hører til denne. F.eks. er E6 «en veg». Denne
+  informasjonen omtales som vegsystemreferanse (https://www.vegvesen.no/globalassets/fag/handboker/hb-v830-nasjonalt-vegreferansesystem.pdf[Nasjonalt vegreferansesystem, Håndbok V830])
+* angir hvor «en adresse» er, f.eks. hvor Storgata i en kommune ligger.
+* angir hvilken funksjonell vegklasse lenkene representerer, denne skal bidra til foretrukket rute i en
+  ruteplanlegger. 
+* beskriver trafikkreguleringer, f.eks. der kjøring på gang- og sykkelveger er lov når det er eneste mulighet til  å kjøre til en eiendom.
+* gir informasjon om motorveg, fartsgrenser, høyderestriksjoner og gågatereguleringer.
+* angir andre kjørerestriksjoner som tillatt kjøreretning.
+* utvalgte bruksklasseverdier for spesialtransport og tømmertransport.
+* Vegsperringer, svingerestriksjoner og gjennomkjøring forbudt med sin avgrensning 
+  leveres som egne objekter.
 
-* Type veg for kjørende: enkel bilveg, kanalisert veg, rampe, rundkjøring, bilferje og gatetun.
-* Type veg for gående og syklende: gangveg, sykkelveg, gang- og sykkelveg, sykkelfelt, gågate, fortau, trapp, gangfelt, passasjerferje, traktorveg, sti, annet.
-* Vegkategori: europa- (E), riks- \(R), fylkes- (F), kommunal veg (K), privat veg (P) og skogsveg (S).
-* Vegfase: eksisterende veg (V), under bygging (A). 
+Kun utvalgte egenskaper for de forskjellige objekttypene er med i NVDB Rutedatasett i forhold til hva som er definert som egenskaper i NVDB sin Datakatalog.
 
-NVDB Vegnett Pluss er et produkt som eksporteres fra Nasjonal vegdatabank (NVDB). Grunnlagsdataene ajourholdes av Statens vegvesen og Kartverket. 
-Les mer om denne på:  https://www.vegvesen.no/fag/teknologi/nasjonal-vegdatabank/[Nasjonal vegdatabank (NVDB) | Statens vegvesen] +
+Geometri for gangveg, fortau og gangfelt er i stor grad etablert, og er også med i datasettet. Traktorveger og stier vil fra 2025 etableres i NVDB, og dermed også bli med i dette datasettet. Det må påregnes en lengre innsamlingsperiode før disse dataene er fullstendige. 
 
-I tillegg til NVDB Vegnett Pluss finnes det også et forenklet datasett, NVDB Vegnett. Dette datasettet består av de samme veglenkene og vegsperringene vi finner i NVDB Vegnett Pluss. +
+Datasettet leveres på kjørefeltnivå fra NVDB. Dette betyr at veglenker for bl.a. svingefelt også er med i datasettet.
 
-Europa-, riks- og fylkesvegnettet ajourføres kontinuerlig i NVDB med basis i plan- og ferdigvegsdata. Ajourføring av kommunale, private og skogsveger organiseres gjennom Norge digitalt og FDV-avtalene med kommuner, administrert av Kartverket. 
-
-
-Denne produktspesifikasjonen er utarbeidet iht. SOSI produktspesifikasjoner – Krav og godkjenning 5.0 <<SOSI-KRAV>>. 
-UML-modellen som ligger til grunn for innhold i diagrammene og dokumentasjon i kap. 5, følger reglene i SOSI Regler for UML-modellering, versjon 5.1 <<SOSI-UML>>. 
-http://sosi.geonorge.no/veiledere/UML[Denne veilederen] gir hjelp til å lese UML-diagrammene.
+Der veglenkene er på rent kjørebanenivå, ligger det også informasjon på lenkene om hvilken vegtrase-lenke kjørebanelenken hører til. Dette benevnes som «superstedfesting». Selve vegtraselenken det vises til er ikke med ut i datasettet.  
 
 === Historikk
 
-Elveg 2.0 var en videreutvikling og sammenslåing av FKB-Vegnett 4.03, Vbase og Elveg, hvor det for første gang ble innført lineært refererte objekter. 
-Fortau, gangveger og gangfelt skulle også overføres fra FKB Traktorveg/Sti. NVDB Vegnett Pluss er en revisjon av Elveg 2.0 etter at datasettet nå har fått endret formål til å være et forvaltningsdatasett mot kommunene.
+NVDB Rutedatasett ble utviklet i 2021.
 
 === Endringslogg
 
