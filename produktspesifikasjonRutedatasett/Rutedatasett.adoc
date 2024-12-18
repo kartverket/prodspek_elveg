@@ -42,6 +42,25 @@ NVDB Rutedatasett ble utviklet i 2021.
 
 === Endringslogg
 
+
+.Endringslog
+[cols="4*"]
+|===
+
+|*Dato*|*Utført av*|*Versjon*|*Kommentar*
+|01.07.2021|Statens vegvesen|0.8|NVDB Rutedatasett tilgjengeliggjøres som testversjon. 
+|01.11.2021|Statens vegvesen|1.0|NVDB Rutedatasett tilgjengelig som versjon 1.0. Informasjon om felt og snudde lenker er nå med i datasettet.
+|01.03.2022|Statens vegvesen|1.1|Etter ønsker fra brukere er datasettet utvidet med veglenker for kjørefeltnivå.
+|01.01.2025|Statens vegvesen|2.O|Navn på en rekke egenskaper er skrevet om. I tillegg er bruken av «_» erstattet med stor bokstav.
+
+Endring på veglenka:
+
+
+|===
+
+
+
+
 Dette er første versjon av produktspesifikasjonen {datasett}. I forhold til Elveg 2.0 er følgende endringer gjort:
 
 *Generelt:*
