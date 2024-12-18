@@ -1,5 +1,5 @@
 :datasett: Rutedatasett - foreløpig en kopi av NVDB Vegnett Pluss
-:kortnavn: NVDBVegnettPluss
+:kortnavn: Rutedatasett
 :versjon: 1.0
 :skjemaversjon: {versjon}
 :underversjon: 2024-12-01
