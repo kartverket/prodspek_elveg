@@ -118,7 +118,7 @@ Vegnettet består av veglenker med sin vegnettsgeometri. For at nettverket skal 
 
 Vegnettet i NVDB er definert i 3 forskjellige nivåer, men i dette datasettet benyttes kun veglenker for vegtrase/kjørebane, kjørebane og kjørefeltlenker. De fleste veglenkesekvensene tilfredsstiller både kjørebane og vegtrase. De ligger som vegtrase og kjørebane i datasettet. Rene vegtraselenker er ikke med i datasettet. 
 
-image::images/image.png[]
+image::images/image.png.jpg[]
 
 <<<
 
