@@ -96,46 +96,35 @@ Ny objekttype for gjennomkjøring forbudt:
 == Definisjoner og forkortelser
 
 === Definisjoner
-datasett 
+
+*datasett*: 
 identifiserbar samling av beslektede data [T]  
 
-egenskap 
-
+*egenskap*: 
 navngitt kjennetegn eller karakteristikk av et objekt 
 
-nettverkstopologi  
-
+*nettverkstopologi*: 
 overalt hvor det fysiske vegnettet henger sammen, skal det finnes tilsvarende koplinger mellom veglenkene i nettverket. Nettverket blir da en topologisk representasjon av det fysiske vegnettet 
 
-objekt  
-
+*objekt*:  
 forekomst (instans) av en objekttype 
 
-objekttype  
-
+*objekttype*: 
 geografisk objekttype en klasse av objekter med felles egenskaper, forholdet mot andre objekttyper og funksjoner [SOSI] 
 
-
-detaljeringsnivå 
-
+*detaljeringsnivå*:
 veglenkene i NVDB kan være representert på tre forskjellige detaljeringsnivåer: Vegtrasenivå, kjørebanenivå og kjørefeltnivå 
 
-detaljerte lenker 
-
+*detaljerte lenker*:
 veglenke på kjørebanenivå og kjørefeltnivå 
 
-superstedfesting 
-
+*superstedfesting*:
 detaljerte lenkers kobling til vegtrasenivå i NVDB 
 
- 
-
-veglenkesekvens 
-
+*veglenkesekvens*: 
 veglenker gruppert i ordnede sekvenser, den viktigste delen av referansesystemet i NVDB 
 
- 
-include::inkluder/kap21_definisjoner.adoc[]
+
 
 === Forkortelser
 
