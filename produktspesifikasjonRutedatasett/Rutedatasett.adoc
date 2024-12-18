@@ -16,11 +16,9 @@ include::inkluder/filhode.adoc[]
 NVDB Rutedatasett er et verktøyuavhengig rutedatasett som benyttes til navigasjon. Normalt sett tilgjengeliggjøres nye versjoner på Geonorge minimum 10 ganger i året.
 
 Datagrunnlaget er hentet fra Nasjonal vegdatabank (NVDB). Vegnettet segmenteres i forhold til egenskapene til strekningsobjektene som er med i datasettet. Dette er objekttyper som
-*Generelt:* 
-* Produktet har formål som forvaltningsdatasett mot kommunene, slik Elveg 2.0 også ble benyttet. Produktet har fått nytt navn for å tydeliggjøre endring fra gamle Elveg som ikke lengre vil 
-  produseres. 
 * angir hvor «en veg» går, og hvilke deler av vegnettet som hører til denne. F.eks. er E6 «en veg». Denne
-  informasjonen omtales som vegsystemreferanse (https://www.vegvesen.no/globalassets/fag/handboker/hb-v830-nasjonalt-vegreferansesystem.pdf[Nasjonalt vegreferansesystem, Håndbok V830])
+  informasjonen omtales som vegsystemreferanse (https://www.vegvesen.no/globalassets/fag/handboker/hb- 
+ v830-nasjonalt-vegreferansesystem.pdf[Nasjonalt vegreferansesystem, Håndbok V830])
 * angir hvor «en adresse» er, f.eks. hvor Storgata i en kommune ligger.
 * angir hvilken funksjonell vegklasse lenkene representerer, denne skal bidra til foretrukket rute i en
   ruteplanlegger. 
