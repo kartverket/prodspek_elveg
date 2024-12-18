@@ -55,62 +55,86 @@ NVDB Rutedatasett ble utviklet i 2021.
 
 Endring på veglenka:
 
-* jjjjjjjjjjjjjj
+* Fartsgrense angis nå med verdi med veglenkeretningen og verdi mot veglenkeretning. Dette fordi fartsgrensen kan være forskjellig i de to retningene.
+* Ny egenskap på beredskapsveg viser bruksområde. 
+* For gågate er egenskap for kjøring til eiendommene tillatt tatt ut, dette dekkes av Trafikkregulering. Varetransport lørdag fra/til er tatt ut, og dekkes av Varetransport lørdag sine perioder.
+* Trafikkregulering: Egenskapstyper for gjennomkjøring forbudt og sykling mot kjøreretning tillatt er tatt ut. Dekkes av nye objekttyper for Gjennomkjøring forbudt, og egenskap for kjøreretning for sykkel.
+* Nye egenskaper for ferjesamband for å tydeliggjøre begrenset drift. 
+* Noen bruksklasseverdier for tømmertransport er tatt med i datasettet.
 
+Endringer på svingerestriksjon:
 
+* Egenskapen for gjelder tidsrom er erstattet med spesifikke egenskaper for ukedager. 
 
+Ny objekttype for gjennomkjøring forbudt:
+
+* Egenskaper viser i hvilken retning fra et punkt og til et punkt det ikke er lov å kjøre. Egenskaper viser også unntak og andre begrensninger. 
+ 
 |===
 
+Endring på veglenka:
+
+* Fartsgrense angis nå med verdi med veglenkeretningen og verdi mot veglenkeretning. Dette fordi fartsgrensen kan være forskjellig i de to retningene.
+* Ny egenskap på beredskapsveg viser bruksområde. 
+* For gågate er egenskap for kjøring til eiendommene tillatt tatt ut, dette dekkes av Trafikkregulering. Varetransport lørdag fra/til er tatt ut, og dekkes av Varetransport lørdag sine perioder.
+* Trafikkregulering: Egenskapstyper for gjennomkjøring forbudt og sykling mot kjøreretning tillatt er tatt ut. Dekkes av nye objekttyper for Gjennomkjøring forbudt, og egenskap for kjøreretning for sykkel.
+* Nye egenskaper for ferjesamband for å tydeliggjøre begrenset drift. 
+* Noen bruksklasseverdier for tømmertransport er tatt med i datasettet.
 
 
+Endringer på svingerestriksjon:
 
-Dette er første versjon av produktspesifikasjonen {datasett}. I forhold til Elveg 2.0 er følgende endringer gjort:
+* Egenskapen for gjelder tidsrom er erstattet med spesifikke egenskaper for ukedager. 
 
-*Generelt:*
+
+Ny objekttype for gjennomkjøring forbudt:
+
+* Egenskaper viser i hvilken retning fra et punkt og til et punkt det ikke er lov å kjøre. Egenskaper viser også unntak og andre begrensninger. 
  
-* Produktet har formål som forvaltningsdatasett mot kommunene, slik Elveg 2.0 også ble benyttet. Produktet har fått nytt navn for å tydeliggjøre endring fra gamle Elveg som ikke lengre vil produseres. 
-* Forenklet Elveg 2.0 leveres som produktet NVDB Vegnett. Dette inneholder de samme veglenkene og vegsperringene som vi finner i NVDB Vegnett Pluss. 
-* Eksterne kodelister for tillatte verdier benyttes overalt der dette er mulig, se NVDB - Geonorge Register 
-* Stedfestingsegenskaper for sideposisjon og høydeposisjon benyttes ikke for objekttyper i produktet, og er derfor tatt ut. 
-* Overgang til posisjonskvalitet iht. FKB 5.0. 
-
-*Endringer på veglenka:* 
-
-* Type veg er utvidet med «traktorveg», «sti», og «annet». Også disse typene veg vil forvaltes i NVDB for å sikre et fullstendig sammenhengende nettverk for kjørende, gående og syklende. 
-* Det innføres lenker på feltnivå for sykkelfelt som ligger i kjørebanen. I NVDB vil disse lenkene ha samme type veg som resten av vegen feltet er en del av, og være kodet med feltkode for sykkelfelt. For NVDB Vegnett Pluss innføres det en produkttilpasset type veg, «sykkelfelt», for de nye feltlenkene. For vanlig sykkelveg innføres ikke egne lenker på kjørefeltnivå. 
-
-*Endring på objekttyper:*
- 
-* Beredskapsveg: 
-** Ny egenskap viser bruksområde. Gjør det enklere å lage gode kart der beredskapsveger som egentlig ikke trenger å vises godt i kartet kan tones ned, eller ikke vises i det hele tatt. 
-* Gågatereguleringer:
-** Egenskap kjøring til eiendommer tillatt er tatt ut, dette dekkes av objekttypen Trafikkregulering. 
-** Det er lagt til mulighet for to perioder for varetransport lørdag. 
-* InnkjøringForbudt:
-** Er erstattet av ny objekttype, TillattKjøreretning.  
-** TillattKjøreretning har også egenskap som viser sykling mot kjøreretning tillatt. 
-* Trafikkregulering:  
-** Egenskapstype for sykling mot kjøreretning tillatt er tatt ut, denne reguleringen dekkes av den nye objekttypen Tillatt kjøreretning (som nevnt over). 
-** Egenskapstyper for gjennomkjøring forbudt er tatt ut, og erstattet av to nye objekttyper, GjennomkjøringForbudt med assosiasjon til GjennomkjøringForbudtTil  
-* VærutsattVeg:  
-** Objekttypen har gjennom andre prosesser fått endret flere egenskaper, og fått flere administrative egenskaper som f.eks. stedsnavn. 
-* Ferjesamband: 
-** Ny objekttype bl.a. for å tydeliggjøre sommerruter. Værutsatt veg vil ikke lengre legges på ferjestrekninger. 
-* Vegsperring: 
-** Kodeliste for Type er tilpasset objekttype Vegbom i NVDB/FKB Veg sine typer der disse i utgangspunktet er like. 
-
-
-
-=== Normative referanser
-
-include::inkluder/kap14_normativ_ref.adoc[]
-
 <<<
 
 == Definisjoner og forkortelser
 
 === Definisjoner
+datasett 
+identifiserbar samling av beslektede data [T]  
 
+egenskap 
+
+navngitt kjennetegn eller karakteristikk av et objekt 
+
+nettverkstopologi  
+
+overalt hvor det fysiske vegnettet henger sammen, skal det finnes tilsvarende koplinger mellom veglenkene i nettverket. Nettverket blir da en topologisk representasjon av det fysiske vegnettet 
+
+objekt  
+
+forekomst (instans) av en objekttype 
+
+objekttype  
+
+geografisk objekttype en klasse av objekter med felles egenskaper, forholdet mot andre objekttyper og funksjoner [SOSI] 
+
+
+detaljeringsnivå 
+
+veglenkene i NVDB kan være representert på tre forskjellige detaljeringsnivåer: Vegtrasenivå, kjørebanenivå og kjørefeltnivå 
+
+detaljerte lenker 
+
+veglenke på kjørebanenivå og kjørefeltnivå 
+
+superstedfesting 
+
+detaljerte lenkers kobling til vegtrasenivå i NVDB 
+
+ 
+
+veglenkesekvens 
+
+veglenker gruppert i ordnede sekvenser, den viktigste delen av referansesystemet i NVDB 
+
+ 
 include::inkluder/kap21_definisjoner.adoc[]
 
 === Forkortelser
