@@ -347,36 +347,36 @@ Ikke relevant for datasettet.
 Hele datasettet
 
 ==== Leveranseformat
-*Formatnavn*
+*Formatnavn* +
 SpatialLite
 
-*Formatversjon*
+*Formatversjon* +
 5.0.1
 
-*Formatspesifikasjon* 
+*Formatspesifikasjon* + 
 SpatiaLite: SpatiaLite (gaia-gis.it)
 
-*Filstruktur*
+*Filstruktur* +
 Fylkesvise filer
 Landsfil
 
-*Språk*
+*Språk* +
 Norsk- NO
 
-*Tegnsett*
-UTF-8
+*Tegnsett* +
+UTF-8 +
 
 ==== Leveransemedium
-*Leveranseenhet*
+*Leveranseenhet* +
 Datasett lastes ned fra geonorge.no
 
-*Overføringsstørrelse*
+*Overføringsstørrelse* +
 Data ikke angitt
 
-*Navn på medium*
+*Navn på medium* +
 Data ikke angitt
 
-*Annen leveranseinformasjon*
+*Annen leveranseinformasjon* +
 Data ikke angitt
 
 
