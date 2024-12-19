@@ -388,8 +388,18 @@ Ingen angitt informasjon
 == Metadata
 
 === Omfang
+Hele datasettet
 
 
 === Metadataspesifikasjon
 
+[cols="3*"]
+|===
+
+|Uttaksdato|ååååmmdd|Dato dataene ble hentet ut fra NVDB
+|refSysHorizontal|25833|Horisontalt referansesystem 
+|refSysVertical|5941|Vertikal referansesystem
+| | | 
+
 <<<
+
