@@ -140,7 +140,7 @@ De fleste objekttypene i NVDB er kun stedfestet på Vegtrasenivå. I og med at N
 
 ==== «Lenkeretning snudd» og betydning for kobling av data
 
-En veglenkesekvens i NVDB vil i all tid beholde sin retning. Dvs. at veglenkesekvensens geometriretning alltid vil være den samme uavhengig av f.eks. vegens metreringsretning. I NVDB Rutedatasett derimot, har de segmenterte veglenkene samme retning som vegens metreringsretning. I noen tilfeller er vegen metrert motsatt retning av lenkesekvensens retning. Egenskapen lenkeretning_snudd viser om den segmenterte veglenken har fått snudd sin geometriretning i forhold til original retning i NVDB. 
+En veglenkesekvens i NVDB vil i all tid beholde sin retning. Dvs. at veglenkesekvensens geometriretning alltid vil være den samme uavhengig av f.eks. vegens metreringsretning. I NVDB Rutedatasett derimot, har de segmenterte veglenkene samme retning som vegens metreringsretning. I noen tilfeller er vegen metrert motsatt retning av lenkesekvensens retning. Egenskapen lenkeretning_snudd viser om den segmenterte veglenken har fått snudd sin geometriretning i forhold til original retning i NVDB.
 
 Ved kobling av data fra NVDB, så må det tas hensyn til om lenkeretningen er snudd. For de veglenkene dette er gjort, så må posisjonene for stedfestingen av objektene som hentes fra NVDB regnes om slik at stedfestingen havner på riktig sted for veglenkene i NVDB Rutedatasett.
 
@@ -153,7 +153,7 @@ image::images/feltkode.jpg[align="center"]
 
 Feltkodene kan ha ekstra informasjon f.eks. der vi har kollektivfelt (K) eller sykkelfelt (S). Konnekteringslenker har ikke feltkoder. Disse er merket som feltoversikt Konnektering i datasettet.
 
-*NB!* Til forskjell fra NVDB er det viktig å merke seg at i NVDB Rutedatasett er feltkodene definert i forhold til geometrien sin retning. I NVDB er feltkoder definert i forhold til den originale veglenkesekvensen sin retning. Der en veg er metrert motsatt av den originale veglenkesekvensen i NVDB (se 2.3.3), så vil man se motsatte verdier i NVDB Rutedatasett i forhold til originalfeltkoder fra NVDB. 
+*NB!* Til forskjell fra NVDB er det viktig å merke seg at i NVDB Rutedatasett er feltkodene definert i forhold til geometrien sin retning. I NVDB er feltkoder definert i forhold til den originale veglenkesekvensen sin retning. Der en veg er metrert motsatt av den originale veglenkesekvensen i NVDB (se 2.3.3), så vil man se motsatte verdier i NVDB Rutedatasett i forhold til originalfeltkoder fra NVDB.
 
 Test
 <<<
@@ -279,7 +279,7 @@ Hele datasettet.
 
 <<<
 
-== Kvalitet Test
+== Kvalitet tEST4
 
 === Omfang
 Hele datasettet
