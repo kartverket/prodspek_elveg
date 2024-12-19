@@ -279,7 +279,7 @@ Hele datasettet.
 
 <<<
 
-== Kvalitet Test
+== Kvalitet
 
 === Omfang
 Hele datasettet
