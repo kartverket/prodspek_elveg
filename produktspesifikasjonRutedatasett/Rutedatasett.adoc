@@ -279,22 +279,18 @@ Hele datasettet.
 
 <<<
 
-== Kvalitet tEST4
+== Kvalitet
 
 === Omfang
-Hele datasettet
+NVDB Rutedatasett er et svært forenklet alternativ til Elveg 2.0, og det er valgt å ikke ta med informasjon om kvalitet i datasettet. Datagrunnlaget for NVDB Ruteplandata er det samme som for Elveg 2.0, og derfor gjelder den samme kvaliteten her.
 
 ==== Fullstendighet
-Datasettet er fullstendig så langt det er mulig og oppdateres kontinuerlig i henhold til avtaler om forvaltning, drift og vedlikehold.
+Datasettet er fullstendig så langt det er mulig, og oppdateres kontinuerlig i henhold til avtaler om forvaltning, drift og vedlikehold av grunnlagsdata i NVDB.
 
 ==== Stedfestingsnøyaktighet
-Det er et overordnet prinsipp at best tilgjengelige geometri skal benyttes i vegnettet. 
-NVDB Vegnett Pluss  inneholder ikke homogene data. Produktet som helhet kan ikke love bedre kvalitet enn de dårligste datakildene. 
-Vegen registreres så langt mulig i tre dimensjoner (nord, øst, høyde), men ved administrativ datafangst godkjennes 2D data (digitalisering fra ortofoto) dersom andre datakilder ikke finnes.
+Det er et overordnet prinsipp at best tilgjengelige geometri skal benyttes i vegnettet. NVDB inneholder ikke homogene data. Produktet som helhet kan ikke love bedre kvalitet enn de dårligste datakildene. Vegen registreres så langt mulig i tre dimensjoner (nord, øst, høyde), men ved administrativ datafangst godkjennes 2D data (digitalisering fra ortofoto) dersom andre datakilder ikke finnes.
 
-NVDB Vegnett Pluss inneholder detaljerte data som er registrert fotogrammetrisk fra flybilder med en oppløsning mellom 7 og 25 cm. 
-Data kan også være innmålte data som ferdigvegsdata etter at vegprosjekter er ferdige. 
-Stedfestingsnøyaktigheten varierer fra +/- 0,10 m til +/- 1 m avhengig av objekttype, områdetype og datafangstmetode. Data fra NVDB Vegnett Pluss egner seg for presentasjon i målestokker fra ca 1:100 til ca 1:20000.
+NVDB inneholder detaljerte data stort sett registrert fotogrammetrisk fra flybilder med en oppløsing mellom 7 og 25 cm. Nøyaktigheten varierer fra +/- 0.10 m til +/- 2 m avhengig av objekttype, områdetype og datafangstmetode.
 
 
 ==== Egenskapsnøyaktighet
@@ -310,9 +306,9 @@ Kontinuerlig kontroll.
 
 == Datafangst
 
-NVDB Vegnett Pluss er et direkte uttrekk fra NVDB. Vegnett i NVDB er etablert med data fra vegsituasjon (fotogrammetri), GPS og treghetsmålinger, administrativ ajourhold (gjennom ajourhold av NVDB Vegnett Pluss) og med data fra Statens vegvesens plan- og ferdigvegsdata. 
+NVDB Rutedatasett er et direkte uttrekk fra NVDB. Vegnett i NVDB er etablert med data fra vegsituasjon (fotogrammetri), GPS og treghetsmålinger, administrativ ajourhold (gjennom ajourhold av NVDB Vegnett Pluss) og med data fra plan- og ferdigvegsdata. 
 
-I tillegg mottar Kartverket og Statens vegvesen feilmeldinger og endringer fra publikum gjennom deres feilmeldingstjenester http://rettikartet.no[http://rettikartet.no] og https://fiksvegdata.atlas.vegvesen.no/[fiksvegdata.atlas.vegvesen.no]. Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB og kommer deretter ut i NVDB Vegnett Pluss. 
+I tillegg mottar Kartverket og Statens vegvesen feilmeldinger og endringer fra publikum gjennom deres feilmeldingstjenester http://rettikartet.no[http://rettikartet.no] og https://fiksvegdata.atlas.vegvesen.no/[fiksvegdata.atlas.vegvesen.no]. Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB.
 
 
 <<<
@@ -329,59 +325,60 @@ Hele datasettet
 Kontinuerlig
 
 ==== Vedlikeholdsbeskrivelse 
-Fotogrammetrisk ajourhold utføres gjennom Geovekst kartleggingsprosjekter. Kartleggingsprosjektene spesifiseres og finansieres gjennom Geovekst og settes ut på anbud fra Kartverket. Flyfotografering og selve det fotogrammetriske ajourholdet utføres av et privat firma i tråd med fotogrammetrisk registreringsinstruks. Kartverket gjør kontroll av leveranse ved mottak og legger dataene inn i databasen i samarbeid med Statens vegvesen.
+Fotogrammetrisk ajourhold utføres gjennom Geovekst kartleggingsprosjekter. Kartleggingsprosjektene spesifiseres og finansieres gjennom Geovekst og settes ut på anbud fra Kartverket. Flyfotografering og selve det fotogrammetriske ajourholdet utføres av et privat firma i tråd med fotogrammetrisk registreringsinstruks. Kartverket gjør kontroll av leveranse ved mottak og legger dataene inn i databasen i samarbeid med Statens Vegvesen.
 
-=== Vedlikeholdsinformasjon – Avtaler om forvaltning, drift og vedlikehold
-==== Omfang 
-Hele datasettet
+Den enkelte vegforvalter er ansvarlig for innholdet for sine veger i NVDB. Etter regionreformen har vi mange vegforvaltere som skal sørge for at nødvendige data er registrert i NVDB. For ERF-veger er dette Statens vegvesen, Nye Veier AS og alle fylkeskommunene. Se mer om krav til leveranse av data og grunnlagsinformasjon til NVDB for ERF-veger på Statens vegvesen sine nettsider om
+https://www.vegvesen.no/fag/teknologi/nasjonal-vegdatabank/dataleveranse/[Dataleveranser til NVDB]
 
-==== Vedlikeholdsfrekvens 
-Kontinuerlig
-
-==== Vedlikeholdsbeskrivelse 
-Det er i regi av Geovekst inngått avtaler om forvaltning, drift og vedlikehold (FDV) med de fleste kommuner. 
-Her avtalefestes oppgaver og finansiering av et felles kontinuerlig ajourhold av FKB-dataene blant partene i avtalen (dette gjelder også for NVDB Vegnett Pluss). 
-Den viktigste parten i avtalene er kommunen da mange av endringene i FKB kan fanges opp gjennom kommunal saksbehandling. 
-Dataene blir så sendt til Kartverket for innlesing i databasen. 
-Kommuner utenfor Geovekst gjør tilsvarende vedlikehold i egen regi og leverer data i henhold til Norge digitalt avtale.
-
-==== Omfang 
-Hele datasettet
-
-==== Vedlikeholdsfrekvens 
-Kontinuerlig
-
-==== Vedlikeholdsbeskrivelse 
-Statens vegvesen er forpliktet til å levere ferdigvegsdata til NVDB Vegnett Pluss ved ferdigstillelse av prosjekter.
-
-=== Vedlikeholdsinformasjon – Feilmeldinger og avvikshåndtering
-==== Omfang 
-Hele datasettet
-
-==== Vedlikeholdsfrekvens 
-Kontinuerlig
-
-==== Vedlikeholdsbeskrivelse 
-Kartverket og Statens vegvesen mottar feilmeldinger fra publikum gjennom deres feilmeldingstjenester http://rettikartet.no/ og https://fiksvegdata.atlas.vegvesen.no/ . 
-Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB (og deretter komme ut i NVDB Vegnett Pluss). 
-
+Kartverket oppdaterer det digitale navigerbare vegnettet for kommunale veger, private veger og skogsveger etter manus fra kommunene. Kravet til kommunene er regulert av https://www.kartverket.no/geodataarbeid/Forvaltning-drift-og-vedlikehold/Rutiner-for-forvaltning-drift-og-vedlikehold/[FDV-avtalen] gjennom Norge digitalt.
 
 <<<
 
 == Presentasjon
+Ikke relevant for datasettet.
 
-=== Omfang
-<<HeleDatasettet,Hele datasettet>>
-
-=== Referanse til presentasjonskatalog
-Det er utarbeidet en presentasjonsregel for Elveg, men ikke for NVDB Vegnett Pluss enda. Denne er tilgjengelig via geonorge:
-https://register.geonorge.no/register/versjoner/tegneregler/kartverket/elveg
 
 <<<
 
 == Leveranse
+=== Leveransemetode
 
-include::inkluder/kap11_leveranse.adoc[]
+==== Omfang
+Hele datasettet
+
+==== Leveranseformat
+*Formatnavn*
+SpatialLite
+
+*Formatversjon*
+5.0.1
+
+*Formatspesifikasjon* 
+SpatiaLite: SpatiaLite (gaia-gis.it)
+
+*Filstruktur*
+Fylkesvise filer
+Landsfil
+
+*Språk*
+Norsk- NO
+
+*Tegnsett*
+UTF-8
+
+==== Leveransemedium
+*Leveranseenhet*
+Datasett lastes ned fra geonorge.no
+
+*Overføringsstørrelse*
+Data ikke angitt
+
+*Navn på medium*
+Data ikke angitt
+
+*Annen leveranseinformasjon*
+Data ikke angitt
+
 
 <<<
 
@@ -391,44 +388,8 @@ Ingen angitt informasjon
 == Metadata
 
 === Omfang
-<<HeleDatasettet,Hele datasettet>>
+
 
 === Metadataspesifikasjon
 
-include::inkluder/kap13_metadata.adoc[]
-
 <<<
-
-
-
-[appendix]
-== SOSI-format-realisering
-
-SOSI-realiseringen følger kravene i "Realisering i SOSI-format 5.0" <<SOSI-FORMAT>>. Under en utlisting av SOSI-formatrealiseringen:
-
-SOSI-filer i henhold til denne produktspesifikasjonen merkes med ..OBJEKTKATALOG {kortnavn} {versjon} i filhodet.
-
-Se eksempelfiler på {skjema-url}/eksempel/
-
-include::SOSIformatRealisering.adoc[]
-
-
-[appendix]
-== GML-realisering
-
-GML-realiseringen følger kravene i "Realisering i GML-format 5.0" <<SOSI-GML>>. Realiseringen defineres av følgende filer:
-
-* {skjema-url}/NVDBVegnettPlus.xsd[GML-Skjema]
-* {skjema-url}/NVDBVegnettPlus.sch[Schematron-Skjema]
-
-Se eksempelfiler på {skjema-url}/eksempel/
-
-:sectnums!:
-
-<<<
-
-[discrete]
-== Lisensvilkår
-
-// Inkl. lisensvilkår
-include::inkluder/lisensvilkaar.adoc[]
