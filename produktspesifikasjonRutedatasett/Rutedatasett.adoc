@@ -155,7 +155,7 @@ Feltkodene kan ha ekstra informasjon f.eks. der vi har kollektivfelt (K) eller s
 
 *NB!* Til forskjell fra NVDB er det viktig å merke seg at i NVDB Rutedatasett er feltkodene definert i forhold til geometrien sin retning. I NVDB er feltkoder definert i forhold til den originale veglenkesekvensen sin retning. Der en veg er metrert motsatt av den originale veglenkesekvensen i NVDB (se 2.3.3), så vil man se motsatte verdier i NVDB Rutedatasett i forhold til originalfeltkoder fra NVDB.
 
-Test
+
 <<<
 
 == Generelt om spesifikasjonen
@@ -207,11 +207,15 @@ Vektor
 NVDB Rutedatasett inneholder detaljerte data stort sett registrert fotogrammetrisk fra flybilder med en oppløsing mellom 7 og 25 cm. Nøyaktigheten varierer fra +/- 0.10 m til +/- 2 m avhengig av objekttype, områdetype og datafangstmetode. Datasettet egner seg for presentasjon i målestokker fra ca 1:100 til ca 1:20000.
 
 === Utstrekningsinformasjon
-*Utstrekningbeskrivelse*: Dekker Norges fastlandsterritoium
 
-*Geografisk område*:Norge
+*Utstrekningbeskrivelse*: + 
+Dekker Norges fastlandsterritoium
 
-*Vertikal utbredelse*:Fra ca. -300 m til ca. 1900 m
+*Geografisk område*: + 
+Norge
+
+*Vertikal utbredelse*: + 
+Fra ca. -300 m til ca. 1900 m
 
 
 <<<
@@ -232,13 +236,13 @@ NVDB Rutedatasett
 Ikke relevant
 
 ==== Utstrekningsinformasjon  
-*Utstrekningbeskrivelse*
+*Utstrekningbeskrivelse* +
 Dekker Norges fastlandsterritorium
 
-*Geografisk område*
+*Geografisk område* +
 Norge
 
-*Vertikal utbredelse*
+*Vertikal utbredelse* +
 Fra ca. -300 m til ca. 1900 m
 
 == Innhold og struktur
@@ -282,7 +286,7 @@ Hele datasettet.
 == Kvalitet
 
 === Omfang
-NVDB Rutedatasett er et svært forenklet alternativ til Elveg 2.0, og det er valgt å ikke ta med informasjon om kvalitet i datasettet. Datagrunnlaget for NVDB Ruteplandata er det samme som for Elveg 2.0, og derfor gjelder den samme kvaliteten her.
+NVDB Rutedatasett er et svært forenklet alternativ til NVDB Vegnett Pluss, og det er valgt å ikke ta med informasjon om kvalitet i datasettet. Datagrunnlaget for NVDB Ruteplandata er det samme som for https://dokument.geonorge.no/produktspesifikasjoner/nvdb-vegnett-pluss/1.0/index.html[NVDB Vegnett Pluss], og derfor gjelder den samme kvaliteten her.
 
 ==== Fullstendighet
 Datasettet er fullstendig så langt det er mulig, og oppdateres kontinuerlig i henhold til avtaler om forvaltning, drift og vedlikehold av grunnlagsdata i NVDB.
@@ -399,7 +403,8 @@ Hele datasettet
 |Uttaksdato|ååååmmdd|Dato dataene ble hentet ut fra NVDB
 |refSysHorizontal|25833|Horisontalt referansesystem 
 |refSysVertical|5941|Vertikal referansesystem
-| | | 
+
+
+|===
 
 <<<
-
