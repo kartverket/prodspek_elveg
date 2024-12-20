@@ -19,13 +19,14 @@ Datagrunnlaget er hentet fra Nasjonal vegdatabank (NVDB). Vegnettet segmenteres 
 
 * angir hvor «en veg» går, og hvilke deler av vegnettet som hører til denne. F.eks. er E6 «en veg». Denne informasjonen omtales som vegsystemreferanse (https://www.vegvesen.no/globalassets/fag/handboker/hb-v830-nasjonalt-vegreferansesystem.pdf[Nasjonalt vegreferansesystem, Håndbok V830])    
 * angir hvor «en https://datakatalogen.atlas.vegvesen.no/#/538/[adresse]» er, f.eks. hvor Storgata i en kommune ligger.
-* angir hvilken https://datakatalogen.atlas.vegvesen.no/#/821/[funksjonell vegklasse]lenkene representerer, denne skal bidra til foretrukket rute i en
+* angir hvilken https://datakatalogen.atlas.vegvesen.no/#/821/[funksjonell vegklasse] lenkene representerer, denne skal bidra til foretrukket rute i en
   ruteplanlegger.
 * beskriver https://datakatalogen.atlas.vegvesen.no/#/856/[trafikkreguleringer], f.eks. der kjøring på gang- og sykkelveger er lov når det er eneste mulighet til  å kjøre til en eiendom.
-* gir informasjon om https://datakatalogen.atlas.vegvesen.no/#/595/[motorveg], https://datakatalogen.atlas.vegvesen.no/#/105/[fartsgrenser], https://datakatalogen.atlas.vegvesen.no/#/591/[høyderestriksjoner] og https://datakatalogen.atlas.vegvesen.no/#/813/[gågatereguleringer].
-* angir andre kjørerestriksjoner som https://datakatalogen.atlas.vegvesen.no/#/977/[tillatt kjøreretning].
+* gir informasjon om link:++https://datakatalogen.atlas.vegvesen.no/#/595/++[motorveg], link:++https://datakatalogen.atlas.vegvesen.no/#/105/++[fartsgrenser], link:++https://datakatalogen.atlas.vegvesen.no/#/591/++[høyderestriksjoner] 
+og link:++https://datakatalogen.atlas.vegvesen.no/#/813/++[gågatereguleringer].
+* angir andre kjørerestriksjoner som https://datakatalogen.atlas.vegvesen.no/#/977/[tillatt kjøreretning] .
 * utvalgte bruksklasseverdier for spesialtransport og tømmertransport.
-* https://datakatalogen.atlas.vegvesen.no/#/607/[Vegsperringer], https://datakatalogen.atlas.vegvesen.no/#/573/[svingerestriksjoner] og https://datakatalogen.atlas.vegvesen.no/#/913/[gjennomkjøring forbudt] med sin https://datakatalogen.atlas.vegvesen.no/#/979/[avgrensning] 
+* link:++https://datakatalogen.atlas.vegvesen.no/#/607/++[Vegsperringer], link:++https://datakatalogen.atlas.vegvesen.no/#/573/++[svingerestriksjoner] og link:++https://datakatalogen.atlas.vegvesen.no/#/913/++[gjennomkjøring forbudt] med sin link:++https://datakatalogen.atlas.vegvesen.no/#/979/++[avgrensning] 
 leveres som egne objekter.
 
 Kun utvalgte egenskaper for de forskjellige objekttypene er med i NVDB Rutedatasett i forhold til hva som er definert som egenskaper i https://datakatalogen.atlas.vegvesen.no/[NVDB sin Datakatalog].
