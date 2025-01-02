@@ -44,7 +44,7 @@ NVDB Rutedatasett ble utviklet i 2021.
 === Endringslogg
 
 
-.Endringslog
+.Endringslogg
 [cols="4*"]
 |===
 
