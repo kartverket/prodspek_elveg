@@ -1,9 +1,9 @@
-:datasett: Rutedatasett - foreløpig en kopi av NVDB Vegnett Pluss
-:kortnavn: Rutedatasett
-:versjon: 1.0
+:datasett: NVDB Rutedatasett
+:kortnavn: NVDB Rutedatasett
+:versjon: 2.0
 :skjemaversjon: {versjon}
-:underversjon: 2024-12-01
-:publisert: 2024-11-29
+:underversjon: 2025-01-01
+:publisert: 2025-01-01
 :metadata-url: https://kartkatalog.geonorge.no/metadata/elveg-20/77944f7e-3d75-4f6d-ae04-c528cc72e8f6
 :dokumentstatus: 2
 // All informasjon i hode over denne linja må fylles ut for hvert datasett. Øvrige parametere settes i adoc_parametere.adoc
@@ -13,99 +13,163 @@ include::inkluder/filhode.adoc[]
 
 === Innledning test
 
-Rutedatasett test4 er et forvaltningsdatasett for kommunene til forvaltning av vegnettet i SFKB. En kvalitetssikret versjon tilgjengeliggjøres på Geonorge. 
-Datasettet omfatter alle kjørbare veger som er lengre enn 50 meter, eller del av et nettverk, samt gang- og sykkelveger og sykkelveger representert som veglenkegeometri. 
-Fortau, gangveger, gangfelt, traktorveger og stier som tidligere fantes i FKB-TraktorvegSti, vil også være en del av NVDB Vegnett Pluss. For disse typene veg gjenstår noe innsamling av data.
+NVDB Rutedatasett er et verktøyuavhengig rutedatasett som benyttes til navigasjon. Normalt sett tilgjengeliggjøres nye versjoner på Geonorge minimum 10 ganger i året.
 
-I tillegg inneholder datasettet adresseinformasjon (som gir mulighet for kobling til matrikkelen og andre registre), fartsgrenser, trafikkreguleringer og vegklasser. 
-Veglenkens attributter er tematisert etter typeveg, vegkategori og vegfase.  
+Datagrunnlaget er hentet fra Nasjonal vegdatabank (NVDB). Vegnettet segmenteres i forhold til egenskapene til strekningsobjektene som er med i datasettet. Dette er objekttyper som
 
-* Type veg for kjørende: enkel bilveg, kanalisert veg, rampe, rundkjøring, bilferje og gatetun.
-* Type veg for gående og syklende: gangveg, sykkelveg, gang- og sykkelveg, sykkelfelt, gågate, fortau, trapp, gangfelt, passasjerferje, traktorveg, sti, annet.
-* Vegkategori: europa- (E), riks- \(R), fylkes- (F), kommunal veg (K), privat veg (P) og skogsveg (S).
-* Vegfase: eksisterende veg (V), under bygging (A). 
+* angir hvor «en veg» går, og hvilke deler av vegnettet som hører til denne. F.eks. er E6 «en veg». Denne informasjonen omtales som vegsystemreferanse (https://www.vegvesen.no/globalassets/fag/handboker/hb-v830-nasjonalt-vegreferansesystem.pdf[Nasjonalt vegreferansesystem, Håndbok V830])    
+* angir hvor «en https://datakatalogen.atlas.vegvesen.no/#/538/[adresse]» er, f.eks. hvor Storgata i en kommune ligger.
+* angir hvilken https://datakatalogen.atlas.vegvesen.no/#/821/[funksjonell vegklasse] lenkene representerer, denne skal bidra til foretrukket rute i en
+  ruteplanlegger.
+* beskriver https://datakatalogen.atlas.vegvesen.no/#/856/[trafikkreguleringer], f.eks. der kjøring på gang- og sykkelveger er lov når det er eneste mulighet til  å kjøre til en eiendom.
+* gir informasjon om link:++https://datakatalogen.atlas.vegvesen.no/#/595/++[motorveg], link:++https://datakatalogen.atlas.vegvesen.no/#/105/++[fartsgrenser], link:++https://datakatalogen.atlas.vegvesen.no/#/591/++[høyderestriksjoner] 
+og link:++https://datakatalogen.atlas.vegvesen.no/#/813/++[gågatereguleringer].
+* angir andre kjørerestriksjoner som https://datakatalogen.atlas.vegvesen.no/#/977/[tillatt kjøreretning] .
+* utvalgte bruksklasseverdier for spesialtransport og tømmertransport.
+* link:++https://datakatalogen.atlas.vegvesen.no/#/607/++[Vegsperringer], link:++https://datakatalogen.atlas.vegvesen.no/#/573/++[svingerestriksjoner] og link:++https://datakatalogen.atlas.vegvesen.no/#/913/++[gjennomkjøring forbudt] med sin link:++https://datakatalogen.atlas.vegvesen.no/#/979/++[avgrensning] 
+leveres som egne objekter.
 
-NVDB Vegnett Pluss er et produkt som eksporteres fra Nasjonal vegdatabank (NVDB). Grunnlagsdataene ajourholdes av Statens vegvesen og Kartverket. 
-Les mer om denne på:  https://www.vegvesen.no/fag/teknologi/nasjonal-vegdatabank/[Nasjonal vegdatabank (NVDB) | Statens vegvesen] +
+Kun utvalgte egenskaper for de forskjellige objekttypene er med i NVDB Rutedatasett i forhold til hva som er definert som egenskaper i https://datakatalogen.atlas.vegvesen.no/[NVDB sin Datakatalog].
 
-I tillegg til NVDB Vegnett Pluss finnes det også et forenklet datasett, NVDB Vegnett. Dette datasettet består av de samme veglenkene og vegsperringene vi finner i NVDB Vegnett Pluss. +
+Geometri for gangveg, fortau og gangfelt er i stor grad etablert, og er også med i datasettet. Traktorveger og stier vil fra 2025 etableres i NVDB, og dermed også bli med i dette datasettet. Det må påregnes en lengre innsamlingsperiode før disse dataene er fullstendige. 
 
-Europa-, riks- og fylkesvegnettet ajourføres kontinuerlig i NVDB med basis i plan- og ferdigvegsdata. Ajourføring av kommunale, private og skogsveger organiseres gjennom Norge digitalt og FDV-avtalene med kommuner, administrert av Kartverket. 
+Datasettet leveres på kjørefeltnivå fra NVDB. Dette betyr at veglenker for bl.a. svingefelt også er med i datasettet.
 
-
-Denne produktspesifikasjonen er utarbeidet iht. SOSI produktspesifikasjoner – Krav og godkjenning 5.0 <<SOSI-KRAV>>. 
-UML-modellen som ligger til grunn for innhold i diagrammene og dokumentasjon i kap. 5, følger reglene i SOSI Regler for UML-modellering, versjon 5.1 <<SOSI-UML>>. 
-http://sosi.geonorge.no/veiledere/UML[Denne veilederen] gir hjelp til å lese UML-diagrammene.
+Der veglenkene er på rent kjørebanenivå, ligger det også informasjon på lenkene om hvilken vegtrase-lenke kjørebanelenken hører til. Dette benevnes som «superstedfesting». Selve vegtraselenken det vises til er ikke med ut i datasettet.  
 
 === Historikk
 
-Elveg 2.0 var en videreutvikling og sammenslåing av FKB-Vegnett 4.03, Vbase og Elveg, hvor det for første gang ble innført lineært refererte objekter. 
-Fortau, gangveger og gangfelt skulle også overføres fra FKB Traktorveg/Sti. NVDB Vegnett Pluss er en revisjon av Elveg 2.0 etter at datasettet nå har fått endret formål til å være et forvaltningsdatasett mot kommunene.
+NVDB Rutedatasett ble utviklet i 2021.
 
 === Endringslogg
 
-Dette er første versjon av produktspesifikasjonen {datasett}. I forhold til Elveg 2.0 er følgende endringer gjort:
 
-*Generelt:*
+.Endringslogg
+[cols="4*"]
+|===
+
+|*Dato*|*Utført av*|*Versjon*|*Kommentar*
+|01.07.2021|Statens vegvesen|0.8|NVDB Rutedatasett tilgjengeliggjøres som testversjon. 
+|01.11.2021|Statens vegvesen|1.0|NVDB Rutedatasett tilgjengelig som versjon 1.0. Informasjon om felt og snudde lenker er nå med i datasettet.
+|01.03.2022|Statens vegvesen|1.1|Etter ønsker fra brukere er datasettet utvidet med veglenker for kjørefeltnivå.
+|01.01.2025|Statens vegvesen|2.0 a|Navn på en rekke egenskaper er skrevet om. I tillegg er bruken av «_» erstattet med stor bokstav.
+
+Endring på veglenka:
+
+* Fartsgrense angis nå med verdi med veglenkeretningen og verdi mot veglenkeretning. Dette fordi fartsgrensen kan være forskjellig i de to retningene.
+* Ny egenskap på beredskapsveg viser bruksområde. 
+* For gågate er egenskap for kjøring til eiendommene tillatt tatt ut, dette dekkes av Trafikkregulering. Varetransport lørdag fra/til er tatt ut, og dekkes av Varetransport lørdag sine perioder.
+* Trafikkregulering: Egenskapstyper for gjennomkjøring forbudt og sykling mot kjøreretning tillatt er tatt ut. Dekkes av nye objekttyper for Gjennomkjøring forbudt, og egenskap for kjøreretning for sykkel.
+* Nye egenskaper for ferjesamband for å tydeliggjøre begrenset drift. 
+* Noen bruksklasseverdier for tømmertransport er tatt med i datasettet.
+
+Endringer på svingerestriksjon:
+
+* Egenskapen for gjelder tidsrom er erstattet med spesifikke egenskaper for ukedager. 
+
+Ny objekttype for gjennomkjøring forbudt:
+
+* Egenskaper viser i hvilken retning fra et punkt og til et punkt det ikke er lov å kjøre. Egenskaper viser også unntak og andre begrensninger. 
  
-* Produktet har formål som forvaltningsdatasett mot kommunene, slik Elveg 2.0 også ble benyttet. Produktet har fått nytt navn for å tydeliggjøre endring fra gamle Elveg som ikke lengre vil produseres. 
-* Forenklet Elveg 2.0 leveres som produktet NVDB Vegnett. Dette inneholder de samme veglenkene og vegsperringene som vi finner i NVDB Vegnett Pluss. 
-* Eksterne kodelister for tillatte verdier benyttes overalt der dette er mulig, se NVDB - Geonorge Register 
-* Stedfestingsegenskaper for sideposisjon og høydeposisjon benyttes ikke for objekttyper i produktet, og er derfor tatt ut. 
-* Overgang til posisjonskvalitet iht. FKB 5.0. 
+|=== 
 
-*Endringer på veglenka:* 
-
-* Type veg er utvidet med «traktorveg», «sti», og «annet». Også disse typene veg vil forvaltes i NVDB for å sikre et fullstendig sammenhengende nettverk for kjørende, gående og syklende. 
-* Det innføres lenker på feltnivå for sykkelfelt som ligger i kjørebanen. I NVDB vil disse lenkene ha samme type veg som resten av vegen feltet er en del av, og være kodet med feltkode for sykkelfelt. For NVDB Vegnett Pluss innføres det en produkttilpasset type veg, «sykkelfelt», for de nye feltlenkene. For vanlig sykkelveg innføres ikke egne lenker på kjørefeltnivå. 
-
-*Endring på objekttyper:*
  
-* Beredskapsveg: 
-** Ny egenskap viser bruksområde. Gjør det enklere å lage gode kart der beredskapsveger som egentlig ikke trenger å vises godt i kartet kan tones ned, eller ikke vises i det hele tatt. 
-* Gågatereguleringer:
-** Egenskap kjøring til eiendommer tillatt er tatt ut, dette dekkes av objekttypen Trafikkregulering. 
-** Det er lagt til mulighet for to perioder for varetransport lørdag. 
-* InnkjøringForbudt:
-** Er erstattet av ny objekttype, TillattKjøreretning.  
-** TillattKjøreretning har også egenskap som viser sykling mot kjøreretning tillatt. 
-* Trafikkregulering:  
-** Egenskapstype for sykling mot kjøreretning tillatt er tatt ut, denne reguleringen dekkes av den nye objekttypen Tillatt kjøreretning (som nevnt over). 
-** Egenskapstyper for gjennomkjøring forbudt er tatt ut, og erstattet av to nye objekttyper, GjennomkjøringForbudt med assosiasjon til GjennomkjøringForbudtTil  
-* VærutsattVeg:  
-** Objekttypen har gjennom andre prosesser fått endret flere egenskaper, og fått flere administrative egenskaper som f.eks. stedsnavn. 
-* Ferjesamband: 
-** Ny objekttype bl.a. for å tydeliggjøre sommerruter. Værutsatt veg vil ikke lengre legges på ferjestrekninger. 
-* Vegsperring: 
-** Kodeliste for Type er tilpasset objekttype Vegbom i NVDB/FKB Veg sine typer der disse i utgangspunktet er like. 
-
-
-
-=== Normative referanser
-
-include::inkluder/kap14_normativ_ref.adoc[]
-
 <<<
 
 == Definisjoner og forkortelser
 
 === Definisjoner
 
-include::inkluder/kap21_definisjoner.adoc[]
+*datasett*: 
+identifiserbar samling av beslektede data [T]  
+
+*egenskap*: 
+navngitt kjennetegn eller karakteristikk av et objekt 
+
+*nettverkstopologi*: 
+overalt hvor det fysiske vegnettet henger sammen, skal det finnes tilsvarende koplinger mellom veglenkene i nettverket. Nettverket blir da en topologisk representasjon av det fysiske vegnettet 
+
+*objekt*:  
+forekomst (instans) av en objekttype 
+
+*objekttype*: 
+geografisk objekttype en klasse av objekter med felles egenskaper, forholdet mot andre objekttyper og funksjoner [SOSI] 
+
+*detaljeringsnivå*:
+veglenkene i NVDB kan være representert på tre forskjellige detaljeringsnivåer: Vegtrasenivå, kjørebanenivå og kjørefeltnivå 
+
+*detaljerte lenker*:
+veglenke på kjørebanenivå og kjørefeltnivå 
+
+*superstedfesting*:
+detaljerte lenkers kobling til vegtrasenivå i NVDB 
+
+*veglenkesekvens*: 
+veglenker gruppert i ordnede sekvenser, den viktigste delen av referansesystemet i NVDB 
+
 
 === Forkortelser
 
-include::inkluder/kap22_forkortelser.adoc[]
+NVDB: Nasjonal vegdatabank
+
+=== Øvrig defenisjoner
+==== Vegnettes geometri og detaljeringsnivå
+
+Vegnettet består av veglenker med sin vegnettsgeometri. For at nettverket skal kunne brukes til navigasjon, så er det helt vesentlig at nettverket er knyttet sammen der dette er riktig. 
+
+Vegnettet i NVDB er definert i 3 forskjellige nivåer, men i dette datasettet benyttes kun veglenker for vegtrase/kjørebane, kjørebane og kjørefeltlenker. De fleste veglenkesekvensene tilfredsstiller både kjørebane og vegtrase. De ligger som vegtrase og kjørebane i datasettet. Rene vegtraselenker er ikke med i datasettet. 
+
+
+.I NVDB er vegnettet definert i 3 forskjellige detaljeringsnivåer. Figuren viser Vegtraselenkene, her vist i rødt, er ikke med i NVDB Rutedatasett. 
+image::images/detaljniva.jpg[]
+
+
+
+Veglenkesekvensene på kjørebanenivå og kjørefeltnivå er stedfestet på veglenkesekvensene på vegtrasenivå. Denne stedfestingen kalles superstedfesting. Superstedfesting for detaljerte lenker er tatt med i datasettet selv om veglenkesekvenser på vegtrase ikke er tatt med.
+
+For ytterligere detaljer om vegnettets geometri og detaljeringsnivåer, se denne veilederen fra Statens vegvesen: https://www.vegvesen.no/globalassets/fag/handboker/hb-v830-nasjonalt-vegreferansesystem.pdf[V830 Nasjonalt vegreferansesystem].
+
+For definisjoner av egenskaper veglenkene i dette datasettet er segmentert i forhold til, se kap.5
+
+====	Koble objekter fra NVDB
+Objekter i NVDB er stedfestet på veglenkesekvenser. Ved at de segmenterte lenkenes posisjoner på aktuell veglenkesekvens fra NVDB er tatt med i datasettet, kan objekter hentes fra NVDB og kobles direkte på de segmenterte veglenkene.
+
+.Et objekt, f.eks. en bru, kan hentes fra NVDB og stedfestes direkte på de segmenterte veglenkene vha. informasjonen om veglenkeseksekvensnummer og posisjoner.
+image::images/stedfesting.jpg[]
+
+De fleste objekttypene i NVDB er kun stedfestet på Vegtrasenivå. I og med at NVDB Rutedatasett også har med informasjon om superstedfesting, så kan datasettet suppleres med andre objekttyper fra NVDB også for de detaljerte lenkene.
+
+==== «Lenkeretning snudd» og betydning for kobling av data
+
+En veglenkesekvens i NVDB vil i all tid beholde sin retning. Dvs. at veglenkesekvensens geometriretning alltid vil være den samme uavhengig av f.eks. vegens metreringsretning. I NVDB Rutedatasett derimot, har de segmenterte veglenkene samme retning som vegens metreringsretning. I noen tilfeller er vegen metrert motsatt retning av lenkesekvensens retning. Egenskapen lenkeretning_snudd viser om den segmenterte veglenken har fått snudd sin geometriretning i forhold til original retning i NVDB.
+
+Ved kobling av data fra NVDB, så må det tas hensyn til om lenkeretningen er snudd. For de veglenkene dette er gjort, så må posisjonene for stedfestingen av objektene som hentes fra NVDB regnes om slik at stedfestingen havner på riktig sted for veglenkene i NVDB Rutedatasett.
+
+==== Feltkoding
+
+Feltkoden beskriver referansesystemet på tvers av vegen, og gir oss informasjon om hvilke kjørefelt som finnes i vegens tverrsnitt. Partall angir kjøreretning med lenkeretning, oddetall angir kjøreretning mot lenkeretning.
+
+.Feltkoden gir oss informasjon om kjørefeltene i vegens tverrsnitt. 
+image::images/feltkode.jpg[align="center"]
+
+Feltkodene kan ha ekstra informasjon f.eks. der vi har kollektivfelt (K) eller sykkelfelt (S). Konnekteringslenker har ikke feltkoder. Disse er merket som feltoversikt Konnektering i datasettet.
+
+*NB!* Til forskjell fra NVDB er det viktig å merke seg at i NVDB Rutedatasett er feltkodene definert i forhold til geometrien sin retning. I NVDB er feltkoder definert i forhold til den originale veglenkesekvensen sin retning. Der en veg er metrert motsatt av den originale veglenkesekvensen i NVDB (se 2.3.3), så vil man se motsatte verdier i NVDB Rutedatasett i forhold til originalfeltkoder fra NVDB.
+
 
 <<<
 
 == Generelt om spesifikasjonen
 
 === Unik identifisering
+
+==== Kortnavn
+
 {kortnavn}
 
 ==== Fullstendig navn
-{datasett} 
+
+{datasett}
 
 ==== Versjon
 {versjon}
@@ -114,72 +178,124 @@ include::inkluder/kap22_forkortelser.adoc[]
 {underversjon}
 
 === Ansvarlig organisasjon
-Kartverket
+Statens vegvesen
 
 === Språk
 Norsk
 
 === Hovedtema
-Basisdata, Samferdsel
+Samferdsel
 
 === Temakategori
-basisData
+Transport
 
 === Sammendrag
 
-NVDB Vegnett Pluss er et vegnettsdatasett som omfatter alle kjørbare veger og vegnett for gående og syklende, i den grad dette er registrert, representert som veglenkegeometri. I tillegg inneholder datasettet adresseinformasjon (som gir mulighet for kobling til matrikkelen og andre registre), fartsgrenser, trafikkreguleringer, trafikkrestriksjoner og vegklasser, alle representert som egengeometri. 
+NVDB Rutedatasett er et verktøyuavhengig rutedatasett som benyttes til navigasjon. Datasettet har et vegnett segmentert på aktuelle strekningsegenskaper fra NVDB. Vegsperringer og svingerestriksjoner leveres som egne objekter. Metadata ligger i en egen tabell uten geometri. 
 
 
 === Formål
 
-NVDB Vegnett Pluss brukes som forvaltningsdatasett i den offentlige forvaltningen av vegnett gjennom Geovekst FDV-avtalene.
+Navigasjon og ruteplanlegging.
 
 
-// Fellesdel som dekker kap 3.9 - 3.12 for alle FKB-produktspesifikasjoner
-include::inkluder/kap39-312_representasjon.adoc[]
+=== Representasjonsform
 
-=== Supplerende beskrivelse
-Data ikke angitt
+Vektor
+
+=== Datasettoppløsning
+*Detaljnivå*
+NVDB Rutedatasett inneholder detaljerte data stort sett registrert fotogrammetrisk fra flybilder med en oppløsing mellom 7 og 25 cm. Nøyaktigheten varierer fra +/- 0.10 m til +/- 2 m avhengig av objekttype, områdetype og datafangstmetode. Datasettet egner seg for presentasjon i målestokker fra ca 1:100 til ca 1:20000.
+
+=== Utstrekningsinformasjon
+
+*Utstrekningbeskrivelse*: + 
+Dekker Norges fastlandsterritoium
+
+*Geografisk område*: + 
+Norge
+
+*Vertikal utbredelse*: + 
+Fra ca. -300 m til ca. 1900 m
+
 
 <<<
 
 == Spesifikasjonsomfang
 
-include::inkluder/kap4_omfang.adoc[]  
+=== Spesifikasjonsomfang for hele spesifikasjonen
+==== Identifikasjon 
+Hele datasettet
 
-<<<
+==== Nivå
+Datasett
+
+==== Navn
+NVDB Rutedatasett
+
+==== Beskrivelse
+Ikke relevant
+
+==== Utstrekningsinformasjon  
+*Utstrekningbeskrivelse* +
+Dekker Norges fastlandsterritorium
+
+*Geografisk område* +
+Norge
+
+*Vertikal utbredelse* +
+Fra ca. -300 m til ca. 1900 m
 
 == Innhold og struktur
-
-=== Omfang
-<<HeleDatasettet,Hele datasettet>>
+=== Vektorbasert data- applikasjonsskjema
+==== Omfang
+Hele datasettet
 
 include::modellRapport.adoc[]
 
 <<<
 
 == Referansesystem
+=== Romlig referansesystem
+==== Omfang
+Hele datasettet
 
-include::inkluder/kap6_referansesystem.adoc[]
+==== Navn på kilden til referansesystemet
+SOSI referansesystemkode/ EPSG
+
+==== Ansvarlig organisasjon for referansesystemet:
+Kartverket / The International Association of Oil & Gas Producers
+
+==== Link til mer info om referansesystemet:
+https://register.geonorge.no/epsg-koder/euref89-utm-sone-33-2d-nn2000/8613bed1-c470-4106-a4a8-c96e7f8ef456[EUREF89 UTM sone 33, 2d + NN2000 - Geonorge Register]
+
+==== Koderom
+SOSI ReferansesystemKode (grunnriss)/SYSKODE og Høydereferansesystem (høyde) / EPSG
+
+==== Identifikasjonskode:
+EUREF89 UTM sone 33 (SOSI-kode 23) og høydereferansesystem NN2000 som tilsvarer EPSG/0/5973.
+
+=== Temporalt referansesystem
+==== Navn på temporalt referansesystem
+CET (norsk lokaltid).
+
+==== Omfang
+Hele datasettet.
 
 <<<
 
 == Kvalitet
 
 === Omfang
-Hele datasettet
+NVDB Rutedatasett er et svært forenklet alternativ til NVDB Vegnett Pluss, og det er valgt å ikke ta med informasjon om kvalitet i datasettet. Datagrunnlaget for NVDB Ruteplandata er det samme som for https://dokument.geonorge.no/produktspesifikasjoner/nvdb-vegnett-pluss/1.0/index.html[NVDB Vegnett Pluss], og derfor gjelder den samme kvaliteten her.
 
 ==== Fullstendighet
-Datasettet er fullstendig så langt det er mulig og oppdateres kontinuerlig i henhold til avtaler om forvaltning, drift og vedlikehold.
+Datasettet er fullstendig så langt det er mulig, og oppdateres kontinuerlig i henhold til avtaler om forvaltning, drift og vedlikehold av grunnlagsdata i NVDB.
 
 ==== Stedfestingsnøyaktighet
-Det er et overordnet prinsipp at best tilgjengelige geometri skal benyttes i vegnettet. 
-NVDB Vegnett Pluss  inneholder ikke homogene data. Produktet som helhet kan ikke love bedre kvalitet enn de dårligste datakildene. 
-Vegen registreres så langt mulig i tre dimensjoner (nord, øst, høyde), men ved administrativ datafangst godkjennes 2D data (digitalisering fra ortofoto) dersom andre datakilder ikke finnes.
+Det er et overordnet prinsipp at best tilgjengelige geometri skal benyttes i vegnettet. NVDB inneholder ikke homogene data. Produktet som helhet kan ikke love bedre kvalitet enn de dårligste datakildene. Vegen registreres så langt mulig i tre dimensjoner (nord, øst, høyde), men ved administrativ datafangst godkjennes 2D data (digitalisering fra ortofoto) dersom andre datakilder ikke finnes.
 
-NVDB Vegnett Pluss inneholder detaljerte data som er registrert fotogrammetrisk fra flybilder med en oppløsning mellom 7 og 25 cm. 
-Data kan også være innmålte data som ferdigvegsdata etter at vegprosjekter er ferdige. 
-Stedfestingsnøyaktigheten varierer fra +/- 0,10 m til +/- 1 m avhengig av objekttype, områdetype og datafangstmetode. Data fra NVDB Vegnett Pluss egner seg for presentasjon i målestokker fra ca 1:100 til ca 1:20000.
+NVDB inneholder detaljerte data stort sett registrert fotogrammetrisk fra flybilder med en oppløsing mellom 7 og 25 cm. Nøyaktigheten varierer fra +/- 0.10 m til +/- 2 m avhengig av objekttype, områdetype og datafangstmetode.
 
 
 ==== Egenskapsnøyaktighet
@@ -195,9 +311,9 @@ Kontinuerlig kontroll.
 
 == Datafangst
 
-NVDB Vegnett Pluss er et direkte uttrekk fra NVDB. Vegnett i NVDB er etablert med data fra vegsituasjon (fotogrammetri), GPS og treghetsmålinger, administrativ ajourhold (gjennom ajourhold av NVDB Vegnett Pluss) og med data fra Statens vegvesens plan- og ferdigvegsdata. 
+NVDB Rutedatasett er et direkte uttrekk fra NVDB. Vegnett i NVDB er etablert med data fra vegsituasjon (fotogrammetri), GPS og treghetsmålinger, administrativ ajourhold (gjennom ajourhold av NVDB Vegnett Pluss) og med data fra plan- og ferdigvegsdata. 
 
-I tillegg mottar Kartverket og Statens vegvesen feilmeldinger og endringer fra publikum gjennom deres feilmeldingstjenester http://rettikartet.no[http://rettikartet.no] og https://fiksvegdata.atlas.vegvesen.no/[fiksvegdata.atlas.vegvesen.no]. Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB og kommer deretter ut i NVDB Vegnett Pluss. 
+I tillegg mottar Kartverket og Statens vegvesen feilmeldinger og endringer fra publikum gjennom deres feilmeldingstjenester http://rettikartet.no[http://rettikartet.no] og https://fiksvegdata.atlas.vegvesen.no/[fiksvegdata.atlas.vegvesen.no]. Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB.
 
 
 <<<
@@ -214,59 +330,60 @@ Hele datasettet
 Kontinuerlig
 
 ==== Vedlikeholdsbeskrivelse 
-Fotogrammetrisk ajourhold utføres gjennom Geovekst kartleggingsprosjekter. Kartleggingsprosjektene spesifiseres og finansieres gjennom Geovekst og settes ut på anbud fra Kartverket. Flyfotografering og selve det fotogrammetriske ajourholdet utføres av et privat firma i tråd med fotogrammetrisk registreringsinstruks. Kartverket gjør kontroll av leveranse ved mottak og legger dataene inn i databasen i samarbeid med Statens vegvesen.
+Fotogrammetrisk ajourhold utføres gjennom Geovekst kartleggingsprosjekter. Kartleggingsprosjektene spesifiseres og finansieres gjennom Geovekst og settes ut på anbud fra Kartverket. Flyfotografering og selve det fotogrammetriske ajourholdet utføres av et privat firma i tråd med fotogrammetrisk registreringsinstruks. Kartverket gjør kontroll av leveranse ved mottak og legger dataene inn i databasen i samarbeid med Statens Vegvesen.
 
-=== Vedlikeholdsinformasjon – Avtaler om forvaltning, drift og vedlikehold
-==== Omfang 
-Hele datasettet
+Den enkelte vegforvalter er ansvarlig for innholdet for sine veger i NVDB. Etter regionreformen har vi mange vegforvaltere som skal sørge for at nødvendige data er registrert i NVDB. For ERF-veger er dette Statens vegvesen, Nye Veier AS og alle fylkeskommunene. Se mer om krav til leveranse av data og grunnlagsinformasjon til NVDB for ERF-veger på Statens vegvesen sine nettsider om
+https://www.vegvesen.no/fag/teknologi/nasjonal-vegdatabank/dataleveranse/[Dataleveranser til NVDB]
 
-==== Vedlikeholdsfrekvens 
-Kontinuerlig
-
-==== Vedlikeholdsbeskrivelse 
-Det er i regi av Geovekst inngått avtaler om forvaltning, drift og vedlikehold (FDV) med de fleste kommuner. 
-Her avtalefestes oppgaver og finansiering av et felles kontinuerlig ajourhold av FKB-dataene blant partene i avtalen (dette gjelder også for NVDB Vegnett Pluss). 
-Den viktigste parten i avtalene er kommunen da mange av endringene i FKB kan fanges opp gjennom kommunal saksbehandling. 
-Dataene blir så sendt til Kartverket for innlesing i databasen. 
-Kommuner utenfor Geovekst gjør tilsvarende vedlikehold i egen regi og leverer data i henhold til Norge digitalt avtale.
-
-==== Omfang 
-Hele datasettet
-
-==== Vedlikeholdsfrekvens 
-Kontinuerlig
-
-==== Vedlikeholdsbeskrivelse 
-Statens vegvesen er forpliktet til å levere ferdigvegsdata til NVDB Vegnett Pluss ved ferdigstillelse av prosjekter.
-
-=== Vedlikeholdsinformasjon – Feilmeldinger og avvikshåndtering
-==== Omfang 
-Hele datasettet
-
-==== Vedlikeholdsfrekvens 
-Kontinuerlig
-
-==== Vedlikeholdsbeskrivelse 
-Kartverket og Statens vegvesen mottar feilmeldinger fra publikum gjennom deres feilmeldingstjenester http://rettikartet.no/ og https://fiksvegdata.atlas.vegvesen.no/ . 
-Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB (og deretter komme ut i NVDB Vegnett Pluss). 
-
+Kartverket oppdaterer det digitale navigerbare vegnettet for kommunale veger, private veger og skogsveger etter manus fra kommunene. Kravet til kommunene er regulert av https://www.kartverket.no/geodataarbeid/Forvaltning-drift-og-vedlikehold/Rutiner-for-forvaltning-drift-og-vedlikehold/[FDV-avtalen] gjennom Norge digitalt.
 
 <<<
 
 == Presentasjon
+Ikke relevant for datasettet.
 
-=== Omfang
-<<HeleDatasettet,Hele datasettet>>
-
-=== Referanse til presentasjonskatalog
-Det er utarbeidet en presentasjonsregel for Elveg, men ikke for NVDB Vegnett Pluss enda. Denne er tilgjengelig via geonorge:
-https://register.geonorge.no/register/versjoner/tegneregler/kartverket/elveg
 
 <<<
 
 == Leveranse
+=== Leveransemetode
 
-include::inkluder/kap11_leveranse.adoc[]
+==== Omfang
+Hele datasettet
+
+==== Leveranseformat
+*Formatnavn* +
+SpatialLite
+
+*Formatversjon* +
+5.0.1
+
+*Formatspesifikasjon* + 
+SpatiaLite: SpatiaLite (gaia-gis.it)
+
+*Filstruktur* +
+Fylkesvise filer
+Landsfil
+
+*Språk* +
+Norsk- NO
+
+*Tegnsett* +
+UTF-8 +
+
+==== Leveransemedium
+*Leveranseenhet* +
+Datasett lastes ned fra geonorge.no
+
+*Overføringsstørrelse* +
+Data ikke angitt
+
+*Navn på medium* +
+Data ikke angitt
+
+*Annen leveranseinformasjon* +
+Data ikke angitt
+
 
 <<<
 
@@ -276,44 +393,19 @@ Ingen angitt informasjon
 == Metadata
 
 === Omfang
-<<HeleDatasettet,Hele datasettet>>
+Hele datasettet
+
 
 === Metadataspesifikasjon
 
-include::inkluder/kap13_metadata.adoc[]
+[cols="3*"]
+|===
+
+|Uttaksdato|ååååmmdd|Dato dataene ble hentet ut fra NVDB
+|refSysHorizontal|25833|Horisontalt referansesystem 
+|refSysVertical|5941|Vertikal referansesystem
+
+
+|===
 
 <<<
-
-
-
-[appendix]
-== SOSI-format-realisering
-
-SOSI-realiseringen følger kravene i "Realisering i SOSI-format 5.0" <<SOSI-FORMAT>>. Under en utlisting av SOSI-formatrealiseringen:
-
-SOSI-filer i henhold til denne produktspesifikasjonen merkes med ..OBJEKTKATALOG {kortnavn} {versjon} i filhodet.
-
-Se eksempelfiler på {skjema-url}/eksempel/
-
-include::SOSIformatRealisering.adoc[]
-
-
-[appendix]
-== GML-realisering
-
-GML-realiseringen følger kravene i "Realisering i GML-format 5.0" <<SOSI-GML>>. Realiseringen defineres av følgende filer:
-
-* {skjema-url}/NVDBVegnettPlus.xsd[GML-Skjema]
-* {skjema-url}/NVDBVegnettPlus.sch[Schematron-Skjema]
-
-Se eksempelfiler på {skjema-url}/eksempel/
-
-:sectnums!:
-
-<<<
-
-[discrete]
-== Lisensvilkår
-
-// Inkl. lisensvilkår
-include::inkluder/lisensvilkaar.adoc[]
