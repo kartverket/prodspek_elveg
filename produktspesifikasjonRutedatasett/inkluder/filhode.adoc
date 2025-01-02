@@ -24,7 +24,7 @@ ifdef::backend-pdf[:toc: macro]
 
 
 
-= SOSI-standardisert produktspesifikasjon: {datasett} {versjon}
+= Produktspesifikasjon: {datasett} {versjon}
 Kartverket
 {versjon}, {underversjon}
 
