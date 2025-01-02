@@ -41,7 +41,7 @@ Der veglenkene er på rent kjørebanenivå, ligger det også informasjon på len
 
 NVDB Rutedatasett ble utviklet i 2021.
 
-=== Endringslogg
+=== Endringslogg_test
 
 
 .Endringslog
