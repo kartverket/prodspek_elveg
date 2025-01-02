@@ -11,7 +11,7 @@ include::inkluder/filhode.adoc[]
 
 == Innledning, historikk og endringslogg
 
-=== Innledning test
+=== Innledning
 
 NVDB Rutedatasett er et verktøyuavhengig rutedatasett som benyttes til navigasjon. Normalt sett tilgjengeliggjøres nye versjoner på Geonorge minimum 10 ganger i året.
 
