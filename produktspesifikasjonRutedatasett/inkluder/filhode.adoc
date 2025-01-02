@@ -1,0 +1,72 @@
+:toc: left
+:toc-title: Innholdsfortegnelse
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 4
+:figure-caption: Figur
+:table-caption: Tabell
+:section-refsig: Kapittel
+:version-label: Versjon
+:doctype: book
+:encoding: utf-8
+:lang: nb
+:appendix-caption: Vedlegg
+:pdf-page-size: A4
+ifdef::backend-pdf[:toc: macro]
+:chapter-label! :
+:skjemabase-url: https://skjema.geonorge.no/SOSI/produktspesifikasjon/
+:prodspekbase-url: https://sosi.geonorge.no/produktspesifikasjoner/
+:umlbase-url: https://sosi.geonorge.no/uml-modeller/sosi-del-3-produktspesifikasjoner/
+:reginstrbase-url: https://sosi.geonorge.no/registreringsinstrukser/
+:fkbGenerellDel-url: https://sosi.geonorge.no/Standarder/FKB_generell_del
+:skjema-url: {skjemabase-url}{kortnavn}/{skjemaversjon}
+:uml-url: {umlbase-url}{kortnavn}/{versjon}
+
+
+
+= SOSI-standardisert produktspesifikasjon: {datasett} {versjon}
+Kartverket
+{versjon}, {underversjon}
+
+****
+
+ifeval::[{dokumentstatus} == 2]
+
+WARNING: *Høringsversjon!* 
+
+*Publisert*: {publisert} 
+
+endif::[]
+
+
+ifeval::[{dokumentstatus} == 3]
+
+WARNING: *Utgått versjon!* Dokumentet er erstattet av  
+
+*Publisert*: {publisert} 
+
+endif::[]
+
+ifeval::[{dokumentstatus} == 4]
+
+*Status* : Ferdig dokument til godkjenning hos Standardiseringskomiteen for Geomatikk 
+
+*Publisert*: {publisert} 
+
+endif::[]
+
+ifeval::[{dokumentstatus} == 1]
+
+*Publisert*: {publisert} +
+*Denne versjonen finnes på*: {prodspekbase-url}/{kortnavn}/{versjon} +
+//- {uml-url}[HTML-visning av UML-modellen] +
+//*Nyeste versjon finnes på*: {prodspek-url} +
+*Faglig godkjent av*: Kartverket +
+
+Vedtatt som standard av Standardiseringskomiteen for Geomatikk 
+
+endif::[]
+
+****
+
+toc::[]
