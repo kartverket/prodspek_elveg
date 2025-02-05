@@ -17,10 +17,9 @@ ifdef::backend-pdf[:toc: macro]
 :skjemabase-url: https://skjema.geonorge.no/SOSI/produktspesifikasjon/
 :prodspekbase-url: https://sosi.geonorge.no/produktspesifikasjoner/
 :umlbase-url: https://sosi.geonorge.no/uml-modeller/sosi-del-3-produktspesifikasjoner/
-:reginstrbase-url: https://sosi.geonorge.no/registreringsinstrukser/
 :fkbGenerellDel-url: https://sosi.geonorge.no/Standarder/FKB_generell_del
 :skjema-url: {skjemabase-url}{kortnavn}/{skjemaversjon}
-:uml-url: {umlbase-url}{kortnavn}/{versjon}
+:uml-url: https://sosi.geonorge.no/uml-modeller/sosi-del-3-produktspesifikasjoner/NVDB_Vegnett_Pluss/1.0/
 
 
 
@@ -59,9 +58,8 @@ ifeval::[{dokumentstatus} == 1]
 
 *Publisert*: {publisert} +
 *Denne versjonen finnes på*: {prodspekbase-url}/{kortnavn}/{versjon} +
-//- {uml-url}[HTML-visning av UML-modellen] +
-//*Nyeste versjon finnes på*: {prodspek-url} +
-*Faglig godkjent av*: Kartverket +
+- {uml-url}[HTML-visning av UML-modellen] +
+*Nyeste versjon finnes på*: {prodspekbase-url}/{kortnavn} +
 
 Vedtatt som standard av Standardiseringskomiteen for Geomatikk 
 

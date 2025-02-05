@@ -2,9 +2,9 @@
 :kortnavn: NVDBVegnettPluss
 :versjon: 1.0
 :skjemaversjon: {versjon}
-:underversjon: 2024-12-15
-:publisert: 2024-12-13
-:dokumentstatus: 4
+:underversjon: 2025-01-01
+:publisert: 2025-02-05
+:dokumentstatus: 1
 // All informasjon i hode over denne linja må fylles ut for hvert datasett. Øvrige parametere settes i adoc_parametere.adoc
 include::inkluder/filhode.adoc[]
 
@@ -303,10 +303,7 @@ include::SOSIformatRealisering.adoc[]
 
 GML-realiseringen følger kravene i "Realisering i GML-format 5.0" <<SOSI-GML>>. Realiseringen defineres av følgende filer:
 
-* {skjema-url}/NVDBVegnettPlus.xsd[GML-Skjema]
-* {skjema-url}/NVDBVegnettPlus.sch[Schematron-Skjema]
-
-Se eksempelfiler på {skjema-url}/eksempel/
+* {skjema-url}/NVDBVegnettPluss.xsd[GML-Skjema]
 
 :sectnums!:
 
