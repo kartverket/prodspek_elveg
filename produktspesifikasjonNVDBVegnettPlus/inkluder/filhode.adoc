@@ -57,9 +57,9 @@ endif::[]
 ifeval::[{dokumentstatus} == 1]
 
 *Publisert*: {publisert} +
-*Denne versjonen finnes på*: {prodspekbase-url}/{kortnavn}/{versjon} +
+*Denne versjonen finnes på*: {prodspekbase-url}/NVDB_Vegnett_Pluss/{versjon} +
 - {uml-url}[HTML-visning av UML-modellen] +
-*Nyeste versjon finnes på*: {prodspekbase-url}/{kortnavn} +
+*Nyeste versjon finnes på*: {prodspekbase-url}/NVDB_Vegnett_Pluss +
 
 Vedtatt som standard av Standardiseringskomiteen for Geomatikk 
 
