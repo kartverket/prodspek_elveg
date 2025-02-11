@@ -121,7 +121,9 @@ Vegnettet i NVDB er definert i 3 forskjellige nivåer, men i dette datasettet be
 
 
 .I NVDB er vegnettet definert i 3 forskjellige detaljeringsnivåer. Figuren viser alle disse nivåene. Vegtraselenkene som her er vist i rødt, er ikke med i NVDB Rutedatasett. 
+
 image::images/detaljniva.jpg[]
+
 
 
 
