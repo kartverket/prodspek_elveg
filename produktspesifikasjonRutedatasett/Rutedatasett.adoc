@@ -15,13 +15,13 @@ include::inkluder/filhode.adoc[]
 
 NVDB Rutedatasett er et verktøyuavhengig rutedatasett som benyttes til navigasjon. Normalt sett tilgjengeliggjøres nye versjoner på Geonorge minimum 10 ganger i året.
 
-Datagrunnlaget er hentet fra Nasjonal vegdatabank (NVDB). Vegnettet segmenteres i forhold til egenskapene til strekningsobjektene som er med i datasettet. Dette er objekttyper som
+Datagrunnlaget er hentet fra Nasjonal vegdatabank (NVDB). Vegnettet segmenteres i forhold til egenskapene til strekningsobjektene som er med i datasettet. Dette er objekttyper som:
 
 * angir hvor «en veg» går, og hvilke deler av vegnettet som hører til denne. F.eks. er E6 «en veg». Denne informasjonen omtales som vegsystemreferanse (https://www.vegvesen.no/globalassets/fag/handboker/hb-v830-nasjonalt-vegreferansesystem.pdf[Nasjonalt vegreferansesystem, Håndbok V830])    
 * angir hvor «en https://datakatalogen.atlas.vegvesen.no/#/538/[adresse]» er, f.eks. hvor Storgata i en kommune ligger.
 * angir hvilken https://datakatalogen.atlas.vegvesen.no/#/821/[funksjonell vegklasse] lenkene representerer, denne skal bidra til foretrukket rute i en
   ruteplanlegger.
-* beskriver https://datakatalogen.atlas.vegvesen.no/#/856/[trafikkreguleringer], f.eks. der kjøring på gang- og sykkelveger er lov når det er eneste mulighet til  å kjøre til en eiendom.
+* beskriver https://datakatalogen.atlas.vegvesen.no/#/856/[trafikkreguleringer], f.eks. der det er forbudt å kjøre, eller der kjøring på gang- og sykkelveg er lov når det er eneste mulighet til  å kjøre til en eiendom.
 * gir informasjon om link:++https://datakatalogen.atlas.vegvesen.no/#/595/++[motorveg], link:++https://datakatalogen.atlas.vegvesen.no/#/105/++[fartsgrenser], link:++https://datakatalogen.atlas.vegvesen.no/#/591/++[høyderestriksjoner] 
 og link:++https://datakatalogen.atlas.vegvesen.no/#/813/++[gågatereguleringer].
 * angir andre kjørerestriksjoner som https://datakatalogen.atlas.vegvesen.no/#/977/[tillatt kjøreretning] .
