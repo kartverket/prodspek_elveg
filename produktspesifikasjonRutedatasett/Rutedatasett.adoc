@@ -125,6 +125,7 @@ image::images/detaljniva.jpg[]
 
 
 
+
 Veglenkesekvensene på kjørebanenivå og kjørefeltnivå er stedfestet på veglenkesekvensene på vegtrasenivå. Denne stedfestingen kalles superstedfesting. Superstedfesting for detaljerte lenker er tatt med i datasettet selv om veglenkesekvenser på vegtrase ikke er tatt med.
 
 For ytterligere detaljer om vegnettets geometri og detaljeringsnivåer, se denne veilederen fra Statens vegvesen: https://www.vegvesen.no/globalassets/fag/handboker/hb-v830-nasjonalt-vegreferansesystem.pdf[V830 Nasjonalt vegreferansesystem].
