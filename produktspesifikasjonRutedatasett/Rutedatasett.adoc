@@ -120,8 +120,7 @@ Vegnettet består av veglenker med sin vegnettsgeometri. For at nettverket skal 
 Vegnettet i NVDB er definert i 3 forskjellige nivåer, men i dette datasettet benyttes kun veglenker for vegtrase/kjørebane, kjørebane og kjørefeltlenker. De fleste veglenkesekvensene tilfredsstiller både kjørebane og vegtrase. De ligger som vegtrase og kjørebane i datasettet. Rene vegtraselenker er ikke med i datasettet. 
 
 
-.I NVDB er vegnettet definert i 3 forskjellige detaljeringsnivåer. Figuren viser alle disse nivåene. Vegtraselenkene som her er vist i rødt, er ikke med i NVDB Rutedatasett. 
-
+.I NVDB er vegnettet definert i 3 forskjellige detaljeringsnivåer. Figuren viser alle disse nivåene. Vegtraselenkene som her er vist i rødt, er ikke med i NVDB Rutedatasett.
 image::images/detaljniva.jpg[]
 
 
@@ -194,7 +193,7 @@ Transport
 
 === Sammendrag
 
-NVDB Rutedatasett er et verktøyuavhengig rutedatasett som benyttes til navigasjon. Datasettet har et vegnett segmentert på aktuelle strekningsegenskaper fra NVDB. Vegsperringer og svingerestriksjoner leveres som egne objekter. Metadata ligger i en egen tabell uten geometri. 
+NVDB Rutedatasett er et verktøyuavhengig rutedatasett som benyttes til navigasjon. Datasettet har et vegnett segmentert på aktuelle strekningsegenskaper fra NVDB. Vegsperringer, svingerestriksjoner og gjennomkjoring forbudt leveres som egne objekter. Metadata ligger i en egen tabell uten geometri. 
 
 
 === Formål
