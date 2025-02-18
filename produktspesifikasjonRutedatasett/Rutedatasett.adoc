@@ -25,7 +25,7 @@ Datagrunnlaget er hentet fra Nasjonal vegdatabank (NVDB). Vegnettet segmenteres 
 * beskriver https://datakatalogen.atlas.vegvesen.no/#/856/[trafikkreguleringer], f.eks. der det er forbudt å kjøre, eller der kjøring på gang- og sykkelveg er lov når det er eneste mulighet til  å kjøre til en eiendom.
 * gir informasjon om link:++https://datakatalogen.atlas.vegvesen.no/#/595/++[motorveg], link:++https://datakatalogen.atlas.vegvesen.no/#/105/++[fartsgrenser], link:++https://datakatalogen.atlas.vegvesen.no/#/591/++[høyderestriksjoner] 
 og link:++https://datakatalogen.atlas.vegvesen.no/#/813/++[gågatereguleringer].
-* angir andre kjørerestriksjoner som https://datakatalogen.atlas.vegvesen.no/#/977/[tillatt kjøreretning] .
+* angir andre kjørerestriksjoner som https://datakatalogen.atlas.vegvesen.no/#/977/[tillatt kjøreretning].
 * utvalgte bruksklasseverdier for spesialtransport og tømmertransport.
 * link:++https://datakatalogen.atlas.vegvesen.no/#/607/++[Vegsperringer], link:++https://datakatalogen.atlas.vegvesen.no/#/573/++[svingerestriksjoner] og link:++https://datakatalogen.atlas.vegvesen.no/#/913/++[gjennomkjøring forbudt] med sin link:++https://datakatalogen.atlas.vegvesen.no/#/979/++[avgrensning] 
 leveres som egne objekter.
@@ -194,7 +194,7 @@ Transport
 
 === Sammendrag
 
-NVDB Rutedatasett er et verktøyuavhengig rutedatasett som benyttes til navigasjon. Datasettet har et vegnett segmentert på aktuelle strekningsegenskaper fra NVDB. Vegsperringer, svingerestriksjoner og gjennomkjoring forbudt leveres som egne objekter. Metadata ligger i en egen tabell uten geometri. 
+NVDB Rutedatasett er et verktøyuavhengig rutedatasett som benyttes til navigasjon. Datasettet har et vegnett segmentert på aktuelle strekningsegenskaper fra NVDB. Vegsperringer, svingerestriksjoner og gjennomkjøring forbudt leveres som egne objekter. Metadata ligger i en egen tabell uten geometri. 
 
 
 === Formål
