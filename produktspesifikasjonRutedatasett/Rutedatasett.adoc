@@ -1,6 +1,6 @@
 :datasett: NVDB Rutedatasett
 :kortnavn: NVDB Rutedatasett
-:versjon: 2.0
+:versjon: 1.9
 :skjemaversjon: {versjon}
 :underversjon: 2025-01-01
 :publisert: 2025-01-01
@@ -219,7 +219,7 @@ Dekker Norges fastlandsterritoium
 Norge
 
 *Vertikal utbredelse*: + 
-Fra ca. -300 m til ca. 1900 m
+Fra ca. -300 m til ca. 2500 m
 
 
 <<<
@@ -247,7 +247,7 @@ Dekker Norges fastlandsterritorium
 Norge
 
 *Vertikal utbredelse* +
-Fra ca. -300 m til ca. 1900 m
+Fra ca. -300 m til ca. 2500 m
 
 == Innhold og struktur
 === Vektorbasert data- applikasjonsskjema
