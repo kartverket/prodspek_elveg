@@ -25,7 +25,7 @@ ifdef::backend-pdf[:toc: macro]
 
 
 = Produktspesifikasjon: {datasett} {versjon}
-Kartverket
+Statens vegvesen og Kartverket
 {versjon}, {underversjon}
 
 ****
