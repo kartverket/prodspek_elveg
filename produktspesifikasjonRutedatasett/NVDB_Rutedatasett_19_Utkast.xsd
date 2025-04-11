@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" elementFormDefault="qualified" targetNamespace="https://github.com/kartverket/prodspek_elveg/tree/master/produktspesifikasjonRutedatasett" version="2.0" xmlns:="https://github.com/kartverket/prodspek_elveg/tree/master/produktspesifikasjonRutedatasett">
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:app="https://github.com/kartverket/prodspek_elveg/tree/master/produktspesifikasjonRutedatasett" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" elementFormDefault="qualified" targetNamespace="https://github.com/kartverket/prodspek_elveg/tree/master/produktspesifikasjonRutedatasett" version="1.9">
   <annotation>
     <documentation>NVDB Rutedatasett er et verktøyuavhengig rutedatasett som benyttes til navigasjon. Datagrunnlaget er hentet fra Nasjonal vegdatabank (NVDB). Vegnettet segmenteres i forhold til egenskapene til strekningsobjektene som er med i datasettet.
 NVDB Rutedatasett er ikke et SOSI-standardisert produkt, men modellen forvaltes likevel i SOSI Modellregister.</documentation>
@@ -13,7 +13,7 @@ NVDB Rutedatasett er ikke et SOSI-standardisert produkt, men modellen forvaltes 
         <sc:taggedValue tag="NVDB_ID">12599</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":BeredskapsvegBruksomradeEnumerationType :BeredskapsvegBruksomradeOtherType"/>
+    <union memberTypes="app:BeredskapsvegBruksomradeEnumerationType app:BeredskapsvegBruksomradeOtherType"/>
   </simpleType>
   <simpleType name="BeredskapsvegBruksomradeEnumerationType">
     <annotation>
@@ -61,7 +61,7 @@ NVDB Rutedatasett er ikke et SOSI-standardisert produkt, men modellen forvaltes 
         <sc:taggedValue tag="NVDB_ID">9189</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":DriftsstatusEnumerationType :DriftsstatusOtherType"/>
+    <union memberTypes="app:DriftsstatusEnumerationType app:DriftsstatusOtherType"/>
   </simpleType>
   <simpleType name="DriftsstatusEnumerationType">
     <annotation>
@@ -117,7 +117,7 @@ NVDB Rutedatasett er ikke et SOSI-standardisert produkt, men modellen forvaltes 
         <sc:taggedValue tag="NVDB_ID">2021</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":FartsgrenseVerdiEnumerationType :FartsgrenseVerdiOtherType"/>
+    <union memberTypes="app:FartsgrenseVerdiEnumerationType app:FartsgrenseVerdiOtherType"/>
   </simpleType>
   <simpleType name="FartsgrenseVerdiEnumerationType">
     <annotation>
@@ -237,7 +237,7 @@ NVDB Rutedatasett er ikke et SOSI-standardisert produkt, men modellen forvaltes 
         <sc:taggedValue tag="NVDB_ID">11542</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":FunksjonVegsperringEnumerationType :FunksjonVegsperringOtherType"/>
+    <union memberTypes="app:FunksjonVegsperringEnumerationType app:FunksjonVegsperringOtherType"/>
   </simpleType>
   <simpleType name="FunksjonVegsperringEnumerationType">
     <annotation>
@@ -309,7 +309,7 @@ NVDB Rutedatasett er ikke et SOSI-standardisert produkt, men modellen forvaltes 
         <sc:taggedValue tag="NVDB_ID">9338</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":FunksjonellVegklasseEnumerationType :FunksjonellVegklasseOtherType"/>
+    <union memberTypes="app:FunksjonellVegklasseEnumerationType app:FunksjonellVegklasseOtherType"/>
   </simpleType>
   <simpleType name="FunksjonellVegklasseEnumerationType">
     <annotation>
@@ -413,7 +413,7 @@ NVDB Rutedatasett er ikke et SOSI-standardisert produkt, men modellen forvaltes 
         <sc:taggedValue tag="NVDB_ID">12563</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":GjelderForEnumerationType :GjelderForOtherType"/>
+    <union memberTypes="app:GjelderForEnumerationType app:GjelderForOtherType"/>
   </simpleType>
   <simpleType name="GjelderForEnumerationType">
     <annotation>
@@ -451,7 +451,7 @@ angitt ukedag.</documentation>
         <sc:taggedValue tag="NVDB_ID">12929</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":GjelderUkedagEnumerationType :GjelderUkedagOtherType"/>
+    <union memberTypes="app:GjelderUkedagEnumerationType app:GjelderUkedagOtherType"/>
   </simpleType>
   <simpleType name="GjelderUkedagEnumerationType">
     <annotation>
@@ -499,7 +499,7 @@ gjelder fredag.</documentation>
       <pattern value="other: \w{2,}"/>
     </restriction>
   </simpleType>
-  <element name="GjennomkjoringForbudt" substitutionGroup="gml:AbstractFeature" type=":GjennomkjoringForbudtType">
+  <element name="GjennomkjoringForbudt" substitutionGroup="gml:AbstractFeature" type="app:GjennomkjoringForbudtType">
     <annotation>
       <documentation>Punkt der forbud mot gjennomkjøring gjelder fra. I noen tilfeller gjelder forbudet i begge retninger.</documentation>
       <appinfo>
@@ -512,7 +512,7 @@ gjelder fredag.</documentation>
     <complexContent>
       <extension base="gml:AbstractFeatureType">
         <sequence>
-          <element name="gjelderFor" type=":GjelderForType">
+          <element name="gjelderFor" type="app:GjelderForType">
             <annotation>
               <documentation>12563: Gjelderfor angir hvilke kjøretøy forbudet gjelder for</documentation>
               <appinfo>
@@ -568,7 +568,7 @@ gjelder fredag.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element name="gjelderUkedag" type=":GjelderUkedagType">
+          <element name="gjelderUkedag" type="app:GjelderUkedagType">
             <annotation>
               <documentation>12649: Gjennomkjøring forbudt gjelder kun angitt ukedag.</documentation>
               <appinfo>
@@ -576,12 +576,12 @@ gjelder fredag.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element name="retning" type=":RetningType">
+          <element name="retning" type="app:RetningType">
             <annotation>
               <documentation>Retning beskriver om det er gjennomkjøring forbudt i en eller begge kjøreretninger.</documentation>
             </annotation>
           </element>
-          <element name="gjennomkjoringForbudtTilVeglenkeRetning" type=":VeglenkeretningType">
+          <element name="gjennomkjoringForbudtTilVeglenkeRetning" type="app:VeglenkeretningType">
             <annotation>
               <documentation>Beskriver hvilke retning veglenka har i forhold til gjenomkjøringforbudt til objekt.</documentation>
             </annotation>
@@ -594,7 +594,7 @@ gjelder fredag.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element name="gjennomkjoringForbudtFraVeglenkeRetning" type=":VeglenkeretningType">
+          <element name="gjennomkjoringForbudtFraVeglenkeRetning" type="app:VeglenkeretningType">
             <annotation>
               <documentation>Beskriver hvilke retning veglenka har i forhold til gjenomkjøringforbudt fra objekt.</documentation>
             </annotation>
@@ -607,7 +607,7 @@ gjelder fredag.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element name="unntakForBuss" type=":JaNeiType">
+          <element name="unntakForBuss" type="app:JaNeiType">
             <annotation>
               <documentation>12635: Unntak for Buss eller ikke</documentation>
               <appinfo>
@@ -615,7 +615,7 @@ gjelder fredag.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element name="unntakForMoped" type=":JaNeiType">
+          <element name="unntakForMoped" type="app:JaNeiType">
             <annotation>
               <documentation>Unntak for Moped eller ikke</documentation>
               <appinfo>
@@ -623,7 +623,7 @@ gjelder fredag.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element name="unntakForMotorsykkel" type=":JaNeiType">
+          <element name="unntakForMotorsykkel" type="app:JaNeiType">
             <annotation>
               <documentation>12638: Unntak for Motorsykkel eller ikke</documentation>
               <appinfo>
@@ -631,7 +631,7 @@ gjelder fredag.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element name="unntakForTaxi" type=":JaNeiType">
+          <element name="unntakForTaxi" type="app:JaNeiType">
             <annotation>
               <documentation>12636: Unntak for Taxi eller ikke</documentation>
               <appinfo>
@@ -639,7 +639,7 @@ gjelder fredag.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element name="unntakForTraktor" type=":JaNeiType">
+          <element name="unntakForTraktor" type="app:JaNeiType">
             <annotation>
               <documentation>12639: Unntak for Traktor eller ikke.</documentation>
               <appinfo>
@@ -653,7 +653,7 @@ gjelder fredag.</documentation>
   </complexType>
   <complexType name="GjennomkjoringForbudtPropertyType">
     <sequence minOccurs="0">
-      <element ref=":GjennomkjoringForbudt"/>
+      <element ref="app:GjennomkjoringForbudt"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
@@ -662,7 +662,7 @@ gjelder fredag.</documentation>
     <annotation>
       <documentation>Verdier for å angi ja eller nei.</documentation>
     </annotation>
-    <union memberTypes=":JaNeiEnumerationType :JaNeiOtherType"/>
+    <union memberTypes="app:JaNeiEnumerationType app:JaNeiOtherType"/>
   </simpleType>
   <simpleType name="JaNeiEnumerationType">
     <annotation>
@@ -693,7 +693,7 @@ gjelder fredag.</documentation>
         <sc:taggedValue tag="NVDB_ID">977</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":KjoreretningEnumerationType :KjoreretningOtherType"/>
+    <union memberTypes="app:KjoreretningEnumerationType app:KjoreretningOtherType"/>
   </simpleType>
   <simpleType name="KjoreretningEnumerationType">
     <annotation>
@@ -732,7 +732,7 @@ gjelder fredag.</documentation>
         <sc:taggedValue tag="NVDB_ID">9339</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":LandbruksvegklasseEnumerationType :LandbruksvegklasseOtherType"/>
+    <union memberTypes="app:LandbruksvegklasseEnumerationType app:LandbruksvegklasseOtherType"/>
   </simpleType>
   <simpleType name="LandbruksvegklasseEnumerationType">
     <annotation>
@@ -818,7 +818,7 @@ gjelder fredag.</documentation>
       <documentation>Objektets beliggenhet i forhold til jordoverflaten.
 Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</documentation>
     </annotation>
-    <union memberTypes=":MediumEnumerationType :MediumOtherType"/>
+    <union memberTypes="app:MediumEnumerationType app:MediumOtherType"/>
   </simpleType>
   <simpleType name="MediumEnumerationType">
     <annotation>
@@ -880,7 +880,7 @@ Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</document
         <sc:taggedValue tag="NVDB_ID">5378</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":MotorvegtypeEnumerationType :MotorvegtypeOtherType"/>
+    <union memberTypes="app:MotorvegtypeEnumerationType app:MotorvegtypeOtherType"/>
   </simpleType>
   <simpleType name="MotorvegtypeEnumerationType">
     <annotation>
@@ -920,7 +920,7 @@ Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</document
         <sc:taggedValue tag="NVDB_ID">12634</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":RetningEnumerationType :RetningOtherType"/>
+    <union memberTypes="app:RetningEnumerationType app:RetningOtherType"/>
   </simpleType>
   <simpleType name="RetningEnumerationType">
     <annotation>
@@ -954,7 +954,7 @@ Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</document
         <sc:taggedValue tag="NVDB_ID">9793</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":SidevegEnumerationType :SidevegOtherType"/>
+    <union memberTypes="app:SidevegEnumerationType app:SidevegOtherType"/>
   </simpleType>
   <simpleType name="SidevegEnumerationType">
     <annotation>
@@ -994,7 +994,7 @@ Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</document
         <sc:taggedValue tag="NVDB_ID">12905</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":SpesialAksellastTeleEnumerationType :SpesialAksellastTeleOtherType"/>
+    <union memberTypes="app:SpesialAksellastTeleEnumerationType app:SpesialAksellastTeleOtherType"/>
   </simpleType>
   <simpleType name="SpesialAksellastTeleEnumerationType">
     <annotation>
@@ -1058,7 +1058,7 @@ Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</document
         <sc:taggedValue tag="NVDB_ID">10899</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":SpesialBruksklasseEnumerationType :SpesialBruksklasseOtherType"/>
+    <union memberTypes="app:SpesialBruksklasseEnumerationType app:SpesialBruksklasseOtherType"/>
   </simpleType>
   <simpleType name="SpesialBruksklasseEnumerationType">
     <annotation>
@@ -1138,7 +1138,7 @@ Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</document
         <sc:taggedValue tag="NVDB_ID">10905</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":SpesialBruksklasseVinterEnumerationType :SpesialBruksklasseVinterOtherType"/>
+    <union memberTypes="app:SpesialBruksklasseVinterEnumerationType app:SpesialBruksklasseVinterOtherType"/>
   </simpleType>
   <simpleType name="SpesialBruksklasseVinterEnumerationType">
     <annotation>
@@ -1210,7 +1210,7 @@ Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</document
         <sc:taggedValue tag="NVDB_ID">10911</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":SpesialMaksVogntoglengdeEnumerationType :SpesialMaksVogntoglengdeOtherType"/>
+    <union memberTypes="app:SpesialMaksVogntoglengdeEnumerationType app:SpesialMaksVogntoglengdeOtherType"/>
   </simpleType>
   <simpleType name="SpesialMaksVogntoglengdeEnumerationType">
     <annotation>
@@ -1259,7 +1259,7 @@ Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</document
       <pattern value="other: \w{2,}"/>
     </restriction>
   </simpleType>
-  <element name="Svingerestriksjon" substitutionGroup="gml:AbstractFeature" type=":SvingerestriksjonType">
+  <element name="Svingerestriksjon" substitutionGroup="gml:AbstractFeature" type="app:SvingerestriksjonType">
     <annotation>
       <documentation>573: Angir svingerestriksjon.</documentation>
       <appinfo>
@@ -1327,7 +1327,7 @@ Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</document
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="gjelderUkedag" type=":GjelderUkedagType">
+          <element minOccurs="0" name="gjelderUkedag" type="app:GjelderUkedagType">
             <annotation>
               <documentation>Svingeforbud gjelder kun angitt ukedag.</documentation>
             </annotation>
@@ -1362,7 +1362,7 @@ Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</document
   </complexType>
   <complexType name="SvingerestriksjonPropertyType">
     <sequence minOccurs="0">
-      <element ref=":Svingerestriksjon"/>
+      <element ref="app:Svingerestriksjon"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
@@ -1374,7 +1374,7 @@ Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</document
         <sc:taggedValue tag="NVDB_ID">12903</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":TommerAksellastTeleEnumerationType :TommerAksellastTeleOtherType"/>
+    <union memberTypes="app:TommerAksellastTeleEnumerationType app:TommerAksellastTeleOtherType"/>
   </simpleType>
   <simpleType name="TommerAksellastTeleEnumerationType">
     <annotation>
@@ -1438,7 +1438,7 @@ Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</document
         <sc:taggedValue tag="NVDB_ID">10897</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":TommerBruksklasseEnumerationType :TommerBruksklasseOtherType"/>
+    <union memberTypes="app:TommerBruksklasseEnumerationType app:TommerBruksklasseOtherType"/>
   </simpleType>
   <simpleType name="TommerBruksklasseEnumerationType">
     <annotation>
@@ -1542,7 +1542,7 @@ Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</document
         <sc:taggedValue tag="NVDB_ID">10903</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":TommerBruksklasseVinterEnumerationType :TommerBruksklasseVinterOtherType"/>
+    <union memberTypes="app:TommerBruksklasseVinterEnumerationType app:TommerBruksklasseVinterOtherType"/>
   </simpleType>
   <simpleType name="TommerBruksklasseVinterEnumerationType">
     <annotation>
@@ -1638,7 +1638,7 @@ Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</document
         <sc:taggedValue tag="NVDB_ID">10909</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":TommerMaksVogntoglengdeEnumerationType :TommerMaksVogntoglengdeOtherType"/>
+    <union memberTypes="app:TommerMaksVogntoglengdeEnumerationType app:TommerMaksVogntoglengdeOtherType"/>
   </simpleType>
   <simpleType name="TommerMaksVogntoglengdeEnumerationType">
     <annotation>
@@ -1710,7 +1710,7 @@ Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</document
         <sc:taggedValue tag="NVDB_ID">7016</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":TypeFartsgrenseVariabelEnumerationType :TypeFartsgrenseVariabelOtherType"/>
+    <union memberTypes="app:TypeFartsgrenseVariabelEnumerationType app:TypeFartsgrenseVariabelOtherType"/>
   </simpleType>
   <simpleType name="TypeFartsgrenseVariabelEnumerationType">
     <annotation>
@@ -1766,7 +1766,7 @@ Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</document
         <sc:taggedValue tag="NVDB_ID">9794</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":TypeTrafikkreguleringEnumerationType :TypeTrafikkreguleringOtherType"/>
+    <union memberTypes="app:TypeTrafikkreguleringEnumerationType app:TypeTrafikkreguleringOtherType"/>
   </simpleType>
   <simpleType name="TypeTrafikkreguleringEnumerationType">
     <annotation>
@@ -1950,7 +1950,7 @@ Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</document
         <sc:taggedValue tag="NVDB_ID">11426</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":TypeVegEnumerationType :TypeVegOtherType"/>
+    <union memberTypes="app:TypeVegEnumerationType app:TypeVegOtherType"/>
   </simpleType>
   <simpleType name="TypeVegEnumerationType">
     <annotation>
@@ -2073,7 +2073,7 @@ INSPIRE: FormOfWay=tractor.</documentation>
         <sc:taggedValue tag="NVDB_ID">7861</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":TypeVegsperringEnumerationType :TypeVegsperringOtherType"/>
+    <union memberTypes="app:TypeVegsperringEnumerationType app:TypeVegsperringOtherType"/>
   </simpleType>
   <simpleType name="TypeVegsperringEnumerationType">
     <annotation>
@@ -2169,7 +2169,7 @@ INSPIRE: FormOfWay=tractor.</documentation>
         <sc:taggedValue tag="NVDB_ID">9401</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":UkedagEnumerationType :UkedagOtherType"/>
+    <union memberTypes="app:UkedagEnumerationType app:UkedagOtherType"/>
   </simpleType>
   <simpleType name="UkedagEnumerationType">
     <annotation>
@@ -2275,7 +2275,7 @@ Ikke angitt verdi tilsvarer tidligere bruk av VegSenterlinje, der linja represen
         <sc:taggedValue tag="NVDB_ID">11427</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":VegdetaljnivaEnumerationType :VegdetaljnivaOtherType"/>
+    <union memberTypes="app:VegdetaljnivaEnumerationType app:VegdetaljnivaOtherType"/>
   </simpleType>
   <simpleType name="VegdetaljnivaEnumerationType">
     <annotation>
@@ -2316,7 +2316,7 @@ Ikke angitt verdi tilsvarer tidligere bruk av VegSenterlinje, der linja represen
         <sc:taggedValue tag="NVDB_ID">10923</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":VeggruppeEnumerationType :VeggruppeOtherType"/>
+    <union memberTypes="app:VeggruppeEnumerationType app:VeggruppeOtherType"/>
   </simpleType>
   <simpleType name="VeggruppeEnumerationType">
     <annotation>
@@ -2364,7 +2364,7 @@ Ikke angitt verdi tilsvarer tidligere bruk av VegSenterlinje, der linja represen
         <sc:taggedValue tag="NVDB_ID">11276</sc:taggedValue>
       </appinfo>
     </annotation>
-    <union memberTypes=":VegkategoriEnumerationType :VegkategoriOtherType"/>
+    <union memberTypes="app:VegkategoriEnumerationType app:VegkategoriOtherType"/>
   </simpleType>
   <simpleType name="VegkategoriEnumerationType">
     <annotation>
@@ -2429,7 +2429,7 @@ Ikke angitt verdi tilsvarer tidligere bruk av VegSenterlinje, der linja represen
       <pattern value="other: \w{2,}"/>
     </restriction>
   </simpleType>
-  <element name="Veglenke" substitutionGroup="gml:AbstractFeature" type=":VeglenkeType">
+  <element name="Veglenke" substitutionGroup="gml:AbstractFeature" type="app:VeglenkeType">
     <annotation>
       <documentation>Objekttype som representerer lenker i vegnettet.
 Eksempel: NVDB Referanselenkedeler.</documentation>
@@ -2455,7 +2455,7 @@ Eksempel: NVDB Referanselenkedeler.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="adresseSideveg" type=":SidevegType">
+          <element minOccurs="0" name="adresseSideveg" type="app:SidevegType">
             <annotation>
               <documentation>9793: Angir om en veglenke er sideveg og dermed bruker adresser fra lenken den er sideveg fra. Dersom ikke oppgitt, gir det "Nei"- alternativet, dvs "Ikke sideveg".</documentation>
               <appinfo>
@@ -2463,7 +2463,7 @@ Eksempel: NVDB Referanselenkedeler.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element name="beredskapsveg" type=":JaNeiType">
+          <element name="beredskapsveg" type="app:JaNeiType">
             <annotation>
               <documentation>Vegstrekning som ikke er åpen for allmenn trafikk. Åpnes for å lede trafikk til en annen veg når hovedvegen stenges.</documentation>
               <appinfo>
@@ -2471,7 +2471,7 @@ Eksempel: NVDB Referanselenkedeler.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element name="beredskapsvegBruksomrade" type=":BeredskapsvegBruksomradeType">
+          <element name="beredskapsvegBruksomrade" type="app:BeredskapsvegBruksomradeType">
             <annotation>
               <documentation>Angir hvilket bruksområde beredskapsvegen i hovedsak benyttes til.</documentation>
               <appinfo>
@@ -2479,7 +2479,7 @@ Eksempel: NVDB Referanselenkedeler.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element name="detaljniva" type=":VegdetaljnivaType">
+          <element name="detaljniva" type="app:VegdetaljnivaType">
             <annotation>
               <documentation>Detaljnivå i vegnettet.</documentation>
               <appinfo>
@@ -2487,7 +2487,7 @@ Eksempel: NVDB Referanselenkedeler.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="fartsgrenseMed" type=":FartsgrenseVerdiType">
+          <element minOccurs="0" name="fartsgrenseMed" type="app:FartsgrenseVerdiType">
             <annotation>
               <documentation>2021: Fartsgrense med lenkeretningen.</documentation>
               <appinfo>
@@ -2495,7 +2495,7 @@ Eksempel: NVDB Referanselenkedeler.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="fartsgrenseMot" type=":FartsgrenseVerdiType">
+          <element minOccurs="0" name="fartsgrenseMot" type="app:FartsgrenseVerdiType">
             <annotation>
               <documentation>Fartsgrense mot lenkeretningen.</documentation>
               <appinfo>
@@ -2503,7 +2503,7 @@ Eksempel: NVDB Referanselenkedeler.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="fartsgrenseVariabel" type=":FartsgrenseVerdiType">
+          <element minOccurs="0" name="fartsgrenseVariabel" type="app:FartsgrenseVerdiType">
             <annotation>
               <documentation>7023: Verdien på fartsgrensen i angitt tidsrom.</documentation>
               <appinfo>
@@ -2543,7 +2543,7 @@ Eksempel: NVDB Referanselenkedeler.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="fartsgrenseVariabelType" type=":TypeFartsgrenseVariabelType">
+          <element minOccurs="0" name="fartsgrenseVariabelType" type="app:TypeFartsgrenseVariabelType">
             <annotation>
               <documentation>7016: Angir hvilken type variabel fartsgrense det er.</documentation>
               <appinfo>
@@ -2551,7 +2551,7 @@ Eksempel: NVDB Referanselenkedeler.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="fartsgrenseVariabelUkedag" type=":UkedagType">
+          <element minOccurs="0" name="fartsgrenseVariabelUkedag" type="app:UkedagType">
             <annotation>
               <documentation>9401: Angir ukedager en variabel fartsgrense gjelder for.</documentation>
               <appinfo>
@@ -2572,7 +2572,7 @@ Eksempel: NVDB Referanselenkedeler.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element name="ferjesambandDriftStatus" type=":DriftsstatusType">
+          <element name="ferjesambandDriftStatus" type="app:DriftsstatusType">
             <annotation>
               <documentation>9189: Status ferjesamband</documentation>
             </annotation>
@@ -2607,7 +2607,7 @@ Skal angis for sommersamband, dvs for ferjesamband som kun er i drift i sommerha
               <documentation>Startposisjon for den segmenterte veglenken langs veglenkesekvensen.</documentation>
             </annotation>
           </element>
-          <element name="funksjonellVegklasse" type=":FunksjonellVegklasseType">
+          <element name="funksjonellVegklasse" type="app:FunksjonellVegklasseType">
             <annotation>
               <documentation>9338: Angir funksjonell vegklasse.</documentation>
               <appinfo>
@@ -2684,12 +2684,12 @@ Skal angis for sommersamband, dvs for ferjesamband som kun er i drift i sommerha
               <documentation>Geometilengde for den segmenterte veglenken.</documentation>
             </annotation>
           </element>
-          <element name="kjoreretning" type=":KjoreretningType">
+          <element name="kjoreretning" type="app:KjoreretningType">
             <annotation>
               <documentation>Tillatt kjøreretning i forhold til geometriretning for en veglenke.</documentation>
             </annotation>
           </element>
-          <element name="kjoreretningSykkel" type=":KjoreretningType">
+          <element name="kjoreretningSykkel" type="app:KjoreretningType">
             <annotation>
               <documentation>Egenskap som viser om sykling tillatt med, mot eller begge.</documentation>
             </annotation>
@@ -2706,7 +2706,7 @@ Merknad: Det presiseres at kommune alltid skal ha 4 siffer, dvs. eventuelt med l
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="landbruksvegklasse" type=":LandbruksvegklasseType">
+          <element minOccurs="0" name="landbruksvegklasse" type="app:LandbruksvegklasseType">
             <annotation>
               <documentation>9339: Landbruksmyndighetene sin inndeling av landbruksveger, ut ifra støtteordninger.</documentation>
               <appinfo>
@@ -2714,12 +2714,12 @@ Merknad: Det presiseres at kommune alltid skal ha 4 siffer, dvs. eventuelt med l
               </appinfo>
             </annotation>
           </element>
-          <element name="lenkeretningSnudd" type=":JaNeiType">
+          <element name="lenkeretningSnudd" type="app:JaNeiType">
             <annotation>
               <documentation>Angir om lenken har motsatt geometriretning av den originale lenken i NVDB</documentation>
             </annotation>
           </element>
-          <element minOccurs="0" name="medium" type=":MediumType">
+          <element minOccurs="0" name="medium" type="app:MediumType">
             <annotation>
               <documentation>Objektets beliggenhet i forhold til jordoverflaten.
 Eksempel:
@@ -2734,7 +2734,7 @@ På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</documentation>
               <documentation>Målt lengde for den segmenterte veglenken.</documentation>
             </annotation>
           </element>
-          <element minOccurs="0" name="motorvegtype" type=":MotorvegtypeType">
+          <element minOccurs="0" name="motorvegtype" type="app:MotorvegtypeType">
             <annotation>
               <documentation>5378: Angir hvilken type motorveg det er tale om.</documentation>
               <appinfo>
@@ -2763,7 +2763,7 @@ På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</documentation>
               <documentation>Forløp som følger objektets sentrale del.</documentation>
             </annotation>
           </element>
-          <element name="serviceveg" type=":JaNeiType">
+          <element name="serviceveg" type="app:JaNeiType">
             <annotation>
               <documentation>Vegstrekning som ikke er åpen for allmenn trafikk, men som benyttes for å komme til tekniske anlegg el.l.</documentation>
               <appinfo>
@@ -2779,7 +2779,7 @@ På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="spesialtransportAksellastTelelosning" type=":SpesialAksellastTeleType">
+          <element minOccurs="0" name="spesialtransportAksellastTelelosning" type="app:SpesialAksellastTeleType">
             <annotation>
               <documentation>Angir største tillatte aksellast for periode med aksellastrestriksjoner pga teleløsning.
 Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</documentation>
@@ -2788,7 +2788,7 @@ Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</doc
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="spesialtransportBruksklasse" type=":SpesialBruksklasseType">
+          <element minOccurs="0" name="spesialtransportBruksklasse" type="app:SpesialBruksklasseType">
             <annotation>
               <documentation>Angir helårs bruksklasse.</documentation>
               <appinfo>
@@ -2796,7 +2796,7 @@ Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</doc
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="spesialtransportMaksVogntoglengde" type=":SpesialMaksVogntoglengdeType">
+          <element minOccurs="0" name="spesialtransportMaksVogntoglengde" type="app:SpesialMaksVogntoglengdeType">
             <annotation>
               <documentation>Angir maksimal lengde for vogntog.</documentation>
               <appinfo>
@@ -2812,7 +2812,7 @@ Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</doc
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="spesialtransportVeggruppe" type=":VeggruppeType">
+          <element minOccurs="0" name="spesialtransportVeggruppe" type="app:VeggruppeType">
             <annotation>
               <documentation>10923: Angir dispensasjon for spesialtransport avhengig av bruenes tilstand.</documentation>
               <appinfo>
@@ -2820,7 +2820,7 @@ Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</doc
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="spesialtransportVinter" type=":SpesialBruksklasseVinterType">
+          <element minOccurs="0" name="spesialtransportVinter" type="app:SpesialBruksklasseVinterType">
             <annotation>
               <documentation>Angir lovlig bruksklasse (maks aksellast) for vinter.</documentation>
               <appinfo>
@@ -2860,7 +2860,7 @@ Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</doc
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="tommertransportAksellastTelelosning" type=":TommerAksellastTeleType">
+          <element minOccurs="0" name="tommertransportAksellastTelelosning" type="app:TommerAksellastTeleType">
             <annotation>
               <documentation>Angir største tillatte aksellast for periode med aksellastrestriksjoner pga teleløsning.
 Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</documentation>
@@ -2869,7 +2869,7 @@ Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</doc
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="tommertransportBruksklasse" type=":TommerBruksklasseType">
+          <element minOccurs="0" name="tommertransportBruksklasse" type="app:TommerBruksklasseType">
             <annotation>
               <documentation>10897: Angir helårs bruksklasse.</documentation>
               <appinfo>
@@ -2877,7 +2877,7 @@ Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</doc
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="tommertransportMaksVogntoglengde" type=":TommerMaksVogntoglengdeType">
+          <element minOccurs="0" name="tommertransportMaksVogntoglengde" type="app:TommerMaksVogntoglengdeType">
             <annotation>
               <documentation>Angir maksimal lengde for vogntog.</documentation>
               <appinfo>
@@ -2885,7 +2885,7 @@ Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</doc
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="tommertransportVinter" type=":TommerBruksklasseVinterType">
+          <element minOccurs="0" name="tommertransportVinter" type="app:TommerBruksklasseVinterType">
             <annotation>
               <documentation>Angir lovlig bruksklasse (maks aksellast) for vinter.</documentation>
               <appinfo>
@@ -2893,7 +2893,7 @@ Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</doc
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="trafikkreguleringer" type=":TypeTrafikkreguleringType">
+          <element minOccurs="0" name="trafikkreguleringer" type="app:TypeTrafikkreguleringType">
             <annotation>
               <documentation>9794: Angir eventuelle restriksjoner for motortrafikk, gående og syklende.</documentation>
               <appinfo>
@@ -2909,7 +2909,7 @@ Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</doc
               </appinfo>
             </annotation>
           </element>
-          <element name="typeveg" type=":TypeVegType">
+          <element name="typeveg" type="app:TypeVegType">
             <annotation>
               <documentation>Type veg (FormOfWay).</documentation>
               <appinfo>
@@ -2917,7 +2917,7 @@ Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</doc
               </appinfo>
             </annotation>
           </element>
-          <element name="vegkategori" type=":VegkategoriType">
+          <element name="vegkategori" type="app:VegkategoriType">
             <annotation>
               <documentation>11276: Kategorisering som angir på hvilket nivå vegmyndigheten for strekningen ligger.</documentation>
               <appinfo>
@@ -2995,7 +2995,7 @@ Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</doc
   </complexType>
   <complexType name="VeglenkePropertyType">
     <sequence minOccurs="0">
-      <element ref=":Veglenke"/>
+      <element ref="app:Veglenke"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
@@ -3004,7 +3004,7 @@ Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</doc
     <annotation>
       <documentation>Tillatt kjøreretning i forhold til geometriretning for en veglenke.</documentation>
     </annotation>
-    <union memberTypes=":VeglenkeretningEnumerationType :VeglenkeretningOtherType"/>
+    <union memberTypes="app:VeglenkeretningEnumerationType app:VeglenkeretningOtherType"/>
   </simpleType>
   <simpleType name="VeglenkeretningEnumerationType">
     <annotation>
@@ -3028,7 +3028,7 @@ Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</doc
       <pattern value="other: \w{2,}"/>
     </restriction>
   </simpleType>
-  <element name="Vegsperring" substitutionGroup="gml:AbstractFeature" type=":VegsperringType">
+  <element name="Vegsperring" substitutionGroup="gml:AbstractFeature" type="app:VegsperringType">
     <annotation>
       <documentation>Angir at veg er fysisk sperret.</documentation>
       <appinfo>
@@ -3040,7 +3040,7 @@ Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</doc
     <complexContent>
       <extension base="gml:AbstractFeatureType">
         <sequence>
-          <element name="funksjon" type=":FunksjonVegsperringType">
+          <element name="funksjon" type="app:FunksjonVegsperringType">
             <annotation>
               <documentation>11542: Angir hvilken funksjon sperringen har.</documentation>
               <appinfo>
@@ -3096,7 +3096,7 @@ Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</doc
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="stengtUkedag" type=":UkedagType">
+          <element minOccurs="0" name="stengtUkedag" type="app:UkedagType">
             <annotation>
               <documentation>Del av tidsrombeskrivelse for når vegsperring er stengt. Benyttes om stengning ikke gjelder alle ukedager.</documentation>
               <appinfo>
@@ -3104,7 +3104,7 @@ Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</doc
               </appinfo>
             </annotation>
           </element>
-          <element name="type" type=":TypeVegsperringType">
+          <element name="type" type="app:TypeVegsperringType">
             <annotation>
               <documentation>7861: Angir hvilken type sperring det er tale om.</documentation>
               <appinfo>
@@ -3134,7 +3134,7 @@ Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</doc
   </complexType>
   <complexType name="VegsperringPropertyType">
     <sequence minOccurs="0">
-      <element ref=":Vegsperring"/>
+      <element ref="app:Vegsperring"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
