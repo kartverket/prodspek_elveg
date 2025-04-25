@@ -520,7 +520,7 @@ gjelder fredag.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element name="gjelderHverdagerULordagFraKl" type="time">
+          <element name="gjelderHverdagerULordagFraKl" type="string">
             <annotation>
               <documentation>12640: Gjennomkjøring forbudt gjelder på hverdager unntatt lørdag fra angitt klokkeslett.</documentation>
               <appinfo>
@@ -528,7 +528,7 @@ gjelder fredag.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element name="gjelderHverdagerULordagTilKl" type="time">
+          <element name="gjelderHverdagerULordagTilKl" type="string">
             <annotation>
               <documentation>12641: Gjennomkjøring forbudt gjelder på hverdager unntatt lørdag til angitt klokkeslett.</documentation>
               <appinfo>
@@ -536,7 +536,7 @@ gjelder fredag.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element name="gjelderLordagFraKl" type="time">
+          <element name="gjelderLordagFraKl" type="string">
             <annotation>
               <documentation>12642: Gjennomkjøring forbudt gjelder på lørdager fra angitt klokkeslett.</documentation>
               <appinfo>
@@ -544,7 +544,7 @@ gjelder fredag.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element name="gjelderLordagTilKl" type="time">
+          <element name="gjelderLordagTilKl" type="string">
             <annotation>
               <documentation>Gjennomkjøring forbudt gjelder på lørdager til angitt klokkeslett.</documentation>
               <appinfo>
@@ -552,7 +552,7 @@ gjelder fredag.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element name="gjelderSondagFraKl" type="time">
+          <element name="gjelderSondagFraKl" type="string">
             <annotation>
               <documentation>12644: Gjennomkjøring forbudt gjelder på søndager fra angitt klokkeslett.</documentation>
               <appinfo>
@@ -560,7 +560,7 @@ gjelder fredag.</documentation>
               </appinfo>
             </annotation>
           </element>
-          <element name="gjelderSondagTilKl" type="time">
+          <element name="gjelderSondagTilKl" type="string">
             <annotation>
               <documentation>12645: Gjennomkjøring forbudt gjelder på søndager til angitt klokkeslett.</documentation>
               <appinfo>
@@ -1279,7 +1279,7 @@ Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</document
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="gjelderHverdagerULordagFraKl" type="time">
+          <element minOccurs="0" name="gjelderHverdagerULordagFraKl" type="string">
             <annotation>
               <documentation>Gjennomkjøring forbudt gjelder på hverdager unntatt lørdag fra angitt klokkeslett.</documentation>
               <appinfo>
@@ -1287,7 +1287,7 @@ Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</document
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="gjelderHverdagerULordagTilKl" type="time">
+          <element minOccurs="0" name="gjelderHverdagerULordagTilKl" type="string">
             <annotation>
               <documentation>Svingeforbud gjelder på hverdager unntatt lørdag til angitt klokkeslett.</documentation>
               <appinfo>
@@ -1295,7 +1295,7 @@ Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</document
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="gjelderLordagFraKl" type="time">
+          <element minOccurs="0" name="gjelderLordagFraKl" type="string">
             <annotation>
               <documentation>Svingeforbud gjelder på lørdager fra angitt klokkeslett.</documentation>
               <appinfo>
@@ -1303,7 +1303,7 @@ Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</document
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="gjelderLordagTilKl" type="time">
+          <element minOccurs="0" name="gjelderLordagTilKl" type="string">
             <annotation>
               <documentation>Svingeforbud gjelder på lørdager til angitt klokkeslett.</documentation>
               <appinfo>
@@ -1311,7 +1311,7 @@ Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</document
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="gjelderSondagFraKl" type="time">
+          <element minOccurs="0" name="gjelderSondagFraKl" type="string">
             <annotation>
               <documentation>Svingeforbud gjelder på søndager fra angitt klokkeslett.</documentation>
               <appinfo>
@@ -1319,7 +1319,7 @@ Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</document
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="gjelderSondagTilKl" type="time">
+          <element minOccurs="0" name="gjelderSondagTilKl" type="string">
             <annotation>
               <documentation>Svingeforbud gjelder på søndager til angitt klokkeslett.</documentation>
               <appinfo>
@@ -1340,7 +1340,7 @@ Eksempel: Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.</document
               </appinfo>
             </annotation>
           </element>
-          <element name="posisjon" type="gml:PointPropertyType">
+          <element name="posisjon" type="string">
             <annotation>
               <documentation>Gir punkt som geometrisk representerer objektet.</documentation>
               <appinfo>
@@ -2615,7 +2615,7 @@ Skal angis for sommersamband, dvs for ferjesamband som kun er i drift i sommerha
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="gagateVaretransportHverdagULordagPeriode1FraKl" type="time">
+          <element minOccurs="0" name="gagateVaretransportHverdagULordagPeriode1FraKl" type="string">
             <annotation>
               <documentation>9314: Varetransport hverdag untatt lørdag periode 1, fra klokkeslett.</documentation>
               <appinfo>
@@ -2623,7 +2623,7 @@ Skal angis for sommersamband, dvs for ferjesamband som kun er i drift i sommerha
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="gagateVaretransportHverdagULordagPeriode1TilKl" type="time">
+          <element minOccurs="0" name="gagateVaretransportHverdagULordagPeriode1TilKl" type="string">
             <annotation>
               <documentation>9315: Varetransport hverdag untatt lørdag periode 1, til klokkeslett.</documentation>
               <appinfo>
@@ -2631,7 +2631,7 @@ Skal angis for sommersamband, dvs for ferjesamband som kun er i drift i sommerha
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="gagateVaretransportHverdagULordagPeriode2FraKl" type="time">
+          <element minOccurs="0" name="gagateVaretransportHverdagULordagPeriode2FraKl" type="string">
             <annotation>
               <documentation>9316: Varetransport hverdag untatt lørdag periode 2, fra klokkeslett.</documentation>
               <appinfo>
@@ -2639,7 +2639,7 @@ Skal angis for sommersamband, dvs for ferjesamband som kun er i drift i sommerha
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="gagateVaretransportHverdagULordagPeriode2TilKl" type="time">
+          <element minOccurs="0" name="gagateVaretransportHverdagULordagPeriode2TilKl" type="string">
             <annotation>
               <documentation>9317: Varetransport hverdag untatt lørdag periode 2, til klokkeslett.</documentation>
               <appinfo>
@@ -2647,7 +2647,7 @@ Skal angis for sommersamband, dvs for ferjesamband som kun er i drift i sommerha
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="gagateVaretransportLordagPeriode1FraKl" type="time">
+          <element minOccurs="0" name="gagateVaretransportLordagPeriode1FraKl" type="string">
             <annotation>
               <documentation>11537: Varetransport lørdag periode 1, fra klokkeslett.</documentation>
               <appinfo>
@@ -2655,7 +2655,7 @@ Skal angis for sommersamband, dvs for ferjesamband som kun er i drift i sommerha
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="gagateVaretransportLordagPeriode1TilKl" type="time">
+          <element minOccurs="0" name="gagateVaretransportLordagPeriode1TilKl" type="string">
             <annotation>
               <documentation>11538: Varetransport lørdag periode 1, til klokkeslett.</documentation>
               <appinfo>
@@ -2663,7 +2663,7 @@ Skal angis for sommersamband, dvs for ferjesamband som kun er i drift i sommerha
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="gagateVaretransportLordagPeriode2FraKl" type="time">
+          <element minOccurs="0" name="gagateVaretransportLordagPeriode2FraKl" type="string">
             <annotation>
               <documentation>11539: Varetransport lørdag periode 2, fra klokkeslett.</documentation>
               <appinfo>
@@ -2671,7 +2671,7 @@ Skal angis for sommersamband, dvs for ferjesamband som kun er i drift i sommerha
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="gagateVaretransportLordagPeriode2TilKl" type="time">
+          <element minOccurs="0" name="gagateVaretransportLordagPeriode2TilKl" type="string">
             <annotation>
               <documentation>11540: Varetransport lørdag periode 2, til klokkeslett.</documentation>
               <appinfo>
@@ -3056,7 +3056,7 @@ Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</doc
               </appinfo>
             </annotation>
           </element>
-          <element name="posisjon" type="gml:PointPropertyType">
+          <element name="posisjon" type="string">
             <annotation>
               <documentation>7930: Gir punkt som geometrisk representerer objektet.</documentation>
               <appinfo>
@@ -3064,7 +3064,7 @@ Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</doc
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="stengtFraDato" type="date">
+          <element minOccurs="0" name="stengtFraDato" type="string">
             <annotation>
               <documentation>Del av tidsrombeskrivelse for når vegsperring er stengt. Benyttes om stengning ikke gjelder hele året.</documentation>
               <appinfo>
@@ -3072,7 +3072,7 @@ Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</doc
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="stengtFraKlokkeslett" type="time">
+          <element minOccurs="0" name="stengtFraKlokkeslett" type="string">
             <annotation>
               <documentation>Del av tidsrombeskrivelse for når vegsperring er stengt. Benyttes om stengning ikke gjelder hele døgnet.</documentation>
               <appinfo>
@@ -3080,7 +3080,7 @@ Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</doc
               </appinfo>
             </annotation>
           </element>
-          <element name="stengtTilDato" type="date">
+          <element name="stengtTilDato" type="string">
             <annotation>
               <documentation>Del av tidsrombeskrivelse for når vegsperring er stengt. Benyttes om stengning ikke gjelder hele året.</documentation>
               <appinfo>
@@ -3088,7 +3088,7 @@ Skal angis om det er aksellastrestriksjoner pga teleløsning på strekning.</doc
               </appinfo>
             </annotation>
           </element>
-          <element name="stengtTilKlokkeslett" type="time">
+          <element name="stengtTilKlokkeslett" type="string">
             <annotation>
               <documentation>Del av tidsrombeskrivelse for når vegsperring er stengt. Benyttes om stengning ikke gjelder hele døgnet.</documentation>
               <appinfo>
