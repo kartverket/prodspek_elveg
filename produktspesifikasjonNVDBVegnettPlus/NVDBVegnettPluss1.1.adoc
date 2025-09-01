@@ -1,9 +1,9 @@
 :datasett: NVDB Vegnett Pluss
 :kortnavn: NVDBVegnettPluss
-:versjon: 1.0
+:versjon: 1.1
 :skjemaversjon: {versjon}
-:underversjon: 2025-01-01
-:publisert: 2025-02-05
+:underversjon: 2025-09-01
+:publisert: 2025-09-01
 :dokumentstatus: 1
 // All informasjon i hode over denne linja må fylles ut for hvert datasett. Øvrige parametere settes i adoc_parametere.adoc
 include::inkluder/filhode.adoc[]
@@ -43,7 +43,13 @@ Fortau, gangveger og gangfelt skulle også overføres fra FKB Traktorveg/Sti. NV
 
 === Endringslogg
 
-Dette er første versjon av produktspesifikasjonen {datasett}. I forhold til Elveg 2.0 er følgende endringer gjort:
+===== Endringer fra NVDB Vegnett Pluss 1.0 til NVDB Vegnett Pluss 1.1
+
+
+
+===== Endringer fra Elveg 2.0 til NVDB Vegnett Pluss 1.0
+
+I forhold til Elveg 2.0 er følgende endringer gjort:
 
 *Generelt:*
  

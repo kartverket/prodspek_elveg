@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.20">
 <meta name="author" content="Kartverket">
-<title>SOSI-standardisert produktspesifikasjon: NVDB Vegnett Pluss 1.0</title>
+<title>SOSI-standardisert produktspesifikasjon: NVDB Vegnett Pluss 1.1</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -436,11 +436,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1>SOSI-standardisert produktspesifikasjon: NVDB Vegnett Pluss 1.0</h1>
+<h1>SOSI-standardisert produktspesifikasjon: NVDB Vegnett Pluss 1.1</h1>
 <div class="details">
 <span id="author" class="author">Kartverket</span><br>
-<span id="revnumber">versjon 1.0,</span>
-<span id="revdate">2025-01-01</span>
+<span id="revnumber">versjon 1.1,</span>
+<span id="revdate">2025-09-01</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Innholdsfortegnelse</div>
@@ -449,7 +449,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_innledning">1.1. Innledning</a></li>
 <li><a href="#_historikk">1.2. Historikk</a></li>
-<li><a href="#_endringslogg">1.3. Endringslogg</a></li>
+<li><a href="#_endringslogg">1.3. Endringslogg</a>
+<ul class="sectlevel4">
+<li><a href="#_endringer_fra_nvdb_vegnett_pluss_1_0_til_nvdb_vegnett_pluss_1_1">1.3.1. Endringer fra NVDB Vegnett Pluss 1.0 til NVDB Vegnett Pluss 1.1</a></li>
+<li><a href="#_endringer_fra_elveg_2_0_til_nvdb_vegnett_pluss_1_0">1.3.2. Endringer fra Elveg 2.0 til NVDB Vegnett Pluss 1.0</a></li>
+</ul>
+</li>
 <li><a href="#_normative_referanser">1.4. Normative referanser</a></li>
 </ul>
 </li>
@@ -497,7 +502,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_innhold_og_struktur">5. Innhold og struktur</a>
 <ul class="sectlevel2">
 <li><a href="#_omfang">5.1. Omfang</a></li>
-<li><a href="#_applicationschema_nvdb_vegnett_pluss_1_0">5.2. «ApplicationSchema» NVDB Vegnett Pluss-1.0</a>
+<li><a href="#_applicationschema_nvdb_vegnett_pluss_1_1">5.2. «ApplicationSchema» NVDB Vegnett Pluss-1.1</a>
 <ul class="sectlevel3">
 <li><a href="#_pakke_veglenke">5.2.1. Pakke: Veglenke</a>
 <ul class="sectlevel4">
@@ -566,19 +571,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#appgjelderfor">5.2.4.30. NVDB::«CodeList» GjelderFor</a></li>
 <li><a href="#appgjelderukedag">5.2.4.31. NVDB::«CodeList» GjelderUkedag</a></li>
 <li><a href="#appklasselandbruksveg">5.2.4.32. NVDB::«codeList» KlasseLandbruksveg</a></li>
-<li><a href="#appmotorvegtype">5.2.4.33. NVDB::«codeList» Motorvegtype</a></li>
-<li><a href="#appmålemetodehøydebegrensning">5.2.4.34. NVDB::«codeList» MålemetodeHøydebegrensning</a></li>
-<li><a href="#appretning">5.2.4.35. NVDB::«CodeList» Retning</a></li>
-<li><a href="#apptypejernbanekryssing">5.2.4.36. NVDB::«codeList» TypeJernbanekryssing</a></li>
-<li><a href="#apptypetrafikkreguleringer">5.2.4.37. NVDB::«CodeList» TypeTrafikkreguleringer</a></li>
-<li><a href="#appvegklasse">5.2.4.38. NVDB::«codeList» Vegklasse</a></li>
-<li><a href="#appekstravintervedlikehold">5.2.4.39. NVDB::«codeList» EkstraVintervedlikehold</a></li>
-<li><a href="#appsambandstype">5.2.4.40. NVDB::«codeList» Sambandstype</a></li>
-<li><a href="#apptypefartsgrensevariabel">5.2.4.41. NVDB::«codeList» TypeFartsgrenseVariabel</a></li>
-<li><a href="#apptypehinder">5.2.4.42. NVDB::«codeList» TypeHinder</a></li>
-<li><a href="#appsengtukedag">5.2.4.43. NVDB::«codeList» SengtUkedag</a></li>
-<li><a href="#apptypevegsperring">5.2.4.44. NVDB::«codeList» TypeVegsperring</a></li>
-<li><a href="#appukedag">5.2.4.45. NVDB::«codeList» Ukedag</a></li>
+<li><a href="#appmerknad">5.2.4.33. NVDB::«codeList» Merknad</a></li>
+<li><a href="#appmotorvegtype">5.2.4.34. NVDB::«codeList» Motorvegtype</a></li>
+<li><a href="#appmålemetodehøydebegrensning">5.2.4.35. NVDB::«codeList» MålemetodeHøydebegrensning</a></li>
+<li><a href="#appretning">5.2.4.36. NVDB::«CodeList» Retning</a></li>
+<li><a href="#apptypejernbanekryssing">5.2.4.37. NVDB::«codeList» TypeJernbanekryssing</a></li>
+<li><a href="#apptypetrafikkreguleringer">5.2.4.38. NVDB::«CodeList» TypeTrafikkreguleringer</a></li>
+<li><a href="#appvegklasse">5.2.4.39. NVDB::«codeList» Vegklasse</a></li>
+<li><a href="#appekstravintervedlikehold">5.2.4.40. NVDB::«codeList» EkstraVintervedlikehold</a></li>
+<li><a href="#appsambandstype">5.2.4.41. NVDB::«codeList» Sambandstype</a></li>
+<li><a href="#apptypefartsgrensevariabel">5.2.4.42. NVDB::«codeList» TypeFartsgrenseVariabel</a></li>
+<li><a href="#apptypehinder">5.2.4.43. NVDB::«codeList» TypeHinder</a></li>
+<li><a href="#appsengtukedag">5.2.4.44. NVDB::«codeList» SengtUkedag</a></li>
+<li><a href="#apptypevegsperring">5.2.4.45. NVDB::«codeList» TypeVegsperring</a></li>
+<li><a href="#appukedag">5.2.4.46. NVDB::«codeList» Ukedag</a></li>
 </ul>
 </li>
 </ul>
@@ -706,8 +712,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sidebarblock">
 <div class="content">
 <div class="paragraph">
-<p><strong>Publisert</strong>: 2025-02-05<br>
-<strong>Denne versjonen finnes på</strong>: <a href="https://sosi.geonorge.no/produktspesifikasjoner/NVDB_Vegnett_Pluss/1.0" class="bare">https://sosi.geonorge.no/produktspesifikasjoner/NVDB_Vegnett_Pluss/1.0</a><br>
+<p><strong>Publisert</strong>: 2025-09-01<br>
+<strong>Denne versjonen finnes på</strong>: <a href="https://sosi.geonorge.no/produktspesifikasjoner/NVDB_Vegnett_Pluss/1.1" class="bare">https://sosi.geonorge.no/produktspesifikasjoner/NVDB_Vegnett_Pluss/1.1</a><br>
 - <a href="https://sosi.geonorge.no/uml-modeller/sosi-del-3-produktspesifikasjoner/NVDB_Vegnett_Pluss/1.0/">HTML-visning av UML-modellen</a><br>
 <strong>Nyeste versjon finnes på</strong>: <a href="https://sosi.geonorge.no/produktspesifikasjoner/NVDB_Vegnett_Pluss" class="bare">https://sosi.geonorge.no/produktspesifikasjoner/NVDB_Vegnett_Pluss</a><br></p>
 </div>
@@ -774,8 +780,14 @@ Fortau, gangveger og gangfelt skulle også overføres fra FKB Traktorveg/Sti. NV
 </div>
 <div class="sect2">
 <h3 id="_endringslogg">1.3. Endringslogg</h3>
+<div class="sect4">
+<h5 id="_endringer_fra_nvdb_vegnett_pluss_1_0_til_nvdb_vegnett_pluss_1_1">1.3.1. Endringer fra NVDB Vegnett Pluss 1.0 til NVDB Vegnett Pluss 1.1</h5>
+
+</div>
+<div class="sect4">
+<h5 id="_endringer_fra_elveg_2_0_til_nvdb_vegnett_pluss_1_0">1.3.2. Endringer fra Elveg 2.0 til NVDB Vegnett Pluss 1.0</h5>
 <div class="paragraph">
-<p>Dette er første versjon av produktspesifikasjonen NVDB Vegnett Pluss. I forhold til Elveg 2.0 er følgende endringer gjort:</p>
+<p>I forhold til Elveg 2.0 er følgende endringer gjort:</p>
 </div>
 <div class="paragraph">
 <p><strong>Generelt:</strong></p>
@@ -900,6 +912,7 @@ Fortau, gangveger og gangfelt skulle også overføres fra FKB Traktorveg/Sti. NV
 </div>
 </li>
 </ul>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -1458,14 +1471,14 @@ SOSI: ..FELTOVERSIKT 1#2#3K#4K</p>
 <div class="sect3">
 <h4 id="_versjon">3.1.2. Versjon</h4>
 <div class="paragraph">
-<p>1.0</p>
+<p>1.1</p>
 </div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_referansedato">3.2. Referansedato</h3>
 <div class="paragraph">
-<p>2025-01-01</p>
+<p>2025-09-01</p>
 </div>
 </div>
 <div class="sect2">
@@ -1606,11 +1619,11 @@ FKB-data dekker Norges fastlandsterritorium</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_applicationschema_nvdb_vegnett_pluss_1_0">5.2. «ApplicationSchema» NVDB Vegnett Pluss-1.0</h3>
+<h3 id="_applicationschema_nvdb_vegnett_pluss_1_1">5.2. «ApplicationSchema» NVDB Vegnett Pluss-1.1</h3>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> NVDB Vegnett Pluss inneholder informasjon om alle europa-, riks-, fylkes-, kommunale og skogsbilveger, samt alle private veger unntatt korte, private blindveger. Korte veger er veger med lengde mindre enn 50 m. Veger med unike adresser er med uansett lengde. Bilferjestrekninger og vegnett for gående og syklende kan også være med.
 Vegnettet er strukturert som et nettverk av veglenker med restriksjoner i form av lineære referanser. I produktet NVDB Vegnett Pluss utveksles objektene som er knyttet til vegnettet med egengeometri hentet fra vegnettet objektet er referert til.
-Vegnettet og objekter for aktuelle restriksjoner forvaltes i NVDB.</p>
+Vegnettet ajourføres i Nasjonal Vegdatabank, NVDB.</p>
 </div>
 <h4 id="_profilparametre_i_tagged_values" class="discrete">Profilparametre i tagged values</h4>
 <table class="tableblock frame-all grid-all stretch">
@@ -1653,11 +1666,11 @@ Vegnettet og objekter for aktuelle restriksjoner forvaltes i NVDB.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">targetNamespace</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/produktspesifikasjon/NVDBVegnettPluss/1.0" class="bare">http://skjema.geonorge.no/SOSI/produktspesifikasjon/NVDBVegnettPluss/1.0</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/produktspesifikasjon/NVDBVegnettPluss/1.1" class="bare">http://skjema.geonorge.no/SOSI/produktspesifikasjon/NVDBVegnettPluss/1.1</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">version</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">xmlns</p></td>
@@ -1682,13 +1695,13 @@ Vegnettet og objekter for aktuelle restriksjoner forvaltes i NVDB.</p>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Realisert fra</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Andre viktige komponenter::NVDB::<span class="underline">«ApplicationSchema» NVDB Datakatalogen</span><br>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SOSI Generelle konsepter::SOSI Nettverk og lineære referanser::<span class="underline">«ApplicationSchema» SOSI Nettverk og lineære referanser 5.0</span><br>
+SOSI Generelle konsepter::SOSI Generelle typer::<span class="underline">«ApplicationSchema» Generelle typer 5.0</span><br>
+SOSI Generell objektkatalog::FKB Generell del::<span class="underline">FKB Generell del-5.0</span><br>
 SOSI Generelle konsepter::SOSI Nettverk og lineære referanser::<span class="underline">«ApplicationSchema» SOSI Nettverk og lineære referanser 5.0</span><br>
 SOSI Generell objektkatalog::AdministrativeOgStatistiskeInndelinger::<span class="underline">«ApplicationSchema» AdministrativeOgStatistiskeInndelinger-4.6</span><br>
+Andre viktige komponenter::NVDB::<span class="underline">«ApplicationSchema» NVDB Datakatalogen</span><br>
 SOSI Generelle konsepter::SOSI Generelle typer::<span class="underline">«ApplicationSchema» Generelle typer 5.1</span><br>
-SOSI Generell objektkatalog::FKB Generell del::<span class="underline">FKB Generell del-5.0</span><br>
-SOSI Generelle konsepter::SOSI Generelle typer::<span class="underline">«ApplicationSchema» Generelle typer 5.0</span><br>
-SOSI Generelle konsepter::SOSI Nettverk og lineære referanser::<span class="underline">«ApplicationSchema» SOSI Nettverk og lineære referanser 5.0</span><br>
 SOSI Generell objektkatalog::Vegnett::<span class="underline">«applicationSchema» Vegnett-5.0</span><br></p></td>
 </tr>
 </tbody>
@@ -2127,8 +2140,8 @@ Merknad: Komplett vegadresse består i tillegg av husnummer og bokstav</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Fartsgrense
-Enhet: Kilometer/time</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fartsgrense. Høyeste tillatte hastighet på en vegstrekning.</p>
+<p class="tableblock">Enhet: Kilometer/time</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
@@ -2156,11 +2169,44 @@ Enhet: Kilometer/time</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>merknad</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gir merknad knyttet til fartsgrense.
+Kodeliste: "Privat skiltet" (23050), "Privat veg innenfor fartsgrensesone" (23051) og "Privat adkomst" (23052).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#appmerknad">«codeList» Merknad</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodeSpace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/merknad" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/merknad</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13170</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>vedtaksnummer</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Angir vedtaksnummer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Angir vedtaksnummer. Påkrevd der ny fartsgrense avviker fra standardgrensene 50 i tettbygd strøk og 80 i spredtbygd.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
@@ -3584,6 +3630,90 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
 </tr>
 </tbody>
 </table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>vedtaksnummer</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Angir vedtaksnummer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/CharacterString">CharacterString</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13186</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>arkivnummer</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gir referanse til relevant sak i vegeiers arkivsystem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/CharacterString">CharacterString</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13192</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>gyldigFraDato</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dato for når gjennomkjøring forbudt ble innført. Den dato skilt ble "avduket".</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/Date">Date</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13199</p></td>
+</tr>
+</tbody>
+</table>
 <h6 id="_roller" class="discrete">Roller</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -3972,6 +4102,90 @@ Kjørende kan ikke passere mellom et GjennomkjøringForbudt-punkt og et tilhøre
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>vedtaksnummer</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Angir vedtaksnummer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/CharacterString">CharacterString</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13184</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>arkivnummer</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gir referanse til relevant sak i vegeiers arkivsystem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/CharacterString">CharacterString</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13190</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>gyldigFraDato</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dato for når gågate ble innført. Den dato skilt ble "avduket".</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/Date">Date</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13197</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>senterlinje</strong></p></td>
 </tr>
 <tr>
@@ -4141,6 +4355,90 @@ Enhet: Meter</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">5778</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>vedtaksnummer</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Angir vedtaksnummer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/CharacterString">CharacterString</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13187</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>arkivnummer</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gir referanse til relevant sak i vegeiers arkivsystem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/CharacterString">CharacterString</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13193</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>gyldigFraDato</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dato for når høydegrenseskilt ble satt opp/"avduket".</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/Date">Date</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13200</p></td>
 </tr>
 </tbody>
 </table>
@@ -4759,6 +5057,34 @@ Enhet: Meter</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>gyldigFraDato</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dato for når motorvegen ble satt i drift. Den dato skilt ble "avduket".</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/Date">Date</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13195</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>arkivnummer</strong></p></td>
 </tr>
 <tr>
@@ -5146,6 +5472,90 @@ Enhet: Meter</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>vedtaksnummer</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Angir vedtaksnummer. Påkrevd for svingerestriksjoner som er skiltet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/CharacterString">CharacterString</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13182</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>arkivnummer</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gir referanse til relevant sak i vegeiers arkivsystem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/CharacterString">CharacterString</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13188</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>gyldigFraDato</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dato for når svingerestriksjonen ble innført. Den dato skilt ble "avduket".</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/Date">Date</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13194</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>posisjon</strong></p></td>
 </tr>
 <tr>
@@ -5239,6 +5649,62 @@ Enhet: Meter</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>vedtaksnummer</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Angir vedtaksnummer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/CharacterString">CharacterString</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13183</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>arkivnummer</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gir referanse til relevant sak i vegeiers arkivsystem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/CharacterString">CharacterString</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13189</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>senterlinje</strong></p></td>
 </tr>
 <tr>
@@ -5252,6 +5718,34 @@ Enhet: Meter</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/GM_Curve">GM_Curve</a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>gyldigFraDato</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dato for når envegskjøring ble innført. Den dato skilt ble "avduket".</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/Date">Date</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13196</p></td>
 </tr>
 </tbody>
 </table>
@@ -5548,16 +6042,96 @@ Enhet: Meter</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">True</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/gjelderukedag" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/gjelderukedag</a></p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">deafultCodeSpace</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/gjelderukedag" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/gjelderukedag</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">12936</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>vedtaksnummer</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Angir vedtaksnummer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/CharacterString">CharacterString</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13185</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>arkivnummer</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gir referanse til relevant sak i vegeiers arkivsystem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/CharacterString">CharacterString</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13191</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>gyldigFraDato</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dato for når trafikkregulering ble innført. Den dato skilt ble "avduket".</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/Date">Date</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13198</p></td>
 </tr>
 </tbody>
 </table>
@@ -6605,24 +7179,24 @@ Oppdateringsdato kan være forskjellig fra Datafangsdato ved at data som er regi
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Subtyper:</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#appsosi_objekt_veglenke">«FeatureType» SOSI_Objekt_veglenke</a><br>
-<a href="#appfunksjonellvegklasse">«featureType» FunksjonellVegklasse</a><br>
 <a href="#appmotorveg">«featureType» Motorveg</a><br>
-<a href="#apphøydebegrensning">«featureType» Høydebegrensning</a><br>
-<a href="#appjernbanekryssing">«featureType» Jernbanekryssing</a><br>
-<a href="#appferjesamband">«featureType» Ferjesamband</a><br>
-<a href="#appberedskapsveg">«FeatureType» Beredskapsveg</a><br>
 <a href="#appgågatereguleringer">«featureType» Gågatereguleringer</a><br>
-<a href="#apptillattkjøreretning">«FeatureType» TillattKjøreretning</a><br>
-<a href="#appværutsattveg">«featureType» VærutsattVeg</a><br>
-<a href="#appsvingerestriksjon">«featureType» Svingerestriksjon</a><br>
-<a href="#appvegsperring">«featureType» Vegsperring</a><br>
-<a href="#appfartsgrensevariabel">«featureType» FartsgrenseVariabel</a><br>
-<a href="#apptrafikkreguleringer">«featureType» Trafikkreguleringer</a><br>
-<a href="#appfartsgrense">«FeatureType» Fartsgrense</a><br>
+<a href="#appgjennomkjøringforbudt">«featureType» GjennomkjøringForbudt</a><br>
 <a href="#appserviceveg">«featureType» Serviceveg</a><br>
 <a href="#appgjennomkjøringforbudttil">«featureType» GjennomkjøringForbudtTil</a><br>
-<a href="#appgjennomkjøringforbudt">«featureType» GjennomkjøringForbudt</a><br>
-<a href="#applandbruksvegklasse">«featureType» Landbruksvegklasse</a><br></p></td>
+<a href="#appferjesamband">«featureType» Ferjesamband</a><br>
+<a href="#appsvingerestriksjon">«featureType» Svingerestriksjon</a><br>
+<a href="#applandbruksvegklasse">«featureType» Landbruksvegklasse</a><br>
+<a href="#appfartsgrense">«FeatureType» Fartsgrense</a><br>
+<a href="#apptrafikkreguleringer">«featureType» Trafikkreguleringer</a><br>
+<a href="#appværutsattveg">«featureType» VærutsattVeg</a><br>
+<a href="#apptillattkjøreretning">«FeatureType» TillattKjøreretning</a><br>
+<a href="#apphøydebegrensning">«featureType» Høydebegrensning</a><br>
+<a href="#appvegsperring">«featureType» Vegsperring</a><br>
+<a href="#appfartsgrensevariabel">«featureType» FartsgrenseVariabel</a><br>
+<a href="#appfunksjonellvegklasse">«featureType» FunksjonellVegklasse</a><br>
+<a href="#appjernbanekryssing">«featureType» Jernbanekryssing</a><br>
+<a href="#appberedskapsveg">«FeatureType» Beredskapsveg</a><br></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Realisert fra:</p></td>
@@ -8148,9 +8722,9 @@ Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for 
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Realisert fra:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">SOSI Generell objektkatalog::FKB Generell del::FKB Generell del-5.0::Generelle elementer::<span class="underline">«dataType» Posisjonskvalitet</span><br>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Generelle typer 5.1::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underline">«dataType» Posisjonskvalitet</span><br>
 Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underline">«dataType» Posisjonskvalitet</span><br>
-Generelle typer 5.1::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underline">«dataType» Posisjonskvalitet</span><br></p></td>
+SOSI Generell objektkatalog::FKB Generell del::FKB Generell del-5.0::Generelle elementer::<span class="underline">«dataType» Posisjonskvalitet</span><br></p></td>
 </tr>
 </tbody>
 </table>
@@ -8187,8 +8761,8 @@ Generelle typer 5.1::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Realisert fra:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">SOSI Generell objektkatalog::FKB Generell del::FKB Generell del-5.0::Generelle elementer::<span class="underline">«CodeList» Synbarhet</span><br>
-Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underline">«CodeList» Synbarhet</span><br></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underline">«CodeList» Synbarhet</span><br>
+SOSI Generell objektkatalog::FKB Generell del::FKB Generell del-5.0::Generelle elementer::<span class="underline">«CodeList» Synbarhet</span><br></p></td>
 </tr>
 </tbody>
 </table>
@@ -8655,11 +9229,43 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <hr>
 </div>
 <div class="sect4">
-<h5 id="appmotorvegtype">5.2.4.33. NVDB::«codeList» Motorvegtype</h5>
+<h5 id="appmerknad">5.2.4.33. NVDB::«codeList» Merknad</h5>
+<div class="paragraph">
+<p><strong>Definisjon:</strong> Fartsgrense</p>
+</div>
+<h6 id="_profilparametre_i_tagged_values_42" class="discrete">Profilparametre i tagged values</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">asDictionary</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/merknad" class="bare">https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/merknad</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13170</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB_navn</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merknad</p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</div>
+<div class="sect4">
+<h5 id="appmotorvegtype">5.2.4.34. NVDB::«codeList» Motorvegtype</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir hvilken type motorveg det er tale om</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_42" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_43" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -8696,11 +9302,11 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <hr>
 </div>
 <div class="sect4">
-<h5 id="appmålemetodehøydebegrensning">5.2.4.34. NVDB::«codeList» MålemetodeHøydebegrensning</h5>
+<h5 id="appmålemetodehøydebegrensning">5.2.4.35. NVDB::«codeList» MålemetodeHøydebegrensning</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir målemetode som er brukt for å måle høyder</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_43" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_44" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -8737,11 +9343,11 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <hr>
 </div>
 <div class="sect4">
-<h5 id="appretning">5.2.4.35. NVDB::«CodeList» Retning</h5>
+<h5 id="appretning">5.2.4.36. NVDB::«CodeList» Retning</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir hvilken retning gjennomkjøring forbudt gjelder.</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_44" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_45" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -8765,11 +9371,11 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <hr>
 </div>
 <div class="sect4">
-<h5 id="apptypejernbanekryssing">5.2.4.36. NVDB::«codeList» TypeJernbanekryssing</h5>
+<h5 id="apptypejernbanekryssing">5.2.4.37. NVDB::«codeList» TypeJernbanekryssing</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir hvilken type vegobjektet er av</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_45" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_46" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -8806,11 +9412,11 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <hr>
 </div>
 <div class="sect4">
-<h5 id="apptypetrafikkreguleringer">5.2.4.37. NVDB::«CodeList» TypeTrafikkreguleringer</h5>
+<h5 id="apptypetrafikkreguleringer">5.2.4.38. NVDB::«CodeList» TypeTrafikkreguleringer</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir eventuelle restriksjoner for motortrafikk, gående og syklende.</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_46" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_47" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -8847,11 +9453,11 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <hr>
 </div>
 <div class="sect4">
-<h5 id="appvegklasse">5.2.4.38. NVDB::«codeList» Vegklasse</h5>
+<h5 id="appvegklasse">5.2.4.39. NVDB::«codeList» Vegklasse</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir funksjonell vegklasse</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_47" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_48" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -8888,11 +9494,11 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <hr>
 </div>
 <div class="sect4">
-<h5 id="appekstravintervedlikehold">5.2.4.39. NVDB::«codeList» EkstraVintervedlikehold</h5>
+<h5 id="appekstravintervedlikehold">5.2.4.40. NVDB::«codeList» EkstraVintervedlikehold</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir om denne vegstrekningen krever ekstra vintervedlikehold utover standard vinterdrift. Informasjon benyttes i forbindelse med beregning av vedlikeholdsmidler i MOTIV.</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_48" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_49" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -8929,11 +9535,11 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <hr>
 </div>
 <div class="sect4">
-<h5 id="appsambandstype">5.2.4.40. NVDB::«codeList» Sambandstype</h5>
+<h5 id="appsambandstype">5.2.4.41. NVDB::«codeList» Sambandstype</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir hvilken type samband det er, dvs. om det er på stat-, fylke- eller kommunenivå.</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_49" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_50" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -8957,11 +9563,11 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <hr>
 </div>
 <div class="sect4">
-<h5 id="apptypefartsgrensevariabel">5.2.4.41. NVDB::«codeList» TypeFartsgrenseVariabel</h5>
+<h5 id="apptypefartsgrensevariabel">5.2.4.42. NVDB::«codeList» TypeFartsgrenseVariabel</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir hvilken type variabel fartsgrense det er</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_50" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_51" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -8998,11 +9604,11 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <hr>
 </div>
 <div class="sect4">
-<h5 id="apptypehinder">5.2.4.42. NVDB::«codeList» TypeHinder</h5>
+<h5 id="apptypehinder">5.2.4.43. NVDB::«codeList» TypeHinder</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir hvilken type hinder det er tale om</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_51" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_52" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -9039,11 +9645,11 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <hr>
 </div>
 <div class="sect4">
-<h5 id="appsengtukedag">5.2.4.43. NVDB::«codeList» SengtUkedag</h5>
+<h5 id="appsengtukedag">5.2.4.44. NVDB::«codeList» SengtUkedag</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir ukedager en variabel fartsgrense gjelder for.</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_52" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_53" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -9067,11 +9673,11 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <hr>
 </div>
 <div class="sect4">
-<h5 id="apptypevegsperring">5.2.4.44. NVDB::«codeList» TypeVegsperring</h5>
+<h5 id="apptypevegsperring">5.2.4.45. NVDB::«codeList» TypeVegsperring</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir hvilken type sperring det er tale om.</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_53" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_54" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -9108,11 +9714,11 @@ Generelle typer 5.0::SOSI_Fellesegenskaper og SOSI_Objekt::<span class="underlin
 <hr>
 </div>
 <div class="sect4">
-<h5 id="appukedag">5.2.4.45. NVDB::«codeList» Ukedag</h5>
+<h5 id="appukedag">5.2.4.46. NVDB::«codeList» Ukedag</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> Angir ukedager en variabel fartsgrense gjelder for.</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_54" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_55" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -9597,10 +10203,10 @@ Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB
 <p>SOSI-realiseringen følger kravene i "Realisering i SOSI-format 5.0" <a href="#SOSI-FORMAT">[SOSI-FORMAT]</a>. Under en utlisting av SOSI-formatrealiseringen:</p>
 </div>
 <div class="paragraph">
-<p>SOSI-filer i henhold til denne produktspesifikasjonen merkes med ..OBJEKTKATALOG NVDBVegnettPluss 1.0 i filhodet.</p>
+<p>SOSI-filer i henhold til denne produktspesifikasjonen merkes med ..OBJEKTKATALOG NVDBVegnettPluss 1.1 i filhodet.</p>
 </div>
 <div class="paragraph">
-<p>Se eksempelfiler på <a href="https://skjema.geonorge.no/SOSI/produktspesifikasjon/NVDBVegnettPluss/1.0/eksempel/" class="bare">https://skjema.geonorge.no/SOSI/produktspesifikasjon/NVDBVegnettPluss/1.0/eksempel/</a></p>
+<p>Se eksempelfiler på <a href="https://skjema.geonorge.no/SOSI/produktspesifikasjon/NVDBVegnettPluss/1.1/eksempel/" class="bare">https://skjema.geonorge.no/SOSI/produktspesifikasjon/NVDBVegnettPluss/1.1/eksempel/</a></p>
 </div>
 <h5 id="_objekttype_veglenke" class="discrete">Objekttype: Veglenke</h5>
 <h6 id="_geometrityper" class="discrete">Geometrityper</h6>
@@ -9939,13 +10545,6 @@ Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB
 <td class="tableblock halign-left valign-top"><p class="tableblock">..FELTOVERSIKT</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">T50</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">feltoversikt</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..FELTOVERSIKT</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T50</p></td>
-</tr>
 </tbody>
 </table>
 <h5 id="_objekttype_beredskapsveg" class="discrete">Objekttype: Beredskapsveg</h5>
@@ -10010,13 +10609,6 @@ Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB
 <td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..NVDBID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T50</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">bruksområde</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» BruksområdeBeredskapsveg</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..BRUKSOMRÅDEBEREDSKAPSVEG</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">T50</p></td>
 </tr>
 <tr>
@@ -10100,6 +10692,13 @@ Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB
 <td class="tableblock halign-left valign-top"><p class="tableblock">H3</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">merknad</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«codeList» Merknad</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..MERKNAD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T50</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">vedtaksnummer</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» CharacterString</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
@@ -10112,13 +10711,6 @@ Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..GYLDIGFRADATO</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">arkivnummer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..ARKIVNUMMER</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T250</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">arkivnummer</p></td>
@@ -10277,13 +10869,6 @@ Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB
 <td class="tableblock halign-left valign-top"><p class="tableblock">..PROSJEKTREFERANSE</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">T200</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">prosjektreferanse</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..PROSJEKTREFERANSE</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T200</p></td>
-</tr>
 </tbody>
 </table>
 <h5 id="_objekttype_ferjesamband" class="discrete">Objekttype: Ferjesamband</h5>
@@ -10406,13 +10991,6 @@ Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB
 <td class="tableblock halign-left valign-top"><p class="tableblock">..DRIFTTILDATO</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">T4</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">driftTilDato</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..DRIFTTILDATO</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T4</p></td>
-</tr>
 </tbody>
 </table>
 <h5 id="_objekttype_funksjonellvegklasse" class="discrete">Objekttype: FunksjonellVegklasse</h5>
@@ -10485,13 +11063,6 @@ Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..VEGKLASSE</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">merknad</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..MERKNAD</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T250</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">merknad</p></td>
@@ -10630,13 +11201,6 @@ Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB
 <td class="tableblock halign-left valign-top"><p class="tableblock">BOOLSK</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">unntakForTraktor</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..UNNTAKFORTRAKTOR</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">BOOLSK</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">gjelderHverdagerULørdagFraKl</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Time</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
@@ -10677,6 +11241,27 @@ Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..GJELDERSØNDAGTILKL</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">T20</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vedtaksnummer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..VEDTAKSNUMMER</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T30</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">arkivnummer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..ARKIVNUMMER</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T250</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">gyldigFraDato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..GYLDIGFRADATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
 </tr>
 </tbody>
 </table>
@@ -10897,11 +11482,25 @@ Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB
 <td class="tableblock halign-left valign-top"><p class="tableblock">T20</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">varetransportLørdagPeriode2TilKl</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Time</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vedtaksnummer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..VARETRANSPORTLØRDAGPERIODE2TILKL</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T20</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..VEDTAKSNUMMER</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T30</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">arkivnummer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..ARKIVNUMMER</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T250</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">gyldigFraDato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..GYLDIGFRADATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
 </tr>
 </tbody>
 </table>
@@ -10998,6 +11597,27 @@ Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB
 <td class="tableblock halign-left valign-top"><p class="tableblock">T50</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vedtaksnummer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..VEDTAKSNUMMER</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T30</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">arkivnummer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..ARKIVNUMMER</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T250</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">gyldigFraDato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..GYLDIGFRADATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">merknad</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» CharacterString</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
@@ -11045,13 +11665,6 @@ Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..MÅLEDATO</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">prosjektreferanse</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..PROSJEKTREFERANSE</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T200</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">prosjektreferanse</p></td>
@@ -11147,13 +11760,6 @@ Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB
 <td class="tableblock halign-left valign-top"><p class="tableblock">..TILLEGGSINFORMASJON</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">T250</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">tilleggsinformasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..TILLEGGSINFORMASJON</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T250</p></td>
-</tr>
 </tbody>
 </table>
 <h5 id="_objekttype_landbruksvegklasse" class="discrete">Objekttype: Landbruksvegklasse</h5>
@@ -11219,13 +11825,6 @@ Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..NVDBID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">T50</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">klasseLandbruksveg</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«codeList» KlasseLandbruksveg</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..KLASSELANDBRUKSVEG</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T40</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">klasseLandbruksveg</p></td>
@@ -11315,11 +11914,11 @@ Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB
 <td class="tableblock halign-left valign-top"><p class="tableblock">T15</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">arkivnummer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">gyldigFraDato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..ARKIVNUMMER</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T250</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..GYLDIGFRADATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">arkivnummer</p></td>
@@ -11517,11 +12116,25 @@ Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB
 <td class="tableblock halign-left valign-top"><p class="tableblock">T30</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">gjelderUkedag</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» GjelderUkedag</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vedtaksnummer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» CharacterString</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..GJELDERUKEDAG</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..VEDTAKSNUMMER</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">T30</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">arkivnummer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..ARKIVNUMMER</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T250</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">gyldigFraDato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..GYLDIGFRADATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
 </tr>
 </tbody>
 </table>
@@ -11597,11 +12210,25 @@ Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB
 <td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">syklingMotKjøreretningTillatt</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vedtaksnummer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..SYKLINGMOTKJØRERETNINGTILLATT</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..VEDTAKSNUMMER</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T30</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">arkivnummer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..ARKIVNUMMER</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T250</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">gyldigFraDato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..GYLDIGFRADATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
 </tr>
 </tbody>
 </table>
@@ -11733,11 +12360,25 @@ Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB
 <td class="tableblock halign-left valign-top"><p class="tableblock">T20</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">gjelderUkedag</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» GjelderUkedag</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vedtaksnummer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» CharacterString</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..GJELDERUKEDAG</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T20</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..VEDTAKSNUMMER</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T30</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">arkivnummer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..ARKIVNUMMER</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T250</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">gyldigFraDato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..GYLDIGFRADATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
 </tr>
 </tbody>
 </table>
@@ -11860,13 +12501,6 @@ Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">..STENGTUKEDAG</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">T10</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">eier</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«codeList» EierVegsperring</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..EIER</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T30</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">eier</p></td>
@@ -12067,13 +12701,6 @@ Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB
 <td class="tableblock halign-left valign-top"><p class="tableblock">..TILLEGGSINFORMASJON</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">T400</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">tilleggsinformasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» CharacterString</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..TILLEGGSINFORMASJON</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">T400</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -12087,7 +12714,7 @@ Disse meldingene kan etter en vurdering mot andre datakilder bli lagt inn i NVDB
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://skjema.geonorge.no/SOSI/produktspesifikasjon/NVDBVegnettPluss/1.0/NVDBVegnettPluss.xsd">GML-Skjema</a></p>
+<p><a href="https://skjema.geonorge.no/SOSI/produktspesifikasjon/NVDBVegnettPluss/1.1/NVDBVegnettPluss.xsd">GML-Skjema</a></p>
 </li>
 </ul>
 </div>
@@ -12151,8 +12778,8 @@ av denne lisensen og ikke kan viderebrukes</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Versjon 1.0<br>
-Last updated 2025-02-05 12:39:11 +0100
+Versjon 1.1<br>
+Last updated 2025-09-01 13:15:41 +0200
 </div>
 </div>
 </body>
