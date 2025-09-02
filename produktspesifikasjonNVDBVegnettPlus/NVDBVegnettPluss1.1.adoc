@@ -45,9 +45,10 @@ Fortau, gangveger og gangfelt skulle også overføres fra FKB Traktorveg/Sti. NV
 
 ==== Endringer fra NVDB Vegnett Pluss 1.0 til NVDB Vegnett Pluss 1.1
 
-Vedtaksregister for skiltvedtak: endringer på objekttyper som har en sammenheng med trafikkskilt for å sikre en god integrering mellom vedtaksregisteret og NVDB. Egenskaper: «vedtaksnummer», «arkivnummer» og «gyldigFraDato» leges til objekttyper: Svingerestriksjon, Motorveg, TillattKjøreretning, Gågatereguleringer, Trafikkreguleringer, GjennomkjøringForbudt og Høydebegrensning
+*Vedtaksregister for skiltvedtak:* Endringer på objekttyper som har en sammenheng med trafikkskilt for å sikre en god integrering mellom 
+vedtaksregisteret og NVDB. Egenskapene «vedtaksnummer», «arkivnummer» og «gyldigFraDato» er lagt til på objekttypene Svingerestriksjon, Motorveg, TillattKjøreretning, Gågatereguleringer, Trafikkreguleringer, GjennomkjøringForbudt og Høydebegrensning
 
-Fartsgrenser på privat veg: Objekttypen Fartsgrense får ny egenskap for å kunne begrunne avvik fra generelle fartsgrenser på privat veg. Ny egenskap «Merknad» har tre tillatte verdier: «Privat skiltet», «Privat veg innenfor fartsgrensesone» og «Privat adkomst». 
+*Fartsgrenser på privat veg:* Objekttypen Fartsgrense får ny egenskap for å kunne begrunne avvik fra generelle fartsgrenser på privat veg. Ny egenskap «Merknad» har tre tillatte verdier: «Privat skiltet», «Privat veg innenfor fartsgrensesone» og «Privat adkomst». 
 
 ==== Endringer fra Elveg 2.0 til NVDB Vegnett Pluss 1.0
 
