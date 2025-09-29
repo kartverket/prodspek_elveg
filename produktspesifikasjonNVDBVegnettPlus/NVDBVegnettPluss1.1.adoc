@@ -3,8 +3,8 @@
 :versjon: 1.1
 :skjemaversjon: {versjon}
 :underversjon: 2025-09-01
-:publisert: 2025-09-01
-:dokumentstatus: 4
+:publisert: 2025-09-29
+:dokumentstatus: 1
 // All informasjon i hode over denne linja må fylles ut for hvert datasett. Øvrige parametere settes i adoc_parametere.adoc
 include::inkluder/filhode.adoc[]
 
@@ -49,6 +49,8 @@ Fortau, gangveger og gangfelt skulle også overføres fra FKB Traktorveg/Sti. NV
 vedtaksregisteret og NVDB. Egenskapene «vedtaksnummer», «arkivnummer» og «gyldigFraDato» er lagt til på objekttypene Svingerestriksjon, Motorveg, TillattKjøreretning, Gågatereguleringer, Trafikkreguleringer, GjennomkjøringForbudt og Høydebegrensning
 
 *Fartsgrenser på privat veg:* Objekttypen Fartsgrense får ny egenskap for å kunne begrunne avvik fra generelle fartsgrenser på privat veg. Ny egenskap «Merknad» har tre tillatte verdier: «Privat skiltet», «Privat veg innenfor fartsgrensesone» og «Privat adkomst». 
+
+*Feilretting på SOSI-tagger:* Rettet SOSI-tagger (SOSI_lengde/SOSI_datatype) på en del egenskaper slik at det samsvarer med datatype. Alle egenskaper med datatype boolean har SOSI_datatype BOOLSK
 
 ==== Endringer fra Elveg 2.0 til NVDB Vegnett Pluss 1.0
 
