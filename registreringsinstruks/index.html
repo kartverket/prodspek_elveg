@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.20">
+<meta name="generator" content="Asciidoctor 2.0.26">
 <meta name="author" content="Geovekst">
 <title>Registreringsinstruks: Fotogrammetrisk Elveg</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -117,7 +117,6 @@ h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title str
 :not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
 pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
 pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
-pre>code{display:block}
 pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
 em em{font-style:normal}
 strong strong{font-weight:400}
@@ -141,7 +140,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #content::before{content:none}
 #header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
 #header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
-#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header>h1:only-child{border-bottom:1px solid #dddddf;padding-bottom:8px}
 #header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
 #header .details span:first-child{margin-left:-.125em}
 #header .details span.email a{color:rgba(0,0,0,.85)}
@@ -163,6 +162,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #toctitle{color:#7a2518;font-size:1.2em}
 @media screen and (min-width:768px){#toctitle{font-size:1.375em}
 body.toc2{padding-left:15em;padding-right:0}
+body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
 #toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
 #toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
 #toc.toc2>ul{font-size:.9em;margin-bottom:0}
@@ -219,6 +219,7 @@ table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
 .literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
 .literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
 .listingblock>.content{position:relative}
+.listingblock pre>code{display:block}
 .listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
 .listingblock:hover code[data-lang]::before{display:block}
 .listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
@@ -328,7 +329,7 @@ a.image{text-decoration:none;display:inline-block}
 a.image object{pointer-events:none}
 sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
 sup.footnote a,sup.footnoteref a{text-decoration:none}
-sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+sup.footnote a:active,sup.footnoteref a:active,#footnotes .footnote a:first-of-type:active{text-decoration:underline}
 #footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
 #footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
 #footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
@@ -453,9 +454,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_endringslogg">1.2. Endringslogg</a>
 <ul class="sectlevel3">
-<li><a href="#_endringer_fra_versjon_5_0_2023_01_01_til_versjon_5_0_2024_01_01">1.2.1. Endringer fra versjon 5.0 2023-01-01 til versjon 5.0 2024-01-01:</a></li>
-<li><a href="#_endringer_fra_versjon_5_0_2022_01_01_til_versjon_5_0_2023_01_01">1.2.2. Endringer fra versjon 5.0 2022-01-01 til versjon 5.0 2023-01-01:</a></li>
-<li><a href="#_endringer_fra_fkb_vegnett_versjon_4_6_2018_01_01_til_versjon_5_0_2023_01_01">1.2.3. Endringer fra FKB-Vegnett versjon 4.6 2018-01-01 til versjon 5.0 2023-01-01:</a></li>
+<li><a href="#_endringer_fra_versjon_5_0_2024_01_01_til_xxx">1.2.1. Endringer fra versjon 5.0 2024-01-01 til xxx:</a></li>
+<li><a href="#_endringer_fra_versjon_5_0_2023_01_01_til_versjon_5_0_2024_01_01">1.2.2. Endringer fra versjon 5.0 2023-01-01 til versjon 5.0 2024-01-01:</a></li>
+<li><a href="#_endringer_fra_versjon_5_0_2022_01_01_til_versjon_5_0_2023_01_01">1.2.3. Endringer fra versjon 5.0 2022-01-01 til versjon 5.0 2023-01-01:</a></li>
+<li><a href="#_endringer_fra_fkb_vegnett_versjon_4_6_2018_01_01_til_versjon_5_0_2023_01_01">1.2.4. Endringer fra FKB-Vegnett versjon 4.6 2018-01-01 til versjon 5.0 2023-01-01:</a></li>
 </ul>
 </li>
 </ul>
@@ -577,7 +579,29 @@ SOSI Elveg 2.0.</p>
 <div class="sect2">
 <h3 id="_endringslogg">1.2. Endringslogg</h3>
 <div class="sect3">
-<h4 id="_endringer_fra_versjon_5_0_2023_01_01_til_versjon_5_0_2024_01_01">1.2.1. Endringer fra versjon 5.0 2023-01-01 til versjon 5.0 2024-01-01:</h4>
+<h4 id="_endringer_fra_versjon_5_0_2024_01_01_til_xxx">1.2.1. Endringer fra versjon 5.0 2024-01-01 til xxx:</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>I kapittel 3.2.3 Registrering av veglenker for gående/syklende presisering og ny figur for registrering av trapper med korte avsatser.</p>
+</li>
+<li>
+<p>I kap.3.2.1 Generelt angående registrering av veglenker og nettverkstopolpogi rettet figurhenvisning.</p>
+</li>
+<li>
+<p>I kap.3.2.8 Registrering av veglenker for kjørende rettet figurhenvisning og henvisning til produktspesifikasjon istedenfor registreringsinstruks.</p>
+</li>
+<li>
+<p>I kap.5.1 Registrering av nye veglenker rettet figurhenvisninger.</p>
+</li>
+<li>
+<p>I kap.5.2 Sletting av eksisterende veglenker rettet figurhenvisninger.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_endringer_fra_versjon_5_0_2023_01_01_til_versjon_5_0_2024_01_01">1.2.2. Endringer fra versjon 5.0 2023-01-01 til versjon 5.0 2024-01-01:</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -605,7 +629,7 @@ SOSI Elveg 2.0.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_endringer_fra_versjon_5_0_2022_01_01_til_versjon_5_0_2023_01_01">1.2.2. Endringer fra versjon 5.0 2022-01-01 til versjon 5.0 2023-01-01:</h4>
+<h4 id="_endringer_fra_versjon_5_0_2022_01_01_til_versjon_5_0_2023_01_01">1.2.3. Endringer fra versjon 5.0 2022-01-01 til versjon 5.0 2023-01-01:</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -642,7 +666,7 @@ SOSI Elveg 2.0.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_endringer_fra_fkb_vegnett_versjon_4_6_2018_01_01_til_versjon_5_0_2023_01_01">1.2.3. Endringer fra FKB-Vegnett versjon 4.6 2018-01-01 til versjon 5.0 2023-01-01:</h4>
+<h4 id="_endringer_fra_fkb_vegnett_versjon_4_6_2018_01_01_til_versjon_5_0_2023_01_01">1.2.4. Endringer fra FKB-Vegnett versjon 4.6 2018-01-01 til versjon 5.0 2023-01-01:</h4>
 <div class="paragraph">
 <p>Produktspesifikasjon Elveg 2.0 er første versjon og er en videreutvikling av FKB-Vegnett, Vbase og Elveg.
 De største endringene fra fotogrammetrisk FKB-Vegnett versjon 4.6 – 2018-01-01 til Elveg 2.0 er:</p>
@@ -1013,13 +1037,13 @@ Konnekteringslenker skal ikke nyregistreres ved fotogrammetrisk datafangst. Alle
 <div class="paragraph">
 <p>I kryss vil man få en liten strekning med overlapp mellom vegene, der veglenken går over en annen veg sin flate. Her er det den veg som er «viktigst» som «eier» strekningen, og alle andre veger får konnektering fra den viktigste vegens flatekant og inn til kryssets sentrum. Se skisseeksempler under.</p>
 </div>
-<div class="imageblock">
+<div id="NVDB_konnekteringslenker_rundkjoring" class="imageblock">
 <div class="content">
 <img src="figurer/NVDB_konnekteringslenker_rundkjoring.png" alt="NVDB konnekteringslenker rundkjoring">
 </div>
 <div class="title">Figur 1. Eksempel på eksisterende konnekteringslenker fra NVDB over en rundkjøringsflate i Elveg.</div>
 </div>
-<div class="imageblock">
+<div id="NVDB_konnekteringslenker_t-kryss" class="imageblock">
 <div class="content">
 <img src="figurer/NVDB_konnekteringslenker_t-kryss.png" alt="NVDB konnekteringslenker t kryss">
 </div>
@@ -1374,7 +1398,7 @@ Veglenke for gatetun registreres som senterlinje midt mellom oppmerkede kantlinj
 </tbody>
 </table>
 <div class="paragraph">
-<p>Veglenker med typeveg-koder i <a href="#tab-typeveg-kjorende">Typeveg-koder for kjørende i Elveg 2.0 og FKB-Veg 5.0</a> skal alltid samsvare med en flate med samme typeveg-kode i FKB-Veg.</p>
+<p>Veglenker med typeveg-koder i <a href="#tab-typeveg-kjorende">Tabell 3</a> skal alltid samsvare med en flate med samme typeveg-kode i FKB-Veg.</p>
 </div>
 <table id="tab-typeveg-gaende" class="tableblock frame-all grid-all stretch">
 <caption class="title">Tabell 4. <a href="https://register.geonorge.no/sosi-kodelister/fkb/veg/5.0/typeveggaendeogsyklende">Typeveg-koder for gående og syklende i Elveg 2.0 og FKB-Veg 5.0</a></caption>
@@ -1431,6 +1455,13 @@ Sykkelveg kan være fremkommelig for kjøretøy, men er normalt ikke åpen for a
 <td class="tableblock halign-left valign-top"><p class="tableblock">sykkel</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sykkelfelt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Felt i vegbanen bestemt for syklende. Feltet er skilt fra andre kjørefelt med stiplet oppmerking og eventuelt farget vegdekke. Normalt skiltet med skilt 521.1 (sykkelfelt - sideplassert) eller 521.2 (sykkelfelt - midtplassert).</p>
+<p class="tableblock"><strong>Regler for fotogrammetrisk registering</strong>:<br>
+Veglenke for sykkelfelt registreres som senterlinje i sykkelfeltarealet.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sykkelfelt</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Trapp</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Trapp som inngår i nettverket for gående (og syklende).</p>
 <p class="tableblock"><strong>Regler for fotogrammetrisk registering</strong>:<br>
@@ -1448,12 +1479,12 @@ Veglenke for gangfelt registreres som senterlinje i oppmerket kryssingssted for 
 </tbody>
 </table>
 <div class="paragraph">
-<p>Veglenker med typeveg-koder i <a href="#tab-typeveg-gaende">Typeveg-koder for gående og syklende i Elveg 2.0 og FKB-Veg 5.0</a> skal alltid samsvare med en flate med samme typeveg-kode i FKB-Veg med unntak av for <em>Gangfelt</em> og <em>Trapp</em>.</p>
+<p>Veglenker med typeveg-koder i <a href="#tab-typeveg-gaende">Tabell 4</a> skal alltid samsvare med en flate med samme typeveg-kode i FKB-Veg med unntak av for <em>Gangfelt</em> og <em>Trapp</em>.</p>
 </div>
 <div class="sect3">
 <h4 id="_generelt_angående_registrering_av_veglenker_og_nettverkstopolpogi">3.2.1. Generelt angående registrering av veglenker og nettverkstopolpogi</h4>
 <div class="paragraph">
-<p>Målet er et sammenhengende nettverk for både gående og kjørende. Noen ganger er det også naturlig og nødvendig å binde veglenker for gående og syklende sammen mot veglenker for kjørende. Av og til må vi også akseptere løse ender i nettverket der det er fysisk "umulig" eller ulogisk (se eksempel i figur 8 i Registreringsinstruks: Fotogrammetrisk Elveg) å ta seg videre, enten som gående eller kjørende.</p>
+<p>Målet er et sammenhengende nettverk for både gående og kjørende. Noen ganger er det også naturlig og nødvendig å binde veglenker for gående og syklende sammen mot veglenker for kjørende. Av og til må vi også akseptere løse ender i nettverket der det er fysisk "umulig" eller ulogisk (se eksempel i <a href="#busslomme_nyregistrert">Figur 11</a> i Registreringsinstruks: Fotogrammetrisk Elveg) å ta seg videre, enten som gående eller kjørende.</p>
 </div>
 <div class="paragraph">
 <p>På tidligere leveranser ser vi at det er en del hull i nettverket, spesielt mellom nye veglenker eller mellom nye veglenker og eksisterende veglenker for gående. Registreringsinstruksen beskriver dessverre langt ifra alle disse situasjonene men følgende eksempler prøver å presisere hva som skal gjøres ved enkelte situasjoner.</p>
@@ -1470,61 +1501,61 @@ Veglenke for gangfelt registreres som senterlinje i oppmerket kryssingssted for 
 <div class="paragraph">
 <p>I noen av eksemplene vises de mest typiske situasjonene der veglenker under 2 meter (i forbindelse med Gangfelt) nå forlenges utover egen utstrekning og konnekteres mot nærmeste veglenke.</p>
 </div>
-<div class="imageblock">
+<div id="Veglenker1" class="imageblock">
 <div class="content">
 <img src="figurer/Veglenker1.png" alt="Veglenker1">
 </div>
 <div class="title">Figur 3. Figuren viser eksempel på registrering av flere ulike typer veg. Rundkjøring registreres i senter av sirkulasjonsarealet uavhengig av antall kjørefelt</div>
 </div>
-<div class="imageblock">
+<div id="Veglenker2" class="imageblock">
 <div class="content">
 <img src="figurer/Veglenker2.png" alt="Veglenker2">
 </div>
 <div class="title">Figur 4. Figuren viser registrering av flere ulike typer veg i et fullkanalisert T-kryss med svingefelt. I de aller fleste tilfeller vil topologien i slike kryss være etablert og skal da ikke endres ved fotogrammetrisk registrering. Fotogrammetrisk registrering vil i hovedsak gå ut på forbedring av geometri der kriteriene for dette er tilstede.</div>
 </div>
-<div class="imageblock">
+<div id="Veglenker3" class="imageblock">
 <div class="content">
 <img src="figurer/Veglenker3.png" alt="Veglenker3">
 </div>
 <div class="title">Figur 5. Figuren viser registrering av flere ulike typer veg</div>
 </div>
-<div class="imageblock">
+<div id="veglenker" class="imageblock">
 <div class="content">
 <img src="figurer/veglenker.png" alt="veglenker">
 </div>
 <div class="title">Figur 6. Eksemplet viser hvordan veglenkene i Elveg skal henge sammen. Det presiseres at ved parallelle lenker forlenges hver lenke (her sykkelveg og fortau) mot nærmest tilstøtende veglenke (her fortau) når fysisk skille mellom veglenker opphører og avstanden er kortere enn 10 meter.</div>
 </div>
-<div class="imageblock">
+<div id="gatetun" class="imageblock">
 <div class="content">
 <img src="figurer/gatetun.png" alt="gatetun">
 </div>
 <div class="title">Figur 7. Venstre skisse viser eksempel på gatetun. Høyre skisse viser gågate</div>
 </div>
-<div class="imageblock">
+<div id="kanalisert" class="imageblock">
 <div class="content">
 <img src="figurer/kanalisert.png" alt="kanalisert">
 </div>
 <div class="title">Figur 8. Start- og sluttpunkt for kanalisert veg settes normalt 10 meter før- og etter fysisk hinder</div>
 </div>
-<div class="imageblock">
+<div id="plankryss_rampe" class="imageblock">
 <div class="content">
 <img src="figurer/plankryss_rampe.png" alt="plankryss rampe">
 </div>
 <div class="title">Figur 9. Bildet viser eksempel på et planskilt kryss med rampesystem</div>
 </div>
-<div class="imageblock">
+<div id="rampe" class="imageblock">
 <div class="content">
 <img src="figurer/rampe.png" alt="rampe">
 </div>
 <div class="title">Figur 10. Figuren viser registrering av start og slutt for av- og påkjøringsrampe</div>
 </div>
-<div class="imageblock">
+<div id="busslomme_nyregistrert" class="imageblock">
 <div class="content">
 <img src="figurer/busslomme_nyregistrert.png" alt="busslomme nyregistrert">
 </div>
 <div class="title">Figur 11. Eksempel på start/slutt nyregistrert gangveg ved busslomme. Fysisk adskilt trafikklomme registrert som enkel bilveg. Dette er et eksempel på "lovlig løs ende" i nettverket for gående.</div>
 </div>
-<div class="imageblock">
+<div id="busslomme2_eksisterende" class="imageblock">
 <div class="content">
 <img src="figurer/busslomme2_eksisterende.png" alt="busslomme2 eksisterende">
 </div>
@@ -1536,7 +1567,7 @@ Veglenke for gangfelt registreres som senterlinje i oppmerket kryssingssted for 
 <div class="paragraph">
 <p>Under vises et eksempel på registrering av en utydelig typeveg mellom fortau (fra sør) og gangfelt (til venstre) – markert med rødt i figuren). Disse typevegene er meget vanskelige å skille på ved registrering, derfor skal typeveg kodes som gangveg ved fotogrammetrisk nyregistrering og ev. justeres administrativt.</p>
 </div>
-<div class="imageblock">
+<div id="veglenke_gangveg" class="imageblock">
 <div class="content">
 <img src="figurer/veglenke_gangveg.png" alt="veglenke gangveg">
 </div>
@@ -1545,11 +1576,20 @@ Veglenke for gangfelt registreres som senterlinje i oppmerket kryssingssted for 
 <div class="paragraph">
 <p>Under vises et eksempel på registrering på registrering av veglenke mellom to gangfelt (markert i rødt i figuren). Hvis lengde er under minstemål for registrering av veglenker (2m) registreres gangfeltet sammenhengende. Hvis lengde er over minstemål registreres veglenken mellom gangfeltene som gangveg fotogrammetrisk og justeres ev. administrativt. Ved eksisterende veglenke (gang- og sykkelveg) over gangfelt kan veglenke splittes opp og gis ny typeveg og endret type E, hvis eksiterende veglenke oppfyller kravene for nøyaktighet.</p>
 </div>
-<div class="imageblock">
+<div id="veglenke_gangfelt" class="imageblock">
 <div class="content">
 <img src="figurer/veglenke_gangfelt.png" alt="veglenke gangfelt">
 </div>
 <div class="title">Figur 14. Eksemplet viser registrering av veglenke mellom to typeveg gangfelt.</div>
+</div>
+<div class="paragraph">
+<p>I trapper med avsatser, der avstand mellom trinnene er under 2 meter, skal hele strekningen registreres som trapp. Figuren under viser eksempel på riktig registrering.</p>
+</div>
+<div id="veglenke_trapp2m" class="imageblock">
+<div class="content">
+<img src="figurer/veglenke_trapp2m.png" alt="veglenke trapp2m">
+</div>
+<div class="title">Figur 15. Eksempel på registrering av trapp med kort trappeavsats (&lt;2m). Hele strekningen skal registreres som trapp.</div>
 </div>
 </div>
 <div class="sect3">
@@ -1560,26 +1600,26 @@ Veglenke for gangfelt registreres som senterlinje i oppmerket kryssingssted for 
 <div class="paragraph">
 <p>Disse veglenkene skal registreres fotogrammetrisk (ikke konnekteringslenke).</p>
 </div>
-<div class="imageblock">
+<div id="korte_veglenker1" class="imageblock">
 <div class="content">
 <img src="figurer/korte_veglenker1.png" alt="korte veglenker1">
 </div>
-<div class="title">Figur 15. Et eksempel på kortere veglenke (&gt;2m) som danner topologi mellom gangfelt og gang- og sykkelveg, på begge sider om bilvegen.</div>
+<div class="title">Figur 16. Et eksempel på kortere veglenke (&gt;2m) som danner topologi mellom gangfelt og gang- og sykkelveg, på begge sider om bilvegen.</div>
 </div>
-<div class="imageblock">
+<div id="korte_veglenker2" class="imageblock">
 <div class="content">
 <img src="figurer/korte_veglenker2.png" alt="korte veglenker2">
 </div>
-<div class="title">Figur 16. Et eksempel på kortere veglenke (&gt;2m) som danner topologi mellom to gang- og sykkelveger.</div>
+<div class="title">Figur 17. Et eksempel på kortere veglenke (&gt;2m) som danner topologi mellom to gang- og sykkelveger.</div>
 </div>
 <div class="paragraph">
 <p>Manglende «nettverk» ved trapper.</p>
 </div>
-<div class="imageblock">
+<div id="korte_veglenker3" class="imageblock">
 <div class="content">
 <img src="figurer/korte_veglenker3_trapper.png" alt="korte veglenker3 trapper">
 </div>
-<div class="title">Figur 17. Når avstanden er kortere enn 2m skal trapp forlenges mot nærmeste veglenke. Når avstanden er over 2m skal egen veglenke registreres, fortrinnsvis med typeveg gangveg mellom trapper og/eller mot tilgrensende veglenker for gående (se bildeeksempel til høyre).</div>
+<div class="title">Figur 18. Når avstanden er kortere enn 2m skal trapp forlenges mot nærmeste veglenke. Når avstanden er over 2m skal egen veglenke registreres, fortrinnsvis med typeveg gangveg mellom trapper og/eller mot tilgrensende veglenker for gående (se bildeeksempel til høyre).</div>
 </div>
 </div>
 <div class="sect3">
@@ -1590,32 +1630,32 @@ Veglenke for gangfelt registreres som senterlinje i oppmerket kryssingssted for 
 <div class="paragraph">
 <p>Disse veglenkene kan registreres fotogrammetrisk etter manus (ikke konnekteringslenke).</p>
 </div>
-<div class="imageblock">
+<div id="lengre_veglenker_manus1" class="imageblock">
 <div class="content">
 <img src="figurer/lengre_veglenker_manus1.png" alt="lengre veglenker manus1">
 </div>
-<div class="title">Figur 18. Eksempelet viser en veglenke som kan registreres (med typeveg gangveg) etter manus. Denne skal knyttes sammen mot fortau i nord og mot fortau (manglende veglenke for trapp og veglenke videre fra trapp mot fortau vises også i blått i bildet) i sørøst.</div>
+<div class="title">Figur 19. Eksempelet viser en veglenke som kan registreres (med typeveg gangveg) etter manus. Denne skal knyttes sammen mot fortau i nord og mot fortau (manglende veglenke for trapp og veglenke videre fra trapp mot fortau vises også i blått i bildet) i sørøst.</div>
 </div>
-<div class="imageblock">
+<div id="lengre_veglenker_manus2" class="imageblock">
 <div class="content">
 <img src="figurer/lengre_veglenker_manus2.png" alt="lengre veglenker manus2">
 </div>
-<div class="title">Figur 19. Eksempelet viser en veglenke som kan registreres (med typeveg fortau) etter manus. Denne skal knyttes sammen mot bilveg i nordvest og mot fortau i sørøst.</div>
+<div class="title">Figur 20. Eksempelet viser en veglenke som kan registreres (med typeveg fortau) etter manus. Denne skal knyttes sammen mot bilveg i nordvest og mot fortau i sørøst.</div>
 </div>
 <div class="paragraph">
 <p>Veglenkene i eksemplene under bør kunne registreres fotogrammetrisk uten manus (ikke konnekteringslenke). De har enten tydelige eksisterende avgrensningslinjer og/eller nærliggende nyregistrerte veglenker (med løse ender) som det er naturlig å knytte disse til.</p>
 </div>
-<div class="imageblock">
+<div id="lengre_veglenker3" class="imageblock">
 <div class="content">
 <img src="figurer/lengre_veglenker3.png" alt="lengre veglenker3">
 </div>
-<div class="title">Figur 20. Eksempelet viser en veglenke som går over en litt lengre strekning men som samtidig har tydelige avgrensingslinjer (kaibryggekant/bru). Derfor skal denne typen veglenker registreres fotogrammetrisk. Veglenke skal registreres med typeveg gangveg som knyttes sammen med gangveg i øst (manglende veglenke for trapp og videre mot gangveg, vises også i blått i bildet) og i vest.</div>
+<div class="title">Figur 21. Eksempelet viser en veglenke som går over en litt lengre strekning men som samtidig har tydelige avgrensingslinjer (kaibryggekant/bru). Derfor skal denne typen veglenker registreres fotogrammetrisk. Veglenke skal registreres med typeveg gangveg som knyttes sammen med gangveg i øst (manglende veglenke for trapp og videre mot gangveg, vises også i blått i bildet) og i vest.</div>
 </div>
-<div class="imageblock">
+<div id="lengre_veglenker4" class="imageblock">
 <div class="content">
 <img src="figurer/lengre_veglenker4.png" alt="lengre veglenker4">
 </div>
-<div class="title">Figur 21. Eksempelet viser en veglenke som går over en litt lengre strekning men som samtidig har nyregistrerte veglenker i begge ender (med typeveg fortau). Derfor skal denne typen veglenker registreres fotogrammetrisk. Veglenke skal registreres med typeveg fortau som knyttes sammen med nyregistrerte fortau i både nordøst og sørvest. Eksempelet viser også en manglende veglenke fra gangfelt til eksisterende gang- og sykkelveg, som kan beskrives som en kortere veglenke som skal registreres fotogrammetrisk, se kapittel "Korte (&gt;2m), naturlige forbindelser for gående og syklende".</div>
+<div class="title">Figur 22. Eksempelet viser en veglenke som går over en litt lengre strekning men som samtidig har nyregistrerte veglenker i begge ender (med typeveg fortau). Derfor skal denne typen veglenker registreres fotogrammetrisk. Veglenke skal registreres med typeveg fortau som knyttes sammen med nyregistrerte fortau i både nordøst og sørvest. Eksempelet viser også en manglende veglenke fra gangfelt til eksisterende gang- og sykkelveg, som kan beskrives som en kortere veglenke som skal registreres fotogrammetrisk, se kapittel "Korte (&gt;2m), naturlige forbindelser for gående og syklende".</div>
 </div>
 </div>
 <div class="sect3">
@@ -1638,53 +1678,53 @@ Eksisterende veglenker med konnekteringslenke ja skal geometriforbedres dersom t
 <div class="paragraph">
 <p>Det presiseres at gangveger som ikke er til felles anvendelse (eksempler kan være inne på områder til barnehager eller eldresenter) eller som blir liggende som løst nettverk ikke skal registreres. Det skal heller ikke registreres gangveger i forbindelse med eneboliger eller på inngjerdet område av privat karakter.</p>
 </div>
-<div class="imageblock">
+<div id="Gangveg1_Veg" class="imageblock">
 <div class="content">
 <img src="figurer/Gangveg1_Veg.png" alt="Bilde av gangveger">
 </div>
-<div class="title">Figur 22. Eksempel på hvordan "hovegangvegene" kan registreres på en gravplass.</div>
+<div class="title">Figur 23. Eksempel på hvordan "hovegangvegene" kan registreres på en gravplass.</div>
 </div>
-<div class="imageblock">
+<div id="Gangveg2_Veg" class="imageblock">
 <div class="content">
 <img src="figurer/Gangveg2_Veg.png" alt="Bilde av gangveger">
 </div>
-<div class="title">Figur 23. Eksempel på gangveger som ikke skal registreres, i dette fallet gangareal som er innegjerdet i en barnehage.</div>
+<div class="title">Figur 24. Eksempel på gangveger som ikke skal registreres, i dette fallet gangareal som er innegjerdet i en barnehage.</div>
 </div>
-<div class="imageblock">
+<div id="Rulleskiloype" class="imageblock">
 <div class="content">
 <img src="figurer/Rulleskiloype.png" alt="Bilde av gangveger">
 </div>
-<div class="title">Figur 24. Eksempel på rulleskiløype som skal registeres som gangveg.</div>
+<div class="title">Figur 25. Eksempel på rulleskiløype som skal registeres som gangveg.</div>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_sykkelfelt_i_vegbanen">3.2.7. Sykkelfelt i vegbanen</h4>
 <div class="paragraph">
-<p>Sykkelfelt med langsgående oppmerking er egne kjørefelt i kjørebanen og skal ikke ha egne veglenker i nettverket.</p>
+<p>Sykkelfelt er kjørefelt bestemt for syklende. Disse ligger som en del av vegbanen, og er skilt fra andre kjørefelt med langsgående oppmerking og ofte også rød farge på vegdekket. Sykkelfelt er oftest plassert i ytterkant av vegbanen (sideplassert), men kan også være midtplassert. <a href="#typeveg_sykkelfelt">Figur 26</a> og <a href="#sykkelfelt2">Figur 27</a> viser eksempler på registrering av sykkelfelt.</p>
 </div>
-<div class="imageblock">
+<div id="typeveg_sykkelfelt" class="imageblock">
 <div class="content">
-<img src="figurer/sykkelfelt1.png" alt="sykkelfelt1">
+<img src="figurer/typeveg_sykkelfelt.png" alt="typeveg sykkelfelt">
 </div>
-<div class="title">Figur 25. Pilen i bildet viser innsynsretning for bildeeksempelet under.</div>
+<div class="title">Figur 26. Eksempel på registrering av sykkelfelt i vegbanen.</div>
 </div>
-<div class="imageblock">
+<div id="sykkelfelt2" class="imageblock">
 <div class="content">
 <img src="figurer/sykkelfelt2.png" alt="sykkelfelt2">
 </div>
-<div class="title">Figur 26. Eksempel på registrering av sykkelfelt i vegbanen. Sykkelfelt har ingen egen veglenke i FKB 5.0. Den inngår i vegflaten og avgrensningen av sykkelfeltet registreres med objekttypen vegoppmerking (opsjon). For beskrivelse av objekttyper og typeveg, se bilde.</div>
+<div class="title">Figur 27. Eksempel på registrering av sykkelfelt i vegbanen, inkludert registrering av omkringliggende objekter i NVDB Vegnett Pluss og FKB-Veg. For beskrivelse av objekttyper og typeveg, se bilde.</div>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_registrering_av_veglenker_for_kjørende">3.2.8. Registrering av veglenker for kjørende</h4>
 <div class="paragraph">
-<p>Under vises et eksempel på registrering av et svingefelt (høyresvingefelt – markert med rødt i figuren). Svingefelt skal registreres med typeveg kanalisert veg. Ellers gjelder teksten fra figur 2 i produktspesifikasjonen for Elveg: "I de aller fleste tilfeller vil topologien i slike kryss være etablert og skal da ikke endres ved fotogrammetrisk registrering. Fotogrammetrisk registrering vil i hovedsak gå ut på forbedring av geometri der kriteriene for dette er til stede".</p>
+<p>Under vises et eksempel på registrering av et svingefelt (høyresvingefelt – markert med rødt i figuren). Svingefelt skal registreres med typeveg kanalisert veg. Ellers gjelder teksten fra <a href="#Veglenker2">Figur 4</a> i Fotogrammetrisk registreringsinstruks for Elveg: "I de aller fleste tilfeller vil topologien i slike kryss være etablert og skal da ikke endres ved fotogrammetrisk registrering. Fotogrammetrisk registrering vil i hovedsak gå ut på forbedring av geometri der kriteriene for dette er til stede".</p>
 </div>
-<div class="imageblock">
+<div id="veglenke_kanalisert_veg" class="imageblock">
 <div class="content">
 <img src="figurer/veglenke_kanalisert_veg.png" alt="veglenke kanalisert veg">
 </div>
-<div class="title">Figur 27. Eksemplet viser registrering av veglenke med typeveg kanalisert veg for svingefelt.</div>
+<div class="title">Figur 28. Eksemplet viser registrering av veglenke med typeveg kanalisert veg for svingefelt.</div>
 </div>
 </div>
 <div class="sect3">
@@ -1696,11 +1736,11 @@ Eksisterende veglenker med konnekteringslenke ja skal geometriforbedres dersom t
 <p>Eksisterende veglenker med konnekteringslenke ja skal bare slettes dersom veglenka den skaper forbindelse til også slettes.
 Eksisterende veglenker med konnekteringslenke ja skal geometriforbedres dersom tilstøtende veglenker geometriforbedres.</p>
 </div>
-<div class="imageblock">
+<div id="Forlengelse1_Elveg" class="imageblock">
 <div class="content">
 <img src="figurer/Forlengelse1_Elveg.png" alt="Bilde av forlenget veglenke">
 </div>
-<div class="title">Figur 28. Eksempel på veglenke som skal forlenges (rød pil i bildet) mot nærmest annen veglenke for ruting for gående til/fra et busstopp.</div>
+<div class="title">Figur 29. Eksempel på veglenke som skal forlenges (rød pil i bildet) mot nærmest annen veglenke for ruting for gående til/fra et busstopp.</div>
 </div>
 </div>
 <div class="sect3">
@@ -1708,11 +1748,11 @@ Eksisterende veglenker med konnekteringslenke ja skal geometriforbedres dersom t
 <div class="paragraph">
 <p>Selv om kravet for konsekvensretting mellom veglenke og vegflate er +-10 meter skal kortere veglenker registreres for mindre flater/arealer der eneste naturlige ruting for gående og syklende er over veg (for kjørende) for å komme seg videre.</p>
 </div>
-<div class="imageblock">
+<div id="Manglende1_Elveg" class="imageblock">
 <div class="content">
 <img src="figurer/Manglende1_Elveg.png" alt="Bilde av mindre flater/areal uten veglenke">
 </div>
-<div class="title">Figur 29. Eksempel på veglenke (rød pil i bildet) som skal registreres over mindre flater/arealer for ruting videre for gående og syklende.</div>
+<div class="title">Figur 30. Eksempel på veglenke (rød pil i bildet) som skal registreres over mindre flater/arealer for ruting videre for gående og syklende.</div>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -2027,16 +2067,16 @@ Eksisterende veglenker med konnekteringslenke ja skal geometriforbedres dersom t
 <p>Veglenke kan registreres for veger med lengde under 50 meter selv om ingen av de andre kriteriene er oppfylt dersom dette er naturlig for en helhetlig forståelse/bruk av vegnettet, for eksempel ved avkjøringer til store/sentrale bygninger. Veglenker skal ikke registreres for veger med lengde under 20 meter uten at kriterium 2 er oppfylt.</p>
 </div>
 <div class="paragraph">
-<p>Det skal være topologi (nodepunkt) internt i nykonstruerte veglenker, men det skal ikke etableres nodepunkt eller konnekteringspunkt mot eksisterende veglenker. Se figur 10.</p>
+<p>Det skal være topologi (nodepunkt) internt i nykonstruerte veglenker, men det skal ikke etableres nodepunkt eller konnekteringspunkt mot eksisterende veglenker. Se <a href="#veglenke_konnektering_riktig">Figur 31</a>.</p>
 </div>
 <div class="paragraph">
 <p>Så langt det er mulig bør det unngås å ha altfor mange korte og oppstykkede veglenker i forbindelse med synbarhetskoding. Les mer om Synbarhet i kap.4.2.</p>
 </div>
 <div class="paragraph">
-<p>I forbindelse med industriområder, gårdsplasser og andre åpne plasser vil det være en vurderingssak hvor langt inn på plassen veglenken skal gå. Veglenken bør avsluttes slik at en vegflate i FKB-Veg også naturlig kan avgrenses der veglenken slutter. Se figur 11.</p>
+<p>I forbindelse med industriområder, gårdsplasser og andre åpne plasser vil det være en vurderingssak hvor langt inn på plassen veglenken skal gå. Veglenken bør avsluttes slik at en vegflate i FKB-Veg også naturlig kan avgrenses der veglenken slutter. Se <a href="#veglenke_avslutning">Figur 32</a>.</p>
 </div>
 <div class="paragraph">
-<p>Gangfelt innenfor lukket område som ikke er tilgjengelige for allmenn ferdsel og heller ikke krysser veg eller henger sammen med annen del av nettverket, skal ikke registreres. Se figur 12.</p>
+<p>Gangfelt innenfor lukket område som ikke er tilgjengelige for allmenn ferdsel og heller ikke krysser veg eller henger sammen med annen del av nettverket, skal ikke registreres. Se <a href="#gangfelt_feil">Figur 33</a>.</p>
 </div>
 <div class="paragraph">
 <p>Braketter (også kalt opphøyd vegskulder) skal ikke registreres som fortau. Braketter finnes som regel langs veger i forbindelse med nyere tunneler og der det ikke er plass med veggrøft. Bankett er normalt langt smalere enn fortau. Det er oftest heller ingen naturlig forbindelse mellom disse brakettene og andre veglenker for gående.</p>
@@ -2044,68 +2084,68 @@ Eksisterende veglenker med konnekteringslenke ja skal geometriforbedres dersom t
 <div class="paragraph">
 <p>Veglenke skal så langt som mulig registreres under bruer og trafikklokk, men ikke i tunneler. Usikker nøyaktighet/synbarhet oppgis gjennom kvalitetskodingen. Veglenker i tunnel registreres ikke fotogrammetrisk.</p>
 </div>
-<div class="imageblock">
+<div id="veglenke_konnektering_riktig" class="imageblock">
 <div class="content">
 <img src="figurer/veglenke_konnektering_riktig.png" alt="veglenke konnektering riktig">
 </div>
-<div class="title">Figur 30. Eksempel på riktig avslutning av veglenke mot eksisterende geometri. Markert lenke (rosa) er eksisterende lenke som er innenfor kvalitetskrav (+-2m). Nykonstruert lenke (grønn) skal da konstrueres til midt av vegen slik bildet viser. Da er den nykonstruerte lenka helt riktig og den eksisterende lenka med litt dårlig geometri, men ikke så dårlig at den skal nykonstrueres, vil bli riktig tilpasset ny geometri ved innlegging i NVDB. Oransje lenke er kodet med Endret type S og skal slettes</div>
+<div class="title">Figur 31. Eksempel på riktig avslutning av veglenke mot eksisterende geometri. Markert lenke (rosa) er eksisterende lenke som er innenfor kvalitetskrav (+-2m). Nykonstruert lenke (grønn) skal da konstrueres til midt av vegen slik bildet viser. Da er den nykonstruerte lenka helt riktig og den eksisterende lenka med litt dårlig geometri, men ikke så dårlig at den skal nykonstrueres, vil bli riktig tilpasset ny geometri ved innlegging i NVDB. Oransje lenke er kodet med Endret type S og skal slettes</div>
 </div>
-<div class="imageblock">
+<div id="veglenke_avslutning" class="imageblock">
 <div class="content">
 <img src="figurer/veglenke_avslutning.png" alt="veglenke avslutning">
 </div>
-<div class="title">Figur 31. Eksempel på riktig avslutning av veglenke (og vegflate i FKB-Veg) på gårdsplass. Det skal ikke registreres veglenke rundt driftsbygningen i dette tilfellet. NB! Bildet viser overfullstendighet av AnnetVegarealAvgrensning rundt rundt driftsbygningen</div>
+<div class="title">Figur 32. Eksempel på riktig avslutning av veglenke (og vegflate i FKB-Veg) på gårdsplass. Det skal ikke registreres veglenke rundt driftsbygningen i dette tilfellet. NB! Bildet viser overfullstendighet av AnnetVegarealAvgrensning rundt rundt driftsbygningen</div>
 </div>
-<div class="imageblock">
+<div id="gangfelt_feil" class="imageblock">
 <div class="content">
 <img src="figurer/gangfelt_feil.png" alt="gangfelt feil">
 </div>
-<div class="title">Figur 32. Eksempler på gangfelt som ikke skal registreres</div>
+<div class="title">Figur 33. Eksempler på gangfelt som ikke skal registreres</div>
 </div>
-<div class="imageblock">
+<div id="Braketter" class="imageblock">
 <div class="content">
 <img src="figurer/Braketter.png" alt="Braketter">
 </div>
-<div class="title">Figur 33. Eksempler på braketter som ikke skal registreres</div>
+<div class="title">Figur 34. Eksempler på braketter som ikke skal registreres</div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_sletting_av_eksisterende_veglenker">5.2. Sletting av eksisterende veglenker</h3>
 <div class="paragraph">
-<p>Veglenker skal kun slettes dersom det kan verifiseres i flybildene at vegen ikke eksisterer/ er kjørbar. (se figur 13)</p>
+<p>Veglenker skal kun slettes dersom det kan verifiseres i flybildene at vegen ikke eksisterer/ er kjørbar. (se <a href="#veglenke_slettes">Figur 35</a>)</p>
 </div>
 <div class="paragraph">
-<p>I eksisterende data kan det ligge veglenker som ikke oppfyller kriteriene for fotogrammetrisk registrering, for eksempel at de er kortere enn minstemål. Disse skal ikke slettes. I slike tilfeller er det ikke krav om etablering av vegflate i FKB-Veg. (se figur 14)</p>
+<p>I eksisterende data kan det ligge veglenker som ikke oppfyller kriteriene for fotogrammetrisk registrering, for eksempel at de er kortere enn minstemål. Disse skal ikke slettes. I slike tilfeller er det ikke krav om etablering av vegflate i FKB-Veg. (se <a href="#veglenke_slettes_ikke">Figur 36</a>)</p>
 </div>
 <div class="paragraph">
 <p>Veglenker med Medium U og B, i tunnel eller i bygning, skal ikke slettes. Hvis tunnel eller bygning er borte (revet) kan veglenker med medium slettes.</p>
 </div>
 <div class="paragraph">
-<p>Det tolereres inntil +/- 10 meter avvik mellom Elveg og FKB-Veg i forbindelse med avslutning av eksisterende veglenker inn på gårdsplasser ol. (se figur 15 og 16)</p>
+<p>Det tolereres inntil +/- 10 meter avvik mellom Elveg og FKB-Veg i forbindelse med avslutning av eksisterende veglenker inn på gårdsplasser ol. (se <a href="#veglenke_under10">Figur 37</a> og <a href="#veglenke_mangler_under10">Figur 38</a>)</p>
 </div>
-<div class="imageblock">
+<div id="veglenke_slettes" class="imageblock">
 <div class="content">
 <img src="figurer/veglenke_slettes.png" alt="veglenke slettes">
 </div>
-<div class="title">Figur 34. Eksempelet viser en eksisterende veglenke (rødt) som skal slettes ettersom vegen ikke lengre eksisterer i bildene</div>
+<div class="title">Figur 35. Eksempelet viser en eksisterende veglenke (rødt) som skal slettes ettersom vegen ikke lengre eksisterer i bildene</div>
 </div>
-<div class="imageblock">
+<div id="veglenke_slettes_ikke" class="imageblock">
 <div class="content">
 <img src="figurer/veglenke_slettes_ikke.png" alt="veglenke slettes ikke">
 </div>
-<div class="title">Figur 35. Eksempelet viser en eksisterende veglenke (rødt) som ikke skal slettes (selv om den ikke oppfyller kriteriene for fotogrammetrisk registrering) ettersom vegen fortsatt eksisterer (i FKB-Veg) og er kjørbar i bildene</div>
+<div class="title">Figur 36. Eksempelet viser en eksisterende veglenke (rødt) som ikke skal slettes (selv om den ikke oppfyller kriteriene for fotogrammetrisk registrering) ettersom vegen fortsatt eksisterer (i FKB-Veg) og er kjørbar i bildene</div>
 </div>
-<div class="imageblock">
+<div id="veglenke_under10" class="imageblock">
 <div class="content">
 <img src="figurer/veglenke_under10.png" alt="veglenke under10">
 </div>
-<div class="title">Figur 36. Eksempelet viser et godkjent avvik (under 10m) mellom Elveg (grønt) og FKB-Veg (flate med skravur). Den overskytende delen av veglenken skal ikke slettes</div>
+<div class="title">Figur 37. Eksempelet viser et godkjent avvik (under 10m) mellom Elveg (grønt) og FKB-Veg (flate med skravur). Den overskytende delen av veglenken skal ikke slettes</div>
 </div>
-<div class="imageblock">
+<div id="veglenke_mangler_under10" class="imageblock">
 <div class="content">
 <img src="figurer/veglenke_mangler_under10.png" alt="veglenke mangler under10">
 </div>
-<div class="title">Figur 37. Eksempelet viser et godkjent avvik (under 10m) mellom Elveg (grønt) og FKB-Veg (flate med skravur). Den manglende delen av veglenken skal ikke registreres</div>
+<div class="title">Figur 38. Eksempelet viser et godkjent avvik (under 10m) mellom Elveg (grønt) og FKB-Veg (flate med skravur). Den manglende delen av veglenken skal ikke registreres</div>
 </div>
 </div>
 <div class="sect2">
@@ -2159,11 +2199,11 @@ Eksisterende veglenker med konnekteringslenke ja skal geometriforbedres dersom t
 <div class="paragraph">
 <p>Det tolereres inntil +/- 10 meter avvik mellom Elveg og FKB-Veg i forbindelse med avslutning av eksisterende veglenker inn på gårdsplasser ol.</p>
 </div>
-<div class="imageblock">
+<div id="geometriforbedring" class="imageblock">
 <div class="content">
 <img src="figurer/geometriforbedring.png" alt="geometriforbedring">
 </div>
-<div class="title">Figur 38. Eksempelet viser geometriforbedring av en veglenke. Det faktiske avviket (mellom dagens situasjon og riktig utstrekning av veglenken) vises i rødt. Hele den eksisterende veglenken (fra nodepunkt til nodepunkt) må slettes og registreres på nytt (vises i gult).</div>
+<div class="title">Figur 39. Eksempelet viser geometriforbedring av en veglenke. Det faktiske avviket (mellom dagens situasjon og riktig utstrekning av veglenken) vises i rødt. Hele den eksisterende veglenken (fra nodepunkt til nodepunkt) må slettes og registreres på nytt (vises i gult).</div>
 </div>
 </div>
 <div class="sect3">
@@ -2368,7 +2408,7 @@ av denne lisensen og ikke kan viderebrukes</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-01-09 09:28:21 +0100
+Last updated 2025-11-28 11:52:43 +0100
 </div>
 </div>
 </body>
