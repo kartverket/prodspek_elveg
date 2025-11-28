@@ -12,6 +12,7 @@
 // Dokumentstatus styrer skriving av dokument metadata i filhode.adoc. 1 - Gyldig, 2 - Høring, 3 - Erstattet
 :dokumentstatus: 1
 
+
 include::../felles_reginst/filhode.adoc[]
 
 
@@ -96,7 +97,7 @@ include::../felles_reginst/fotogrammetrisk_datafangst.adoc[]
 
 == Objekttyper og egenskaper
 
-Ved fotogrammetrisk registrering av Elveg 2.0 er det kun senterlinjegeometri av objekttypen Veglenke som skal registreres. Den sentrale oppgaven er å registrere ny senterlinjegeometri med noen sentrale egenskaper der vegnettsgeometrien mangler eller eksisterende geometri er slik at <<Kriterier for fotogrammetrisk ajourhold>> er oppfylt.
+Ved fotogrammetrisk registrering av Elveg 2.0 er det kun senterlinjegeometri av objekttypen Veglenke som skal registreres. Den sentrale oppgaven er å registrere ny senterlinjegeometri med noen sentrale egenskaper der vegnettsgeometrien mangler eller eksisterende geometri er slik at <<Kriterier for fotogrammetrisk ajourhold, Kriterier for fotogrammetrisk ajourhold>> er oppfylt.
 
 Egenskapene som skal oppdateres fotogrammetrisk er:
 
@@ -112,9 +113,11 @@ Eksisterende konnekteringslenker skal som hovedregel ikke endres (selv om tilst�
 
 I kryss vil man få en liten strekning med overlapp mellom vegene, der veglenken går over en annen veg sin flate. Her er det den veg som er «viktigst» som «eier» strekningen, og alle andre veger får konnektering fra den viktigste vegens flatekant og inn til kryssets sentrum. Se skisseeksempler under.
 
+[[NVDB_konnekteringslenker_rundkjoring]]
 .Eksempel på eksisterende konnekteringslenker fra NVDB over en rundkjøringsflate i Elveg.
 image::figurer\NVDB_konnekteringslenker_rundkjoring.png[]
 
+[[NVDB_konnekteringslenker_t-kryss]]
 .Eksempel på eksisterende konnekteringslenke fra NVDB i et T-kryss.
 image::figurer\NVDB_konnekteringslenker_t-kryss.png[]
 
@@ -131,7 +134,7 @@ include::typeveg.adoc[]
 
 For detaljer om kvalitetsmodellen som er benyttet her henvises det til {fkbGenerellDel-url}#truekvalitet[FKB Generell del, kapittel 8].
 
-De enkelte objekttypene er gruppert i forskjellige <<Kvalitetsklasser>> som styrer krav til nøyaktighet og fullstendighet ved registrering.
+De enkelte objekttypene er gruppert i forskjellige <<Kvalitetsklasser, Kvalitetsklasser>> som styrer krav til nøyaktighet og fullstendighet ved registrering.
 
  
 === Kvalitetskrav
