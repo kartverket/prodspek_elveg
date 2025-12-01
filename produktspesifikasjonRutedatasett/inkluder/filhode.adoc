@@ -26,7 +26,7 @@ ifdef::backend-pdf[:toc: macro]
 
 = Produktspesifikasjon: {datasett} {versjon}
 Statens vegvesen og Kartverket
-{versjon}, {underversjon}
+{versjon}
 
 ****
 
@@ -58,12 +58,10 @@ endif::[]
 ifeval::[{dokumentstatus} == 1]
 
 *Publisert*: {publisert} +
-*Denne versjonen finnes på*: {prodspekbase-url}/{kortnavn}/{versjon} +
+//*Denne versjonen finnes på*: {prodspekbase-url}/{kortnavn}/{versjon} +
 //- {uml-url}[HTML-visning av UML-modellen] +
 //*Nyeste versjon finnes på*: {prodspek-url} +
-*Faglig godkjent av*: Kartverket +
-
-Vedtatt som standard av Standardiseringskomiteen for Geomatikk 
+//*Faglig godkjent av*: Kartverket +
 
 endif::[]
 
