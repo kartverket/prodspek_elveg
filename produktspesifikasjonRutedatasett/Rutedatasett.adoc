@@ -1,6 +1,6 @@
 :datasett: NVDB Rutedatasett
 :kortnavn: NVDB Rutedatasett
-:versjon: 1.9
+:versjon: 2.0
 :skjemaversjon: {versjon}
 :underversjon: 2025-01-01
 :publisert: 2025-01-01
