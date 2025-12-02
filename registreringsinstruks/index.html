@@ -506,7 +506,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_registrering_av_nye_veglenker">5.1. Registrering av nye veglenker</a></li>
 <li><a href="#_sletting_av_eksisterende_veglenker">5.2. Sletting av eksisterende veglenker</a></li>
-<li><a href="#_regler_for_fotogrammetrisk_ajourhold_av_elveg">5.3. Regler for fotogrammetrisk ajourhold av Elveg</a>
+<li><a href="#_regler_for_fotogrammetrisk_ajourhold_av_nvdb_vegnett_pluss">5.3. Regler for fotogrammetrisk ajourhold av NVDB Vegnett Pluss</a>
 <ul class="sectlevel3">
 <li><a href="#_bruk_av_endringsflagg">5.3.1. Bruk av endringsflagg</a></li>
 <li><a href="#_kriterier_for_fotogrammetrisk_ajourhold">5.3.2. Kriterier for fotogrammetrisk ajourhold</a></li>
@@ -1333,8 +1333,8 @@ Konnekteringslenker skal ikke nyregistreres ved fotogrammetrisk datafangst. Alle
 <div class="sect2">
 <h3 id="_kodeliste_typeveg">3.2. Kodeliste Typeveg</h3>
 <div class="paragraph">
-<p>Vegnettets klassifisering etter type veg skal henge sammen i datasettene FKB-TraktorvegSti og Elveg 2.0 som en helhet. Oppdeling og koding av FKB-Veg skal styres av og være konsistent med type veg i Elveg 2.0 og FKB-TraktorvegSti. Enhver endring av geometri og type veg i Elveg 2.0 eller FKB-TraktorvegSti skal følges opp med konsekvensretting av vegkanter og flater i FKB-Veg. Det er alltid type veg i Elveg og FKB-TraktorvegSti som skal være førende for innhold og koding av vegkanter og vegflater i FKB-Veg, ikke omvendt.
-Kodeverdier av typeveg som er aktuelle for fotogrammetrisk registrering i Elveg er angitt i tabellen under.</p>
+<p>Vegnettets klassifisering etter type veg skal henge sammen i datasettene FKB-TraktorvegSti og NVDB Vegnett Pluss som en helhet. Oppdeling og koding av FKB-Veg skal styres av og være konsistent med type veg i NVDB Vegnett Pluss og FKB-TraktorvegSti. Enhver endring av geometri og type veg i NVDB Vegnett Pluss eller FKB-TraktorvegSti skal følges opp med konsekvensretting av vegkanter og flater i FKB-Veg. Det er alltid type veg i NVDB Vegnett Pluss og FKB-TraktorvegSti som skal være førende for innhold og koding av vegkanter og vegflater i FKB-Veg, ikke omvendt.
+Kodeverdier av typeveg som er aktuelle for fotogrammetrisk registrering i NVDB Vegnett Pluss er angitt i tabellen under.</p>
 </div>
 <div class="paragraph">
 <p>Klassifisering av typeveg på eksisterende geometri skal <em>ikke</em> endres. Unntaket er tilfeller der det åpenbart har skjedd en fysisk endring siden forrige kartlegging. For eksempel tilfeller der det er etablert en ny veg hvor det tidligere har vært traktorveg. Hvis det er tvil om koding av type veg ved utskifting av geometri skal ny geometri arve typeveg fra eksisterte lenke.</p>
@@ -1343,7 +1343,7 @@ Kodeverdier av typeveg som er aktuelle for fotogrammetrisk registrering i Elveg 
 <p>Se tabellene under for definisjon av de ulike typeveg-kodene og retningslinjer for fotogrammetrisk registrering og eksemplene i kapittel 3.2.2 - 3.2.6 for illustrasjoner.</p>
 </div>
 <table id="tab-typeveg-kjorende" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 3. <a href="https://register.geonorge.no/sosi-kodelister/fkb/veg/5.0/typevegkjorende">Typeveg-koder for kjørende i Elveg 2.0 og FKB-Veg 5.0</a></caption>
+<caption class="title">Tabell 3. <a href="https://register.geonorge.no/sosi-kodelister/fkb/veg/5.0/typevegkjorende">Typeveg-koder for kjørende i NVDB Vegnett Pluss og FKB-Veg 5.0</a></caption>
 <colgroup>
 <col style="width: 15%;">
 <col style="width: 70%;">
@@ -1401,7 +1401,7 @@ Veglenke for gatetun registreres som senterlinje midt mellom oppmerkede kantlinj
 <p>Veglenker med typeveg-koder i <a href="#tab-typeveg-kjorende">Tabell 3</a> skal alltid samsvare med en flate med samme typeveg-kode i FKB-Veg.</p>
 </div>
 <table id="tab-typeveg-gaende" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 4. <a href="https://register.geonorge.no/sosi-kodelister/fkb/veg/5.0/typeveggaendeogsyklende">Typeveg-koder for gående og syklende i Elveg 2.0 og FKB-Veg 5.0</a></caption>
+<caption class="title">Tabell 4. <a href="https://register.geonorge.no/sosi-kodelister/fkb/veg/5.0/typeveggaendeogsyklende">Typeveg-koder for gående og syklende i NVDB Vegnett Pluss og FKB-Veg 5.0</a></caption>
 <colgroup>
 <col style="width: 15%;">
 <col style="width: 70%;">
@@ -1484,7 +1484,7 @@ Veglenke for gangfelt registreres som senterlinje i oppmerket kryssingssted for 
 <div class="sect3">
 <h4 id="_generelt_angående_registrering_av_veglenker_og_nettverkstopolpogi">3.2.1. Generelt angående registrering av veglenker og nettverkstopolpogi</h4>
 <div class="paragraph">
-<p>Målet er et sammenhengende nettverk for både gående og kjørende. Noen ganger er det også naturlig og nødvendig å binde veglenker for gående og syklende sammen mot veglenker for kjørende. Av og til må vi også akseptere løse ender i nettverket der det er fysisk "umulig" eller ulogisk (se eksempel i <a href="#busslomme_nyregistrert">Figur 11</a> i Registreringsinstruks: Fotogrammetrisk Elveg) å ta seg videre, enten som gående eller kjørende.</p>
+<p>Målet er et sammenhengende nettverk for både gående og kjørende. Noen ganger er det også naturlig og nødvendig å binde veglenker for gående og syklende sammen mot veglenker for kjørende. Av og til må vi også akseptere løse ender i nettverket der det er fysisk "umulig" eller ulogisk (se eksempel i <a href="#busslomme_nyregistrert">Figur 11</a> i Registreringsinstruks: Fotogrammetrisk NVDB Vegnett Pluss) å ta seg videre, enten som gående eller kjørende.</p>
 </div>
 <div class="paragraph">
 <p>På tidligere leveranser ser vi at det er en del hull i nettverket, spesielt mellom nye veglenker eller mellom nye veglenker og eksisterende veglenker for gående. Registreringsinstruksen beskriver dessverre langt ifra alle disse situasjonene men følgende eksempler prøver å presisere hva som skal gjøres ved enkelte situasjoner.</p>
@@ -1493,7 +1493,7 @@ Veglenke for gangfelt registreres som senterlinje i oppmerket kryssingssted for 
 <p>Ved nyregistrerte<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup> veglenker skal også tilhørende avgrensingslinjer og flater (hvis dette fremkommer gjennom teknisk kravspesifikasjon – for eksempel med en bestilt oppgradering som flater på fortau og gangveg) konsekvensrettes i FKB-Veg. Dette utføres etter beste evne ved hjelp av eksisterende data eller naturlige avgrensninger/kontraster i bildene for å finne passende avgrensnings- og lukkelinjer for flatene.</p>
 </div>
 <div class="paragraph">
-<p>Det presiseres at veglenker under 2 meter ikke skal registreres i Elveg.</p>
+<p>Det presiseres at veglenker under 2 meter ikke skal registreres i NVDB Vegnett Pluss.</p>
 </div>
 </div>
 <div class="sect3">
@@ -1523,7 +1523,7 @@ Veglenke for gangfelt registreres som senterlinje i oppmerket kryssingssted for 
 <div class="content">
 <img src="figurer/veglenker.png" alt="veglenker">
 </div>
-<div class="title">Figur 6. Eksemplet viser hvordan veglenkene i Elveg skal henge sammen. Det presiseres at ved parallelle lenker forlenges hver lenke (her sykkelveg og fortau) mot nærmest tilstøtende veglenke (her fortau) når fysisk skille mellom veglenker opphører og avstanden er kortere enn 10 meter.</div>
+<div class="title">Figur 6. Eksemplet viser hvordan veglenkene i NVDB Vegnett Pluss skal henge sammen. Det presiseres at ved parallelle lenker forlenges hver lenke (her sykkelveg og fortau) mot nærmest tilstøtende veglenke (her fortau) når fysisk skille mellom veglenker opphører og avstanden er kortere enn 10 meter.</div>
 </div>
 <div id="gatetun" class="imageblock">
 <div class="content">
@@ -1718,7 +1718,7 @@ Eksisterende veglenker med konnekteringslenke ja skal geometriforbedres dersom t
 <div class="sect3">
 <h4 id="_registrering_av_veglenker_for_kjørende">3.2.8. Registrering av veglenker for kjørende</h4>
 <div class="paragraph">
-<p>Under vises et eksempel på registrering av et svingefelt (høyresvingefelt – markert med rødt i figuren). Svingefelt skal registreres med typeveg kanalisert veg. Ellers gjelder teksten fra <a href="#Veglenker2">Figur 4</a> i Fotogrammetrisk registreringsinstruks for Elveg: "I de aller fleste tilfeller vil topologien i slike kryss være etablert og skal da ikke endres ved fotogrammetrisk registrering. Fotogrammetrisk registrering vil i hovedsak gå ut på forbedring av geometri der kriteriene for dette er til stede".</p>
+<p>Under vises et eksempel på registrering av et svingefelt (høyresvingefelt – markert med rødt i figuren). Svingefelt skal registreres med typeveg kanalisert veg. Ellers gjelder teksten fra <a href="#Veglenker2">Figur 4</a> i Fotogrammetrisk registreringsinstruks for NVDB Vegnett Pluss: "I de aller fleste tilfeller vil topologien i slike kryss være etablert og skal da ikke endres ved fotogrammetrisk registrering. Fotogrammetrisk registrering vil i hovedsak gå ut på forbedring av geometri der kriteriene for dette er til stede".</p>
 </div>
 <div id="veglenke_kanalisert_veg" class="imageblock">
 <div class="content">
@@ -2046,7 +2046,7 @@ Eksisterende veglenker med konnekteringslenke ja skal geometriforbedres dersom t
 <h2 id="_tilleggsinformasjon">5. Tilleggsinformasjon</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>De generelle retningslinjene for fotogrammetrisk registering av FKB er beskrevet i kapittel 2. Elveg skiller seg en del fra øvrige FKB-datasett og en del av innholdet i kapittel 2 gjelder derfor ikke Elveg. Disse avvikene er presisert i dette kapittelet. Der innholdet i kapittel 2 og i kapittel 5 ikke harmonerer er det beskrivelsene i kapittel 5 som gjelder.</p>
+<p>De generelle retningslinjene for fotogrammetrisk registering av FKB er beskrevet i kapittel 2. NVDB Vegnett Pluss skiller seg en del fra øvrige FKB-datasett og en del av innholdet i kapittel 2 gjelder derfor ikke NVDB Vegnett Pluss. Disse avvikene er presisert i dette kapittelet. Der innholdet i kapittel 2 og i kapittel 5 ikke harmonerer er det beskrivelsene i kapittel 5 som gjelder.</p>
 </div>
 <div class="sect2">
 <h3 id="_registrering_av_nye_veglenker">5.1. Registrering av nye veglenker</h3>
@@ -2121,7 +2121,7 @@ Eksisterende veglenker med konnekteringslenke ja skal geometriforbedres dersom t
 <p>Veglenker med Medium U og B, i tunnel eller i bygning, skal ikke slettes. Hvis tunnel eller bygning er borte (revet) kan veglenker med medium slettes.</p>
 </div>
 <div class="paragraph">
-<p>Det tolereres inntil +/- 10 meter avvik mellom Elveg og FKB-Veg i forbindelse med avslutning av eksisterende veglenker inn på gårdsplasser ol. (se <a href="#veglenke_under10">Figur 37</a> og <a href="#veglenke_mangler_under10">Figur 38</a>)</p>
+<p>Det tolereres inntil +/- 10 meter avvik mellom NVDB Vegnett Pluss og FKB-Veg i forbindelse med avslutning av eksisterende veglenker inn på gårdsplasser ol. (se <a href="#veglenke_under10">Figur 37</a> og <a href="#veglenke_mangler_under10">Figur 38</a>)</p>
 </div>
 <div id="veglenke_slettes" class="imageblock">
 <div class="content">
@@ -2139,21 +2139,21 @@ Eksisterende veglenker med konnekteringslenke ja skal geometriforbedres dersom t
 <div class="content">
 <img src="figurer/veglenke_under10.png" alt="veglenke under10">
 </div>
-<div class="title">Figur 37. Eksempelet viser et godkjent avvik (under 10m) mellom Elveg (grønt) og FKB-Veg (flate med skravur). Den overskytende delen av veglenken skal ikke slettes</div>
+<div class="title">Figur 37. Eksempelet viser et godkjent avvik (under 10m) mellom NVDB Vegnett Pluss (grønt) og FKB-Veg (flate med skravur). Den overskytende delen av veglenken skal ikke slettes</div>
 </div>
 <div id="veglenke_mangler_under10" class="imageblock">
 <div class="content">
 <img src="figurer/veglenke_mangler_under10.png" alt="veglenke mangler under10">
 </div>
-<div class="title">Figur 38. Eksempelet viser et godkjent avvik (under 10m) mellom Elveg (grønt) og FKB-Veg (flate med skravur). Den manglende delen av veglenken skal ikke registreres</div>
+<div class="title">Figur 38. Eksempelet viser et godkjent avvik (under 10m) mellom NVDB Vegnett Pluss (grønt) og FKB-Veg (flate med skravur). Den manglende delen av veglenken skal ikke registreres</div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_regler_for_fotogrammetrisk_ajourhold_av_elveg">5.3. Regler for fotogrammetrisk ajourhold av Elveg</h3>
+<h3 id="_regler_for_fotogrammetrisk_ajourhold_av_nvdb_vegnett_pluss">5.3. Regler for fotogrammetrisk ajourhold av NVDB Vegnett Pluss</h3>
 <div class="sect3">
 <h4 id="_bruk_av_endringsflagg">5.3.1. Bruk av endringsflagg</h4>
 <div class="paragraph">
-<p>Ved fotogrammetrisk ajourhold av Elveg er det 2 mulige operasjoner:</p>
+<p>Ved fotogrammetrisk ajourhold av NVDB Vegnett Pluss er det 2 mulige operasjoner:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -2197,7 +2197,7 @@ Eksisterende veglenker med konnekteringslenke ja skal geometriforbedres dersom t
 <p>Egenskapene som finnes på eksisterende geometri skal beholdes på slettede data. Egenskapene trenger da ikke å overføres til ny geometri.</p>
 </div>
 <div class="paragraph">
-<p>Det tolereres inntil +/- 10 meter avvik mellom Elveg og FKB-Veg i forbindelse med avslutning av eksisterende veglenker inn på gårdsplasser ol.</p>
+<p>Det tolereres inntil +/- 10 meter avvik mellom NVDB Vegnett Pluss og FKB-Veg i forbindelse med avslutning av eksisterende veglenker inn på gårdsplasser ol.</p>
 </div>
 <div id="geometriforbedring" class="imageblock">
 <div class="content">
@@ -2210,10 +2210,10 @@ Eksisterende veglenker med konnekteringslenke ja skal geometriforbedres dersom t
 <h4 id="_håndtering_av_geografisk_avgrensning_av_kartleggingsområde">5.3.3. Håndtering av geografisk avgrensning av kartleggingsområde</h4>
 <div class="paragraph">
 <p>Kapittel 2.4 inneholder generelle retningslinjer for håndtering av eksisterende kurve-objekter som krysser avgrensningspolygonet ved fotogrammetrisk ajourhold av FKB-data.
-Disse retningslinjene gjelder ikke for Elveg.</p>
+Disse retningslinjene gjelder ikke for NVDB Vegnett Pluss.</p>
 </div>
 <div class="paragraph">
-<p>For Elveg er prinsippet at alle eksisterende veglenker (kurve-objekter) som overlapper (dvs. ligger innenfor eller krysser) kartleggingspolygonet skal ajourføres.
+<p>For NVDB Vegnett Pluss er prinsippet at alle eksisterende veglenker (kurve-objekter) som overlapper (dvs. ligger innenfor eller krysser) kartleggingspolygonet skal ajourføres.
 Veglenkene skal ikke klippes med avgrensningspolygonet. Dette innebærer at hovedregelen er at for veglenker som krysser avgrensningspolygonet (og som faller innenfor kriteriene for ajourhold angitt over) så skal hele veglenka byttes ut med ny geometri.</p>
 </div>
 <div class="paragraph">

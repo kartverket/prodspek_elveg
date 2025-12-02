@@ -1,6 +1,6 @@
 :xrefstyle: short
 
-De generelle retningslinjene for fotogrammetrisk registering av FKB er beskrevet i kapittel 2. Elveg skiller seg en del fra øvrige FKB-datasett og en del av innholdet i kapittel 2 gjelder derfor ikke Elveg. Disse avvikene er presisert i dette kapittelet. Der innholdet i kapittel 2 og i kapittel 5 ikke harmonerer er det beskrivelsene i kapittel 5 som gjelder.
+De generelle retningslinjene for fotogrammetrisk registering av FKB er beskrevet i kapittel 2. NVDB Vegnett Pluss skiller seg en del fra øvrige FKB-datasett og en del av innholdet i kapittel 2 gjelder derfor ikke NVDB Vegnett Pluss. Disse avvikene er presisert i dette kapittelet. Der innholdet i kapittel 2 og i kapittel 5 ikke harmonerer er det beskrivelsene i kapittel 5 som gjelder.
 
 === Registrering av nye veglenker
 Veglenker skal registreres for alle veger som tilfredsstiller minst 1 av disse kriteriene:
@@ -46,7 +46,7 @@ I eksisterende data kan det ligge veglenker som ikke oppfyller kriteriene for fo
 
 Veglenker med Medium U og B, i tunnel eller i bygning, skal ikke slettes. Hvis tunnel eller bygning er borte (revet) kan veglenker med medium slettes.
 
-Det tolereres inntil +/- 10 meter avvik mellom Elveg og FKB-Veg i forbindelse med avslutning av eksisterende veglenker inn på gårdsplasser ol. (se <<veglenke_under10>> og <<veglenke_mangler_under10>>)
+Det tolereres inntil +/- 10 meter avvik mellom NVDB Vegnett Pluss og FKB-Veg i forbindelse med avslutning av eksisterende veglenker inn på gårdsplasser ol. (se <<veglenke_under10>> og <<veglenke_mangler_under10>>)
 
 [[veglenke_slettes]]
 .Eksempelet viser en eksisterende veglenke (rødt) som skal slettes ettersom vegen ikke lengre eksisterer i bildene
@@ -57,18 +57,18 @@ image::figurer/veglenke_slettes.png[]
 image::figurer/veglenke_slettes_ikke.png[]
 
 [[veglenke_under10]]
-.Eksempelet viser et godkjent avvik (under 10m) mellom Elveg (grønt) og FKB-Veg (flate med skravur). Den overskytende delen av veglenken skal ikke slettes
+.Eksempelet viser et godkjent avvik (under 10m) mellom NVDB Vegnett Pluss (grønt) og FKB-Veg (flate med skravur). Den overskytende delen av veglenken skal ikke slettes
 image::figurer/veglenke_under10.png[]
 
 [[veglenke_mangler_under10]]
-.Eksempelet viser et godkjent avvik (under 10m) mellom Elveg (grønt) og FKB-Veg (flate med skravur). Den manglende delen av veglenken skal ikke registreres
+.Eksempelet viser et godkjent avvik (under 10m) mellom NVDB Vegnett Pluss (grønt) og FKB-Veg (flate med skravur). Den manglende delen av veglenken skal ikke registreres
 image::figurer/veglenke_mangler_under10.png[]
 
-=== Regler for fotogrammetrisk ajourhold av Elveg
+=== Regler for fotogrammetrisk ajourhold av NVDB Vegnett Pluss
 
 ==== Bruk av endringsflagg
 
-Ved fotogrammetrisk ajourhold av Elveg er det 2 mulige operasjoner:
+Ved fotogrammetrisk ajourhold av NVDB Vegnett Pluss er det 2 mulige operasjoner:
 
 . Eksisterende geometri/objekt skal slettes. Objektet merkes med endringsflagg med _ENDRET_TYPE S_
 . Ny geometri/objekt skal etableres. Objektet merkes med endringsflagg med _ENDRET_TYPE N_
@@ -89,7 +89,7 @@ Ny geometri registreres med samme typeveg som eksisterende.
 
 Egenskapene som finnes på eksisterende geometri skal beholdes på slettede data. Egenskapene trenger da ikke å overføres til ny geometri.
 
-Det tolereres inntil +/- 10 meter avvik mellom Elveg og FKB-Veg i forbindelse med avslutning av eksisterende veglenker inn på gårdsplasser ol.
+Det tolereres inntil +/- 10 meter avvik mellom NVDB Vegnett Pluss og FKB-Veg i forbindelse med avslutning av eksisterende veglenker inn på gårdsplasser ol.
 
 [[geometriforbedring]]
 .Eksempelet viser geometriforbedring av en veglenke. Det faktiske avviket (mellom dagens situasjon og riktig utstrekning av veglenken) vises i rødt. Hele den eksisterende veglenken (fra nodepunkt til nodepunkt) må slettes og registreres på nytt (vises i gult).
@@ -98,9 +98,9 @@ image::figurer/geometriforbedring.png[]
 ==== Håndtering av geografisk avgrensning av kartleggingsområde
 
 Kapittel 2.4 inneholder generelle retningslinjer for håndtering av eksisterende kurve-objekter som krysser avgrensningspolygonet ved fotogrammetrisk ajourhold av FKB-data. 
-Disse retningslinjene gjelder ikke for Elveg.
+Disse retningslinjene gjelder ikke for NVDB Vegnett Pluss.
 
-For Elveg er prinsippet at alle eksisterende veglenker (kurve-objekter) som overlapper (dvs. ligger innenfor eller krysser) kartleggingspolygonet skal ajourføres. 
+For NVDB Vegnett Pluss er prinsippet at alle eksisterende veglenker (kurve-objekter) som overlapper (dvs. ligger innenfor eller krysser) kartleggingspolygonet skal ajourføres. 
 Veglenkene skal ikke klippes med avgrensningspolygonet. Dette innebærer at hovedregelen er at for veglenker som krysser avgrensningspolygonet (og som faller innenfor kriteriene for ajourhold angitt over) så skal hele veglenka byttes ut med ny geometri. 
 
 Dette gjelder så lenge det er fotodekning for hele veglenka. Dersom veglenka går så langt ut fra avgrensningspolygonet at det ikke er fotodekning så skal eksisterende veglenke splittes i første punkt utenfor avgrensningspolygon og knyttes til nykonstruert veglenke innenfor området. 
