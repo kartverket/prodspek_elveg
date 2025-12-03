@@ -16,12 +16,6 @@ Egenskapen typeveg er den viktigste egenskapen til veglenke og angir hvilken typ
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Senterlinje midt mellom vegkanter slik at den følger vegens naturlige forløp
- 
-|FKB høydereferanse
-|Vegdekke
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -33,6 +27,12 @@ Egenskapen typeveg er den viktigste egenskapen til veglenke og angir hvilken typ
  
 |FKB-D
 |Påkrevd registrering
+ 
+|FKB grunnrissreferanse
+|Senterlinje midt mellom vegkanter slik at den følger vegens naturlige forløp
+ 
+|FKB høydereferanse
+|Vegdekke
  
 |===
  
@@ -73,30 +73,15 @@ Egenskapen typeveg er den viktigste egenskapen til veglenke og angir hvilken typ
 |..OPPDATERINGSDATO
 |[0..1]
  
-|NVDB_identifikasjon
-|«dataType» NVDB_Identifikasjon
-|..NVDB_IDENT
-|[0..1]
- 
-|NVDB_identifikasjon.NVDB_Id
+|nvdbId
 |CharacterString
-|...NVDB_ID
-|[0..1]
- 
-|NVDB_identifikasjon.navnerom
-|CharacterString
-|...NAVNEROM
-|[0..1]
- 
-|NVDB_identifikasjon.versjonId
-|CharacterString
-|...VERSJONID
+|..NVDBID
 |[0..1]
  
 |datafangstdato
 |«dataType» Date
 |..DATAFANGSTDATO
-|[0..1]
+|[1..1]
  
 |verifiseringsdato
 |«dataType» Date
@@ -105,8 +90,8 @@ Egenskapen typeveg er den viktigste egenskapen til veglenke og angir hvilken typ
  
 |endringsflagg
 |«dataType» Endringsflagg
-|..ENDRINGSFLAGG
-|[0..1]
+|..
+|[1..1]
  
 |endringsflagg.typeEndring
 |«CodeList» TypeEndring
@@ -116,17 +101,17 @@ Egenskapen typeveg er den viktigste egenskapen til veglenke og angir hvilken typ
 |endringsflagg.tidspunktEndring
 |DateTime
 |...ENDRET_TID
-|[0..1]
+|[1..1]
  
 |kommunenummer
-| «CodeList»  http://skjema.geonorge.no/SOSI/kodeliste/AdmEnheter/Kommunenummer[Kommunenummer, window = _blank]
+| «codeList»  https://register.geonorge.no/sosi-kodelister/inndelinger/inndelingsbase/kommunenummer[Kommunenummer, window = _blank]
 |..KOMM
 |[1..1]
  
 |kvalitet
 |«dataType» Posisjonskvalitet
 |..KVALITET
-|[0..1]
+|[1..1]
  
 |kvalitet.datafangstmetode
 | «CodeList»  https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/datafangstmetode[Datafangstmetode, window = _blank]
@@ -154,17 +139,17 @@ Egenskapen typeveg er den viktigste egenskapen til veglenke og angir hvilken typ
 |[0..1]
  
 |medium
-|«CodeList» Medium
+| «CodeList»  https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/medium[Medium, window = _blank]
 |..MEDIUM
-|[0..1]
+|[1..1]
  
 |typeVeg
-|«codeList» TypeVeg
+| «codeList»  https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/typeveg[TypeVeg, window = _blank]
 |..TYPEVEG
 |[1..1]
  
 |detaljnivå
-|«codeList» Vegdetaljnivå
+| «codeList»  https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/vegdetaljniv%C3%A5[Vegdetaljnivå, window = _blank]
 |..DETALJNIVÅ
 |[0..1]
  
@@ -204,12 +189,12 @@ Egenskapen typeveg er den viktigste egenskapen til veglenke og angir hvilken typ
 |[1..1]
  
 |vegsystemreferanse.vegsystem.vegkategori
-|«codeList» Vegkategori
+| «codeList»  https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/vegkategori[Vegkategori, window = _blank]
 |....VEGKATEGORI
 |[1..1]
  
 |vegsystemreferanse.vegsystem.fase
-|«codeList» Vegfase
+| «CodeList»  https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/vegfase[Vegfase, window = _blank]
 |....VEGFASE
 |[1..1]
  
@@ -218,13 +203,93 @@ Egenskapen typeveg er den viktigste egenskapen til veglenke og angir hvilken typ
 |....VEGNUMMER
 |[0..1]
  
+|vegsystemreferanse.vegstrekning
+|«dataType» Vegstrekning
+|...VEGSTREKNING
+|[0..1]
+ 
+|vegsystemreferanse.vegstrekning.strekningNummer
+|«dataType» Integer
+|....STREKNINGNUMMER
+|[1..1]
+ 
+|vegsystemreferanse.vegstrekning.delstrekningNummer
+|«dataType» Integer
+|....DELSTREKNINGNUMMER
+|[1..1]
+ 
+|vegsystemreferanse.vegstrekning.fraMeter
+|«dataType» Integer
+|....FRAMETER
+|[1..1]
+ 
+|vegsystemreferanse.vegstrekning.tilMeter
+|«dataType» Integer
+|....TILMETER
+|[1..1]
+ 
+|vegsystemreferanse.vegstrekning.adskilteLøp
+| «codeList»  https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/adskiltel%C3%B8p[AdskilteLøp, window = _blank]
+|....ADSKILTELØP
+|[0..1]
+ 
+|vegsystemreferanse.vegstrekning.adskilteLøpNummer
+|CharacterString
+|....ADSKILTELØPNUMMER
+|[0..1]
+ 
+|vegsystemreferanse.sideanlegg
+|«dataType» Sideanlegg
+|...SIDEANLEGG
+|[0..1]
+ 
+|vegsystemreferanse.sideanlegg.sideanleggsdel
+|«dataType» Integer
+|....SIDEANLEGGSDEL
+|[1..1]
+ 
+|vegsystemreferanse.sideanlegg.fraMeter
+|«dataType» Integer
+|....FRAMETER
+|[1..1]
+ 
+|vegsystemreferanse.sideanlegg.tilMeter
+|«dataType» Integer
+|....TILMETER
+|[1..1]
+ 
+|vegsystemreferanse.kryssystem
+|«dataType» Kryssystem
+|...KRYSSYSTEM
+|[0..1]
+ 
+|vegsystemreferanse.kryssystem.kryssdel
+|«dataType» Integer
+|....KRYSSDEL
+|[1..1]
+ 
+|vegsystemreferanse.kryssystem.fraMeter
+|«dataType» Integer
+|....FRAMETER
+|[1..1]
+ 
+|vegsystemreferanse.kryssystem.tilMeter
+|«dataType» Integer
+|....TILMETER
+|[1..1]
+ 
+|vegsystemreferanse.referanseretning
+| «codeList»  https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/referanseretning[Referanseretning, window = _blank]
+|...REFERANSERETNING
+|[0..1]
+ 
 |feltoversikt
 |«dataType» CharacterString
 |..FELTOVERSIKT
 |[0..1]
  
 |senterlinje
-|Kurve
+|GM_Curve
 |.KURVE
 |[1..1]
  
