@@ -29,7 +29,7 @@ ifdef::backend-pdf[:toc: macro]
 :uml-url: {umlbase-url}{datasett}/{versjon}
 :reginstr-url: {reginstrbase-url}{datasett}/{versjon}/{reginstr-type}_{underversjon}
 :reginstr-url-ny: {reginstrbase-url}{datasett}/{versjon-ny}/{reginstr-type}_{underversjon-ny}
-:reginstr-url-erstatter: {reginstrbase-url}{datasett}/{versjon-erstatter}/{reginstr-type}_{underversjon-erstatter}
+:reginstr-url-erstatter: {reginstrbase-url}{datasett-erstatter}/{versjon-erstatter}/{reginstr-type}_{underversjon-erstatter}
 
 // Adoc filhode/metadata
 = Registreringsinstruks: {reginstr-type} {datasett}

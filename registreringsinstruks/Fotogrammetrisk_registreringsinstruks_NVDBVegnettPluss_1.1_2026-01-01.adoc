@@ -1,14 +1,15 @@
-:datasett: Elveg
-:versjon: 2.0
-:underversjon: 2024-01-01
-:publisert: 2024-01-09
+:datasett: NVDB Vegnett Pluss
+:versjon: 1.1
+:underversjon: 2026-01-01
+:publisert: 2025-12-01
 :reginstr-type: Fotogrammetrisk
 // Forrige versjon av dokumentet
+:datasett-erstatter: Elveg
 :versjon-erstatter: 2.0
-:underversjon-erstatter: 2023-01-01
+:underversjon-erstatter: 2024-01-01
 // Ny(siste) versjon av dokumentet. Verdiene skal være like versjon/underversjon unntatt for "erstattet-av" dokumenter 
-:versjon-ny: 2.0
-:underversjon-ny: 2024-01-01
+:versjon-ny: 1.1
+:underversjon-ny: 2026-01-01
 // Dokumentstatus styrer skriving av dokument metadata i filhode.adoc. 1 - Gyldig, 2 - Høring, 3 - Erstattet
 :dokumentstatus: 1
 
