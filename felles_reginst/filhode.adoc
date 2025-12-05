@@ -24,11 +24,11 @@ ifdef::backend-pdf[:toc: macro]
 :fkbGenerellDel-url: https://sosi.geonorge.no/Standarder/FKB_generell_del/5.1
 :title-logo-image: image:../felles_reginst/figurer/geovekst.jpg[bottom=90%, align=center, pdfwidth=1.5in]
 :fkbdatasett: {datasett} {versjon}
-:skjema-url: {skjemabase-url}{datasett}/{versjon}
-:prodspek-url: {prodspekbase-url}{datasett}
-:uml-url: {umlbase-url}{datasett}/{versjon}
-:reginstr-url: {reginstrbase-url}{datasett}/{versjon}/{reginstr-type}_{underversjon}
-:reginstr-url-ny: {reginstrbase-url}{datasett}/{versjon-ny}/{reginstr-type}_{underversjon-ny}
+:skjema-url: {skjemabase-url}{datasett-teknisk}/{versjon}
+:prodspek-url: {prodspekbase-url}{datasett-teknisk}
+:uml-url: {umlbase-url}{datasett-teknisk}/{versjon}
+:reginstr-url: {reginstrbase-url}{datasett-teknisk}/{versjon}/{reginstr-type}_{underversjon}
+:reginstr-url-ny: {reginstrbase-url}{datasett-teknisk}/{versjon-ny}/{reginstr-type}_{underversjon-ny}
 :reginstr-url-erstatter: {reginstrbase-url}{datasett-erstatter}/{versjon-erstatter}/{reginstr-type}_{underversjon-erstatter}
 
 // Adoc filhode/metadata

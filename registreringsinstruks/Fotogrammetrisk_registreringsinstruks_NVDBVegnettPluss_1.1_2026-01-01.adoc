@@ -1,4 +1,5 @@
 :datasett: NVDB Vegnett Pluss
+:datasett-teknisk: NVDB_Vegnett_Pluss
 :versjon: 1.1
 :underversjon: 2026-01-01
 :publisert: 2025-12-01
@@ -92,7 +93,7 @@ De største endringene fra fotogrammetrisk FKB-Vegnett versjon 4.6 – 2018-01-0
 
 == Generelle retningslinjer som gjelder fotogrammetrisk registrering av FKB
 
-include::../felles_reginst/fotogrammetrisk_datafangst.adoc[]
+Se http://sosi.geonorge.no/Standarder/FKB_generell_del/#_generelle_retningslinjer_for_fotogrammetrisk_registrering_av_fkb_normativt[Vedlegg D i FKB Generell del] 
 
 <<<
 
