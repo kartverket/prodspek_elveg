@@ -20,21 +20,21 @@ include::../felles_reginst/filhode.adoc[]
 == Innledning, historikk og endringslogg
 
 === Innledning
-Dette dokumentet er en registreringsinstruks for fotogrammetrisk ajourhold av Elveg 2.0.
+Dette dokumentet er en registreringsinstruks for fotogrammetrisk ajourhold av NVDB Vegnett Pluss.
 
-Fotogrammetrisk Elveg 2.0 henger tett sammen med fotogrammetrisk FKB-Veg 5.0 og
+Fotogrammetrisk NVDB Vegnett Pluss henger tett sammen med fotogrammetrisk FKB-Veg 5.0 og
 fotogrammetrisk FKB-TraktorvegSti 5.0. Klassifiseringen av de ulike vegtypene gjøres ut fra listene
 for typeVeg (se punkt 3.2) og avgjør om objektet skal kartlegges i Elveg eller FKB-TraktorvegSti.
 
-For full beskrivelse av Elveg 2.0 og detaljer rundt modellering og UML-modeller henvises det til
-SOSI Elveg 2.0.
+For full beskrivelse av NVDB Vegnett Pluss og detaljer rundt modellering og UML-modeller henvises det til
+SOSI NVDB Vegnett Pluss.
 
-==== Fotogrammetrisk registrering av Elveg 2.0
-Elveg 2.0 er ikke et rent FKB-datasett og forvaltes i NVDB. Elveg 2.0 består av et komplett nettverk av veglenker og mye informasjon (egenskaper/objekter) knyttet til dette nettverket. Det er ikke mulig/hensiktsmessig å vedlikeholde all informasjonen i Elveg 2.0 ved fotogrammetrisk registrering. Veldig mange egenskaper og en del av veglenkene krever administrativt vedlikehold. 
+==== Fotogrammetrisk registrering av NVDB Vegnett Pluss
+NVDB Vegnett Pluss er ikke et rent FKB-datasett og forvaltes i NVDB. NVDB Vegnett Pluss består av et komplett nettverk av veglenker og mye informasjon (egenskaper/objekter) knyttet til dette nettverket. Det er ikke mulig/hensiktsmessig å vedlikeholde all informasjonen i NVDB Vegnett Pluss ved fotogrammetrisk registrering. Veldig mange egenskaper og en del av veglenkene krever administrativt vedlikehold. 
 
 Det som er ønskelig å vedlikeholde ved fotogrammetrisk registrering er i første rekke nøyaktigheten og fullstendigheten til det eksisterende vegnettet. Denne spesifikasjonen forsøker å beskrive rammene for dette ved bruk av samme mal som øvrige FKB fotogrammetriske registreringsinstrukser. Det er imidlertid en del avvikende regler som er presisert i kapittel 3 og kapittel 5. 
 
-Et godt ajourhold av Elveg 2.0 krever god kjennskap/forståelse til datasettet/fagområdet. Dette dokumentet alene er ikke nok til å skape en slik forståelse, men det er lagt inn en god del skisser/bilder som bør kunne hjelpe til i forståelsen. Eksemplene er ment som eksempler og ikke nødvendigvis fasit på registrering på alle typer veglenker. 
+Et godt ajourhold av NVDB Vegnett Pluss krever god kjennskap/forståelse til datasettet/fagområdet. Dette dokumentet alene er ikke nok til å skape en slik forståelse, men det er lagt inn en god del skisser/bilder som bør kunne hjelpe til i forståelsen. Eksemplene er ment som eksempler og ikke nødvendigvis fasit på registrering på alle typer veglenker. 
 
 === Endringslogg
 
@@ -71,7 +71,7 @@ Et godt ajourhold av Elveg 2.0 krever god kjennskap/forståelse til datasettet/f
 
 ==== Endringer fra FKB-Vegnett versjon 4.6 2018-01-01 til versjon 5.0 2023-01-01:
 
-Produktspesifikasjon Elveg 2.0 er første versjon og er en videreutvikling av FKB-Vegnett, Vbase og Elveg.
+Produktspesifikasjon NVDB Vegnett Pluss er første versjon og er en videreutvikling av FKB-Vegnett, Vbase, Elveg og Elveg 2.0.
 De største endringene fra fotogrammetrisk FKB-Vegnett versjon 4.6 – 2018-01-01 til Elveg 2.0 er:
 
 * For egenskapen typeVeg er kodelisteverdiene fortau, gangveg, gangfelt og (delvis) trapp overført fra FKB-TraktorvegSti til Elveg 2.0.
@@ -98,7 +98,7 @@ include::../felles_reginst/fotogrammetrisk_datafangst.adoc[]
 
 == Objekttyper og egenskaper
 
-Ved fotogrammetrisk registrering av Elveg 2.0 er det kun senterlinjegeometri av objekttypen Veglenke som skal registreres. Den sentrale oppgaven er å registrere ny senterlinjegeometri med noen sentrale egenskaper der vegnettsgeometrien mangler eller eksisterende geometri er slik at <<Kriterier for fotogrammetrisk ajourhold, Kriterier for fotogrammetrisk ajourhold>> er oppfylt.
+Ved fotogrammetrisk registrering av NVDB Vegnett Pluss er det kun senterlinjegeometri av objekttypen Veglenke som skal registreres. Den sentrale oppgaven er å registrere ny senterlinjegeometri med noen sentrale egenskaper der vegnettsgeometrien mangler eller eksisterende geometri er slik at <<Kriterier for fotogrammetrisk ajourhold, Kriterier for fotogrammetrisk ajourhold>> er oppfylt.
 
 Egenskapene som skal oppdateres fotogrammetrisk er:
 
@@ -137,7 +137,7 @@ For detaljer om kvalitetsmodellen som er benyttet her henvises det til {fkbGener
 
 De enkelte objekttypene er gruppert i forskjellige <<Kvalitetsklasser, Kvalitetsklasser>> som styrer krav til nøyaktighet og fullstendighet ved registrering.
 
- 
+ 
 === Kvalitetskrav
 
 [[tab-Logisk-konsistens]]
