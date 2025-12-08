@@ -18,7 +18,7 @@ I forbindelse med industriområder, gårdsplasser og andre åpne plasser vil det
 
 Gangfelt innenfor lukket område som ikke er tilgjengelige for allmenn ferdsel og heller ikke krysser veg eller henger sammen med annen del av nettverket, skal ikke registreres. Se <<gangfelt_feil>>.
 
-Braketter (også kalt opphøyd vegskulder) skal ikke registreres som fortau. Braketter finnes som regel langs veger i forbindelse med nyere tunneler og der det ikke er plass med veggrøft. Bankett er normalt langt smalere enn fortau. Det er oftest heller ingen naturlig forbindelse mellom disse brakettene og andre veglenker for gående.
+Banketter (også kalt opphøyd vegskulder) skal ikke registreres som fortau. Banketter finnes som regel langs veger i forbindelse med nyere tunneler og der det ikke er plass med veggrøft. Bankett er normalt langt smalere enn fortau. Det er oftest heller ingen naturlig forbindelse mellom disse bankettene og andre veglenker for gående.
 
 Veglenke skal så langt som mulig registreres under bruer og trafikklokk, men ikke i tunneler. Usikker nøyaktighet/synbarhet oppgis gjennom kvalitetskodingen. Veglenker i tunnel registreres ikke fotogrammetrisk.
 
@@ -34,8 +34,8 @@ image::figurer/veglenke_avslutning.png[]
 .Eksempler på gangfelt som ikke skal registreres
 image::figurer/gangfelt_feil.png[]
 
-[[Braketter]]
-.Eksempler på braketter som ikke skal registreres
+[[banketter]]
+.Eksempler på banketter som ikke skal registreres
 image::figurer/Braketter.png[]
 
 === Sletting av eksisterende veglenker
