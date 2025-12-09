@@ -39,8 +39,9 @@ Et godt ajourhold av NVDB Vegnett Pluss krever god kjennskap/forståelse til dat
 
 === Endringslogg
 
-==== Endringer fra versjon 5.0 2024-01-01 til NVDB Vegnett Pluss 1.1 2026-01-01:
+==== Endringer fra versjon 2024-01-01 til NVDB Vegnett Pluss 1.1 2026-01-01:
 
+* Endret navn fra Elveg til NVDB Vegnett Pluss
 * I kapittel 3.2 Endring av kodeverdi i Kodeliste Typeveg Tabell 1 og tabell 2 .
 * I kapittel 3.2.3 Registrering av veglenker for gående/syklende presisering og ny figur for registrering av trapper med korte avsatser.
 * I kap.3.2.1 Generelt angående registrering av veglenker og nettverkstopolpogi rettet figurhenvisning.
@@ -49,7 +50,7 @@ Et godt ajourhold av NVDB Vegnett Pluss krever god kjennskap/forståelse til dat
 * I kap. 5.1 Registrering av nye veglenker rettet figurhenvisninger.
 * I kap. 5.2 Sletting av eksisterende veglenker rettet figurhenvisninger.
 
-==== Endringer fra versjon 5.0 2023-01-01 til versjon 5.0 2024-01-01:
+==== Endringer fra versjon 2023-01-01 til versjon 2024-01-01:
 
 * Nytt kapittel 3.2.6, Registrering av Typeveg gangveg, med tekst og bildeeksempler.
 * Nytt kapittel 3.2.9, Registrering av veglenker uten tydelig tilknytning, med tekst og bildeeksempel.
