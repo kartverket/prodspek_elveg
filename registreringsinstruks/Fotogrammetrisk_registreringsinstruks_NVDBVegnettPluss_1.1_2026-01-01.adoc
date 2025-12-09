@@ -25,7 +25,7 @@ Dette dokumentet er en registreringsinstruks for fotogrammetrisk ajourhold av NV
 
 Fotogrammetrisk NVDB Vegnett Pluss henger tett sammen med fotogrammetrisk FKB-Veg 5.0 og
 fotogrammetrisk FKB-TraktorvegSti 5.0. Klassifiseringen av de ulike vegtypene gjøres ut fra listene
-for typeVeg (se punkt 3.2) og avgjør om objektet skal kartlegges i Elveg eller FKB-TraktorvegSti.
+for typeVeg (se punkt 3.2) og avgjør om objektet skal kartlegges i NVDB Vegnett Pluss eller FKB-TraktorvegSti.
 
 For full beskrivelse av NVDB Vegnett Pluss og detaljer rundt modellering og UML-modeller henvises det til
 SOSI NVDB Vegnett Pluss.
@@ -77,7 +77,7 @@ Egenskapene som skal oppdateres fotogrammetrisk er:
 
 * *Typeveg* (Dette er den sentrale klassifiseringen av vegnettet. Se beskrivelser i kapittel 3.2)
 * *Medium* (Registreres på alle objekter som _ikke_ ligger på terrenget. Se forøvring kap. 2.1.1)
-* *Datafangstdato og stedfestingskvalitet* (metadata for innmåling, Se kapittel 2.1.2. Merk forøvring at _registreringsversjon_ ikke skal registreres på Elveg)
+* *Datafangstdato og stedfestingskvalitet* (metadata for innmåling, Se kapittel 2.1.2. Merk forøvring at _registreringsversjon_ ikke skal registreres på NVDB Vegnett Pluss)
 
 *Konnekteringslenke*: +
 Konnekteringslenker vil finnes i dataene som skal ajourføres for å binde sammen vegnettet over for eksempel kryss eller rundkjøringer og benyttes på veglenken for å danne en sammenheng i nettverket for den vegen som ikke eier arealet i krysset. Konnekteringslenker er merket med egenskapen _konnekteringslenke Ja_ (true).
@@ -88,7 +88,7 @@ Eksisterende konnekteringslenker skal som hovedregel ikke endres (selv om tilst�
 I kryss vil man få en liten strekning med overlapp mellom vegene, der veglenken går over en annen veg sin flate. Her er det den veg som er «viktigst» som «eier» strekningen, og alle andre veger får konnektering fra den viktigste vegens flatekant og inn til kryssets sentrum. Se skisseeksempler under.
 
 [[NVDB_konnekteringslenker_rundkjoring]]
-.Eksempel på eksisterende konnekteringslenker fra NVDB over en rundkjøringsflate i Elveg.
+.Eksempel på eksisterende konnekteringslenker fra NVDB over en rundkjøringsflate i NVDB Vegnett Pluss.
 image::figurer\NVDB_konnekteringslenker_rundkjoring.png[]
 
 [[NVDB_konnekteringslenker_t-kryss]]
@@ -213,7 +213,7 @@ Krav til stedfestingsnøyaktighet kontrolleres mot uavhengige innmålinger med b
 Ved angivelse av krav til stedfestingsnøyaktighet er objekttypene inndelt i 4 klasser i grunnriss og høyde. Tabellen under angir hviilke krav som stilles ved registreringav av veglenker.
 
 [[tab-Kvalitetsklasser]]
-.Kvalitetsklasser for veglenker i Elveg
+.Kvalitetsklasser for veglenker i NVDB Vegnett Pluss
 [cols="4*", options="header"]
 |===
 |Objekttype
