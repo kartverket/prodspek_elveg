@@ -132,7 +132,7 @@ Alle gangfelt skal registreres selv om noen allerede eksisterer med typeveg gang
 |gangfelt
 |===
 
-Veglenker med typeveg-koder i <<tab-typeveg-gaende>> skal alltid samsvare med en flate med samme typeveg-kode i FKB-Veg med unntak av for _Gangfelt_ og _Trapp_.
+Veglenker med typeveg-koder i <<tab-typeveg-gaende>> skal alltid samsvare med en flate med samme typeveg-kode i FKB-Veg med unntak av for _Gangfelt_ og _Sykkelfelt_.
 
 ==== Generelt angående registrering av veglenker og nettverkstopolpogi
 Målet er et sammenhengende nettverk for både gående og kjørende. Noen ganger er det også naturlig og nødvendig å binde veglenker for gående og syklende sammen mot veglenker for kjørende. Av og til må vi også akseptere løse ender i nettverket der det er fysisk "umulig" eller ulogisk (se eksempel i <<busslomme_nyregistrert>> i Registreringsinstruks: Fotogrammetrisk NVDB Vegnett Pluss) å ta seg videre, enten som gående eller kjørende.
