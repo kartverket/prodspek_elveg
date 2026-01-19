@@ -156,11 +156,11 @@ image::figurer/Veglenker2.png[]
 
 [[Veglenker3]]
 .Figuren viser registrering av flere ulike typer veg 
-image::figurer/Veglenker3.png[]
+image::figurer/Veglenker4.png[]
 
 [[veglenker]]
 .Eksemplet viser hvordan veglenkene i NVDB Vegnett Pluss skal henge sammen. Det presiseres at ved parallelle lenker forlenges hver lenke (her sykkelveg og fortau) mot nærmest tilstøtende veglenke (her fortau) når fysisk skille mellom veglenker opphører og avstanden er kortere enn 10 meter.
-image::figurer/veglenker.png[]
+image::figurer/veglenker - 2.png[]
 
 [[gatetun]]
 .Venstre skisse viser eksempel på gatetun. Høyre skisse viser gågate 
