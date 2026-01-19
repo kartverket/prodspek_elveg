@@ -2,7 +2,7 @@
 :datasett-teknisk: NVDB_Vegnett_Pluss
 :versjon: 1.1
 :underversjon: 2026-01-01
-:publisert: 2025-12-01
+:publisert: 2026-01-19
 :reginstr-type: Fotogrammetrisk
 // Forrige versjon av dokumentet
 :datasett-erstatter: Elveg
