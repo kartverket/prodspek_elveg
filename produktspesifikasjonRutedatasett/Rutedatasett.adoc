@@ -150,7 +150,7 @@ Ved kobling av data fra NVDB, så må det tas hensyn til om lenkeretningen er sn
 
 ==== Feltkoding
 
-Feltkoden beskriver referansesystemet på tvers av vegen, og gir oss informasjon om hvilke kjørefelt som finnes i vegens tverrsnitt. Partall angir kjøreretning med lenkeretning, oddetall angir kjøreretning mot lenkeretning.
+Feltkoden beskriver referansesystemet på tvers av vegen, og gir oss informasjon om hvilke kjørefelt som finnes i vegens tverrsnitt. Oddetall angir kjøreretning med lenkeretning, partall angir kjøreretning mot lenkeretning.
 
 .Feltkoden gir oss informasjon om kjørefeltene i vegens tverrsnitt. 
 image::images/feltkode.jpg[align="center"]
