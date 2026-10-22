@@ -8,14 +8,14 @@ Klassifisering av typeveg på eksisterende geometri skal _ikke_ endres. Unntaket
 Se tabellene under for definisjon av de ulike typeveg-kodene og retningslinjer for fotogrammetrisk registrering og eksemplene i kapittel 3.2.2 - 3.2.6 for illustrasjoner.
 
 [[tab-typeveg-kjorende]]
-.https://register.geonorge.no/sosi-kodelister/fkb/veg/5.0/typevegkjorende[Typeveg-koder for kjørende i NVDB Vegnett Pluss]
+.https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/typeveg[Typeveg-koder for kjørende i NVDB]
 [cols="15,70,15", options="header"]
 |===
 |Kodenavn
 |Beskrivelse
 |Kodeverdi
 
-|Enkel bilveg
+|enkelBilveg
 |Veg for kjørende som ikke defineres under de fire andre funksjonene.
 
 *Regler for fotogrammetrisk registering*: +
@@ -23,7 +23,7 @@ På ordinær ett- og tofeltsveg registreres senterlinje midt mellom oppmerkede k
 Veglenke registreres for fysisk adskilte trafikklommer. 
 |bilveg
 
-|Kanalisert veg
+|kanalisertVeg
 |Veg som har fysisk adskilte kjørebaner med rekkverk eller annen fysisk barriere.
 
 *Regler for fotogrammetrisk registering*: +
@@ -38,14 +38,14 @@ I kanaliserte kryss og ved gangfelt hvor kjørebanene er fysisk adskilt med traf
 I planskilte kryss er veger koblet sammen med ramper. Ramper har vanligvis ett kjørefelt og registreres med senterlinje midt mellom oppmerkede kantlinjer. Ramper startes/avsluttes ved halv kjørefeltbredde. 
 |rampe
 
-|Rundkjøring
+|rundkjøring
 |Rundkjøring
 
 *Regler for fotogrammetrisk registering*: +
 I rundkjøringer skal veglenke registreres som en jevn kurve med lik avstand til vegdekkekanten som avgrenser sentraløya(trafikkøy). Rundkjøring registreres i senter av sirkulasjonsarealet uavhengig av antall kjørefelt. 
 |rkj
 
-|Gatetun
+|gatetun
 |Boliggate hvor det er iverksatt fysiske tiltak for å etablere et uteareal for alle trafikantkategorier, hvor all kjøring skjer på fotgjengernes vilkår.
 
 *Regler for fotogrammetrisk registering*: +
@@ -53,26 +53,43 @@ Veglenke for gatetun registreres som senterlinje midt mellom oppmerkede kantlinj
 
 Gatetun skal kun nyregistreres ved hjelp av manus eller etter spesiell avklaring for prosjektet. 
 |gatetun
+
+|traktorveg
+|Veg som hele året (eller deler av året) ikke egner seg for vanlig bilkjøring, men som er farbar med traktor.
+
+*Regler for fotogrammetrisk registering*: +
+Veglenke for gatetun registreres som senterlinje midt mellom oppmerkede kantlinjer. På veg uten oppmerking registreres senterlinje midt mellom vegdekkekanter. Veg for kjørende hvor type veg er vanskelig å bestemme fotogrammetrisk, registreres som enkel bilveg.
+
+Traktorveger skal være så brede at traktorer kan benytte disse, minimum 2.5 meter. 
+Traktorveger inngår i det permanente vegnettet og medfører varige terrenginngrep i form av en sammenhengende vegkropp. 
+Slep og driftsveier som ikke har bearbeidet såle og som er skapt av gjentatte passeringer med traktor, defineres normalt ikke som en traktorveg. 
+Slep og driftsveier som binder sammen samferdselsnettverket kan registreres som konnekteringslenke med typeveg sti. 
+Veger som er bygd som traktorveger, men opprustet slik at de i praksis er kjørbare med bil skal registreres som bilveg i NVDB. 
+En (tidligere) traktorveg som er gjengrodd med vegetasjon og ikke lenger egner seg for ferdsel med traktor skal ikke klassifiseres som traktorveg 
+(men heller klassifiseres som Typeveg Sti).
+
+|tv
+
 |===
 
 Veglenker med typeveg-koder i <<tab-typeveg-kjorende>> skal alltid samsvare med en flate med samme typeveg-kode i FKB-Veg.   
 
 [[tab-typeveg-gaende]]
-.https://register.geonorge.no/sosi-kodelister/fkb/veg/5.0/typeveggaendeogsyklende[Typeveg-koder for gående og syklende i NVDB Vegnett Pluss]
+.https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/typeveg[Typeveg-koder for gående og syklende i NVDB]
 [cols="15,70,15", options="header"]
 |===
 |Kodenavn
 |Beskrivelse
 |Kodeverdi
 
-|Fortau
+|fortau
 |Del av veg reservert for gående. Ligger høyere enn vegbanen og er adskilt fra denne med kantstein.
 
 *Regler for fotogrammetrisk registering*: +
 Veglenke for fortau registreres som senterlinje i fortausarealet. Fortau ligger normalt høyere enn vegbanen og er adskilt fra denne med kantstein. Der fortausarealet mangler ytteravgrensning, registreres veglenke som parallell til fortauskant etter beste skjønn.
 |fortau
 
-|Gang- og sykkelveg
+|gangOgSykkelveg
 |Veg som er bestemt for gående, syklende eller kombinert gang- og sykkeltrafikk. Vegen er skilt fra annen veg med gressplen, grøft, gjerde, kantstein eller på annen måte. Normalt skiltet med skilt 522.
 
 *Regler for fotogrammetrisk registering*: +
@@ -83,7 +100,7 @@ På veg for gående og syklende registreres senterlinje midt mellom vegdekkekant
 Gang- og sykkelveg skal ikke nyregistreres (kodes som gangveg ved fotogrammetrisk nyregistrering og justeres ev. administrativt) 
 |gsv
 
-|Gangveg
+|gangveg
 |Veg som er bestemt for gående. Vegen er skilt fra annen veg med gressplen, grøft, gjerde, kantstein eller på annen måte.
 
 *Regler for fotogrammetrisk registering*: +
@@ -92,14 +109,14 @@ Gangveg kan være fremkommelig for kjøretøy, men er normalt ikke åpen for ann
 På veg for gående registreres senterlinje midt mellom vegdekkekanter eller kjørebanekanter.
 |gangveg
 
-|Gågate
+|gågate
 |Område hvor det er forbudt å kjøre motorvogn og hvor trafikkreglenes bestemmelser om gågate gjelder. Skiltet med skilt 548.
 
 *Regler for fotogrammetrisk registering*: +
 I gågate registreres senterlinje for midtstilt ferdselssone. Der slik ferdselssone ikke er tydelig, registreres senterlinje midt mellom vegdekkekanter. Veg for gående og syklende hvor type veg er vanskelig å bestemme fotogrammetrisk, registreres som gangveg.
 |gagate
 
-|Sykkelveg
+|sykkelveg
 |Veg som er bestemt for syklende. Vegen er skilt fra annen veg med gressplen, grøft, gjerde, kantstein eller på annen måte. Normalt skiltet med skilt 520.
 
 *Regler for fotogrammetrisk registering*: +
@@ -108,21 +125,21 @@ Sykkelveg kan være fremkommelig for kjøretøy, men er normalt ikke åpen for a
 På veg for syklende registreres senterlinje midt mellom vegdekkekanter eller kjørebanekanter. På veg for syklende med oppmerket midtlinje skal denne registreres som veglenke. Sykkelveg som ikke lar seg klassifisere fotogrammetrisk, registreres som gangveg. Dersom oppmerking viser skille mellom gående og syklende, registreres senterlinje for sykkelvegen samt egen veglenke for fortauet. 
 |sv
 
-|Sykkelfelt
+|sykkelfelt
 |Felt i vegbanen bestemt for syklende. Feltet er skilt fra andre kjørefelt med stiplet oppmerking og eventuelt farget vegdekke. Normalt skiltet med skilt 521.1 (sykkelfelt - sideplassert) eller 521.2 (sykkelfelt - midtplassert).
 
 *Regler for fotogrammetrisk registering*: +
 Veglenke for sykkelfelt registreres som senterlinje i sykkelfeltarealet. 
 |sfelt
 
-|Trapp
-|Trapp som inngår i nettverket for gående (og syklende).
+|trapp
+|Trapp som inngår i nettverket for gående.
 
 *Regler for fotogrammetrisk registering*: +
 Veglenke for trapp registreres som senterlinje i trapp som er del av nettverk for gående og syklende 
 |trapp
 
-|Gangfelt
+|gangfelt
 |Kryssningsfelt for gående hvor trafikkreglenes bestemmelser om gangfelt gjelder. Oppmerket og eventuelt skiltet med skilt 516.
 
 *Regler for fotogrammetrisk registering*: +
@@ -130,6 +147,18 @@ Veglenke for gangfelt registreres som senterlinje i oppmerket kryssingssted for 
 
 Alle gangfelt skal registreres selv om noen allerede eksisterer med typeveg gang- og sykkelveg (disse vil bli administrativt slettet i forbindelse med ajourføringen av gangfelt)
 |gangfelt
+
+|sti
+|Tydelig, smalt og sammenhengende tråkk i terrenget, som har oppstått gjennom bruk eller aktiv tilrettelegging.
+
+*Regler for fotogrammetrisk registering*: +
+
+Sti benyttes primært i utmark, men kan også registreres i urbane strøk for stier/tråkk i terrenget der det ikke er noen opparbeidet veg med klar avgrensning. 
+Stier skal være del av et sammenhengende transportnettverk for gående. Kortere frittliggende stier som ikke inngår i et transportnettverk er derfor ikke nødvendig å registrere. 
+I områder med mange stier (for eksempel rundt parkeringsplasser, parkområder etc.) er det bare nødvendig å registrere hovedferdselårene. 
+
+|sti
+
 |===
 
 Veglenker med typeveg-koder i <<tab-typeveg-gaende>> skal alltid samsvare med en flate med samme typeveg-kode i FKB-Veg med unntak av for _Gangfelt_ og _Sykkelfelt_.

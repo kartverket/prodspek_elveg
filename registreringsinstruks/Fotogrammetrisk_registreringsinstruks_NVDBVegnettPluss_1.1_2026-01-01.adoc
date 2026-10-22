@@ -1,18 +1,18 @@
 :datasett: NVDB Vegnett Pluss
 :datasett-teknisk: NVDB_Vegnett_Pluss
 :versjon: 1.1
-:underversjon: 2026-01-01
+:underversjon: 2027-01-01
 :publisert: 2026-01-19
 :reginstr-type: Fotogrammetrisk
 // Forrige versjon av dokumentet
 :datasett-erstatter: Elveg
 :versjon-erstatter: 2.0
-:underversjon-erstatter: 2024-01-01
+:underversjon-erstatter: 2026-01-01
 // Ny(siste) versjon av dokumentet. Verdiene skal være like versjon/underversjon unntatt for "erstattet-av" dokumenter 
 :versjon-ny: 1.1
-:underversjon-ny: 2026-01-01
+:underversjon-ny: 2027-01-01
 // Dokumentstatus styrer skriving av dokument metadata i filhode.adoc. 1 - Gyldig, 2 - Høring, 3 - Erstattet
-:dokumentstatus: 1
+:dokumentstatus: 2
 
 
 include::../felles_reginst/filhode.adoc[]
@@ -23,21 +23,31 @@ include::../felles_reginst/filhode.adoc[]
 === Innledning
 Dette dokumentet er en registreringsinstruks for fotogrammetrisk ajourhold av NVDB Vegnett Pluss.
 
-Fotogrammetrisk NVDB Vegnett Pluss henger tett sammen med fotogrammetrisk FKB-Veg 5.0 og
-fotogrammetrisk FKB-TraktorvegSti 5.0. Klassifiseringen av de ulike vegtypene gjøres ut fra listene
-for typeVeg (se punkt 3.2) og avgjør om objektet skal kartlegges i NVDB Vegnett Pluss eller FKB-TraktorvegSti.
+Fotogrammetrisk NVDB Vegnett Pluss henger tett sammen med fotogrammetrisk FKB-Veg 5.0. Klassifiseringen av de ulike vegtypene gjøres ut fra listene
+for typeVeg (se punkt 3.2).
 
 For full beskrivelse av NVDB Vegnett Pluss og detaljer rundt modellering og UML-modeller henvises det til
 SOSI NVDB Vegnett Pluss.
 
 ==== Fotogrammetrisk registrering av NVDB Vegnett Pluss
-NVDB Vegnett Pluss er ikke et rent FKB-datasett og forvaltes i NVDB. NVDB Vegnett Pluss består av et komplett nettverk av veglenker og mye informasjon (egenskaper/objekter) knyttet til dette nettverket. Det er ikke mulig/hensiktsmessig å vedlikeholde all informasjonen i NVDB Vegnett Pluss ved fotogrammetrisk registrering. Veldig mange egenskaper og en del av veglenkene krever administrativt vedlikehold. 
+NVDB Vegnett Pluss er ikke et rent FKB-datasett og forvaltes i NVDB. 
+NVDB Vegnett Pluss består av et komplett nettverk av veglenker og mye informasjon (egenskaper/objekter) knyttet til dette nettverket. 
+Det er ikke mulig/hensiktsmessig å vedlikeholde all informasjonen i NVDB Vegnett Pluss ved fotogrammetrisk registrering. 
+Veldig mange egenskaper og en del av veglenkene krever administrativt vedlikehold. 
 
-Det som er ønskelig å vedlikeholde ved fotogrammetrisk registrering er i første rekke nøyaktigheten og fullstendigheten til det eksisterende vegnettet. Denne spesifikasjonen forsøker å beskrive rammene for dette ved bruk av samme mal som øvrige FKB fotogrammetriske registreringsinstrukser. Det er imidlertid en del avvikende regler som er presisert i kapittel 3 og kapittel 5. 
+Det som er ønskelig å vedlikeholde ved fotogrammetrisk registrering er i første rekke nøyaktigheten og fullstendigheten til det eksisterende vegnettet. 
+Denne spesifikasjonen forsøker å beskrive rammene for dette ved bruk av samme mal som øvrige FKB fotogrammetriske registreringsinstrukser. 
+Det er imidlertid en del avvikende regler som er presisert i kapittel 3 og kapittel 5. 
 
-Et godt ajourhold av NVDB Vegnett Pluss krever god kjennskap/forståelse til datasettet/fagområdet. Dette dokumentet alene er ikke nok til å skape en slik forståelse, men det er lagt inn en god del skisser/bilder som bør kunne hjelpe til i forståelsen. Eksemplene er ment som eksempler og ikke nødvendigvis fasit på registrering på alle typer veglenker. 
+Et godt ajourhold av NVDB Vegnett Pluss krever god kjennskap/forståelse til datasettet/fagområdet. 
+Dette dokumentet alene er ikke nok til å skape en slik forståelse, men det er lagt inn en god del skisser/bilder som bør kunne hjelpe til i forståelsen. 
+Eksemplene er ment som eksempler og ikke nødvendigvis fasit på registrering på alle typer veglenker. 
 
 === Endringslogg
+
+==== Endringer fra NVDB Vegnett Pluss 1.1 2026-01-01 til NVDB Vegnett Pluss 1.1 2027-01-01:
+
+* Innført traktorveg og sti
 
 ==== Endringer fra versjon 2024-01-01 til NVDB Vegnett Pluss 1.1 2026-01-01:
 
@@ -49,17 +59,6 @@ Et godt ajourhold av NVDB Vegnett Pluss krever god kjennskap/forståelse til dat
 * I kap.3.2.8 Registrering av veglenker for kjørende rettet figurhenvisning og henvisning til produktspesifikasjon istedenfor registreringsinstruks.
 * I kap. 5.1 Registrering av nye veglenker rettet figurhenvisninger.
 * I kap. 5.2 Sletting av eksisterende veglenker rettet figurhenvisninger.
-
-==== Endringer fra versjon 2023-01-01 til versjon 2024-01-01:
-
-* Nytt kapittel 3.2.6, Registrering av Typeveg gangveg, med tekst og bildeeksempler.
-* Nytt kapittel 3.2.9, Registrering av veglenker uten tydelig tilknytning, med tekst og bildeeksempel.
-* Nytt kapittel 3.2.10, Mindre flater/arealer uten veglenke, med tekst og bildeeksempel.
-* Ny figur 31 og utvidet bildetekst.
-* Det er lagt til mer beskrivende tekst om eksisterende konnekteringslenker fra NVDB og lagt til to skisser i kap.3, Objekttyper og egenskaper.
-* Lagt til ny tekst og figur i kap 5.1, Registrering av nye veglenker, om banketter.
-* Enklete bilder/skisser er byttet ut med nye og tydeligere bilder/skisser.
-
 
 
 <<<
