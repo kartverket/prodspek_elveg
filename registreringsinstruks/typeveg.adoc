@@ -326,14 +326,14 @@ Veglenker som ikke har noen tydelig tilknytning men som har en naturlig rutefunk
 Eksisterende veglenker med konnekteringslenke ja skal bare slettes dersom veglenka den skaper forbindelse til også slettes.
 Eksisterende veglenker med konnekteringslenke ja skal geometriforbedres dersom tilstøtende veglenker geometriforbedres.
 
-[[Forlengelse1_NVDB Vegnett Pluss]]
+[[Forlengelse1_NVDB_Vegnett_Pluss]]
 .Eksempel på veglenke som skal forlenges (rød pil i bildet) mot nærmest annen veglenke for ruting for gående til/fra et busstopp.
 image::figurer/Forlengelse1_Elveg.png[alt="Bilde av forlenget veglenke"]
 
 ==== Mindre flater/arealer uten veglenke
 Selv om kravet for konsekvensretting mellom veglenke og vegflate er +-10 meter skal kortere veglenker registreres for mindre flater/arealer der eneste naturlige ruting for gående og syklende er over veg (for kjørende) for å komme seg videre.
 
-[[Manglende1_NVDB Vegnett Pluss]]
+[[Manglende1_NVDB_Vegnett_Pluss]]
 .Eksempel på veglenke (rød pil i bildet) som skal registreres over mindre flater/arealer for ruting videre for gående og syklende.
 image::figurer/Manglende1_Elveg.png[alt="Bilde av mindre flater/areal uten veglenke"]
 
