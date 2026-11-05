@@ -12,7 +12,7 @@ Veglenke kan registreres for veger med lengde under 50 meter selv om ingen av de
 
 Det skal være topologi (nodepunkt) internt i nykonstruerte veglenker, men det skal ikke etableres nodepunkt eller konnekteringspunkt mot eksisterende veglenker. Se <<veglenke_konnektering_riktig>>.
 
-Så langt det er mulig bør det unngås å ha altfor mange korte og oppstykkede veglenker i forbindelse med synbarhetskoding. Les mer om Synbarhet i kap.4.2.
+Så langt det er mulig bør det unngås å ha altfor mange korte og oppstykkede veglenker i forbindelse med synbarhetskoding. Hvis en lenke som konstrueres inneholder punkter med ulik synbarhet, skal lenken gis synbarhetskode tilsvarende majoriteten av punktene sin synbarhet. Les mer om Synbarhet i kap.4.3
 
 I forbindelse med industriområder, gårdsplasser og andre åpne plasser vil det være en vurderingssak hvor langt inn på plassen veglenken skal gå. Veglenken bør avsluttes slik at en vegflate i FKB-Veg også naturlig kan avgrenses der veglenken slutter. Se <<veglenke_avslutning>>.
 

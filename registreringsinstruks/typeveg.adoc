@@ -3,12 +3,22 @@
 Vegnettets klassifisering etter type veg skal henge sammen i datasettene FKB-TraktorvegSti og NVDB Vegnett Pluss som en helhet. Oppdeling og koding av FKB-Veg skal styres av og være konsistent med type veg i NVDB Vegnett Pluss og FKB-TraktorvegSti. Enhver endring av geometri og type veg i NVDB Vegnett Pluss eller FKB-TraktorvegSti skal følges opp med konsekvensretting av vegkanter og flater i FKB-Veg. Det er alltid type veg i NVDB Vegnett Pluss og FKB-TraktorvegSti som skal være førende for innhold og koding av vegkanter og vegflater i FKB-Veg, ikke omvendt.
 Kodeverdier av typeveg som er aktuelle for fotogrammetrisk registrering i NVDB Vegnett Pluss er angitt i tabellen under. 
 
-Klassifisering av typeveg på eksisterende geometri skal _ikke_ endres. Unntaket er tilfeller der det åpenbart har skjedd en fysisk endring siden forrige kartlegging. For eksempel tilfeller der det er etablert en ny veg hvor det tidligere har vært traktorveg. Hvis det er tvil om koding av type veg ved utskifting av geometri skal ny geometri arve typeveg fra eksisterte lenke. 
+****
 
-Se tabellene under for definisjon av de ulike typeveg-kodene og retningslinjer for fotogrammetrisk registrering og eksemplene i kapittel 3.2.2 - 3.2.6 for illustrasjoner.
+*Merknad om traktorveger og stier*: +
+I løpet av 2026 startet jobben med å overføre traktorveger og stier inn i NVDB. Arbeidet utføres kommunevis og vil pågå 1-2 år. 
+I de områdene der traktorveger og stier er overført inn i NVDB er det naturlig å ajourholde disse objektene gjennom denne kartleggingsinstruksen (i stedet for etter kartleggingsinstruks for FKB-TraktorvegSti). 
+NVDB Vegnett Pluss vil da alene bestemme klassifisering av flater i FKB-Veg. Hvilke områder dette gjelder avtales i det enkelte kartleggingsprosjekt.
 
-[[tab-typeveg-kjorende]]
-.https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/typeveg[Typeveg-koder for kjørende i NVDB]
+****
+
+Klassifisering av typeveg på eksisterende geometri skal _ikke_ endres. Unntaket er tilfeller der det åpenbart har skjedd en fysisk endring siden forrige kartlegging. 
+For eksempel tilfeller der det er etablert en ny veg hvor det tidligere har vært traktorveg. Hvis det er tvil om koding av type veg ved utskifting av geometri skal ny geometri arve typeveg fra eksisterte lenke. 
+
+Se tabellen under for definisjon av de ulike typeveg-kodene og retningslinjer for fotogrammetrisk registrering. Ytterligere eksempler og illustrasjoner finnes i kapittel 3.2.2 - 3.2.6.
+
+[[tab-typeveg]]
+.https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/typeveg[Typeveg-koder i NVDB]
 [cols="15,70,15", options="header"]
 |===
 |Kodenavn
@@ -70,17 +80,7 @@ En (tidligere) traktorveg som er gjengrodd med vegetasjon og ikke lenger egner s
 
 |tv
 
-|===
 
-Veglenker med typeveg-koder i <<tab-typeveg-kjorende>> skal alltid samsvare med en flate med samme typeveg-kode i FKB-Veg.   
-
-[[tab-typeveg-gaende]]
-.https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/typeveg[Typeveg-koder for gående og syklende i NVDB]
-[cols="15,70,15", options="header"]
-|===
-|Kodenavn
-|Beskrivelse
-|Kodeverdi
 
 |fortau
 |Del av veg reservert for gående. Ligger høyere enn vegbanen og er adskilt fra denne med kantstein.
@@ -152,7 +152,6 @@ Alle gangfelt skal registreres selv om noen allerede eksisterer med typeveg gang
 |Tydelig, smalt og sammenhengende tråkk i terrenget, som har oppstått gjennom bruk eller aktiv tilrettelegging.
 
 *Regler for fotogrammetrisk registering*: +
-
 Sti benyttes primært i utmark, men kan også registreres i urbane strøk for stier/tråkk i terrenget der det ikke er noen opparbeidet veg med klar avgrensning. 
 Stier skal være del av et sammenhengende transportnettverk for gående. Kortere frittliggende stier som ikke inngår i et transportnettverk er derfor ikke nødvendig å registrere. 
 I områder med mange stier (for eksempel rundt parkeringsplasser, parkområder etc.) er det bare nødvendig å registrere hovedferdselårene. 
@@ -161,14 +160,15 @@ I områder med mange stier (for eksempel rundt parkeringsplasser, parkområder e
 
 |===
 
-Veglenker med typeveg-koder i <<tab-typeveg-gaende>> skal alltid samsvare med en flate med samme typeveg-kode i FKB-Veg med unntak av for _Gangfelt_ og _Sykkelfelt_.
+Veglenker med typeveg-koder i <<tab-typeveg>> skal alltid samsvare med en flate med samme typeveg-kode i FKB-Veg med unntak av for _Gangfelt_ og _Sykkelfelt_. 
+(merk at kodenavnene i tabellen samsvarer godt med kodenavn i kodelista som brukes i FKB-Veg, mens det er noen forskjeller når det gjelder kodeverdien)
 
 ==== Generelt angående registrering av veglenker og nettverkstopolpogi
 Målet er et sammenhengende nettverk for både gående og kjørende. Noen ganger er det også naturlig og nødvendig å binde veglenker for gående og syklende sammen mot veglenker for kjørende. Av og til må vi også akseptere løse ender i nettverket der det er fysisk "umulig" eller ulogisk (se eksempel i <<busslomme_nyregistrert>> i Registreringsinstruks: Fotogrammetrisk NVDB Vegnett Pluss) å ta seg videre, enten som gående eller kjørende.
 
 På tidligere leveranser ser vi at det er en del hull i nettverket, spesielt mellom nye veglenker eller mellom nye veglenker og eksisterende veglenker for gående. Registreringsinstruksen beskriver dessverre langt ifra alle disse situasjonene men følgende eksempler prøver å presisere hva som skal gjøres ved enkelte situasjoner.
 
-Ved nyregistrertefootnote:[Geometriforbedring eller nyregistrering grunnet «ulovlig» datafangstmetode (se kravspesifikasjon) inngår i nyregistrerte.] veglenker skal også tilhørende avgrensingslinjer og flater (hvis dette fremkommer gjennom teknisk kravspesifikasjon – for eksempel med en bestilt oppgradering som flater på fortau og gangveg) konsekvensrettes i FKB-Veg. Dette utføres etter beste evne ved hjelp av eksisterende data eller naturlige avgrensninger/kontraster i bildene for å finne passende avgrensnings- og lukkelinjer for flatene.
+Ved nyregistrerte veglenker skal også tilhørende avgrensingslinjer og flater (hvis dette fremkommer gjennom teknisk kravspesifikasjon – for eksempel med en bestilt oppgradering som flater på fortau og gangveg) konsekvensrettes i FKB-Veg. Dette utføres etter beste evne ved hjelp av eksisterende data eller naturlige avgrensninger/kontraster i bildene for å finne passende avgrensnings- og lukkelinjer for flatene.
 
 Det presiseres at veglenker under 2 meter ikke skal registreres i NVDB Vegnett Pluss.
 
@@ -281,8 +281,7 @@ image::figurer/lengre_veglenker4.png[]
 Gangveger benyttes typisk i parkområder, på gravplasser og til gangareal (tilknytningsveger for gående) i forbindelse med blokkbebyggelse og offentlige bygg.
 Ved enkelte situasjoner, som parker eller gravplasser med mange gangveger i området, streves det kun etter å registrere «hovedvegene» som ruter gående og syklende gjennom parken eller gravplassen. Øvrige gangarealer kan registreres som sti.
 
-I utmarksområder benyttes gangveg for veger med fast dekke som 
-ikke er åpen for motorisert ferdsel, f. eks. rulleskiløyper.
+I utmarksområder benyttes gangveg for veger med fast dekke som ikke er åpen for motorisert ferdsel, f. eks. rulleskiløyper.
 
 I flere tilfeller vil det være lang avstand mellom aktuell gangveg og eksisterende nettverk. Typiske eksempler på dette er over åpne plasser og parkeringsplasser. I slike tilfeller skal det brukes konnekteringslenke ja for å knytte gangvegen sammen med nettverket og det vil derfor ikke være aktuelt for fotogrammetrisk registrering.
 
@@ -337,3 +336,4 @@ Selv om kravet for konsekvensretting mellom veglenke og vegflate er +-10 meter s
 [[Manglende1_NVDB Vegnett Pluss]]
 .Eksempel på veglenke (rød pil i bildet) som skal registreres over mindre flater/arealer for ruting videre for gående og syklende.
 image::figurer/Manglende1_Elveg.png[alt="Bilde av mindre flater/areal uten veglenke"]
+

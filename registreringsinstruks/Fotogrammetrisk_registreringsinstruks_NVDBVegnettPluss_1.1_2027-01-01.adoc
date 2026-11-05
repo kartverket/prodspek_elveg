@@ -2,7 +2,7 @@
 :datasett-teknisk: NVDB_Vegnett_Pluss
 :versjon: 1.1
 :underversjon: 2027-01-01
-:publisert: 2026-01-19
+:publisert: 2026-11-15
 :reginstr-type: Fotogrammetrisk
 // Forrige versjon av dokumentet
 :datasett-erstatter: Elveg
@@ -27,7 +27,7 @@ Fotogrammetrisk NVDB Vegnett Pluss henger tett sammen med fotogrammetrisk FKB-Ve
 for typeVeg (se punkt 3.2).
 
 For full beskrivelse av NVDB Vegnett Pluss og detaljer rundt modellering og UML-modeller henvises det til
-SOSI NVDB Vegnett Pluss.
+Produktspesifikasjon for NVDB Vegnett Pluss.
 
 ==== Fotogrammetrisk registrering av NVDB Vegnett Pluss
 NVDB Vegnett Pluss er ikke et rent FKB-datasett og forvaltes i NVDB. 
@@ -47,7 +47,8 @@ Eksemplene er ment som eksempler og ikke nødvendigvis fasit på registrering p�
 
 ==== Endringer fra NVDB Vegnett Pluss 1.1 2026-01-01 til NVDB Vegnett Pluss 1.1 2027-01-01:
 
-* Innført traktorveg og sti
+* Innført beskrivelse av kartlegging av typeveg traktorveg og sti
+* Tabeller med beskrivelser av ulike typeveg-koder er slått sammen til en tabell
 
 ==== Endringer fra versjon 2024-01-01 til NVDB Vegnett Pluss 1.1 2026-01-01:
 
@@ -76,16 +77,20 @@ Ved fotogrammetrisk registrering av NVDB Vegnett Pluss er det kun senterlinjegeo
 Egenskapene som skal oppdateres fotogrammetrisk er:
 
 * *Typeveg* (Dette er den sentrale klassifiseringen av vegnettet. Se beskrivelser i kapittel 3.2)
-* *Medium* (Registreres på alle objekter som _ikke_ ligger på terrenget. Se forøvring kap. 2.1.1)
-* *Datafangstdato og stedfestingskvalitet* (metadata for innmåling, Se kapittel 2.1.2. Merk forøvring at _registreringsversjon_ ikke skal registreres på NVDB Vegnett Pluss)
+* *Medium* (Registreres på alle objekter som _ikke_ ligger på terrenget. Se generelle beskrivelser i kap. 2)
+* *Datafangstdato og stedfestingskvalitet* (metadata for innmåling, Se generelle beskrivelser i kap. 2. Merk også at _registreringsversjon_ ikke skal registreres på NVDB Vegnett Pluss)
 
 *Konnekteringslenke*: +
-Konnekteringslenker vil finnes i dataene som skal ajourføres for å binde sammen vegnettet over for eksempel kryss eller rundkjøringer og benyttes på veglenken for å danne en sammenheng i nettverket for den vegen som ikke eier arealet i krysset. Konnekteringslenker er merket med egenskapen _konnekteringslenke Ja_ (true).
+Konnekteringslenker vil finnes i dataene som skal ajourføres for å binde sammen vegnettet over for eksempel kryss eller rundkjøringer og benyttes på veglenken for å danne en sammenheng i nettverket for den vegen som ikke eier arealet i krysset. 
+Konnekteringslenker er merket med egenskapen _konnekteringslenke Ja_ (true).
 Konnekteringslenker skal ikke nyregistreres ved fotogrammetrisk datafangst. Alle nye data merkes _konnekteringslenke Nei_ (false).
+Eksisterende konnekteringslenker skal som hovedregel ikke endres. Avvik fra dette må ev. avtales spesielt. 
+Eksisterende konnekteringslenker skal slettes dersom veglenka den skaper forbindelse til slettes. 
+Eksisterende konnekteringslenker skal geometriforbedres dersom tilstøtende veglenker geometriforbedres. 
+Ved geometriforbedring skal egenskapen konnekteringslenke Ja overføres til ny geometri.
 
-Eksisterende konnekteringslenker skal som hovedregel ikke endres (selv om tilstøtende veglenker endres/slettes). Avvik fra dette må ev. avtales spesielt.
-
-I kryss vil man få en liten strekning med overlapp mellom vegene, der veglenken går over en annen veg sin flate. Her er det den veg som er «viktigst» som «eier» strekningen, og alle andre veger får konnektering fra den viktigste vegens flatekant og inn til kryssets sentrum. Se skisseeksempler under.
+I kryss vil man få en liten strekning med overlapp mellom vegene, der veglenken går over en annen veg sin flate. 
+Her er det den veg som er «viktigst» som «eier» strekningen, og alle andre veger får konnektering fra den viktigste vegens flatekant og inn til kryssets sentrum. Se skisseeksempler under.
 
 [[NVDB_konnekteringslenker_rundkjoring]]
 .Eksempel på eksisterende konnekteringslenker fra NVDB over en rundkjøringsflate i NVDB Vegnett Pluss.

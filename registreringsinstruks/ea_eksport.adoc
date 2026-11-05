@@ -90,7 +90,7 @@ Egenskapen typeveg er den viktigste egenskapen til veglenke og angir hvilken typ
  
 |endringsflagg
 |«dataType» Endringsflagg
-|..
+|..ENDRINGSFLAGG
 |[1..1]
  
 |endringsflagg.typeEndring
