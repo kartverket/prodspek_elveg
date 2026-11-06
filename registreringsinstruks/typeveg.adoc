@@ -337,3 +337,17 @@ Selv om kravet for konsekvensretting mellom veglenke og vegflate er +-10 meter s
 .Eksempel på veglenke (rød pil i bildet) som skal registreres over mindre flater/arealer for ruting videre for gående og syklende.
 image::figurer/Manglende1_Elveg.png[alt="Bilde av mindre flater/areal uten veglenke"]
 
+
+==== Traktorveger og stier
+Etter overføring av traktorveger og stier inn i NVDB skal disse objektene konstrueres som en del av denne instruksen i stedet for etter registreringsinstruks for FKB-TraktorvegSti.
+Det er i prinsippene de samme objektene som skal registreres som tidligere og de samme reglene for klassifisering som gjelder selv om veglenkene er flyttet inn i NVDB. 
+
+Trapper som inngår i nettverket registreres som typeveg Trapp (og ikke stitrapp som var definert i FKB-TraktorvegSti). 
+
+[[Traktorveg_sti_utmark]]
+.Eksempel på klassifisering av veglenke med typeveg traktorveg og sti i utmark
+image::figurer/tvsti_typeveg.png[alt="Bilde av traktorveger og stier i utmark"]
+
+[[Traktorveg_sti_innmark]]
+.Eksempel på klassifisering av veglenke med typeveg traktorveg og sti i urbane områder
+image::figurer/tvsti_typeveg2.png[alt="Bilde av traktorveger og stier i utmark"]

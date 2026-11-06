@@ -475,6 +475,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_registrering_av_veglenker_for_kjørende">3.2.8. Registrering av veglenker for kjørende</a></li>
 <li><a href="#_registrering_av_veglenker_uten_tydelig_tilknytning">3.2.9. Registrering av veglenker uten tydelig tilknytning</a></li>
 <li><a href="#_mindre_flaterarealer_uten_veglenke">3.2.10. Mindre flater/arealer uten veglenke</a></li>
+<li><a href="#_traktorveger_og_stier">3.2.11. Traktorveger og stier</a></li>
 </ul>
 </li>
 </ul>
@@ -1477,6 +1478,28 @@ Eksisterende veglenker med konnekteringslenke ja skal geometriforbedres dersom t
 </div>
 <div class="title">Figur 30. Eksempel på veglenke (rød pil i bildet) som skal registreres over mindre flater/arealer for ruting videre for gående og syklende.</div>
 </div>
+</div>
+<div class="sect3">
+<h4 id="_traktorveger_og_stier">3.2.11. Traktorveger og stier</h4>
+<div class="paragraph">
+<p>Etter overføring av traktorveger og stier inn i NVDB skal disse objektene konstrueres som en del av denne instruksen i stedet for etter registreringsinstruks for FKB-TraktorvegSti.
+Det er i prinsippene de samme objektene som skal registreres som tidligere og de samme reglene for klassifisering som gjelder selv om veglenkene er flyttet inn i NVDB.</p>
+</div>
+<div class="paragraph">
+<p>Trapper som inngår i nettverket registreres som typeveg Trapp (og ikke stitrapp som var definert i FKB-TraktorvegSti).</p>
+</div>
+<div id="Traktorveg_sti_utmark" class="imageblock">
+<div class="content">
+<img src="figurer/tvsti_typeveg.png" alt="Bilde av traktorveger og stier i utmark">
+</div>
+<div class="title">Figur 31. Eksempel på klassifisering av veglenke med typeveg traktorveg og sti i utmark</div>
+</div>
+<div id="Traktorveg_sti_innmark" class="imageblock">
+<div class="content">
+<img src="figurer/tvsti_typeveg2.png" alt="Bilde av traktorveger og stier i utmark">
+</div>
+<div class="title">Figur 32. Eksempel på klassifisering av veglenke med typeveg traktorveg og sti i urbane områder</div>
+</div>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
@@ -1790,16 +1813,16 @@ Eksisterende veglenker med konnekteringslenke ja skal geometriforbedres dersom t
 <p>Veglenke kan registreres for veger med lengde under 50 meter selv om ingen av de andre kriteriene er oppfylt dersom dette er naturlig for en helhetlig forståelse/bruk av vegnettet, for eksempel ved avkjøringer til store/sentrale bygninger. Veglenker skal ikke registreres for veger med lengde under 20 meter uten at kriterium 2 er oppfylt.</p>
 </div>
 <div class="paragraph">
-<p>Det skal være topologi (nodepunkt) internt i nykonstruerte veglenker, men det skal ikke etableres nodepunkt eller konnekteringspunkt mot eksisterende veglenker. Se <a href="#veglenke_konnektering_riktig">Figur 31</a>.</p>
+<p>Det skal være topologi (nodepunkt) internt i nykonstruerte veglenker, men det skal ikke etableres nodepunkt eller konnekteringspunkt mot eksisterende veglenker. Se <a href="#veglenke_konnektering_riktig">Figur 33</a>.</p>
 </div>
 <div class="paragraph">
 <p>Så langt det er mulig bør det unngås å ha altfor mange korte og oppstykkede veglenker i forbindelse med synbarhetskoding. Hvis en lenke som konstrueres inneholder punkter med ulik synbarhet, skal lenken gis synbarhetskode tilsvarende majoriteten av punktene sin synbarhet. Les mer om Synbarhet i kap.4.3</p>
 </div>
 <div class="paragraph">
-<p>I forbindelse med industriområder, gårdsplasser og andre åpne plasser vil det være en vurderingssak hvor langt inn på plassen veglenken skal gå. Veglenken bør avsluttes slik at en vegflate i FKB-Veg også naturlig kan avgrenses der veglenken slutter. Se <a href="#veglenke_avslutning">Figur 32</a>.</p>
+<p>I forbindelse med industriområder, gårdsplasser og andre åpne plasser vil det være en vurderingssak hvor langt inn på plassen veglenken skal gå. Veglenken bør avsluttes slik at en vegflate i FKB-Veg også naturlig kan avgrenses der veglenken slutter. Se <a href="#veglenke_avslutning">Figur 34</a>.</p>
 </div>
 <div class="paragraph">
-<p>Gangfelt innenfor lukket område som ikke er tilgjengelige for allmenn ferdsel og heller ikke krysser veg eller henger sammen med annen del av nettverket, skal ikke registreres. Se <a href="#gangfelt_feil">Figur 33</a>.</p>
+<p>Gangfelt innenfor lukket område som ikke er tilgjengelige for allmenn ferdsel og heller ikke krysser veg eller henger sammen med annen del av nettverket, skal ikke registreres. Se <a href="#gangfelt_feil">Figur 35</a>.</p>
 </div>
 <div class="paragraph">
 <p>Banketter (også kalt opphøyd vegskulder) skal ikke registreres som fortau. Banketter finnes som regel langs veger i forbindelse med nyere tunneler og der det ikke er plass med veggrøft. Bankett er normalt langt smalere enn fortau. Det er oftest heller ingen naturlig forbindelse mellom disse bankettene og andre veglenker for gående.</p>
@@ -1811,64 +1834,64 @@ Eksisterende veglenker med konnekteringslenke ja skal geometriforbedres dersom t
 <div class="content">
 <img src="figurer/veglenke_konnektering_riktig.png" alt="veglenke konnektering riktig">
 </div>
-<div class="title">Figur 31. Eksempel på riktig avslutning av veglenke mot eksisterende geometri. Markert lenke (rosa) er eksisterende lenke som er innenfor kvalitetskrav (+-2m). Nykonstruert lenke (grønn) skal da konstrueres til midt av vegen slik bildet viser. Da er den nykonstruerte lenka helt riktig og den eksisterende lenka med litt dårlig geometri, men ikke så dårlig at den skal nykonstrueres, vil bli riktig tilpasset ny geometri ved innlegging i NVDB. Oransje lenke er kodet med Endret type S og skal slettes</div>
+<div class="title">Figur 33. Eksempel på riktig avslutning av veglenke mot eksisterende geometri. Markert lenke (rosa) er eksisterende lenke som er innenfor kvalitetskrav (+-2m). Nykonstruert lenke (grønn) skal da konstrueres til midt av vegen slik bildet viser. Da er den nykonstruerte lenka helt riktig og den eksisterende lenka med litt dårlig geometri, men ikke så dårlig at den skal nykonstrueres, vil bli riktig tilpasset ny geometri ved innlegging i NVDB. Oransje lenke er kodet med Endret type S og skal slettes</div>
 </div>
 <div id="veglenke_avslutning" class="imageblock">
 <div class="content">
 <img src="figurer/veglenke_avslutning.png" alt="veglenke avslutning">
 </div>
-<div class="title">Figur 32. Eksempel på riktig avslutning av veglenke (og vegflate i FKB-Veg) på gårdsplass. Det skal ikke registreres veglenke rundt driftsbygningen i dette tilfellet. NB! Bildet viser overfullstendighet av AnnetVegarealAvgrensning rundt rundt driftsbygningen</div>
+<div class="title">Figur 34. Eksempel på riktig avslutning av veglenke (og vegflate i FKB-Veg) på gårdsplass. Det skal ikke registreres veglenke rundt driftsbygningen i dette tilfellet. NB! Bildet viser overfullstendighet av AnnetVegarealAvgrensning rundt rundt driftsbygningen</div>
 </div>
 <div id="gangfelt_feil" class="imageblock">
 <div class="content">
 <img src="figurer/gangfelt_feil.png" alt="gangfelt feil">
 </div>
-<div class="title">Figur 33. Eksempler på gangfelt som ikke skal registreres</div>
+<div class="title">Figur 35. Eksempler på gangfelt som ikke skal registreres</div>
 </div>
 <div id="banketter" class="imageblock">
 <div class="content">
 <img src="figurer/Braketter.png" alt="Braketter">
 </div>
-<div class="title">Figur 34. Eksempler på banketter som ikke skal registreres</div>
+<div class="title">Figur 36. Eksempler på banketter som ikke skal registreres</div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_sletting_av_eksisterende_veglenker">5.2. Sletting av eksisterende veglenker</h3>
 <div class="paragraph">
-<p>Veglenker skal kun slettes dersom det kan verifiseres i flybildene at vegen ikke eksisterer/ er kjørbar. (se <a href="#veglenke_slettes">Figur 35</a>)</p>
+<p>Veglenker skal kun slettes dersom det kan verifiseres i flybildene at vegen ikke eksisterer/ er kjørbar. (se <a href="#veglenke_slettes">Figur 37</a>)</p>
 </div>
 <div class="paragraph">
-<p>I eksisterende data kan det ligge veglenker som ikke oppfyller kriteriene for fotogrammetrisk registrering, for eksempel at de er kortere enn minstemål. Disse skal ikke slettes. I slike tilfeller er det ikke krav om etablering av vegflate i FKB-Veg. (se <a href="#veglenke_slettes_ikke">Figur 36</a>)</p>
+<p>I eksisterende data kan det ligge veglenker som ikke oppfyller kriteriene for fotogrammetrisk registrering, for eksempel at de er kortere enn minstemål. Disse skal ikke slettes. I slike tilfeller er det ikke krav om etablering av vegflate i FKB-Veg. (se <a href="#veglenke_slettes_ikke">Figur 38</a>)</p>
 </div>
 <div class="paragraph">
 <p>Veglenker med Medium U og B, i tunnel eller i bygning, skal ikke slettes. Hvis tunnel eller bygning er borte (revet) kan veglenker med medium slettes.</p>
 </div>
 <div class="paragraph">
-<p>Det tolereres inntil +/- 10 meter avvik mellom NVDB Vegnett Pluss og FKB-Veg i forbindelse med avslutning av eksisterende veglenker inn på gårdsplasser ol. (se <a href="#veglenke_under10">Figur 37</a> og <a href="#veglenke_mangler_under10">Figur 38</a>)</p>
+<p>Det tolereres inntil +/- 10 meter avvik mellom NVDB Vegnett Pluss og FKB-Veg i forbindelse med avslutning av eksisterende veglenker inn på gårdsplasser ol. (se <a href="#veglenke_under10">Figur 39</a> og <a href="#veglenke_mangler_under10">Figur 40</a>)</p>
 </div>
 <div id="veglenke_slettes" class="imageblock">
 <div class="content">
 <img src="figurer/veglenke_slettes.png" alt="veglenke slettes">
 </div>
-<div class="title">Figur 35. Eksempelet viser en eksisterende veglenke (rødt) som skal slettes ettersom vegen ikke lengre eksisterer i bildene</div>
+<div class="title">Figur 37. Eksempelet viser en eksisterende veglenke (rødt) som skal slettes ettersom vegen ikke lengre eksisterer i bildene</div>
 </div>
 <div id="veglenke_slettes_ikke" class="imageblock">
 <div class="content">
 <img src="figurer/veglenke_slettes_ikke.png" alt="veglenke slettes ikke">
 </div>
-<div class="title">Figur 36. Eksempelet viser en eksisterende veglenke (rødt) som ikke skal slettes (selv om den ikke oppfyller kriteriene for fotogrammetrisk registrering) ettersom vegen fortsatt eksisterer (i FKB-Veg) og er kjørbar i bildene</div>
+<div class="title">Figur 38. Eksempelet viser en eksisterende veglenke (rødt) som ikke skal slettes (selv om den ikke oppfyller kriteriene for fotogrammetrisk registrering) ettersom vegen fortsatt eksisterer (i FKB-Veg) og er kjørbar i bildene</div>
 </div>
 <div id="veglenke_under10" class="imageblock">
 <div class="content">
 <img src="figurer/veglenke_under10.png" alt="veglenke under10">
 </div>
-<div class="title">Figur 37. Eksempelet viser et godkjent avvik (under 10m) mellom NVDB Vegnett Pluss (grønt) og FKB-Veg (flate med skravur). Den overskytende delen av veglenken skal ikke slettes</div>
+<div class="title">Figur 39. Eksempelet viser et godkjent avvik (under 10m) mellom NVDB Vegnett Pluss (grønt) og FKB-Veg (flate med skravur). Den overskytende delen av veglenken skal ikke slettes</div>
 </div>
 <div id="veglenke_mangler_under10" class="imageblock">
 <div class="content">
 <img src="figurer/veglenke_mangler_under10.png" alt="veglenke mangler under10">
 </div>
-<div class="title">Figur 38. Eksempelet viser et godkjent avvik (under 10m) mellom NVDB Vegnett Pluss (grønt) og FKB-Veg (flate med skravur). Den manglende delen av veglenken skal ikke registreres</div>
+<div class="title">Figur 40. Eksempelet viser et godkjent avvik (under 10m) mellom NVDB Vegnett Pluss (grønt) og FKB-Veg (flate med skravur). Den manglende delen av veglenken skal ikke registreres</div>
 </div>
 </div>
 <div class="sect2">
@@ -1926,7 +1949,7 @@ Eksisterende veglenker med konnekteringslenke ja skal geometriforbedres dersom t
 <div class="content">
 <img src="figurer/geometriforbedring.png" alt="geometriforbedring">
 </div>
-<div class="title">Figur 39. Eksempelet viser geometriforbedring av en veglenke. Det faktiske avviket (mellom dagens situasjon og riktig utstrekning av veglenken) vises i rødt. Hele den eksisterende veglenken (fra nodepunkt til nodepunkt) må slettes og registreres på nytt (vises i gult).</div>
+<div class="title">Figur 41. Eksempelet viser geometriforbedring av en veglenke. Det faktiske avviket (mellom dagens situasjon og riktig utstrekning av veglenken) vises i rødt. Hele den eksisterende veglenken (fra nodepunkt til nodepunkt) må slettes og registreres på nytt (vises i gult).</div>
 </div>
 </div>
 <div class="sect3">
