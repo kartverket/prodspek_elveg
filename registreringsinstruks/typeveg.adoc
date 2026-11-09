@@ -15,7 +15,7 @@ NVDB Vegnett Pluss vil da alene bestemme klassifisering av flater i FKB-Veg. Hvi
 Klassifisering av typeveg på eksisterende geometri skal _ikke_ endres. Unntaket er tilfeller der det åpenbart har skjedd en fysisk endring siden forrige kartlegging. 
 For eksempel tilfeller der det er etablert en ny veg hvor det tidligere har vært traktorveg. Hvis det er tvil om koding av type veg ved utskifting av geometri skal ny geometri arve typeveg fra eksisterte lenke. 
 
-Se tabellen under for definisjon av de ulike typeveg-kodene og retningslinjer for fotogrammetrisk registrering. Ytterligere eksempler og illustrasjoner finnes i kapittel 3.2.2 - 3.2.6.
+Se tabellen under for definisjon av de ulike typeveg-kodene og retningslinjer for fotogrammetrisk registrering. Ytterligere eksempler og illustrasjoner finnes i kapittel 3.2.2 - 3.2.11.
 
 [[tab-typeveg]]
 .https://register.geonorge.no/sosi-kodelister/samferdsel/nvdb/typeveg[Typeveg-koder i NVDB]
@@ -68,8 +68,6 @@ Gatetun skal kun nyregistreres ved hjelp av manus eller etter spesiell avklaring
 |Veg som hele året (eller deler av året) ikke egner seg for vanlig bilkjøring, men som er farbar med traktor.
 
 *Regler for fotogrammetrisk registering*: +
-Veglenke for gatetun registreres som senterlinje midt mellom oppmerkede kantlinjer. På veg uten oppmerking registreres senterlinje midt mellom vegdekkekanter. Veg for kjørende hvor type veg er vanskelig å bestemme fotogrammetrisk, registreres som enkel bilveg.
-
 Traktorveger skal være så brede at traktorer kan benytte disse, minimum 2.5 meter. 
 Traktorveger inngår i det permanente vegnettet og medfører varige terrenginngrep i form av en sammenhengende vegkropp. 
 Slep og driftsveier som ikke har bearbeidet såle og som er skapt av gjentatte passeringer med traktor, defineres normalt ikke som en traktorveg. 
@@ -79,7 +77,6 @@ En (tidligere) traktorveg som er gjengrodd med vegetasjon og ikke lenger egner s
 (men heller klassifiseres som Typeveg Sti).
 
 |tv
-
 
 
 |fortau
@@ -160,8 +157,8 @@ I områder med mange stier (for eksempel rundt parkeringsplasser, parkområder e
 
 |===
 
-Veglenker med typeveg-koder i <<tab-typeveg>> skal alltid samsvare med en flate med samme typeveg-kode i FKB-Veg med unntak av for _Gangfelt_ og _Sykkelfelt_. 
-(merk at kodenavnene i tabellen samsvarer godt med kodenavn i kodelista som brukes i FKB-Veg, mens det er noen forskjeller når det gjelder kodeverdien)
+Veglenker med typeveg-koder i <<tab-typeveg>> skal alltid samsvare med en flate med samme typeveg-kode i FKB-Veg med unntak av for _Gangfelt_ og _Sykkelfelt_. +
+(_Merknad_: Kodenavnene i tabellen samsvarer godt med kodenavn i kodelista som brukes i FKB-Veg, mens det er noen forskjeller når det gjelder kodeverdien i og med at disse for NVDB Vegnett Pluss styres av NVDB)
 
 ==== Generelt angående registrering av veglenker og nettverkstopolpogi
 Målet er et sammenhengende nettverk for både gående og kjørende. Noen ganger er det også naturlig og nødvendig å binde veglenker for gående og syklende sammen mot veglenker for kjørende. Av og til må vi også akseptere løse ender i nettverket der det er fysisk "umulig" eller ulogisk (se eksempel i <<busslomme_nyregistrert>> i Registreringsinstruks: Fotogrammetrisk NVDB Vegnett Pluss) å ta seg videre, enten som gående eller kjørende.
